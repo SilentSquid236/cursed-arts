@@ -1,0 +1,60 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "oritech"
+	group: "AEAA9718BAF5A32A"
+	icon: { id: "oritech:assembler_block" }
+	id: "C5ADC3D897E2E7E3"
+	order_index: 31
+	quest_links: [ ]
+	quests: [
+		{
+			id: "8FF80CF8A4D5878F"
+			rewards: [{ id: "DABD7618208F83C3", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "EB56BE7CDE6DE5FF", item: { count: 1, id: "oritech:basic_generator_block" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8FF80CF8A4D5878F"]
+			id: "5FE258DD76A73856"
+			rewards: [{ id: "D495845F15BF4B8D", type: "xp", xp: 15 }]
+			tasks: [{ id: "E52862A6243D1600", item: { count: 1, id: "oritech:pulverizer_block" }, type: "item" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE258DD76A73856"]
+			id: "C1FA6914882155B4"
+			rewards: [{ id: "8C147935A7BCC3CF", type: "xp", xp: 20 }]
+			tasks: [{ id: "DF5C9B94DFD51D71", item: { count: 1, id: "oritech:assembler_block" }, type: "item" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C1FA6914882155B4"]
+			id: "E7D50CD74DBAAC32"
+			rewards: [{ id: "BD372DD6F852CD43", type: "xp", xp: 25 }]
+			tasks: [{ id: "11C2AC8B7648E7A5", item: { count: 1, id: "oritech:foundry_block" }, type: "item" }]
+			x: 5.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["E7D50CD74DBAAC32"]
+			id: "93ABEE230D0CAAD8"
+			rewards: [{ id: "30974B9B05EB9C69", type: "xp", xp: 30 }]
+			tasks: [{ id: "32375EA625710874", item: { count: 1, id: "oritech:fragment_forge_block" }, type: "item" }]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["93ABEE230D0CAAD8"]
+			id: "231E8DD4548AFEEB"
+			rewards: [{ id: "913A8646F092AF45", type: "xp", xp: 35 }]
+			tasks: [{ id: "3E14E556FCA465B0", item: { count: 1, id: "oritech:laser_arm_block" }, type: "item" }]
+			x: 8.8d
+			y: 0.0d
+		}
+	]
+}

@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "expedition"
-	group: ""
+	group: "193A39D685B7FCB1"
 	icon: { id: "minecraft:compass" }
 	id: "370602F37E1A7E10"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{

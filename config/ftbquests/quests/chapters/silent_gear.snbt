@@ -1,0 +1,335 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "silent_gear"
+	group: "75D26D7A788B4CE3"
+	icon: { id: "silentgear:pickaxe" }
+	id: "74275127051E7775"
+	order_index: 19
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "silentgear:pickaxe" }
+			id: "A760D992481BED01"
+			rewards: [{ id: "0062BDCB9880FC2F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:root", criterion: "", id: "5E868FD858C0C556", type: "advancement" }]
+			x: 0.0d
+			y: 12.2d
+		}
+		{
+			dependencies: ["A760D992481BED01"]
+			icon: { id: "silentgear:blueprint_paper" }
+			id: "FD2FBB0BD9D37997"
+			rewards: [{ id: "C1C78D69C79639CF", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:blueprint_paper", criterion: "", id: "605E6463FCF5A4C0", type: "advancement" }]
+			x: 1.8d
+			y: 2.9d
+		}
+		{
+			dependencies: ["A760D992481BED01"]
+			icon: { id: "minecraft:iron_nugget" }
+			id: "852D0DF3D020526C"
+			rewards: [{ id: "53389DBC507413B0", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:kachink1", criterion: "", id: "2B7EC5E05EA3641E", type: "advancement" }]
+			x: 1.8d
+			y: 7.5d
+		}
+		{
+			dependencies: ["A760D992481BED01"]
+			icon: { id: "minecraft:obsidian" }
+			id: "2C5689B82E288FC4"
+			rewards: [{ id: "FC7E3F2B64D22D8C", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:nether", criterion: "", id: "8DE370BD39410368", type: "advancement" }]
+			x: 1.8d
+			y: 12.7d
+		}
+		{
+			dependencies: ["A760D992481BED01"]
+			icon: { id: "silentgear:flax_fiber" }
+			id: "C43D6763B2BE26E1"
+			rewards: [{ id: "ABE00FCEF6E180ED", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:overworld_plants", criterion: "", id: "E0C178D40F6C9636", type: "advancement" }]
+			x: 1.8d
+			y: 17.5d
+		}
+		{
+			dependencies: ["A760D992481BED01"]
+			icon: { id: "silentgear:stone_anvil" }
+			id: "8DD4C6A76B78B5AA"
+			rewards: [{ id: "FCAC854804627AE6", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:stone_anvil", criterion: "", id: "F9DC9F57E59C6A82", type: "advancement" }]
+			x: 1.8d
+			y: 20.3d
+		}
+		{
+			dependencies: ["FD2FBB0BD9D37997"]
+			icon: { id: "silentgear:helmet" }
+			id: "D76AEC9115DD30CF"
+			rewards: [{ id: "BD1941AFA55D3165", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:armor", criterion: "", id: "31038505465E6E3B", type: "advancement" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FD2FBB0BD9D37997"]
+			icon: { id: "silentgear:blueprint_book" }
+			id: "BEC63B9BB9483D2E"
+			rewards: [{ id: "47F772DEFA36F0B6", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:blueprint_book", criterion: "", id: "2A65EDC065FA63E0", type: "advancement" }]
+			x: 3.5d
+			y: 1.2d
+		}
+		{
+			dependencies: ["FD2FBB0BD9D37997"]
+			icon: { id: "silentgear:bow" }
+			id: "ADBC12EF5E651860"
+			rewards: [{ id: "57E610027AC184EC", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:bow", criterion: "", id: "EC8B702B87FC90D3", type: "advancement" }]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["FD2FBB0BD9D37997"]
+			icon: { id: "silentgear:pickaxe" }
+			id: "9D3D9E4147D93CFD"
+			rewards: [{ id: "A4F2998849E3BF8A", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:standard_tools", criterion: "", id: "E76665E61056B1AD", type: "advancement" }]
+			x: 3.5d
+			y: 4.4d
+		}
+		{
+			dependencies: ["FD2FBB0BD9D37997"]
+			icon: { id: "silentgear:sword" }
+			id: "0D8F2AEB41396857"
+			rewards: [{ id: "B0F7900DB6FF87F3", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:swords", criterion: "", id: "981006AB33073ADB", type: "advancement" }]
+			x: 3.5d
+			y: 6.2d
+		}
+		{
+			dependencies: ["852D0DF3D020526C"]
+			icon: { id: "silentgear:diamond_shard" }
+			id: "1BED9D7E71864057"
+			rewards: [{ id: "6DB2E3EE6BBD75EB", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:kachink2", criterion: "", id: "705ACC37BCC682DC", type: "advancement" }]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2C5689B82E288FC4"]
+			icon: { id: "silentgear:blaze_gold_ingot" }
+			id: "9A1BF2E9240EF85D"
+			rewards: [{ id: "EF6DDBE5F49FC73E", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:blaze_gold", criterion: "", id: "A9954D284A2BB027", type: "advancement" }]
+			x: 3.5d
+			y: 9.4d
+		}
+		{
+			dependencies: ["2C5689B82E288FC4"]
+			icon: { id: "silentgear:crimson_iron_ingot" }
+			id: "40335C561E05A0F4"
+			rewards: [{ id: "C07608802DF54C63", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:crimson_iron", criterion: "", id: "BC66E464243004D6", type: "advancement" }]
+			x: 3.5d
+			y: 11.9d
+		}
+		{
+			dependencies: ["2C5689B82E288FC4"]
+			icon: { id: "silentgear:nether_banana" }
+			id: "E8C6C3FAA6CF8C71"
+			rewards: [{ id: "7E1ACE2B7F5BB2C8", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:nether_plants", criterion: "", id: "09A8466A547B26DD", type: "advancement" }]
+			x: 3.5d
+			y: 13.8d
+		}
+		{
+			dependencies: ["2C5689B82E288FC4"]
+			icon: { id: "minecraft:end_stone" }
+			id: "4D6A31FC31068C7F"
+			rewards: [{ id: "E986CCCAAA982E4D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:the_end", criterion: "", id: "C5C9A495883EDAC5", type: "advancement" }]
+			x: 3.5d
+			y: 15.6d
+		}
+		{
+			dependencies: ["8DD4C6A76B78B5AA"]
+			icon: { id: "silentgear:crude_knife" }
+			id: "770232E3F9E68313"
+			rewards: [{ id: "426BF77CEC69C8BC", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:crude_knife", criterion: "", id: "52A9837328010590", type: "advancement" }]
+			x: 3.5d
+			y: 20.3d
+		}
+		{
+			dependencies: ["ADBC12EF5E651860"]
+			icon: { id: "silentgear:crossbow" }
+			id: "B1DFF6C2BE8F3C0E"
+			rewards: [{ id: "26D3749B1C93C2E3", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:crossbow", criterion: "", id: "6772F7DD423E57C8", type: "advancement" }]
+			x: 5.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["9D3D9E4147D93CFD"]
+			icon: { id: "silentgear:hammer" }
+			id: "30867CC9226FA781"
+			rewards: [{ id: "840EBF8FAEA7B9A1", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:big_job_tools", criterion: "", id: "BE7C827873682D90", type: "advancement" }]
+			x: 5.2d
+			y: 3.8d
+		}
+		{
+			dependencies: ["9D3D9E4147D93CFD"]
+			icon: { id: "silentgear:mattock" }
+			id: "CF5641397D0ECEDF"
+			rewards: [{ id: "D5B3E30BD13D9814", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:mattock", criterion: "", id: "E1757E916C351508", type: "advancement" }]
+			x: 5.2d
+			y: 5.0d
+		}
+		{
+			dependencies: ["9A1BF2E9240EF85D"]
+			icon: { id: "silentgear:material_grader" }
+			id: "2408BFB9BB6B658E"
+			rewards: [{ id: "F204F3C23B97D257", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:material_grader", criterion: "", id: "CF02552131B307A2", type: "advancement" }]
+			x: 5.2d
+			y: 9.4d
+		}
+		{
+			dependencies: ["40335C561E05A0F4"]
+			icon: { id: "silentgear:crimson_steel_ingot" }
+			id: "802CE926471B6591"
+			rewards: [{ id: "A61297CEFAB4C793", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:crimson_steel", criterion: "", id: "8568BD7F7B8D928A", type: "advancement" }]
+			x: 5.2d
+			y: 11.2d
+		}
+		{
+			dependencies: ["40335C561E05A0F4"]
+			icon: { id: "silentgear:salvager" }
+			id: "7063ABB766898BE3"
+			rewards: [{ id: "8CDA0E40BDA1C89C", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:salvager", criterion: "", id: "815DD958C6B99725", type: "advancement" }]
+			x: 5.2d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4D6A31FC31068C7F"]
+			icon: { id: "silentgear:azure_silver_ingot" }
+			id: "D2C7154E8FAD5323"
+			rewards: [{ id: "8A6BBEDCEF783AA5", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:azure_silver", criterion: "", id: "C336150AE73A6A8B", type: "advancement" }]
+			x: 5.2d
+			y: 15.6d
+		}
+		{
+			dependencies: ["770232E3F9E68313"]
+			icon: { id: "silentgear:template_board" }
+			id: "1FB1EE03C687C87F"
+			rewards: [{ id: "83F53FC641CF1FED", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:template_board", criterion: "", id: "68F1AEED20D8D9FC", type: "advancement" }]
+			x: 5.2d
+			y: 20.3d
+		}
+		{
+			dependencies: ["CF5641397D0ECEDF"]
+			icon: { id: "silentgear:sickle" }
+			id: "CB5644CD48E4DA45"
+			rewards: [{ id: "F99F5D24785A15D3", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:sickle", criterion: "", id: "30E66598AAB3ECE1", type: "advancement" }]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2408BFB9BB6B658E"]
+			icon: { id: "silentgear:blazing_dust" }
+			id: "4453FF24D8F2658E"
+			rewards: [{ id: "87D7C139248E26A5", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:grader_catalyst_2", criterion: "", id: "0646F349E2EB2787", type: "advancement" }]
+			x: 7.0d
+			y: 8.8d
+		}
+		{
+			dependencies: ["2408BFB9BB6B658E"]
+			icon: { id: "silentgear:tip" }
+			id: "90504D158DF25297"
+			rewards: [{ id: "5BAF4595998721A9", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:high_durability", criterion: "", id: "ED5F536195DFB922", type: "advancement" }]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["D2C7154E8FAD5323"]
+			icon: { id: "silentgear:azure_electrum_ingot" }
+			id: "3E0DAAD85ECFA75A"
+			rewards: [{ id: "2DFFAA254E1076BF", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:azure_electrum", criterion: "", id: "0CA8C496FDC69F69", type: "advancement" }]
+			x: 7.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["D2C7154E8FAD5323"]
+			icon: { id: "silentgear:boots" }
+			id: "A15583008F67D47E"
+			rewards: [{ id: "7256EB11E6716700", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:moonwalker", criterion: "", id: "66CA0E7323E7C5B4", type: "advancement" }]
+			x: 7.0d
+			y: 16.2d
+		}
+		{
+			dependencies: ["1FB1EE03C687C87F"]
+			icon: { id: "silentgear:crude_repair_kit" }
+			id: "E3605646B6BBE3DE"
+			rewards: [{ id: "BBB7DC25A6B8C22A", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:repair_kit", criterion: "", id: "463E7410B3FE7CC8", type: "advancement" }]
+			x: 7.0d
+			y: 19.4d
+		}
+		{
+			dependencies: ["1FB1EE03C687C87F"]
+			icon: { id: "silentgear:tip" }
+			id: "B3E684A9B82342B2"
+			rewards: [{ id: "678237B9E0C93478", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:tip_upgrade", criterion: "", id: "1CF5CFC11A96FB91", type: "advancement" }]
+			x: 7.0d
+			y: 21.2d
+		}
+		{
+			dependencies: ["4453FF24D8F2658E"]
+			icon: { id: "silentgear:glittery_dust" }
+			id: "B12C57B8159FC9D8"
+			rewards: [{ id: "257712D878B973C5", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:grader_catalyst_3", criterion: "", id: "A68A89AFE8A9D77A", type: "advancement" }]
+			x: 8.8d
+			y: 8.8d
+		}
+		{
+			dependencies: ["E3605646B6BBE3DE"]
+			icon: { id: "silentgear:crimson_repair_kit" }
+			id: "1393069B6DFC7441"
+			rewards: [{ id: "7F5F65A15AE24AE3", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:crimson_repair_kit", criterion: "", id: "55E21E9E3648E108", type: "advancement" }]
+			x: 8.8d
+			y: 18.8d
+		}
+		{
+			dependencies: ["E3605646B6BBE3DE"]
+			icon: { id: "minecraft:flint" }
+			id: "78F77DE03D4E6F79"
+			rewards: [{ id: "AB183F8385B6D4D4", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:repair_from_broken", criterion: "", id: "FC6E63CD8E3542A1", type: "advancement" }]
+			x: 8.8d
+			y: 20.0d
+		}
+		{
+			dependencies: ["1393069B6DFC7441"]
+			icon: { id: "silentgear:azure_repair_kit" }
+			id: "F158C9FCA369A751"
+			rewards: [{ id: "3530372FD7C3270C", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "silentgear:azure_repair_kit", criterion: "", id: "76C0CB036262ED7F", type: "advancement" }]
+			x: 10.5d
+			y: 18.8d
+		}
+	]
+}

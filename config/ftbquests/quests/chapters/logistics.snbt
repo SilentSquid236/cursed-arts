@@ -1,0 +1,84 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "logistics"
+	group: "AEAA9718BAF5A32A"
+	icon: { id: "pipez:item_pipe" }
+	id: "6E2C61BED7B0237E"
+	order_index: 32
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0D9F0B399B15B6F5"
+			rewards: [{ id: "6DEAD2FC33FAD3F6", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "A94EED459245D73B", item: { count: 1, id: "pipez:item_pipe" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D9F0B399B15B6F5"]
+			id: "8A6B3A7A8C8E0394"
+			rewards: [{ id: "03501ECF117DE4B2", type: "xp", xp: 15 }]
+			tasks: [{ id: "66B9D5C6842E6A65", item: { count: 1, id: "pipez:fluid_pipe" }, type: "item" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8A6B3A7A8C8E0394"]
+			id: "E19965316379C781"
+			rewards: [{ id: "3B8BAB21FA1ADDF9", type: "xp", xp: 20 }]
+			tasks: [{ id: "A650D3A3F7C40C1A", item: { count: 1, id: "pipez:energy_pipe" }, type: "item" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["E19965316379C781"]
+			id: "5F3CB9D626051151"
+			rewards: [{ id: "5ADEA94F31637897", type: "xp", xp: 25 }]
+			tasks: [{ id: "B3F7F6707D8BCD0B", item: { count: 1, id: "pipez:universal_pipe" }, type: "item" }]
+			x: 5.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F3CB9D626051151"]
+			id: "680AC1A456144E34"
+			rewards: [{ id: "B720AFA1E8D9F731", type: "xp", xp: 30 }]
+			tasks: [{ id: "D835988C35DCEB42", item: { count: 1, id: "pipez:basic_upgrade" }, type: "item" }]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			id: "E2867C13E006675B"
+			rewards: [{ id: "59C75CB0213E73BC", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "4E61992B6296238E", item: { count: 1, id: "laserio:laser_wrench" }, type: "item" }]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["E2867C13E006675B"]
+			id: "797C065175517034"
+			rewards: [{ id: "90A2FA6DCF2A93DF", type: "xp", xp: 15 }]
+			tasks: [{ id: "0C85BAE688D7CD00", item: { count: 1, id: "laserio:laser_connector" }, type: "item" }]
+			x: 1.8d
+			y: 2.0d
+		}
+		{
+			dependencies: ["797C065175517034"]
+			id: "F6CCE745456C8787"
+			rewards: [{ id: "1B7B7AB4252C3B12", type: "xp", xp: 20 }]
+			tasks: [{ id: "75887A17E5435B84", item: { count: 1, id: "laserio:laser_node" }, type: "item" }]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["F6CCE745456C8787"]
+			id: "5CFD48DD7B261074"
+			rewards: [{ id: "35151BECD36CA601", type: "xp", xp: 25 }]
+			tasks: [{ id: "3B3C7E12515CD4FE", item: { count: 1, id: "laserio:card_item" }, type: "item" }]
+			x: 5.2d
+			y: 2.0d
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "draconic_evolution"
+	group: "AEAA9718BAF5A32A"
+	icon: { id: "draconicevolution:draconium_ingot" }
+	id: "AB296798DE2B1B75"
+	order_index: 27
+	quest_links: [ ]
+	quests: [
+		{
+			id: "DB2396F581953196"
+			rewards: [{ id: "EFBF74A1F994D1E5", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "91ED31B67856B34D", item: { count: 1, id: "draconicevolution:draconium_ingot" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DB2396F581953196"]
+			id: "BD7D73EA615C9312"
+			rewards: [{ id: "2AE8F6575852A28E", type: "xp", xp: 15 }]
+			tasks: [{ id: "A13F706C73472501", item: { count: 1, id: "draconicevolution:draconium_core" }, type: "item" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["BD7D73EA615C9312"]
+			id: "A83F66A731603E83"
+			rewards: [{ id: "0DBE9ABB04230A3D", type: "xp", xp: 20 }]
+			tasks: [{ id: "F2303B41969C4C05", item: { count: 1, id: "draconicevolution:crafting_core" }, type: "item" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			id: "9CA90B855C42001F"
+			rewards: [{ id: "CFF103DA3B3CD34F", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "6CB3EF25872962E3", item: { count: 1, id: "draconicevolution:wyvern_core" }, type: "item" }]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["9CA90B855C42001F"]
+			id: "CF0438E670608918"
+			rewards: [{ id: "DE7A4D5FB017FE74", type: "xp", xp: 15 }]
+			tasks: [{ id: "6BA1EA6817CEF803", item: { count: 1, id: "draconicevolution:wyvern_pickaxe" }, type: "item" }]
+			x: 1.8d
+			y: 2.0d
+		}
+		{
+			dependencies: ["CF0438E670608918"]
+			id: "984D5406A4EB9AFC"
+			rewards: [{ id: "4EE54B29028814B2", type: "xp", xp: 20 }]
+			tasks: [{ id: "99E1DE18C1E81C86", item: { count: 1, id: "draconicevolution:energy_core" }, type: "item" }]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			id: "A3F13B2FB023B0DF"
+			rewards: [{ id: "7B05EC22E43EA3AD", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "626ABE9A887E67AF", item: { count: 1, id: "draconicevolution:awakened_draconium_ingot" }, type: "item" }]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["A3F13B2FB023B0DF"]
+			id: "73B96426A153F812"
+			rewards: [{ id: "798DA27F0C861181", type: "xp", xp: 15 }]
+			tasks: [{ id: "E34A77FE38F095FC", item: { count: 1, id: "draconicevolution:awakened_core" }, type: "item" }]
+			x: 1.8d
+			y: 4.0d
+		}
+		{
+			dependencies: ["73B96426A153F812"]
+			id: "0848FE69425B3F77"
+			rewards: [{ id: "C7A39B3D4831DE22", type: "xp", xp: 20 }]
+			tasks: [{ id: "02256E4AA81B34CE", item: { count: 1, id: "draconicevolution:chaotic_core" }, type: "item" }]
+			x: 3.5d
+			y: 4.0d
+		}
+	]
+}

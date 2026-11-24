@@ -1,0 +1,360 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dungeons_arise"
+	group: "76581968F62E459A"
+	icon: { id: "minecraft:golden_sword" }
+	id: "E8EA4D503D09C07F"
+	order_index: 23
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:golden_sword" }
+			id: "B2166D1EFF94E0B6"
+			rewards: [{ id: "5B8DBD3E2661368A", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:wda_root", criterion: "", id: "B2F7D187B7BF698C", type: "advancement" }]
+			x: 0.0d
+			y: 14.4d
+		}
+		{
+			icon: { id: "minecraft:fishing_rod" }
+			id: "2ACFDBC53FB3BC4F"
+			rewards: [{ id: "1D9BD03F654DA175", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_fishing_hut", criterion: "", id: "AC597C270D2773EC", type: "advancement" }]
+			x: 0.0d
+			y: 28.8d
+		}
+		{
+			icon: { id: "minecraft:rose_bush" }
+			id: "5506C7FC75C09A7B"
+			rewards: [{ id: "CB456B8BD4DA3B9D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_thornborn_towers", criterion: "", id: "0CF7B2169DBA0006", type: "advancement" }]
+			x: 0.0d
+			y: 31.2d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:cracked_stone_bricks" }
+			id: "BAFDFFE242318A9A"
+			rewards: [{ id: "0130CA5CC47EA470", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_abandoned_temple", criterion: "", id: "B19FEABBFF443097", type: "advancement" }]
+			x: 1.8d
+			y: 1.2d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:dead_bush" }
+			id: "67F4A856FC08BD82"
+			rewards: [{ id: "88D2897AE33A8DCD", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_bandit_village", criterion: "", id: "D74E4A41F8469BF9", type: "advancement" }]
+			x: 1.8d
+			y: 3.8d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:blast_furnace" }
+			id: "2C330C1F0E8FCB55"
+			rewards: [{ id: "3012E0D8D2F0C280", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_bathhouse", criterion: "", id: "414346F64D2257F2", type: "advancement" }]
+			x: 1.8d
+			y: 5.0d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:bone" }
+			id: "2A20A82475445375"
+			rewards: [{ id: "6CEF80093259C36E", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_ceryneian_hind", criterion: "", id: "9773814A5D97C14D", type: "advancement" }]
+			x: 1.8d
+			y: 6.2d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:shield" }
+			id: "0B8B4507A429A6F9"
+			rewards: [{ id: "C95427EA1288AD25", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_coliseum", criterion: "", id: "7E86C950EC2D1A4E", type: "advancement" }]
+			x: 1.8d
+			y: 7.5d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:red_mushroom_block" }
+			id: "BE1A26D853716B83"
+			rewards: [{ id: "3D71317535A0752C", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_giant_mushroom", criterion: "", id: "6EF8BE94C7726B41", type: "advancement" }]
+			x: 1.8d
+			y: 9.4d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:barrel" }
+			id: "95819F02F75A3D7E"
+			rewards: [{ id: "96860BF8BCBE0139", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_greenwood_pub", criterion: "", id: "EC26A011226CDE7E", type: "advancement" }]
+			x: 1.8d
+			y: 11.2d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:saddle" }
+			id: "27FF28589518E300"
+			rewards: [{ id: "240A7D3805297679", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_heavenly_rider", criterion: "", id: "6EAA9A404BAE47B3", type: "advancement" }]
+			x: 1.8d
+			y: 12.5d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:tropical_fish" }
+			id: "C3AF22BC6A897412"
+			rewards: [{ id: "E5338924AD0E0FC2", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_illager_corsair_or_illager_galley", criterion: "", id: "41CEA713539EE2D7", type: "advancement" }]
+			x: 1.8d
+			y: 13.8d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:lily_pad" }
+			id: "32D93A77F187D055"
+			rewards: [{ id: "79511B3FFEBED60E", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_keep_kayra", criterion: "", id: "2D450CE0E12B711B", type: "advancement" }]
+			x: 1.8d
+			y: 15.0d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:redstone_lamp" }
+			id: "CD544C33BC1EE436"
+			rewards: [{ id: "074D4B74010D1013", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_lighthouse", criterion: "", id: "500AEB24537F7CF0", type: "advancement" }]
+			x: 1.8d
+			y: 16.2d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:emerald" }
+			id: "5CFF5767777E429A"
+			rewards: [{ id: "F383040EFF0D7B4F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_merchant_campsite", criterion: "", id: "2C6742B6A2A9E126", type: "advancement" }]
+			x: 1.8d
+			y: 18.1d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:hopper_minecart" }
+			id: "063C7C1F480DC338"
+			rewards: [{ id: "103F6B42C1D53886", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_mining_complex", criterion: "", id: "2BDF4B1232530A2D", type: "advancement" }]
+			x: 1.8d
+			y: 20.0d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:blaze_powder" }
+			id: "3AA60CA0F8CB3DC5"
+			rewards: [{ id: "15519F570863D53B", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_scorched_mines", criterion: "", id: "71967379C6BA675D", type: "advancement" }]
+			x: 1.8d
+			y: 21.2d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:totem_of_undying" }
+			id: "DB5FE85741661A98"
+			rewards: [{ id: "2FD51F0A185A807F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_shiraz_palace", criterion: "", id: "D3D9FCFBECB428CC", type: "advancement" }]
+			x: 1.8d
+			y: 22.5d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:comparator" }
+			id: "3897F80DE1BA42C8"
+			rewards: [{ id: "86FAE3E35331A017", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_small_blimp", criterion: "", id: "EA16513D0377B4E1", type: "advancement" }]
+			x: 1.8d
+			y: 23.8d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:gunpowder" }
+			id: "337C0E59C84E1315"
+			rewards: [{ id: "6EE1A946140E5B78", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_undead_pirate_ship", criterion: "", id: "CFD829AA0CDDF34C", type: "advancement" }]
+			x: 1.8d
+			y: 25.0d
+		}
+		{
+			dependencies: ["B2166D1EFF94E0B6"]
+			icon: { id: "minecraft:melon_slice" }
+			id: "9827E8225A21022B"
+			rewards: [{ id: "29702F5C01619C8F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_wishing_well", criterion: "", id: "F823EEBE6A805ECE", type: "advancement" }]
+			x: 1.8d
+			y: 26.2d
+		}
+		{
+			dependencies: ["BAFDFFE242318A9A"]
+			icon: { id: "minecraft:fermented_spider_eye" }
+			id: "D68F3B6CE9E3ED60"
+			rewards: [{ id: "3CE56DB552F7762A", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_infested_temple", criterion: "", id: "289BFAAD83A999D5", type: "advancement" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["BAFDFFE242318A9A"]
+			icon: { id: "minecraft:red_candle" }
+			id: "41AE09C7AE614017"
+			rewards: [{ id: "A971E08ACF4D15A4", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_kisegi_sanctuary", criterion: "", id: "FC9E768E7F02EE56", type: "advancement" }]
+			x: 3.5d
+			y: 1.2d
+		}
+		{
+			dependencies: ["BAFDFFE242318A9A"]
+			icon: { id: "minecraft:feather" }
+			id: "2FD0212379219060"
+			rewards: [{ id: "ADC81C34121541FA", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_monastery", criterion: "", id: "2E5237CAB15C6A38", type: "advancement" }]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["67F4A856FC08BD82"]
+			icon: { id: "minecraft:lantern" }
+			id: "E9E5639EB879A658"
+			rewards: [{ id: "B92646F84846F09D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_bandit_towers", criterion: "", id: "A02FBA99DEE92334", type: "advancement" }]
+			x: 3.5d
+			y: 3.8d
+		}
+		{
+			dependencies: ["2A20A82475445375"]
+			icon: { id: "minecraft:fire_coral" }
+			id: "B934E5EFB7E1FBF3"
+			rewards: [{ id: "A53290917EEB4D95", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_typhon", criterion: "", id: "B8823A55496BD379", type: "advancement" }]
+			x: 3.5d
+			y: 6.2d
+		}
+		{
+			dependencies: ["BE1A26D853716B83"]
+			icon: { id: "minecraft:warped_fungus" }
+			id: "E6B2BC6EB5A0012E"
+			rewards: [{ id: "F1C30A8816BE2D6D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_mushroom_house", criterion: "", id: "870CE23AFCBBF53D", type: "advancement" }]
+			x: 3.5d
+			y: 8.8d
+		}
+		{
+			dependencies: ["BE1A26D853716B83"]
+			icon: { id: "minecraft:iron_pickaxe" }
+			id: "609A6890C40A5A45"
+			rewards: [{ id: "A566F1A797E0F2AB", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_mushroom_mines", criterion: "", id: "4DFF40535B20E3D0", type: "advancement" }]
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["95819F02F75A3D7E"]
+			icon: { id: "minecraft:splash_potion" }
+			id: "1C71310DA32FC4D0"
+			rewards: [{ id: "A9C1C08560A19071", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_plague_asylum", criterion: "", id: "131D599E7C9F221C", type: "advancement" }]
+			x: 3.5d
+			y: 11.2d
+		}
+		{
+			dependencies: ["27FF28589518E300"]
+			icon: { id: "minecraft:golden_chestplate" }
+			id: "60FEB3F882C6F04F"
+			rewards: [{ id: "9971071FFA5146E6", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_heavenly_conqueror", criterion: "", id: "2AE7A9E7BF522751", type: "advancement" }]
+			x: 3.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["5CFF5767777E429A"]
+			icon: { id: "minecraft:crossbow" }
+			id: "3066C704CBFB3FEA"
+			rewards: [{ id: "208B9AEC6F9F033E", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_illager_campsite", criterion: "", id: "2A97884EBE36785C", type: "advancement" }]
+			x: 3.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["5CFF5767777E429A"]
+			icon: { id: "minecraft:iron_hoe" }
+			id: "FE9736063ED9C2D4"
+			rewards: [{ id: "12565C6958BFAF69", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_illager_windmill", criterion: "", id: "B5F923B0694E67A8", type: "advancement" }]
+			x: 3.5d
+			y: 18.8d
+		}
+		{
+			dependencies: ["3AA60CA0F8CB3DC5"]
+			icon: { id: "minecraft:netherite_ingot" }
+			id: "4058083348E3228C"
+			rewards: [{ id: "11DFC74C651EDB35", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_foundry", criterion: "", id: "38A57CA489F5B8D5", type: "advancement" }]
+			x: 3.5d
+			y: 21.2d
+		}
+		{
+			dependencies: ["3897F80DE1BA42C8"]
+			icon: { id: "minecraft:observer" }
+			id: "F514A35E598B989C"
+			rewards: [{ id: "B271187BF705857D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_mechanical_nest", criterion: "", id: "1F9CDEF7E4CE3437", type: "advancement" }]
+			x: 3.5d
+			y: 23.8d
+		}
+		{
+			dependencies: ["2FD0212379219060"]
+			icon: { id: "minecraft:filled_map" }
+			id: "60BB9A8584986147"
+			rewards: [{ id: "82B14FD79B544755", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_infested_temple_map", criterion: "", id: "12DFE2ADF821DEFF", type: "advancement" }]
+			x: 5.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["E6B2BC6EB5A0012E"]
+			icon: { id: "minecraft:crimson_fence" }
+			id: "0AC3EE3F2D154E42"
+			rewards: [{ id: "2C7A568BFC5F55A5", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_mushroom_village", criterion: "", id: "830BA8781FB7D1D9", type: "advancement" }]
+			x: 5.2d
+			y: 8.8d
+		}
+		{
+			dependencies: ["60FEB3F882C6F04F"]
+			icon: { id: "minecraft:netherite_chestplate" }
+			id: "17663D14A6C48120"
+			rewards: [{ id: "6998B08EB0A6A491", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_heavenly_challenger", criterion: "", id: "8F56D3190CB399A7", type: "advancement" }]
+			x: 5.2d
+			y: 12.5d
+		}
+		{
+			dependencies: ["3066C704CBFB3FEA"]
+			icon: { id: "minecraft:snowball" }
+			id: "03B62B59B045BEF4"
+			rewards: [{ id: "E70C8286C46679AD", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_illager_fort", criterion: "", id: "2C27B4817C49F60E", type: "advancement" }]
+			x: 5.2d
+			y: 17.5d
+		}
+		{
+			dependencies: ["17663D14A6C48120"]
+			icon: { id: "minecraft:phantom_membrane" }
+			id: "5C8AB34E9457DC64"
+			rewards: [{ id: "0A8C2AC3ED944D2C", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "dungeons_arise:find_aviary", criterion: "", id: "B9D36642B0784F90", type: "advancement" }]
+			x: 7.0d
+			y: 12.5d
+		}
+	]
+}

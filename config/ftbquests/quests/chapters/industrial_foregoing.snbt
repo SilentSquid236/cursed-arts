@@ -1,0 +1,68 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_foregoing"
+	group: "AEAA9718BAF5A32A"
+	icon: { id: "industrialforegoing:machine_frame_pity" }
+	id: "2C42FF5A3D34FF15"
+	order_index: 29
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4A6B3798FCC93802"
+			rewards: [{ id: "CAAF776F1ABC9BC8", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "C955B3A98B3F51C4", item: { count: 1, id: "industrialforegoing:latex_processing_unit" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A6B3798FCC93802"]
+			id: "5F5076DDB8971CBC"
+			rewards: [{ id: "D0B16222C502B1CB", type: "xp", xp: 15 }]
+			tasks: [{ id: "FF6DEA9886FF0746", item: { count: 1, id: "industrialforegoing:fluid_extractor" }, type: "item" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F5076DDB8971CBC"]
+			id: "62433AF31B581860"
+			rewards: [{ id: "B5053B4195CCA0BC", type: "xp", xp: 20 }]
+			tasks: [{ id: "E7130DB8F173079D", item: { count: 1, id: "industrialforegoing:plastic" }, type: "item" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62433AF31B581860"]
+			id: "4F51C6AFCC6BDBAE"
+			rewards: [{ id: "94E8813ABF32D323", type: "xp", xp: 25 }]
+			tasks: [{ id: "29B3F4BFC5D92E33", item: { count: 1, id: "industrialforegoing:machine_frame_pity" }, type: "item" }]
+			x: 5.2d
+			y: 0.0d
+		}
+		{
+			id: "FA6EF56410E9B008"
+			rewards: [{ id: "8F2929C7201DAC85", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "8C543D027050BF13", item: { count: 1, id: "industrialforegoing:dissolution_chamber" }, type: "item" }]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["FA6EF56410E9B008"]
+			id: "F7537DE857F5C817"
+			rewards: [{ id: "2A811EAA954522C6", type: "xp", xp: 15 }]
+			tasks: [{ id: "141AB14CB49BC7A5", item: { count: 1, id: "industrialforegoing:mob_crusher" }, type: "item" }]
+			x: 1.8d
+			y: 2.0d
+		}
+		{
+			dependencies: ["F7537DE857F5C817"]
+			id: "00BD7B8134E1D361"
+			rewards: [{ id: "8555B3E161D0B0B9", type: "xp", xp: 20 }]
+			tasks: [{ id: "A3D86616835EA5A2", item: { count: 1, id: "industrialforegoing:infinity_drill" }, type: "item" }]
+			x: 3.5d
+			y: 2.0d
+		}
+	]
+}

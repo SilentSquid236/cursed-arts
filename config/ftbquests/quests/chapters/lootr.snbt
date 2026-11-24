@@ -1,0 +1,130 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lootr"
+	group: "76581968F62E459A"
+	icon: { id: "minecraft:chest" }
+	id: "BF89DD74B796F038"
+	order_index: 25
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:chest" }
+			id: "498215F2AB083235"
+			rewards: [{ id: "CC8F337291FFEF51", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:root", criterion: "", id: "BEC8338CD85D9621", type: "advancement" }]
+			x: 0.0d
+			y: 3.8d
+		}
+		{
+			dependencies: ["498215F2AB083235"]
+			icon: { id: "lootr:lootr_barrel" }
+			id: "0A1199D1CEE19CF2"
+			rewards: [{ id: "BD1CEAA331BCE3BB", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:1barrel", criterion: "", id: "0832F67C52698CB3", type: "advancement" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["498215F2AB083235"]
+			icon: { id: "minecraft:chest_minecart" }
+			id: "94C33C857C9E87C4"
+			rewards: [{ id: "B5D58914B1A93766", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:1cart", criterion: "", id: "689D0B8930333D87", type: "advancement" }]
+			x: 1.8d
+			y: 1.2d
+		}
+		{
+			dependencies: ["498215F2AB083235"]
+			icon: { id: "lootr:lootr_chest" }
+			id: "8A8BF83FBEB6EB62"
+			rewards: [{ id: "EB191CC9627AE669", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:1chest", criterion: "", id: "F11F94CF331E9B9A", type: "advancement" }]
+			x: 1.8d
+			y: 2.5d
+		}
+		{
+			dependencies: ["498215F2AB083235"]
+			icon: { id: "minecraft:item_frame" }
+			id: "CA6B1FDF9CA51A29"
+			rewards: [{ id: "51930EED8A873E7A", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:1frame", criterion: "", id: "2CF8877A8599595D", type: "advancement" }]
+			x: 1.8d
+			y: 3.8d
+		}
+		{
+			dependencies: ["498215F2AB083235"]
+			icon: { id: "lootr:lootr_shulker" }
+			id: "EBA88305B31E9305"
+			rewards: [{ id: "EE65D42D36F2821C", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:1shulker", criterion: "", id: "DA6D6B31A1B37AEB", type: "advancement" }]
+			x: 1.8d
+			y: 5.0d
+		}
+		{
+			dependencies: ["498215F2AB083235"]
+			icon: { id: "lootr:suspicious_gravel" }
+			id: "1B4D18E6E50CD9AF"
+			rewards: [{ id: "D61AC65AF3631E6F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:all_gravel", criterion: "", id: "A8F17BD1C5AEC436", type: "advancement" }]
+			x: 1.8d
+			y: 6.2d
+		}
+		{
+			dependencies: ["498215F2AB083235"]
+			icon: { id: "lootr:decorated_pot" }
+			id: "9D29485A0E33A552"
+			rewards: [{ id: "9D5D7A9BAAD8434D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:pot_opened", criterion: "", id: "B12A4BA5B29D4B97", type: "advancement" }]
+			x: 1.8d
+			y: 7.5d
+		}
+		{
+			dependencies: ["8A8BF83FBEB6EB62"]
+			icon: { id: "minecraft:gold_block" }
+			id: "E5CA354021B657DE"
+			rewards: [{ id: "CE81BBAABFB6F645", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:10loot", criterion: "", id: "67C78C29DDA89B83", type: "advancement" }]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["9D29485A0E33A552"]
+			icon: { id: "minecraft:brush" }
+			id: "10E8DA47A7119015"
+			rewards: [{ id: "A4FF015899FC8198", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "10AA429A9A8CC8DB", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "1B19E0E3C768DBB2", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "lootr:archaeologist", criterion: "", id: "F509D84FF18D1DB9", type: "advancement" }]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["E5CA354021B657DE"]
+			icon: { id: "minecraft:emerald_block" }
+			id: "4E927E6B4688EE8B"
+			rewards: [{ id: "C9C6DE68E030FAEF", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:25loot", criterion: "", id: "1983E2CB01A2846E", type: "advancement" }]
+			x: 5.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4E927E6B4688EE8B"]
+			icon: { id: "minecraft:diamond_block" }
+			id: "F168D7C4084C7311"
+			rewards: [{ id: "2F059498AA42BB77", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "lootr:50loot", criterion: "", id: "3BFE015215C009F7", type: "advancement" }]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["F168D7C4084C7311"]
+			icon: { id: "minecraft:netherite_block" }
+			id: "9B050ED10540CDBE"
+			rewards: [{ id: "05574F4A6E29A592", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "00610A21E082B5C2", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "854A8153C0B358E1", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "lootr:100loot", criterion: "", id: "CE7167BB115E0232", type: "advancement" }]
+			x: 8.8d
+			y: 2.5d
+		}
+	]
+}

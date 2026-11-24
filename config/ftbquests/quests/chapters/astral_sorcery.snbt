@@ -1,0 +1,128 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "astral_sorcery"
+	group: "03203A1312E25E36"
+	icon: { id: "astralsorcery:tome" }
+	id: "C4412F38E2495344"
+	order_index: 18
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "astralsorcery:tome" }
+			id: "DA869FFAE810FEEA"
+			rewards: [{ id: "C0BF46E177E6433F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:root", criterion: "", id: "66325536D8DCA295", type: "advancement" }]
+			x: 0.0d
+			y: 3.2d
+		}
+		{
+			dependencies: ["DA869FFAE810FEEA"]
+			icon: { id: "astralsorcery:constellation_paper" }
+			id: "6783F05A1B0BEB9B"
+			rewards: [{ id: "9E86AC819982459B", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:constellation", criterion: "", id: "73604C4F16EB0125", type: "advancement" }]
+			x: 1.8d
+			y: 0.9d
+		}
+		{
+			dependencies: ["DA869FFAE810FEEA"]
+			icon: { id: "astralsorcery:astrolabe" }
+			id: "616AC8AA93EF7EE0"
+			rewards: [{ id: "E386FA1863BF5017", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:focal_point", criterion: "", id: "00BA28FE8561BC37", type: "advancement" }]
+			x: 1.8d
+			y: 3.8d
+		}
+		{
+			dependencies: ["DA869FFAE810FEEA"]
+			icon: { id: "astralsorcery:rock_crystal" }
+			id: "76331FC15AFEA864"
+			rewards: [{ id: "F5318E03749FF720", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:rock_crystal", criterion: "", id: "458DFE18174149F3", type: "advancement" }]
+			x: 1.8d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6783F05A1B0BEB9B"]
+			icon: { id: "astralsorcery:attuned_rock_crystal" }
+			id: "E9A1FED6EE408CF7"
+			rewards: [{ id: "3CDF4A81755CC496", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:attune_crystal", criterion: "", id: "60EF8EC6FF984038", type: "advancement" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6783F05A1B0BEB9B"]
+			icon: { id: "astralsorcery:shifting_star" }
+			id: "BEFDFE9BF937C7A6"
+			rewards: [{ id: "189822FF5A1809F1", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:attune_player", criterion: "", id: "CB450D92C7BA894A", type: "advancement" }]
+			x: 3.5d
+			y: 1.9d
+		}
+		{
+			dependencies: ["616AC8AA93EF7EE0"]
+			icon: { id: "astralsorcery:lumen_crystal" }
+			id: "20A119F146A77533"
+			rewards: [{ id: "2292A10F68C01474", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:lumen", criterion: "", id: "2B9815E70978815F", type: "advancement" }]
+			x: 3.5d
+			y: 3.8d
+		}
+		{
+			dependencies: ["76331FC15AFEA864"]
+			icon: { id: "astralsorcery:celestial_crystal" }
+			id: "4DDDB48B1B1E6CEF"
+			rewards: [{ id: "EC3DB7E310885A81", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:celestial_crystal", criterion: "", id: "C169E32DC5E3FF0D", type: "advancement" }]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["BEFDFE9BF937C7A6"]
+			icon: { id: "astralsorcery:perk_seal" }
+			id: "21EB93220E6F32C3"
+			rewards: [{ id: "6997813A80ED60B8", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:perk_level_10", criterion: "", id: "A1BEF4289AD8CF4B", type: "advancement" }]
+			x: 5.2d
+			y: 1.2d
+		}
+		{
+			dependencies: ["BEFDFE9BF937C7A6"]
+			icon: { id: "astralsorcery:dynamism_gem_sky" }
+			id: "A56D94CB84D12016"
+			rewards: [{ id: "8894ADA1B8AA4DF2", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:socket_gem", criterion: "", id: "7D7943DA62824686", type: "advancement" }]
+			x: 5.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["20A119F146A77533"]
+			icon: { id: "astralsorcery:lumen_crystal" }
+			id: "C44DFCBC1BFD9EB7"
+			rewards: [{ id: "021B675E9DD8FA08", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:lumen_prismatic", criterion: "", id: "0E734013D29AC277", type: "advancement" }]
+			x: 5.2d
+			y: 3.8d
+		}
+		{
+			dependencies: ["21EB93220E6F32C3"]
+			icon: { id: "astralsorcery:perk_seal" }
+			id: "EB6945937B9084CA"
+			rewards: [{ id: "F9BABD154BF87336", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:perk_level_20", criterion: "", id: "58336BA363753191", type: "advancement" }]
+			x: 7.0d
+			y: 1.2d
+		}
+		{
+			dependencies: ["EB6945937B9084CA"]
+			icon: { id: "astralsorcery:perk_seal" }
+			id: "FD7E125F0FC2BCAB"
+			rewards: [{ id: "EB246D7CE265BC2C", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "astralsorcery:perk_level_30", criterion: "", id: "AE0B9B86A976DE76", type: "advancement" }]
+			x: 8.8d
+			y: 1.2d
+		}
+	]
+}

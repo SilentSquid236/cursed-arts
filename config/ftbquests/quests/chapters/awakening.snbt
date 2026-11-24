@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "awakening"
-	group: ""
+	group: "193A39D685B7FCB1"
 	icon: { id: "minecraft:ender_eye" }
 	id: "519DCA519D17C275"
 	order_index: 0

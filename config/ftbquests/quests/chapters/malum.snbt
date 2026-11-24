@@ -1,0 +1,68 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "malum"
+	group: "03203A1312E25E36"
+	icon: { id: "malum:spirit_altar" }
+	id: "7C0EABBBC134CBB9"
+	order_index: 34
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7761AB4E4B42F440"
+			rewards: [{ id: "CAF24000563B1EA6", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "2137544561282A2C", item: { count: 1, id: "malum:encyclopedia_arcana" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7761AB4E4B42F440"]
+			id: "D8F039F917AF28C5"
+			rewards: [{ id: "C5D4EF1EE2DFBDF7", type: "xp", xp: 15 }]
+			tasks: [{ id: "4BE698A79FE5A5E9", item: { count: 1, id: "malum:runewood_log" }, type: "item" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["D8F039F917AF28C5"]
+			id: "8825D2555D70B30D"
+			rewards: [{ id: "65796E8913BE82DC", type: "xp", xp: 20 }]
+			tasks: [{ id: "55590B6714B46F14", item: { count: 1, id: "malum:spirit_altar" }, type: "item" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8825D2555D70B30D"]
+			id: "50C54E02F9E0F0B0"
+			rewards: [{ id: "1FE9DA94BCF9ECF1", type: "xp", xp: 25 }]
+			tasks: [{ id: "D834D464F48911E0", item: { count: 1, id: "malum:spirit_jar" }, type: "item" }]
+			x: 5.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50C54E02F9E0F0B0"]
+			id: "F0FE6916FFDB35F6"
+			rewards: [{ id: "525B457510F5FF79", type: "xp", xp: 30 }]
+			tasks: [{ id: "B6D6532C006F4EF1", item: { count: 1, id: "malum:soul_stained_steel_ingot" }, type: "item" }]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F0FE6916FFDB35F6"]
+			id: "9D58C35520AC7059"
+			rewards: [{ id: "6F84440C3D8A5E30", type: "xp", xp: 35 }]
+			tasks: [{ id: "6CA92B1C8C110162", item: { count: 1, id: "malum:hallowed_gold_ingot" }, type: "item" }]
+			x: 8.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["9D58C35520AC7059"]
+			id: "B423B05204B39E29"
+			rewards: [{ id: "ED977DB06DC134D0", type: "xp", xp: 40 }]
+			tasks: [{ id: "9055CB893544CF41", item: { count: 1, id: "malum:spirit_crucible" }, type: "item" }]
+			x: 10.5d
+			y: 0.0d
+		}
+	]
+}

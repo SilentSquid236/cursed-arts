@@ -1,0 +1,84 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mystical_agriculture"
+	group: "079344C30D45973B"
+	icon: { id: "mysticalagriculture:inferium_essence" }
+	id: "968A76721911FBD9"
+	order_index: 36
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3C3ABF191DE0579A"
+			rewards: [{ id: "AD455585514DEDBA", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "5505B42C6E552BC9", item: { count: 1, id: "mysticalagriculture:inferium_essence" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C3ABF191DE0579A"]
+			id: "2FBFF6DEE3125614"
+			rewards: [{ id: "58551F3E4DDA478C", type: "xp", xp: 15 }]
+			tasks: [{ id: "4D3AF4CC0131D977", item: { count: 1, id: "mysticalagriculture:prosperity_shard" }, type: "item" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FBFF6DEE3125614"]
+			id: "1A638E5DBFEEA239"
+			rewards: [{ id: "0940C2BF28C0A3CD", type: "xp", xp: 20 }]
+			tasks: [{ id: "96938027A69E43A4", item: { count: 1, id: "mysticalagriculture:prudentium_essence" }, type: "item" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A638E5DBFEEA239"]
+			id: "484DD56D21FF15A1"
+			rewards: [{ id: "6A242C2DBD607E9A", type: "xp", xp: 25 }]
+			tasks: [{ id: "9C7DEA866D3EE2B5", item: { count: 1, id: "mysticalagriculture:tertium_essence" }, type: "item" }]
+			x: 5.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["484DD56D21FF15A1"]
+			id: "F7CE9DE75206D05E"
+			rewards: [{ id: "9A1C736F4A273AAC", type: "xp", xp: 30 }]
+			tasks: [{ id: "FFEA4ED54C4D6BD8", item: { count: 1, id: "mysticalagriculture:imperium_essence" }, type: "item" }]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F7CE9DE75206D05E"]
+			id: "267B7526F1A3AEA3"
+			rewards: [{ id: "7982615F10328B8B", type: "xp", xp: 35 }]
+			tasks: [{ id: "9B8AD31C5944A188", item: { count: 1, id: "mysticalagriculture:supremium_essence" }, type: "item" }]
+			x: 8.8d
+			y: 0.0d
+		}
+		{
+			id: "3C3D531AB5A1F125"
+			rewards: [{ id: "0F761625FF1BD30D", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "63CE8B360E995B1F", item: { count: 1, id: "mysticalagriculture:infusion_pedestal" }, type: "item" }]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3C3D531AB5A1F125"]
+			id: "6A367C3FFB3AAFBB"
+			rewards: [{ id: "23C11BE30756CC99", type: "xp", xp: 15 }]
+			tasks: [{ id: "0BA6A7A2FC701695", item: { count: 1, id: "mysticalagriculture:infusion_altar" }, type: "item" }]
+			x: 1.8d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A367C3FFB3AAFBB"]
+			id: "51885DD39E054889"
+			rewards: [{ id: "3E861971284AC7B2", type: "xp", xp: 20 }]
+			tasks: [{ id: "59DBF3C3C40CC74D", item: { count: 1, id: "mysticalagriculture:awakening_altar" }, type: "item" }]
+			x: 3.5d
+			y: 2.0d
+		}
+	]
+}

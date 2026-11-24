@@ -1,0 +1,436 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pneumaticcraft"
+	group: "AEAA9718BAF5A32A"
+	icon: { id: "pneumaticcraft:ingot_iron_compressed" }
+	id: "E56BF6F681F7E14E"
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "pneumaticcraft:ingot_iron_compressed" }
+			id: "81FD894340540D11"
+			rewards: [{ id: "6FAC16885B7EB543", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:root", criterion: "", id: "AEA2C3404194D62F", type: "advancement" }]
+			x: 0.0d
+			y: 8.8d
+		}
+		{
+			dependencies: ["81FD894340540D11"]
+			icon: { id: "pneumaticcraft:logistics_frame_passive_provider" }
+			id: "36832AA1D7B70E24"
+			rewards: [{ id: "8799A6EFC7773035", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:logistics_frame", criterion: "", id: "264A34F03EAE63BB", type: "advancement" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["81FD894340540D11"]
+			icon: { id: "pneumaticcraft:oil_bucket" }
+			id: "FEA7017828D5F4C9"
+			rewards: [{ id: "689847C58A17E75A", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:oil_bucket", criterion: "", id: "F49F9762C30E166D", type: "advancement" }]
+			x: 1.8d
+			y: 2.8d
+		}
+		{
+			dependencies: ["81FD894340540D11"]
+			icon: { id: "pneumaticcraft:pressure_chamber_wall" }
+			id: "BCBBDA04D3D8AC9F"
+			rewards: [{ id: "71BB0391714D84C3", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "2302ADCEE96380A3", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "pneumaticcraft:pressure_chamber", criterion: "", id: "E822C56B7C6C609E", type: "advancement" }]
+			x: 1.8d
+			y: 13.3d
+		}
+		{
+			dependencies: ["81FD894340540D11"]
+			icon: { id: "pneumaticcraft:pressure_tube" }
+			id: "BB0BF8F5F2B26CD4"
+			rewards: [{ id: "E63386903A37B55F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:pressure_tube", criterion: "", id: "83833165E48E209B", type: "advancement" }]
+			x: 1.8d
+			y: 19.0d
+		}
+		{
+			dependencies: ["36832AA1D7B70E24"]
+			icon: { id: "pneumaticcraft:logistics_configurator" }
+			id: "71F09F0F3AB8E78D"
+			rewards: [{ id: "0AB60CB43589C2EF", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:logistics_configurator", criterion: "", id: "CD80DA2F7D229A95", type: "advancement" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FEA7017828D5F4C9"]
+			icon: { id: "pneumaticcraft:refinery" }
+			id: "FB23F7144097BBBB"
+			rewards: [{ id: "6C9F574F66EF7138", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "AC9CF9472C046CF8", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "pneumaticcraft:refinery", criterion: "", id: "10060D443E56043E", type: "advancement" }]
+			x: 3.5d
+			y: 2.8d
+		}
+		{
+			dependencies: ["BCBBDA04D3D8AC9F"]
+			icon: { id: "pneumaticcraft:etching_acid_bucket" }
+			id: "CB8883312C629D59"
+			rewards: [{ id: "8B2B3E395B1C1D28", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:etchacid_bucket", criterion: "", id: "A79D430E2F2AA80B", type: "advancement" }]
+			x: 3.5d
+			y: 13.3d
+		}
+		{
+			dependencies: ["BB0BF8F5F2B26CD4"]
+			icon: { id: "pneumaticcraft:air_compressor" }
+			id: "B860837FD76D74E0"
+			rewards: [{ id: "1A8C8F316DAB3143", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:air_compressor", criterion: "", id: "DA44E2D214883257", type: "advancement" }]
+			x: 3.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["BB0BF8F5F2B26CD4"]
+			icon: { id: "pneumaticcraft:minigun" }
+			id: "4FECA815D71BFB0A"
+			rewards: [{ id: "E1202E19DD41A425", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:minigun", criterion: "", id: "56A021D86B1814DC", type: "advancement" }]
+			x: 3.5d
+			y: 18.8d
+		}
+		{
+			dependencies: ["BB0BF8F5F2B26CD4"]
+			icon: { id: "pneumaticcraft:pneumatic_wrench" }
+			id: "5B0D237042366F16"
+			rewards: [{ id: "D52DEED74114F3D9", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:pneumatic_wrench", criterion: "", id: "0B29544236F7B01A", type: "advancement" }]
+			x: 3.5d
+			y: 20.6d
+		}
+		{
+			dependencies: ["71F09F0F3AB8E78D"]
+			icon: { id: "pneumaticcraft:logistics_drone" }
+			id: "D13D02E0690B8064"
+			rewards: [{ id: "1F0F61C285AA18B8", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "92C5E360FB35E326", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "pneumaticcraft:logistics_drone", criterion: "", id: "9EC36B49DCAE80F7", type: "advancement" }]
+			x: 5.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FB23F7144097BBBB"]
+			icon: { id: "pneumaticcraft:liquid_compressor" }
+			id: "CC3EC79693E7A7BE"
+			rewards: [{ id: "4EAE685A540F9283", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:liquid_compressor", criterion: "", id: "EB38F16E3FD5391F", type: "advancement" }]
+			x: 5.2d
+			y: 1.2d
+		}
+		{
+			dependencies: ["FB23F7144097BBBB"]
+			icon: { id: "pneumaticcraft:vortex_tube" }
+			id: "DC96A307E73B6E8A"
+			rewards: [{ id: "9150B412E886374A", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:vortex_tube", criterion: "", id: "7C92313BEB5A37D7", type: "advancement" }]
+			x: 5.2d
+			y: 4.4d
+		}
+		{
+			dependencies: ["CB8883312C629D59"]
+			icon: { id: "pneumaticcraft:empty_pcb" }
+			id: "F79AACEF65C15AD6"
+			rewards: [{ id: "CB02FCD05C9161BF", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:empty_pcb", criterion: "", id: "38D480AD81ACE64E", type: "advancement" }]
+			x: 5.2d
+			y: 13.3d
+		}
+		{
+			dependencies: ["5B0D237042366F16"]
+			icon: { id: "minecraft:iron_pickaxe" }
+			id: "CF25B20C87D919E6"
+			rewards: [{ id: "C3D75C43F28C6B32", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:machine_vandal", criterion: "", id: "E0E1971052316338", type: "advancement" }]
+			x: 5.2d
+			y: 20.0d
+		}
+		{
+			dependencies: ["5B0D237042366F16"]
+			icon: { id: "pneumaticcraft:pneumatic_wrench" }
+			id: "8A92900B3E8A7116"
+			rewards: [{ id: "0069606500D6D668", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:pneumatic_wrench_charged", criterion: "", id: "381CDE0DAF7BC337", type: "advancement" }]
+			x: 5.2d
+			y: 21.2d
+		}
+		{
+			dependencies: ["DC96A307E73B6E8A"]
+			icon: { id: "pneumaticcraft:lpg_bucket" }
+			id: "CA3B09FC19C039EF"
+			rewards: [{ id: "38692488082C8166", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:lpg_bucket", criterion: "", id: "743F235D9C96F70D", type: "advancement" }]
+			x: 7.0d
+			y: 4.4d
+		}
+		{
+			dependencies: ["F79AACEF65C15AD6"]
+			icon: { id: "pneumaticcraft:unassembled_pcb" }
+			id: "36F2FFACE0415A05"
+			rewards: [{ id: "7A75FE2FE3EF29C5", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:unassembled_pcb", criterion: "", id: "49EA1FFB71C0F817", type: "advancement" }]
+			x: 7.0d
+			y: 13.3d
+		}
+		{
+			dependencies: ["CA3B09FC19C039EF"]
+			icon: { id: "pneumaticcraft:thermopneumatic_processing_plant" }
+			id: "D46E99C580453862"
+			rewards: [{ id: "95771474FC723011", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:tp_plant", criterion: "", id: "F7F0FC1DD3F62C0C", type: "advancement" }]
+			x: 8.8d
+			y: 4.4d
+		}
+		{
+			dependencies: ["36F2FFACE0415A05"]
+			icon: { id: "pneumaticcraft:printed_circuit_board" }
+			id: "5A915E9812B6889C"
+			rewards: [{ id: "C9915C386C41FC0E", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "085EA1C93DF84A36", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "pneumaticcraft:printed_circuit_board", criterion: "", id: "4F68AF67B0E9752F", type: "advancement" }]
+			x: 8.8d
+			y: 13.3d
+		}
+		{
+			dependencies: ["D46E99C580453862"]
+			icon: { id: "pneumaticcraft:lubricant_bucket" }
+			id: "C00AFA5634471204"
+			rewards: [{ id: "9118C7E9CBFF62C8", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:lubricant_bucket", criterion: "", id: "4100523B5F87FC3B", type: "advancement" }]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["D46E99C580453862"]
+			icon: { id: "pneumaticcraft:plastic" }
+			id: "99667AF58EBDB573"
+			rewards: [{ id: "FA2E68DE229070C9", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "2303F48FDAC7D159", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "pneumaticcraft:plastic", criterion: "", id: "972CFAFB4F747D95", type: "advancement" }]
+			x: 10.5d
+			y: 4.4d
+		}
+		{
+			dependencies: ["D46E99C580453862"]
+			icon: { id: "pneumaticcraft:yeast_culture_bucket" }
+			id: "801562464355030D"
+			rewards: [{ id: "7A619048B2846425", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:yeast_culture", criterion: "", id: "2281000AEFDCDE34", type: "advancement" }]
+			x: 10.5d
+			y: 6.2d
+		}
+		{
+			dependencies: ["5A915E9812B6889C"]
+			icon: { id: "pneumaticcraft:assembly_controller" }
+			id: "247C5D3EEBE19CC6"
+			rewards: [{ id: "F3B1DC65E2B63B96", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "F87243C6B985A01B", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "pneumaticcraft:assembly_controller", criterion: "", id: "674D1FBDAB353371", type: "advancement" }]
+			x: 10.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5A915E9812B6889C"]
+			icon: { id: "pneumaticcraft:pneumatic_helmet" }
+			id: "54962363E37635F9"
+			rewards: [{ id: "39CBBEC022D3CDAA", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:pneumatic_armor", criterion: "", id: "EE18F80EFCD8FAF1", type: "advancement" }]
+			x: 10.5d
+			y: 13.8d
+		}
+		{
+			dependencies: ["5A915E9812B6889C"]
+			icon: { id: "pneumaticcraft:programmer" }
+			id: "B37EA7A483F67E39"
+			rewards: [{ id: "0710DA264587D413", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:programmer", criterion: "", id: "A7E8040F5978ABB7", type: "advancement" }]
+			x: 10.5d
+			y: 16.2d
+		}
+		{
+			dependencies: ["C00AFA5634471204"]
+			icon: { id: "pneumaticcraft:speed_upgrade" }
+			id: "27A6BCDE5A89A113"
+			rewards: [{ id: "3D7C6588E4DE33B4", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:speed_upgrade", criterion: "", id: "DE975EA981CEF42C", type: "advancement" }]
+			x: 12.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["99667AF58EBDB573"]
+			icon: { id: "pneumaticcraft:amadron_tablet" }
+			id: "5086B9461E5653A5"
+			rewards: [{ id: "C828EF8781ABD9D0", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:amadron_tablet", criterion: "", id: "65BEF5E70C28ACF9", type: "advancement" }]
+			x: 12.2d
+			y: 3.8d
+		}
+		{
+			dependencies: ["99667AF58EBDB573"]
+			icon: { id: "pneumaticcraft:jackhammer" }
+			id: "6E9B3E7D0027CD23"
+			rewards: [{ id: "110AABA8640ED6DF", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "8EB53D75DC83331A", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "pneumaticcraft:jackhammer", criterion: "", id: "DDA0F882818D534E", type: "advancement" }]
+			x: 12.2d
+			y: 5.0d
+		}
+		{
+			dependencies: ["801562464355030D"]
+			icon: { id: "pneumaticcraft:ethanol_bucket" }
+			id: "A666BDF9635E6316"
+			rewards: [{ id: "23A84EB838E4D833", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:ethanol", criterion: "", id: "26B91D2DC61FC391", type: "advancement" }]
+			x: 12.2d
+			y: 6.2d
+		}
+		{
+			dependencies: ["247C5D3EEBE19CC6"]
+			icon: { id: "pneumaticcraft:advanced_pressure_tube" }
+			id: "E18EEAFF4BD2487D"
+			rewards: [{ id: "EAC71DC96B86BCF8", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:advanced_pressure_tube", criterion: "", id: "C6DD515B1E259EA3", type: "advancement" }]
+			x: 12.2d
+			y: 8.8d
+		}
+		{
+			dependencies: ["247C5D3EEBE19CC6"]
+			icon: { id: "pneumaticcraft:aphorism_tile" }
+			id: "4676656928207B2C"
+			rewards: [{ id: "233FCBECF75C86FA", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:aphorism_tile", criterion: "", id: "6D33D18EFDF8EFD7", type: "advancement" }]
+			x: 12.2d
+			y: 11.2d
+		}
+		{
+			dependencies: ["54962363E37635F9"]
+			icon: { id: "pneumaticcraft:block_tracker_upgrade" }
+			id: "5DB67A1C20865646"
+			rewards: [{ id: "7B3EC95947B49B9D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:block_hack", criterion: "", id: "9CB882EEE800C34D", type: "advancement" }]
+			x: 12.2d
+			y: 12.5d
+		}
+		{
+			dependencies: ["54962363E37635F9"]
+			icon: { id: "pneumaticcraft:entity_tracker_upgrade" }
+			id: "F9D306530C7DE3B7"
+			rewards: [{ id: "7DC05FB360B405BB", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:entity_hack", criterion: "", id: "AD06F63A44468DE5", type: "advancement" }]
+			x: 12.2d
+			y: 13.8d
+		}
+		{
+			dependencies: ["54962363E37635F9"]
+			icon: { id: "pneumaticcraft:jet_boots_upgrade_1" }
+			id: "F22FB46DD916BCFC"
+			rewards: [{ id: "0235E7FF4024B263", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "D738F076B755F3BE", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "DC17B30AEF6AE54D", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "pneumaticcraft:flight", criterion: "", id: "6FC38C925C059CB0", type: "advancement" }]
+			x: 12.2d
+			y: 15.0d
+		}
+		{
+			dependencies: ["B37EA7A483F67E39"]
+			icon: { id: "pneumaticcraft:programming_puzzle" }
+			id: "1B4581D753794C4B"
+			rewards: [{ id: "9A38AEE77A0ED271", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:programming_puzzle", criterion: "", id: "629C99AFE27B1519", type: "advancement" }]
+			x: 12.2d
+			y: 16.2d
+		}
+		{
+			dependencies: ["5086B9461E5653A5"]
+			icon: { id: "pneumaticcraft:pcb_blueprint" }
+			id: "D0EEC1F4C5F32AB6"
+			rewards: [{ id: "9FB6BBCD89A73CB2", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:pcb_blueprint", criterion: "", id: "5155A08C07D67395", type: "advancement" }]
+			x: 14.0d
+			y: 3.8d
+		}
+		{
+			dependencies: ["6E9B3E7D0027CD23"]
+			icon: { id: "pneumaticcraft:drill_bit_netherite" }
+			id: "1B9D12DC8D1E7705"
+			rewards: [{ id: "24B5214B303A2F14", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "D9D5F04C07AD482A", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "1F741C8D019CD5FB", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "pneumaticcraft:drill_bit_netherite", criterion: "", id: "0F325B628E64D583", type: "advancement" }]
+			x: 14.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["A666BDF9635E6316"]
+			icon: { id: "pneumaticcraft:biodiesel_bucket" }
+			id: "D8C17911B4C20831"
+			rewards: [{ id: "E726A8C9DEE18475", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "7BAB7B035428522E", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "pneumaticcraft:biodiesel", criterion: "", id: "DCB783F9784B8D5B", type: "advancement" }]
+			x: 14.0d
+			y: 6.2d
+		}
+		{
+			dependencies: ["E18EEAFF4BD2487D"]
+			icon: { id: "pneumaticcraft:aerial_interface" }
+			id: "D09B5BE4DE758B17"
+			rewards: [{ id: "DF997AACC7B4F78B", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:aerial_interface", criterion: "", id: "B2D02FFB54DABC89", type: "advancement" }]
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["E18EEAFF4BD2487D"]
+			icon: { id: "pneumaticcraft:flux_compressor" }
+			id: "C86F66533B5E4AB1"
+			rewards: [{ id: "99DF488443249BB1", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:flux_compressor", criterion: "", id: "812F4ACFBEEB6327", type: "advancement" }]
+			x: 14.0d
+			y: 8.8d
+		}
+		{
+			dependencies: ["E18EEAFF4BD2487D"]
+			icon: { id: "pneumaticcraft:programmable_controller" }
+			id: "8AC9DF58056B1DD9"
+			rewards: [{ id: "1C2D315BAEF4B8DA", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:programmable_controller", criterion: "", id: "CB01BCA52601F3C2", type: "advancement" }]
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["F22FB46DD916BCFC"]
+			icon: { id: "minecraft:bricks" }
+			id: "7D5BE4FC65E14220"
+			rewards: [{ id: "253D2547AA4B54AD", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:fly_into_wall", criterion: "", id: "7D29F3C131D94559", type: "advancement" }]
+			x: 14.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["1B4581D753794C4B"]
+			icon: { id: "pneumaticcraft:drone" }
+			id: "A36B33CEA06302A2"
+			rewards: [{ id: "3BC85B8DF486303D", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "C2A9313C2D9CA989", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "F9401266F074F048", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "pneumaticcraft:program_drone", criterion: "", id: "3FD294EC043BCE09", type: "advancement" }]
+			x: 14.0d
+			y: 16.2d
+		}
+		{
+			dependencies: ["D0EEC1F4C5F32AB6"]
+			icon: { id: "pneumaticcraft:uv_light_box" }
+			id: "252F5FBEB0C4ECEC"
+			rewards: [{ id: "3FDB12ABE1AD1A3E", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "pneumaticcraft:uv_light_box", criterion: "", id: "EF128114F108C80F", type: "advancement" }]
+			x: 15.8d
+			y: 3.8d
+		}
+	]
+}

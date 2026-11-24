@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "exorcisms"
-	group: ""
+	group: "193A39D685B7FCB1"
 	icon: { id: "minecraft:wither_skeleton_skull" }
 	id: "E68273B9ACC9CCEB"
 	order_index: 1

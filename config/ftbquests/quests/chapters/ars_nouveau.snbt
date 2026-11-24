@@ -1,0 +1,509 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau"
+	group: "03203A1312E25E36"
+	icon: { id: "ars_nouveau:worn_notebook" }
+	id: "956D4C94B07E4CBE"
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "ars_nouveau:worn_notebook" }
+			id: "AE376BB09A929298"
+			rewards: [{ id: "2AB80336539E0F89", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:root", criterion: "", id: "BF11EBCAFAD30BCB", type: "advancement" }]
+			x: 0.0d
+			y: 23.4d
+		}
+		{
+			dependencies: ["AE376BB09A929298"]
+			icon: { id: "ars_nouveau:gilded_sourcestone_large_bricks" }
+			id: "D519A93373A83EF1"
+			rewards: [{ id: "F8FBBCA0679D2DDB", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_additions:find_ruined_portal", criterion: "", id: "F82790120CF4263C", type: "advancement" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AE376BB09A929298"]
+			icon: { id: "ars_nouveau:imbuement_chamber" }
+			id: "1F3660509908F64C"
+			rewards: [{ id: "348C3713092123BF", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:imbuement_chamber", criterion: "", id: "D7AFB3EF6077CAFF", type: "advancement" }]
+			x: 1.8d
+			y: 17.0d
+		}
+		{
+			dependencies: ["AE376BB09A929298"]
+			icon: { id: "ars_nouveau:novice_spell_book" }
+			id: "49BDB4B0553F6113"
+			rewards: [{ id: "371A26F1245D94F8", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:novice_spell_book", criterion: "", id: "21F7656BED04CB36", type: "advancement" }]
+			x: 1.8d
+			y: 27.5d
+		}
+		{
+			dependencies: ["AE376BB09A929298"]
+			icon: { id: "minecraft:gold_nugget" }
+			id: "CADAC459A3EA4D24"
+			rewards: [{ id: "E0CDA9FB78DDAAB7", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:poof_mob", criterion: "", id: "B84601FD2117EA7E", type: "advancement" }]
+			x: 1.8d
+			y: 33.1d
+		}
+		{
+			dependencies: ["AE376BB09A929298"]
+			icon: { id: "ars_nouveau:ritual_brazier" }
+			id: "1CB8BCD75BF4BA5F"
+			rewards: [{ id: "A3969C46AC85F4C9", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:ritual_brazier", criterion: "", id: "4D552542179DFBBF", type: "advancement" }]
+			x: 1.8d
+			y: 39.4d
+		}
+		{
+			dependencies: ["1F3660509908F64C"]
+			icon: { id: "ars_nouveau:enchanting_apparatus" }
+			id: "2E47B4034EFCB318"
+			rewards: [{ id: "27CB25ED1B4FC239", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:enchanting_apparatus", criterion: "", id: "07E9373899D60384", type: "advancement" }]
+			x: 3.5d
+			y: 10.2d
+		}
+		{
+			dependencies: ["1F3660509908F64C"]
+			icon: { id: "ars_nouveau:source_jar" }
+			id: "40600C3A1BCA6409"
+			rewards: [{ id: "4C841C1A26316131", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:source_jar", criterion: "", id: "B7574895D2C9E1F1", type: "advancement" }]
+			x: 3.5d
+			y: 23.8d
+		}
+		{
+			dependencies: ["49BDB4B0553F6113"]
+			icon: { id: "ars_nouveau:apprentice_spell_book" }
+			id: "D08E3514E8CA3704"
+			rewards: [{ id: "C593C5542AC1755F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:apprentice_spell_book", criterion: "", id: "0650C69AE7C7C891", type: "advancement" }]
+			x: 3.5d
+			y: 26.2d
+		}
+		{
+			dependencies: ["49BDB4B0553F6113"]
+			icon: { id: "ars_nouveau:shapers_focus" }
+			id: "6104EC6A8F9E33E6"
+			rewards: [{ id: "2DB370D655E894C2", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:shapers_focus", criterion: "", id: "14FB3928B27E8CE8", type: "advancement" }]
+			x: 3.5d
+			y: 28.8d
+		}
+		{
+			dependencies: ["CADAC459A3EA4D24"]
+			icon: { id: "ars_nouveau:drygmy_charm" }
+			id: "B477487393FC4026"
+			rewards: [{ id: "3FEE1A28038E994D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:drygmy_charm", criterion: "", id: "98746EC5830908F5", type: "advancement" }]
+			x: 3.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["CADAC459A3EA4D24"]
+			icon: { id: "ars_elemental:siren_charm" }
+			id: "2F5682E6F5430B01"
+			rewards: [{ id: "F8FABD62F35C94B0", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:siren_charm", criterion: "", id: "B019D364773FF919", type: "advancement" }]
+			x: 3.5d
+			y: 31.2d
+		}
+		{
+			dependencies: ["CADAC459A3EA4D24"]
+			icon: { id: "ars_nouveau:starbuncle_charm" }
+			id: "9887DEC4B63840EC"
+			rewards: [{ id: "70590DD4410F38AC", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:starby_charm", criterion: "", id: "2A1817C2345D4A94", type: "advancement" }]
+			x: 3.5d
+			y: 33.1d
+		}
+		{
+			dependencies: ["CADAC459A3EA4D24"]
+			icon: { id: "ars_nouveau:whirlisprig_charm" }
+			id: "94D425703130EEA7"
+			rewards: [{ id: "1C8599E10846AB1E", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:whirlisprig_charm", criterion: "", id: "9F39BD815760F736", type: "advancement" }]
+			x: 3.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["CADAC459A3EA4D24"]
+			icon: { id: "ars_nouveau:wixie_charm" }
+			id: "C66931FB5ED3C653"
+			rewards: [{ id: "2DC8616672D16E96", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:wixie_charm", criterion: "", id: "ECD25E5AB36E26F5", type: "advancement" }]
+			x: 3.5d
+			y: 36.2d
+		}
+		{
+			dependencies: ["1CB8BCD75BF4BA5F"]
+			icon: { id: "ars_nouveau:amethyst_golem_charm" }
+			id: "D4795A6AFCBBED1E"
+			rewards: [{ id: "660246A1AD61C752", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:amethyst_golem_charm", criterion: "", id: "68A3086AFCA6E482", type: "advancement" }]
+			x: 3.5d
+			y: 37.5d
+		}
+		{
+			dependencies: ["1CB8BCD75BF4BA5F"]
+			icon: { id: "ars_nouveau:ritual_binding" }
+			id: "4880646465B859DE"
+			rewards: [{ id: "5AAECA4605536A3C", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "282328228E28EB62", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "ars_nouveau:familiar", criterion: "", id: "137E69C72E746101", type: "advancement" }]
+			x: 3.5d
+			y: 38.8d
+		}
+		{
+			dependencies: ["1CB8BCD75BF4BA5F"]
+			icon: { id: "ars_nouveau:mob_jar" }
+			id: "51B8776410915EEE"
+			rewards: [{ id: "8933BB20F004A8B8", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:mob_jar", criterion: "", id: "32B04F0C8C1004EB", type: "advancement" }]
+			x: 3.5d
+			y: 40.0d
+		}
+		{
+			dependencies: ["1CB8BCD75BF4BA5F"]
+			icon: { id: "ars_nouveau:ritual_gravity" }
+			id: "B3BFD859FB2B1977"
+			rewards: [{ id: "E54E23A33B0975D9", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "1813A473EA07ED26", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "ars_nouveau:ritual_gravity", criterion: "", id: "EDDC28ED1192ED5C", type: "advancement" }]
+			x: 3.5d
+			y: 41.2d
+		}
+		{
+			dependencies: ["2E47B4034EFCB318"]
+			icon: { id: "ars_nouveau:basic_spell_turret" }
+			id: "B7816C76B3DB310A"
+			rewards: [{ id: "FF45D0AE0E99274F", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:basic_spell_turret", criterion: "", id: "ABE325F31B8A0231", type: "advancement" }]
+			x: 5.2d
+			y: 1.2d
+		}
+		{
+			dependencies: ["2E47B4034EFCB318"]
+			icon: { id: "ars_elemental:everfull_urn" }
+			id: "3E4C62638E14DE33"
+			rewards: [{ id: "3B3607CB3D88BC4B", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:everfull_urn", criterion: "", id: "D832FA02C1985508", type: "advancement" }]
+			x: 5.2d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E47B4034EFCB318"]
+			icon: { id: "ars_elemental:firenando_charm" }
+			id: "E79E57DA43555DF8"
+			rewards: [{ id: "BB1E8409E8736652", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:firenando_charm", criterion: "", id: "F1E3B5D67609CBC7", type: "advancement" }]
+			x: 5.2d
+			y: 3.8d
+		}
+		{
+			dependencies: ["2E47B4034EFCB318"]
+			icon: { id: "ars_nouveau:magebloom_crop" }
+			id: "75F5328EFECA0741"
+			rewards: [{ id: "3E82FC3F3FA18363", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:magebloom_crop", criterion: "", id: "1ADA0CCE152D2D0A", type: "advancement" }]
+			x: 5.2d
+			y: 11.1d
+		}
+		{
+			dependencies: ["2E47B4034EFCB318"]
+			icon: { id: "ars_nouveau:potion_jar" }
+			id: "02F9774314CEF76D"
+			rewards: [{ id: "94A4BB53F336C775", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:potion_jar", criterion: "", id: "89AB2E97673AECDA", type: "advancement" }]
+			x: 5.2d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2E47B4034EFCB318"]
+			icon: { id: "ars_nouveau:scryers_oculus" }
+			id: "A0211C427572C661"
+			rewards: [{ id: "93B9D37925A82094", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:scryers_oculus", criterion: "", id: "EF9DDEB01FAADF89", type: "advancement" }]
+			x: 5.2d
+			y: 22.5d
+		}
+		{
+			dependencies: ["D08E3514E8CA3704"]
+			icon: { id: "ars_nouveau:wilden_tribute" }
+			id: "2198078028A4587E"
+			rewards: [{ id: "71A50177FC1F4968", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:wilden_tribute", criterion: "", id: "BD5B32D6EC0D60FA", type: "advancement" }]
+			x: 5.2d
+			y: 26.2d
+		}
+		{
+			dependencies: ["9887DEC4B63840EC"]
+			icon: { id: "ars_nouveau:starbuncle_shades" }
+			id: "1DF4241BBF3657D3"
+			rewards: [{ id: "F2F7A75D6BDAC11D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:starbuncle_shades", criterion: "", id: "A2DD3E2BE99DF915", type: "advancement" }]
+			x: 5.2d
+			y: 32.5d
+		}
+		{
+			dependencies: ["9887DEC4B63840EC"]
+			icon: { id: "ars_nouveau:wixie_hat" }
+			id: "625AA736AEE33BEC"
+			rewards: [{ id: "1DFF2B7B2943DF41", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:wixie_hat", criterion: "", id: "EB3F5B89B0EB839F", type: "advancement" }]
+			x: 5.2d
+			y: 33.8d
+		}
+		{
+			dependencies: ["B7816C76B3DB310A"]
+			icon: { id: "ars_nouveau:spell_prism" }
+			id: "01AE8C8842D004E3"
+			rewards: [{ id: "ABBCE4C4E057276D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:spell_prism", criterion: "", id: "216F2A2D31B6BDC5", type: "advancement" }]
+			x: 7.0d
+			y: 1.2d
+		}
+		{
+			dependencies: ["75F5328EFECA0741"]
+			icon: { id: "ars_nouveau:alteration_table" }
+			id: "8C0A9D24CCF13AF4"
+			rewards: [{ id: "9BEB095B868CC5CC", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:alteration_table", criterion: "", id: "EEF9A2DB8DFC57BB", type: "advancement" }]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["75F5328EFECA0741"]
+			icon: { id: "ars_elemental:curio_bag" }
+			id: "9CFE1290B0E4EBF3"
+			rewards: [{ id: "B775F164B0FDFC87", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:curio_bag", criterion: "", id: "62FC6CD1994F4C48", type: "advancement" }]
+			x: 7.0d
+			y: 10.8d
+		}
+		{
+			dependencies: ["75F5328EFECA0741"]
+			icon: { id: "ars_nouveau:warp_scroll" }
+			id: "EC12D3DC0C408713"
+			rewards: [{ id: "87EE2B3A47D38B66", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:warp_scroll", criterion: "", id: "4C398DE00E9BFD55", type: "advancement" }]
+			x: 7.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["02F9774314CEF76D"]
+			icon: { id: "ars_nouveau:potion_diffuser" }
+			id: "B3799B3A5A056ECB"
+			rewards: [{ id: "D55D22C0917847C3", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:potion_diffuser", criterion: "", id: "0B4929CBB8615661", type: "advancement" }]
+			x: 7.0d
+			y: 18.8d
+		}
+		{
+			dependencies: ["02F9774314CEF76D"]
+			icon: { id: "ars_nouveau:potion_flask" }
+			id: "E7A7F3EED3857A66"
+			rewards: [{ id: "9D92E7443B307039", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:potion_flask", criterion: "", id: "632A12C3891B9697", type: "advancement" }]
+			x: 7.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["02F9774314CEF76D"]
+			icon: { id: "ars_nouveau:potion_melder" }
+			id: "9AE739B8C446C7A9"
+			rewards: [{ id: "1917AFD1610EDB53", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:potion_melder", criterion: "", id: "CA0C2D63CAEAF377", type: "advancement" }]
+			x: 7.0d
+			y: 21.2d
+		}
+		{
+			dependencies: ["2198078028A4587E"]
+			icon: { id: "ars_nouveau:archmage_spell_book" }
+			id: "A33A32F3AB196EE7"
+			rewards: [{ id: "E8CC6A6A2F9962FA", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:archmage_spell_book", criterion: "", id: "DB62CCDD52B6566D", type: "advancement" }]
+			x: 7.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["2198078028A4587E"]
+			icon: { id: "ars_elemental:mark_of_mastery" }
+			id: "7DCF23B1BF111AAA"
+			rewards: [{ id: "2B4900AF350B46AA", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:mark_of_mastery", criterion: "", id: "89F864C26D170578", type: "advancement" }]
+			x: 7.0d
+			y: 26.2d
+		}
+		{
+			dependencies: ["2198078028A4587E"]
+			icon: { id: "ars_nouveau:summon_focus" }
+			id: "3DDC6223B91DA090"
+			rewards: [{ id: "A6C57AC4C9EFE446", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:summon_focus", criterion: "", id: "50335167D0908807", type: "advancement" }]
+			x: 7.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["9CFE1290B0E4EBF3"]
+			icon: { id: "ars_elemental:caster_bag" }
+			id: "110E2776F1F68FC4"
+			rewards: [{ id: "15542C8899830CF9", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:caster_bag", criterion: "", id: "316EE46AF05E6E90", type: "advancement" }]
+			x: 8.8d
+			y: 6.2d
+		}
+		{
+			dependencies: ["9CFE1290B0E4EBF3"]
+			icon: { id: "ars_elemental:lesser_air_focus" }
+			id: "CF1C7AE5449D85EE"
+			rewards: [{ id: "B190BBE5BACD8A4D", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:lesser_air_focus", criterion: "", id: "40AAD40A861F86E5", type: "advancement" }]
+			x: 8.8d
+			y: 8.1d
+		}
+		{
+			dependencies: ["9CFE1290B0E4EBF3"]
+			icon: { id: "ars_elemental:lesser_earth_focus" }
+			id: "FB427618433710D5"
+			rewards: [{ id: "05645CDE898DC528", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:lesser_earth_focus", criterion: "", id: "F68E144188D75C57", type: "advancement" }]
+			x: 8.8d
+			y: 10.6d
+		}
+		{
+			dependencies: ["9CFE1290B0E4EBF3"]
+			icon: { id: "ars_elemental:lesser_fire_focus" }
+			id: "B8DA5D68CCB980D0"
+			rewards: [{ id: "7AB1490B7A78B955", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:lesser_fire_focus", criterion: "", id: "2E273A7F04D1803C", type: "advancement" }]
+			x: 8.8d
+			y: 13.1d
+		}
+		{
+			dependencies: ["9CFE1290B0E4EBF3"]
+			icon: { id: "ars_elemental:lesser_water_focus" }
+			id: "4A7D410411F3DCC1"
+			rewards: [{ id: "8C89AD9CF6DF4689", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:lesser_water_focus", criterion: "", id: "EFC4466A4D2B1569", type: "advancement" }]
+			x: 8.8d
+			y: 15.6d
+		}
+		{
+			dependencies: ["EC12D3DC0C408713"]
+			icon: { id: "ars_nouveau:creative_source_jar" }
+			id: "E5530EF5CFED2776"
+			rewards: [{ id: "AE09A6435C7A6ABE", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "4D0050985BBA2670", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "2FFDA6B08076A02A", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "ars_nouveau:create_portal", criterion: "", id: "DD9003F5E7093D83", type: "advancement" }]
+			x: 8.8d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3DDC6223B91DA090"]
+			icon: { id: "ars_elemental:necrotic_focus" }
+			id: "417E11B2AB2E8FE3"
+			rewards: [{ id: "0EE72C98E38EE941", type: "xp", xp: 10 }]
+			tasks: [{ advancement: "ars_nouveau:necrotic_focus", criterion: "", id: "F54B298F106E32AF", type: "advancement" }]
+			x: 8.8d
+			y: 27.5d
+		}
+		{
+			dependencies: ["CF1C7AE5449D85EE"]
+			icon: { id: "ars_elemental:air_focus" }
+			id: "E75B7FB54EE8B340"
+			rewards: [{ id: "7026401829E0DB7B", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "97972E9A30B1DBA4", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "4E50899B84686C51", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "ars_nouveau:air_focus", criterion: "", id: "5C456C73FA619CD6", type: "advancement" }]
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["CF1C7AE5449D85EE"]
+			icon: { id: "ars_elemental:air_caster_tome" }
+			id: "4637DD813DDA0781"
+			rewards: [{ id: "336F0CE274B8D2DC", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "D20F7F4118264817", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "ars_nouveau:levitation", criterion: "", id: "AF7D743F358905A6", type: "advancement" }]
+			x: 10.5d
+			y: 8.8d
+		}
+		{
+			dependencies: ["FB427618433710D5"]
+			icon: { id: "ars_elemental:earth_focus" }
+			id: "69335B84FB5FAB14"
+			rewards: [{ id: "141A6166F607927D", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "736DED8DA67CDBD5", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "47110F748A926C5F", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "ars_nouveau:earth_focus", criterion: "", id: "891F89BAB5E2A3F4", type: "advancement" }]
+			x: 10.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["FB427618433710D5"]
+			icon: { id: "ars_elemental:spore_blossom_up" }
+			id: "416A3679E8CF99A4"
+			rewards: [{ id: "052BC1CBEA6DE1EC", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "F047E6169F498ECF", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "ars_nouveau:spore_blossom", criterion: "", id: "D3A7911F19F51C7D", type: "advancement" }]
+			x: 10.5d
+			y: 11.2d
+		}
+		{
+			dependencies: ["B8DA5D68CCB980D0"]
+			icon: { id: "ars_elemental:fire_focus" }
+			id: "2BBD31E5049F6132"
+			rewards: [{ id: "32830BD49A56E49B", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "B9E2D96E8BD047D6", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "70968EF4D83B32B5", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "ars_nouveau:fire_focus", criterion: "", id: "3C0DAB11D472FB03", type: "advancement" }]
+			x: 10.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["B8DA5D68CCB980D0"]
+			icon: { id: "ars_elemental:fire_caster_tome" }
+			id: "9B6A7E1C8A949197"
+			rewards: [{ id: "4FD5A58F990B4636", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "3DE335C054F4A121", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "ars_nouveau:summon_strider", criterion: "", id: "A2543BF34FCAF6C3", type: "advancement" }]
+			x: 10.5d
+			y: 13.8d
+		}
+		{
+			dependencies: ["4A7D410411F3DCC1"]
+			icon: { id: "ars_elemental:water_caster_tome" }
+			id: "56EB3A070876FBE1"
+			rewards: [{ id: "D86996FC94CE51CD", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "2AF96A0496534759", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "ars_nouveau:summon_dolphin", criterion: "", id: "0EE003B67AF5A310", type: "advancement" }]
+			x: 10.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4A7D410411F3DCC1"]
+			icon: { id: "ars_elemental:water_focus" }
+			id: "AB675B6079A01DFA"
+			rewards: [{ id: "4051D1F4729B3967", type: "xp", xp: 50 }, { command: "/cursed xp {p} 100", id: "E4EE2FC173DB508A", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "A4A496FBDAA3B073", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "gear"
+			tasks: [{ advancement: "ars_nouveau:water_focus", criterion: "", id: "F89451102DC87F4A", type: "advancement" }]
+			x: 10.5d
+			y: 16.2d
+		}
+		{
+			dependencies: ["417E11B2AB2E8FE3"]
+			icon: { id: "ars_elemental:anima_caster_tome" }
+			id: "297F2F7F3595D6B5"
+			rewards: [{ id: "B885FA50FD9DFE29", type: "xp", xp: 25 }, { command: "/cursed xp {p} 25", id: "F7F170274DAD9AB8", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			tasks: [{ advancement: "ars_nouveau:summon_skeleton_horse", criterion: "", id: "C84F6D8B343D7E33", type: "advancement" }]
+			x: 10.5d
+			y: 27.5d
+		}
+	]
+}

@@ -1,0 +1,116 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage_travel"
+	group: "7E0E5E7D94D8772C"
+	icon: { id: "waystones:waystone" }
+	id: "F77CCA1C071DC556"
+	order_index: 37
+	quest_links: [ ]
+	quests: [
+		{
+			id: "EB8998374AA0E0B6"
+			rewards: [{ id: "318846CF89C8A260", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "0FC68BA9BD309205", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["EB8998374AA0E0B6"]
+			id: "C680A373889293B6"
+			rewards: [{ id: "1AEBB944666BC095", type: "xp", xp: 15 }]
+			tasks: [{ id: "00D1CA5A73E73D76", item: { count: 1, id: "sophisticatedbackpacks:pickup_upgrade" }, type: "item" }]
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C680A373889293B6"]
+			id: "FBCE7AE8DC4C022E"
+			rewards: [{ id: "9DBD1E13A5775FE5", type: "xp", xp: 20 }]
+			tasks: [{ id: "B29D090BE449A759", item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }, type: "item" }]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FBCE7AE8DC4C022E"]
+			id: "9687F231371B959E"
+			rewards: [{ id: "B7A43D99499EB636", type: "xp", xp: 25 }]
+			tasks: [{ id: "F361E61412D769AC", item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }, type: "item" }]
+			x: 5.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["9687F231371B959E"]
+			id: "9277701585DCAE55"
+			rewards: [{ id: "667B58DF2E502829", type: "xp", xp: 30 }]
+			tasks: [{ id: "BFC7830B062899FA", item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }, type: "item" }]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["9277701585DCAE55"]
+			id: "C226FD968E6F3D30"
+			rewards: [{ id: "9E7CDE54498517F1", type: "xp", xp: 35 }]
+			tasks: [{ id: "081E4712CCD6FCA3", item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }, type: "item" }]
+			x: 8.8d
+			y: 0.0d
+		}
+		{
+			id: "0F5AAC0AD79575D6"
+			rewards: [{ id: "78F72145015CDA53", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "E5970F0F2432ED3F", item: { count: 1, id: "waystones:waystone" }, type: "item" }]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F5AAC0AD79575D6"]
+			id: "E6CBC5439E7AC7F8"
+			rewards: [{ id: "26B0A56D23E1F03F", type: "xp", xp: 15 }]
+			tasks: [{ id: "2644DF6DFD1CEB97", item: { count: 1, id: "waystones:warp_stone" }, type: "item" }]
+			x: 1.8d
+			y: 2.0d
+		}
+		{
+			dependencies: ["E6CBC5439E7AC7F8"]
+			id: "816AC2C63DCE5282"
+			rewards: [{ id: "BE0909E32A3406FA", type: "xp", xp: 20 }]
+			tasks: [{ id: "B2DC3AB3B583CD31", item: { count: 1, id: "waystones:warp_scroll" }, type: "item" }]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["816AC2C63DCE5282"]
+			id: "B23CB52836E2A587"
+			rewards: [{ id: "56AB179A820CD95B", type: "xp", xp: 25 }]
+			tasks: [{ id: "8CE866E461AA29EB", item: { count: 1, id: "waystones:return_scroll" }, type: "item" }]
+			x: 5.2d
+			y: 2.0d
+		}
+		{
+			id: "67769F89B36CE4D0"
+			rewards: [{ id: "E3D17A9D09CB99FC", type: "xp", xp: 10 }]
+			shape: "hexagon"
+			tasks: [{ id: "70B26808F6A6B21B", item: { count: 1, id: "torchmaster:megatorch" }, type: "item" }]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["67769F89B36CE4D0"]
+			id: "67E3ABEF1663A136"
+			rewards: [{ id: "89C777B79DED30D7", type: "xp", xp: 15 }]
+			tasks: [{ id: "DF964E08631A0E4E", item: { count: 1, id: "torchmaster:feral_flare_lantern" }, type: "item" }]
+			x: 1.8d
+			y: 4.0d
+		}
+		{
+			dependencies: ["67E3ABEF1663A136"]
+			id: "D62CE0CD0D2C0C48"
+			rewards: [{ id: "773A28345EF3BD0A", type: "xp", xp: 20 }]
+			tasks: [{ id: "0F061F2D69B7A048", item: { count: 1, id: "torchmaster:dreadlamp" }, type: "item" }]
+			x: 3.5d
+			y: 4.0d
+		}
+	]
+}

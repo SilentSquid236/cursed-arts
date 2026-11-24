@@ -1,0 +1,6 @@
+[playerConfig]
+	[playerConfig.claims]
+		[playerConfig.claims.protection]
+			[playerConfig.claims.protection.exceptions]
+				#Off by default: no fighting in claims unless the claim owner allows it.
+				playersByPlayers = false
