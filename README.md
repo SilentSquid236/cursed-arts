@@ -4,7 +4,7 @@ A NeoForge 1.21.1 modpack built around **[Cursed Techniques](https://github.com/
 
 ## What's inside
 
-**Magic**: Cursed Techniques · Iron's Spells 'n Spellbooks · Ars Nouveau (+ Ars Elemental, Ars Creo, Ars Additions) · Occultism · Malum · Forbidden & Arcanus · Hexerei · Astral Sorcery · Reliquary · Relics
+**Magic**: Cursed Techniques · Iron's Spells 'n Spellbooks · Ars Nouveau (+ Ars Elemental, Ars Creo, Ars Additions) · Occultism · Malum · Forbidden & Arcanus · Astral Sorcery · Reliquary · Relics
 
 **Modern tech**: Create (+ Crafts & Additions, Create: Connected) · Mekanism (+ Generators, Tools, Additions) · Applied Energistics 2 (+ MEGA Cells, Applied Mekanistics) · Immersive Engineering · Draconic Evolution · Powah · Industrial Foregoing · PneumaticCraft: Repressurized · Oritech · Flux Networks · Pipez · LaserIO · Iron Jetpacks · Mining Gadgets · Building Gadgets · Just Dire Things
 

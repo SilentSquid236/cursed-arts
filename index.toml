@@ -240,11 +240,6 @@ hash = "d573695d37296209dc06495d359c4b283ffa6640bcfe8aa9c9b59eb420891788"
 metafile = true
 
 [[files]]
-file = "mods/hexerei.pw.toml"
-hash = "0ec6dad41e0e0619a06158ebc08109caa64812673e918ae8999a8946500588c1"
-metafile = true
-
-[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "87d5822fd5757378e66eb480206d9a5b20d6b26be6700afa8c2b08c5898ab80b"
 metafile = true
