@@ -1,0 +1,13 @@
+name = "Iron's Spells 'n Spellbooks +"
+filename = "Nice Person Iron.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "59bdf9ba26334f895e11c2e4146baeff31888dd2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8727291
+project-id = 1667149
