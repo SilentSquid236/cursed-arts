@@ -56,8 +56,8 @@ hash = "982c4bedb0295d598d57cf92cf39abe81562c0f2142f5bc1f90a7e61bff71bb5"
 metafile = true
 
 [[files]]
-file = "mods/cursedtech-0.1.0.jar"
-hash = "2c15fc66e7df1eee2f51d454dffd180b81219ae62f8cce7c009126cb745a8ff8"
+file = "mods/cursedtech-0.2.0.jar"
+hash = "2d47839742c6746ecb89e4e904494c8459b8f308fd0d2d747b036f074fe14da9"
 
 [[files]]
 file = "mods/ferritecore.pw.toml"
