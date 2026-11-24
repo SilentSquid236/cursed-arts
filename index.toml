@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".packwizignore"
-hash = "032c45cf1139f87fb30a83e9e85f10c8a54669ebde284ef78d55d5f736e1bbac"
-
-[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
