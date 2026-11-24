@@ -22,8 +22,10 @@ Plus their libraries (GeckoLib, Curios, Balm, playerAnimator, ...). The full, ex
 
 Grab the latest file from [Releases](../../releases):
 
-- **CurseForge app**: `Cursed-Arts-<version>.zip` → *Create Custom Profile → Import*.
-- **Prism Launcher / Modrinth App**: `Cursed-Arts-<version>.mrpack` → *Add Instance → Import*.
+Download `Cursed-Arts-<version>.zip`, then:
+
+- **CurseForge app**: *Create Custom Profile → Import* the zip.
+- **Prism Launcher**: *Add Instance → Import* the zip. Prism asks you to download one or two mods by hand whose authors block third-party downloads (it opens the pages for you).
 
 Give the game at least **6 GB** of RAM. To turn on shaders: *Options → Video Settings → Shader Packs* (or press `K`), then pick Complementary Unbound.
 
@@ -53,7 +55,7 @@ packwiz refresh                 # after any manual edit
 
 Mark client-only mods with `side = "client"` in their `.pw.toml`.
 
-To publish, bump `version` in `pack.toml`, run `packwiz refresh`, and push to `main`. GitHub Actions exports the CurseForge `.zip` and Modrinth `.mrpack`, creates the release, and uploads to CurseForge once `CURSEFORGE_TOKEN` and `CURSEFORGE_PROJECT_ID` are configured (see `.github/workflows/release.yml`).
+To publish, bump `version` in `pack.toml`, run `packwiz refresh`, and push to `main`. GitHub Actions exports the CurseForge `.zip`, creates the release, and uploads to CurseForge once `CURSEFORGE_TOKEN` and `CURSEFORGE_PROJECT_ID` are configured (see `.github/workflows/release.yml`).
 
 ## License
 
