@@ -1,0 +1,88 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "expedition"
+	group: ""
+	icon: { id: "minecraft:compass" }
+	id: "370602F37E1A7E10"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:compass" }
+			id: "098B9B4D404C2C4C"
+			rewards: [{ id: "7F70CA71FE32E33D", type: "xp", xp: 5 }]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{ id: "24D58189638BDF6D", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["098B9B4D404C2C4C"]
+			id: "F9E239911D3215BA"
+			rewards: [{ id: "511AD94419EE4371", type: "xp", xp: 10 }]
+			tasks: [{ id: "44B283547EB99589", item: { count: 1, id: "waystones:waystone" }, type: "item" }]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["098B9B4D404C2C4C"]
+			id: "14F5B975642651E3"
+			rewards: [{ id: "9F67629F6150D562", type: "xp", xp: 10 }]
+			tasks: [{ id: "69D04B5EEF196174", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["098B9B4D404C2C4C"]
+			id: "C3A7241FA3C4E8A2"
+			rewards: [{ id: "8410A32B94BE9808", type: "xp", xp: 10 }]
+			tasks: [{ id: "CDF28BDA31B9F910", item: { count: 1, id: "farmersdelight:cooking_pot" }, type: "item" }]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["F9E239911D3215BA"]
+			id: "A4568A6F9EC15C3D"
+			rewards: [{ id: "55F410FEE59055C4", type: "xp", xp: 15 }]
+			tasks: [{ id: "65783DD6C4EBBAB6", item: { count: 1, id: "explorerscompass:explorerscompass" }, type: "item" }]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["14F5B975642651E3"]
+			id: "276626C111831FB3"
+			rewards: [{ id: "2503B135662EBC49", type: "xp", xp: 15 }]
+			tasks: [{ id: "025B57EC102CA4A0", item: { count: 1, id: "naturescompass:naturescompass" }, type: "item" }]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C3A7241FA3C4E8A2"]
+			id: "A34A9F1B5AC81476"
+			rewards: [{ id: "FE03CE84B2AED583", type: "xp", xp: 20 }]
+			tasks: [{ id: "E70404D9E8C73214", item: { count: 1, id: "apotheosis:reforging_table" }, type: "item" }]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["A4568A6F9EC15C3D"]
+			icon: { id: "minecraft:obsidian" }
+			id: "26CBBBC2B9C2AE94"
+			rewards: [{ command: "/cursed xp {p} 50", id: "3EFAA2F9810698F5", permission_level: 2, silent: true, type: "command" }]
+			tasks: [{ dimension: "minecraft:the_nether", id: "B80CEBE401347B60", type: "dimension" }]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["26CBBBC2B9C2AE94"]
+			icon: { id: "minecraft:end_portal_frame" }
+			id: "8289470054E7CE5C"
+			rewards: [{ command: "/cursed xp {p} 100", id: "06FBAD62A1E8914F", permission_level: 2, silent: true, type: "command" }]
+			tasks: [{ dimension: "minecraft:the_end", id: "90FE77DEAF48A5BF", type: "dimension" }]
+			x: 10.0d
+			y: -1.0d
+		}
+	]
+}

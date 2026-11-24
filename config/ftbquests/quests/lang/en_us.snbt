@@ -1,0 +1,95 @@
+{
+	chapter.370602F37E1A7E10.title: "Expedition"
+	chapter.519DCA519D17C275.title: "Awakening"
+	chapter.6FBE124774A707BA.title: "Sorcery"
+	chapter.AE20CDE1FA023F62.title: "Engineering"
+	chapter.E68273B9ACC9CCEB.title: "Exorcisms"
+	file.0000000000000001.title: "Cursed Arts"
+	quest.012E7235E82B6BC3.quest_desc: ["A domain raises a barrier around you and everything inside suffers your technique's sure-hit effect.", "", "If two domains overlap they &6clash&r: the stronger one shatters the other. Afterwards your technique &cburns out&r for 10 seconds, so pick your moment."]
+	quest.012E7235E82B6BC3.quest_subtitle: "Trap them in your world"
+	quest.012E7235E82B6BC3.title: "Domain Expansion"
+	quest.098B9B4D404C2C4C.quest_desc: ["New terrain, biomes and structures everywhere: Terralith and Tectonic reshape the land, YUNG's mods rebuild every structure, and dungeons hide loot.", "", "Loot chests are per-player (Lootr), so everyone gets their own."]
+	quest.098B9B4D404C2C4C.title: "Expedition"
+	quest.10CA6AEFCA685500.quest_desc: ["From kinetic contraptions to fusion reactors. Each row is a different tech mod; JEI (press &eR&r on an item) shows every recipe."]
+	quest.10CA6AEFCA685500.title: "Modern Engineering"
+	quest.1366816401288A7D.quest_desc: ["Fancy automation and machines with visible moving parts."]
+	quest.1366816401288A7D.title: "Oritech"
+	quest.1FCE7F9A9B85BB1B.quest_desc: ["Design your own spells from glyphs. Start by crafting the Novice Spell Book."]
+	quest.1FCE7F9A9B85BB1B.title: "Ars Nouveau"
+	quest.26CBBBC2B9C2AE94.title: "Into the Nether"
+	quest.2BCF50E758E1E188.quest_desc: ["Promotion to Grade 1 unlocks &dDomain Expansion&r (V)."]
+	quest.2BCF50E758E1E188.quest_subtitle: "8,000 XP and 3 Black Flashes"
+	quest.2BCF50E758E1E188.title: "Grade 1"
+	quest.312D16EEC20ED5E3.title: "Frostmaw"
+	quest.35E9AA90A7C2DBFB.title: "The Wither"
+	quest.369A3C9A91C53DA1.title: "Elder Guardian"
+	quest.37F4B01F78D2D9BC.quest_desc: ["Your technique and grade are shown above your hotbar.", "", "Abilities cost &dcursed energy&r, which refills over about 30 seconds. Watch the cooldowns."]
+	quest.37F4B01F78D2D9BC.quest_subtitle: "Find out what you were born with"
+	quest.37F4B01F78D2D9BC.title: "Your Innate Technique"
+	quest.38016D13B9E71AC1.quest_desc: ["The peak. Unlocks your &cMaximum&r technique (G) and &aReverse Cursed Technique&r, which slowly heals you with cursed energy."]
+	quest.38016D13B9E71AC1.quest_subtitle: "30,000 XP, 12 Black Flashes, 2 bosses"
+	quest.38016D13B9E71AC1.title: "Special Grade"
+	quest.40757890E61DE6BF.quest_desc: ["Big multiblock machines. Craft the Engineer's Hammer and read the manual."]
+	quest.40757890E61DE6BF.title: "Immersive Engineering"
+	quest.47273348BBAD08A0.title: "Maledictus"
+	quest.4893E864CB61A69D.title: "Ender Dragon"
+	quest.4D3D65DC8E0D352B.title: "The Leviathan"
+	quest.4E97247D988A32CF.title: "The Warden"
+	quest.583685991AAB7E10.quest_desc: ["Ore processing, machines and, eventually, a Digital Miner."]
+	quest.583685991AAB7E10.title: "Mekanism"
+	quest.5A0F6163DB8A777B.title: "Night Patrol"
+	quest.5ED49E462F6A95B2.quest_desc: ["Bosses (150+ max health) give a huge amount of grade XP and count toward Special Grade. See the &cExorcisms&r chapter for targets."]
+	quest.5ED49E462F6A95B2.quest_subtitle: "Defeat a boss"
+	quest.5ED49E462F6A95B2.title: "Exorcist"
+	quest.607DFA2F107D16B3.title: "Umvuthi"
+	quest.613AF4C2C2EA5FC3.quest_desc: ["Draw pentacles in chalk and bind spirits to do your work."]
+	quest.613AF4C2C2EA5FC3.title: "Occultism"
+	quest.67CDEAEF4C4C1287.quest_desc: ["Simple, strong power generation."]
+	quest.67CDEAEF4C4C1287.title: "Powah"
+	quest.6E57E08B923545A5.quest_desc: ["These are the strongest things in the world. Each one is worth a huge pile of &bgrade XP&r, and bosses count toward &cSpecial Grade&r.", "", "Explore to find them: Cataclysm bosses guard their own structures, Mowzie's bosses roam specific biomes. &eExplorer's Compass&r helps.", "", "Bring friends. Domain Expansion is your best tool here."]
+	quest.6E57E08B923545A5.quest_subtitle: "Cursed spirits of every grade"
+	quest.6E57E08B923545A5.title: "The Hunt"
+	quest.72C8124E6F186808.title: "Netherite Monstrosity"
+	quest.78DDD8ABCC5910EA.quest_subtitle: "Everything you have"
+	quest.78DDD8ABCC5910EA.title: "Maximum"
+	quest.80370654C92BCF95.title: "The Harbinger"
+	quest.8289470054E7CE5C.title: "The End"
+	quest.8A839B007F16A95D.quest_desc: ["Rotational power, belts and contraptions. Andesite alloy is where it all starts."]
+	quest.8A839B007F16A95D.title: "Create"
+	quest.8D9647F991F211B6.quest_desc: ["Every hostile mob you defeat gives &bgrade XP&r: about a quarter of its max health. Farm animals and villagers give nothing."]
+	quest.8D9647F991F211B6.quest_subtitle: "Hostile kills give grade XP"
+	quest.8D9647F991F211B6.title: "First Exorcisms"
+	quest.8DA49C7E7086A7DA.quest_desc: ["Everyone here is born with an &dinnate technique&r. Most awaken as &7Grade 2&r sorcerers; a rare few are born far stronger.", "", "&eZ&r and &eX&r use your two abilities. &eV&r is Domain Expansion (unlocks at &6Grade 1&r). &eG&r is your Maximum technique (Special Grade only).", "", "Type &b/cursed info&r any time to see your technique, grade and what you need for the next promotion.", "", "Other chapters cover the magic, tech and exploration mods in the pack. Do them in any order."]
+	quest.8DA49C7E7086A7DA.quest_subtitle: "Read me first"
+	quest.8DA49C7E7086A7DA.title: "Welcome to Cursed Arts"
+	quest.9B392D7923CC4243.title: "Ancient Remnant"
+	quest.A34A9F1B5AC81476.quest_desc: ["Apotheosis gear has random affixes. Reforge it for better rolls."]
+	quest.A4568A6F9EC15C3D.quest_desc: ["Points you at any structure, including boss arenas."]
+	quest.A5403A50CE6C9525.quest_desc: ["Your cursed energy reserves deepen: more energy, faster regen, harder hits."]
+	quest.A5403A50CE6C9525.quest_subtitle: "2,500 grade XP"
+	quest.A5403A50CE6C9525.title: "Semi-Grade 1"
+	quest.AA36C68A495C76EE.title: "Ferrous Wroughtnaut"
+	quest.AA8091892E759B3A.quest_desc: ["Cursed techniques aren't the only power here. Spells, rituals and spirits stack with your technique.", "", "Each row is a different school. Most come with an in-game guidebook."]
+	quest.AA8091892E759B3A.title: "Beyond Cursed Energy"
+	quest.ABE198F966760771.quest_desc: ["Grow your resources. Inferium drops from mobs and ore."]
+	quest.ABE198F966760771.title: "Mystical Agriculture"
+	quest.C3A7241FA3C4E8A2.quest_desc: ["Better food, longer fights."]
+	quest.C57667D18A15428F.title: "The Sculptor"
+	quest.CBF6EF56F755BCBE.quest_desc: ["Craft spell books, inscribe scrolls and fight with dozens of schools of magic."]
+	quest.CBF6EF56F755BCBE.title: "Iron's Spells 'n Spellbooks"
+	quest.D2F5D028B8419480.title: "Scylla"
+	quest.D7997DEDAA582093.title: "Ender Guardian"
+	quest.DBF389051888E942.quest_desc: ["Draw power from the constellations. Find a Marble or Aquamarine-rich area and look up at night."]
+	quest.DBF389051888E942.title: "Astral Sorcery"
+	quest.E1EE0177DD026A72.quest_desc: ["Digital storage. Find Certus Quartz in meteorites and grow more."]
+	quest.E1EE0177DD026A72.title: "Applied Energistics 2"
+	quest.E2397FA42D9F109A.title: "Ignis"
+	quest.EC23FE788965FBA7.quest_desc: ["Harvest spirits from the creatures you slay. Fitting for an exorcist."]
+	quest.EC23FE788965FBA7.title: "Malum"
+	quest.F9E239911D3215BA.quest_desc: ["Place Waystones to fast-travel between them."]
+	quest.FB40967D7BC8FC73.quest_desc: ["Endgame power and gear. Draconium ore is in the Overworld, Nether and End."]
+	quest.FB40967D7BC8FC73.title: "Draconic Evolution"
+	quest.FFF1749F797BE8C4.quest_desc: ["Hit something with a &efully charged&r melee attack. There's a small chance it becomes a &cBlack Flash&r: about 1.8x damage and a flash that warps the screen.", "", "Landing one puts you &cin the zone&r for 10 seconds, with much higher odds. Higher grades require several."]
+	quest.FFF1749F797BE8C4.quest_subtitle: "Space bends with a perfect hit"
+	quest.FFF1749F797BE8C4.title: "Black Flash"
+}

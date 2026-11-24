@@ -1,0 +1,166 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "exorcisms"
+	group: ""
+	icon: { id: "minecraft:wither_skeleton_skull" }
+	id: "E68273B9ACC9CCEB"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:iron_sword" }
+			id: "6E57E08B923545A5"
+			rewards: [{ id: "A0B44F85CB205975", type: "xp", xp: 5 }]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{ id: "3506982E9057F28C", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:prismarine_shard" }
+			id: "369A3C9A91C53DA1"
+			rewards: [{ command: "/cursed xp {p} 150", id: "6D24040971A84F02", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "1E812A7FA6C6CE46", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "minecraft:elder_guardian", id: "EB58E61C1768A215", type: "kill", value: 1L }]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:wither_skeleton_skull" }
+			id: "35E9AA90A7C2DBFB"
+			rewards: [{ command: "/cursed xp {p} 150", id: "BCE0AAED6CDF40A9", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "787BC7CF82B06A1B", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "minecraft:wither", id: "3DABD50BFF7E3AF9", type: "kill", value: 1L }]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:dragon_head" }
+			id: "4893E864CB61A69D"
+			rewards: [{ command: "/cursed xp {p} 150", id: "75F8FC860FAD8AD1", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "52C6316D597DD756", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "minecraft:ender_dragon", id: "26FC2FD1E223A9FF", type: "kill", value: 1L }]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:sculk_shrieker" }
+			id: "4E97247D988A32CF"
+			rewards: [{ command: "/cursed xp {p} 150", id: "8210AB6278C3D914", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "2EDAD879864C6A00", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "minecraft:warden", id: "2EF17E9B4FBE73C7", type: "kill", value: 1L }]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:iron_axe" }
+			id: "AA36C68A495C76EE"
+			rewards: [{ command: "/cursed xp {p} 150", id: "1FF2F0F192B82C7F", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "467F7E7774F5597D", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "mowziesmobs:ferrous_wroughtnaut", id: "385D10EDA4CB5805", type: "kill", value: 1L }]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:blue_ice" }
+			id: "312D16EEC20ED5E3"
+			rewards: [{ command: "/cursed xp {p} 150", id: "69D2287A8695E6A3", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "1384D702901ED202", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "mowziesmobs:frostmaw", id: "00B1AC3A2D28C2A6", type: "kill", value: 1L }]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:gold_block" }
+			id: "607DFA2F107D16B3"
+			rewards: [{ command: "/cursed xp {p} 150", id: "C23C8F45749FFB3E", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "FC6EBEB964F76E07", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "mowziesmobs:umvuthi", id: "13029D27D507ECE0", type: "kill", value: 1L }]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:chiseled_stone_bricks" }
+			id: "C57667D18A15428F"
+			rewards: [{ command: "/cursed xp {p} 150", id: "2359C9FD206B156B", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "9A43F37C07001D15", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "mowziesmobs:sculptor", id: "AF8449B2F3290A0B", type: "kill", value: 1L }]
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:end_stone_bricks" }
+			id: "D7997DEDAA582093"
+			rewards: [{ command: "/cursed xp {p} 150", id: "ECE67E9ADE68C9B6", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "E80B2C15F0B6C60C", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:ender_guardian", id: "A7A6757ED10F1449", type: "kill", value: 1L }]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:netherite_block" }
+			id: "72C8124E6F186808"
+			rewards: [{ command: "/cursed xp {p} 150", id: "DA8123F091C2BB83", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "F3ED01E2FCF01930", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:netherite_monstrosity", id: "779DAFCC03DA372D", type: "kill", value: 1L }]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:blaze_rod" }
+			id: "E2397FA42D9F109A"
+			rewards: [{ command: "/cursed xp {p} 150", id: "FBA5730EF180D355", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "11509BDCB6A62296", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:ignis", id: "B6EADB8D95FB31A8", type: "kill", value: 1L }]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:redstone_block" }
+			id: "80370654C92BCF95"
+			rewards: [{ command: "/cursed xp {p} 150", id: "D037CF1418B45592", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "B486A9D128BE88EC", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:the_harbinger", id: "FD8A37A7F037A1F3", type: "kill", value: 1L }]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:heart_of_the_sea" }
+			id: "4D3D65DC8E0D352B"
+			rewards: [{ command: "/cursed xp {p} 150", id: "DACE137E9D13FDE7", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "640A5AE4026CC690", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:the_leviathan", id: "E3B712A240C0613C", type: "kill", value: 1L }]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:sandstone" }
+			id: "9B392D7923CC4243"
+			rewards: [{ command: "/cursed xp {p} 150", id: "76765480D1873E4B", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "390C0467FA044153", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:ancient_remnant", id: "1B915545C78C37F3", type: "kill", value: 1L }]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:soul_lantern" }
+			id: "47273348BBAD08A0"
+			rewards: [{ command: "/cursed xp {p} 150", id: "D953B35BB6882416", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "4ED8993893425917", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:maledictus", id: "DEE2A22E233C574A", type: "kill", value: 1L }]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E57E08B923545A5"]
+			icon: { id: "minecraft:trident" }
+			id: "D2F5D028B8419480"
+			rewards: [{ command: "/cursed xp {p} 150", id: "403FB8DF8707AC74", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "35A6FC74D0CDB75B", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:scylla", id: "DE8EA9CCC439D903", type: "kill", value: 1L }]
+			x: 10.5d
+			y: 3.0d
+		}
+	]
+}

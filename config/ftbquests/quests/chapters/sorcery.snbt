@@ -1,0 +1,126 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sorcery"
+	group: ""
+	icon: { id: "irons_spellbooks:copper_spell_book" }
+	id: "6FBE124774A707BA"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:enchanted_book" }
+			id: "AA8091892E759B3A"
+			rewards: [{ id: "7F70CA71FE32E33D", type: "xp", xp: 5 }]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{ id: "24D58189638BDF6D", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AA8091892E759B3A"]
+			id: "CBF6EF56F755BCBE"
+			rewards: [{ id: "1C5FDFBBBB8936E6", type: "xp", xp: 10 }]
+			tasks: [{ id: "B57775D34C2703C4", item: { count: 1, id: "irons_spellbooks:inscription_table" }, type: "item" }]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["CBF6EF56F755BCBE"]
+			id: "D71DF89D5ECA8C15"
+			rewards: [{ id: "39833C3F199FD836", type: "xp", xp: 15 }]
+			tasks: [{ id: "50923B87961E436A", item: { count: 1, id: "irons_spellbooks:copper_spell_book" }, type: "item" }]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["D71DF89D5ECA8C15"]
+			id: "E8B3DEACDFE706D8"
+			rewards: [{ id: "5199051E67257E49", type: "xp", xp: 20 }]
+			tasks: [{ count: 8L, id: "2C409246310D8403", item: { count: 1, id: "irons_spellbooks:arcane_essence" }, type: "item" }]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["AA8091892E759B3A"]
+			id: "1FCE7F9A9B85BB1B"
+			rewards: [{ id: "76CC210739B2988D", type: "xp", xp: 10 }]
+			tasks: [{ id: "EA13D7571275B13E", item: { count: 1, id: "ars_nouveau:novice_spell_book" }, type: "item" }]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1FCE7F9A9B85BB1B"]
+			id: "33BE09A40E8E02B7"
+			rewards: [{ id: "0345B11BCFC4F264", type: "xp", xp: 15 }]
+			tasks: [{ id: "2D48889B5EA61C31", item: { count: 1, id: "ars_nouveau:scribes_table" }, type: "item" }]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33BE09A40E8E02B7"]
+			id: "2427FFD4A2276F8D"
+			rewards: [{ id: "F10E75D9F4D32D4D", type: "xp", xp: 20 }]
+			tasks: [{ count: 4L, id: "C3D875363D661D47", item: { count: 1, id: "ars_nouveau:source_gem" }, type: "item" }]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["AA8091892E759B3A"]
+			id: "613AF4C2C2EA5FC3"
+			rewards: [{ id: "927BCAD5C6763B9A", type: "xp", xp: 10 }]
+			tasks: [{ id: "8AAFF98B6AD29195", item: { count: 1, id: "occultism:chalk_white" }, type: "item" }]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["613AF4C2C2EA5FC3"]
+			id: "769274269BCE65B9"
+			rewards: [{ id: "A16192DADF287D17", type: "xp", xp: 15 }]
+			tasks: [{ id: "4D8C454C10118CCE", item: { count: 1, id: "occultism:golden_sacrificial_bowl" }, type: "item" }]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AA8091892E759B3A"]
+			id: "EC23FE788965FBA7"
+			rewards: [{ id: "3C15E7B5CD65BB3A", type: "xp", xp: 10 }]
+			tasks: [{ id: "FD11D3AA55738C1F", item: { count: 1, id: "malum:encyclopedia_arcana" }, type: "item" }]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["EC23FE788965FBA7"]
+			id: "A0F753F800AF792D"
+			rewards: [{ id: "C433544A95C1D1DC", type: "xp", xp: 15 }]
+			tasks: [{ id: "D56E5AEC6D3E6B9E", item: { count: 1, id: "malum:spirit_altar" }, type: "item" }]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["A0F753F800AF792D"]
+			id: "E9A01731D668C280"
+			rewards: [{ id: "5A83E27BEC0258F0", type: "xp", xp: 20 }]
+			tasks: [{ count: 4L, id: "29F6DC94837B6F3F", item: { count: 1, id: "malum:soul_stained_steel_ingot" }, type: "item" }]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["AA8091892E759B3A"]
+			id: "DBF389051888E942"
+			rewards: [{ id: "8AC5725F8F611119", type: "xp", xp: 10 }]
+			tasks: [{ id: "712CB77CDF5A5CA7", item: { count: 1, id: "astralsorcery:tome" }, type: "item" }]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["DBF389051888E942"]
+			id: "575B53A8C2EFB44A"
+			rewards: [{ id: "D46F859228918EDC", type: "xp", xp: 15 }]
+			tasks: [{ id: "3ED6BB57A2A7F70A", item: { count: 1, id: "astralsorcery:altar_luminance" }, type: "item" }]
+			x: 4.5d
+			y: 4.0d
+		}
+	]
+}

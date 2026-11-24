@@ -1,6 +1,42 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".packwizignore"
+hash = "032c45cf1139f87fb30a83e9e85f10c8a54669ebde284ef78d55d5f736e1bbac"
+
+[[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/awakening.snbt"
+hash = "7fad13d7c9cec95a8914f60d37f9612c0d29f76fc8358e1875768a86854af9d2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/engineering.snbt"
+hash = "071cf0df603588c7b78a4c98b43cda513b8f056621da10719d64ab873b69f6d3"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/exorcisms.snbt"
+hash = "8d2ba640aaebd733c62e186220be2563b932d173ad94eb5a0074853ad95830bf"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/expedition.snbt"
+hash = "9336f68b3fd18f5bf10621958ae8fd2acb00d194b29c087aed9f96a4822c40cd"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/sorcery.snbt"
+hash = "006bc27802feb9250fea9d8a09e23a1abec135a06692869148e53d559e9ed4be"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "eddb19627c71897af55f11e308bc9059045e2e488297d956da1382bb7b5ce070"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "0a860d835b73b581c9e069a671716b7bdd7e88bf56682877028d7d2ddca113af"
+
+[[files]]
 file = "mods/ambientsounds.pw.toml"
 hash = "99f0f59dde17be1b469b4953651ad59f32f241a276bcdc5738bba2fe676c96f4"
 metafile = true
@@ -161,8 +197,8 @@ hash = "982c4bedb0295d598d57cf92cf39abe81562c0f2142f5bc1f90a7e61bff71bb5"
 metafile = true
 
 [[files]]
-file = "mods/cursedtech-0.2.0.jar"
-hash = "2d47839742c6746ecb89e4e904494c8459b8f308fd0d2d747b036f074fe14da9"
+file = "mods/cursedtech-0.3.0.jar"
+hash = "01de3e30df9a801bd1c9539e9c86b020f12897ea6ff90324d4f78d3439f0a8ba"
 
 [[files]]
 file = "mods/draconic-evolution.pw.toml"
@@ -217,6 +253,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "1c653566b0cea97e9282c23458a28b7de879e5fd226f5bb3455502adabfc839d"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "4c973a826e4e866c3fb4d1813ebdf649526af21a332a83856ae4a2fd57362283"
 metafile = true
 
 [[files]]
