@@ -190,6 +190,11 @@ hash = "d9ed9ac8e0db9db29078dafa22bc2d86ac702f10863ae7cb1d5245111c5ea17b"
 metafile = true
 
 [[files]]
+file = "mods/feature-recycler.pw.toml"
+hash = "9dcd36ef20a813c5b995b320fafd85be41ce188879a6e015b0c2c564e3ad323f"
+metafile = true
+
+[[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
 metafile = true

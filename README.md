@@ -20,7 +20,7 @@ A NeoForge 1.21.1 modpack built around **[Cursed Techniques](https://github.com/
 
 **Quality of life**: FTB Ultimine · FTB Teams · FTB Essentials · JEI · Just Enough Resources · Jade · Xaero's Minimap & World Map · Waystones · Sophisticated Backpacks · Tool Belt · Simple Magnets · Crafting Tweaks · TrashSlot · Comforts · Easy Villagers · AppleSkin · Mouse Tweaks · Controlling
 
-**Performance**: ModernFix · FerriteCore · Lithium · Clumps · spark
+**Performance & fixes**: Feature Recycler · Lithostitched · ModernFix · FerriteCore · Lithium · Clumps · spark
 
 Many of these are hand-picked from FTB Evolution (1.21.1). Plus their libraries. The full, exact list is in [`mods/`](mods).
 
