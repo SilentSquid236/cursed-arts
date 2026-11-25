@@ -12,7 +12,7 @@ A NeoForge 1.21.1 modpack built around **[Cursed Techniques](https://github.com/
 
 **Combat & bosses**: Better Combat · L_Ender's Cataclysm · Mowzie's Mobs
 
-**World generation & exploration**: Tectonic · Terralith · Oh The Biomes We've Gone · YUNG's Better Mineshafts / Strongholds / Desert Temples / Jungle Temples / Witch Huts / Bridges / Extras · When Dungeons Arise · Dungeon Crawl · Explorer's Compass · Nature's Compass · Lootr
+**World generation & exploration**: Tectonic · Terralith · Oh The Biomes We've Gone · When Dungeons Arise · Dungeon Crawl · Explorer's Compass · Nature's Compass · Lootr
 
 **Building & decoration**: Supplementaries · Handcrafted · Macaw's Furniture · Torchmaster
 

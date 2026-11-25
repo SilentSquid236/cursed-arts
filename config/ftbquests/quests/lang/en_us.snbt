@@ -63,7 +63,7 @@
 	quest.07D52847DD891588.quest_desc: ["{advancements.occultism.familiar.mummy_dodge.description}"]
 	quest.07D848DE5A5B0811.quest_desc: ["{advancements.apotheosis.progression.pinnacle.desc}"]
 	quest.08E43A0DF4B6E086.quest_desc: ["{advancement.immersiveengineering.creosote.desc}"]
-	quest.098B9B4D404C2C4C.quest_desc: ["New terrain, biomes and structures everywhere: Terralith and Tectonic reshape the land, YUNG's mods rebuild every structure, and dungeons hide loot.", "", "Loot chests are per-player (Lootr), so everyone gets their own."]
+	quest.098B9B4D404C2C4C.quest_desc: ["New terrain, biomes and structures everywhere: Terralith and Tectonic reshape the land, and When Dungeons Arise and Dungeon Crawl hide dungeons full of loot.", "", "Loot chests are per-player (Lootr), so everyone gets their own."]
 	quest.098B9B4D404C2C4C.title: "Expedition"
 	quest.0A1199D1CEE19CF2.quest_desc: ["{lootr.advancements.1barrel.description}"]
 	quest.0AC3EE3F2D154E42.quest_desc: ["{advancement.dungeons_arise.find_mushroom_village.desc}"]

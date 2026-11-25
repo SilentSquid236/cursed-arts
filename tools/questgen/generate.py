@@ -174,7 +174,7 @@ chapter(c, "Exorcisms", "minecraft:wither_skeleton_skull", 1, qs, group=G["curse
 c = "expedition"
 q = lambda *a, **k: quest(c, *a, **k)
 qs = [q("intro", 0, 0, [task_check("intro")], [r_xp("intro", 5)], title="Expedition", icon="minecraft:compass", shape="hexagon", size=1.5,
-        desc=["New terrain, biomes and structures everywhere: Terralith and Tectonic reshape the land, YUNG's mods rebuild every structure, and dungeons hide loot.",
+        desc=["New terrain, biomes and structures everywhere: Terralith and Tectonic reshape the land, and When Dungeons Arise and Dungeon Crawl hide dungeons full of loot.",
               "", "Loot chests are per-player (Lootr), so everyone gets their own."]),
       q("waystone", 2.5, -2, [task_item("waystone", "waystones:waystone")], [r_xp("waystone", 10)], deps=["intro"],
         desc=["Place Waystones to fast-travel between them."]),

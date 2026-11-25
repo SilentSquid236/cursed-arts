@@ -134,7 +134,7 @@ hash = "eddb19627c71897af55f11e308bc9059045e2e488297d956da1382bb7b5ce070"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "9e5392109f055783f418c10992f63a3d8611f50339c549ea25df574752d7ef08"
+hash = "7f8daca1b6217018d2d65f239f04f9cf13683f0a27ae08e26f11488dd2df5a71"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
@@ -781,46 +781,6 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "62eaf7c193d20dbec89944f6e1401ce64a80d8d704830a988d24c1498d8316e2"
-metafile = true
-
-[[files]]
-file = "mods/yungs-api.pw.toml"
-hash = "212a16441b218137cd27f9c7f8e5ad7de4d62aa761955bb4d08c7bddaf1e41d4"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-desert-temples.pw.toml"
-hash = "31b790264c547f133124a0550492cd60adb6051ea89e1bc66e41757c729cd7be"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-jungle-temples.pw.toml"
-hash = "496ebeea36e9b73f5858e4a730dd90d2aba61f9d8c85bae41549564a4e438519"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-mineshafts-forge.pw.toml"
-hash = "0a786416dcef1b24033a9c652e1e0fc6c97b77cfdfab3b65d4f3cd87377d3a69"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-strongholds.pw.toml"
-hash = "3c30c032674bfd22ef88cf87dcfd4445c7dbc86bf05dc7f14df584c30315aee0"
-metafile = true
-
-[[files]]
-file = "mods/yungs-better-witch-huts.pw.toml"
-hash = "e43a2ee91cb22f300d2e693141c31e92958034a5e51ebfbdacb30d61dce153b2"
-metafile = true
-
-[[files]]
-file = "mods/yungs-bridges.pw.toml"
-hash = "e2b37d3335592645c98c959adb4b09a79ba4d1dcbe0254995a437f68429f7e51"
-metafile = true
-
-[[files]]
-file = "mods/yungs-extras.pw.toml"
-hash = "dccf9bca0bd63a9496285566952d19004a77dad62f6b337b16571f06695b1a42"
 metafile = true
 
 [[files]]
