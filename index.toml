@@ -6,35 +6,35 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1_prologue.snbt"
-hash = "69ecdbbb3dbe56bda7a641499036e88bfbf4be02bae900767bf9892832cf3949"
+hash = "e3f3d6f60ac3b92892976e7e08a0bf89b58f9e361eb252c424a0b8ce1d2ae231"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2_grades.snbt"
-hash = "2acd4042d81a6111d84ed91f9a09210a665231c8ce3a973725acf72da15ebd9a"
+hash = "209b7cb81c4b91605993c3825fd15e100e17368ae22fe9155356b6ac82cbb022"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3_arcane.snbt"
-hash = "447d675f8202a38befeca7c3854be339c04cbe64286dac2d4a8b258f35a6fbb2"
+hash = "437f54dccafd3639ec6941d50165ba76551029a919800e05f983b71a6b6df427"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4_engines.snbt"
-hash = "c48610a11648e4cb5e98aa310ae6b302540c3d1ffc6aabecf8f27210d2ff447b"
+hash = "19ef82fc622a45a91e4e4958134e2c8d04268fa91b1d03125e343e019efdeeb0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5_domain.snbt"
-hash = "c9bec44519b8b9db7ae3e37f48c1b9c8825ab1e98c7ae24bf77080ed01c33394"
+hash = "9dc8126fcd81ba81575a03f5a17bca1255b057e2d9f1c786dd8bdab7cdb0c6d1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_fragments.snbt"
-hash = "3530b7ae94213236bff8a2418e20f25806750a438b8e11d6f670f4953734f44e"
+hash = "d9fd16771fc134ee54ebc0ecff40948792aebdf32f7acd860f66e940f21085b7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/7_forging.snbt"
-hash = "329b244572266c33769dda5e22b9cec0d00b31366c4340e8cfa8c61950f48599"
+hash = "88dec8ea369ee6a403d3aa46971e87ce901d76fd34f6369da7925c438b37678c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/8_finale.snbt"
-hash = "a9e3dad6c9a959f7c2472c3d2babda2d5231ec991d07b5aa52c942466b0e96b9"
+hash = "e4e77f4334fb42d0c77a0b7160b891f2a2561060ce7803b8e0f41ec9f716fd31"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -42,7 +42,7 @@ hash = "6fc1d5621ca2832651d447d3f1b09f247928cb38c4159740e6dd288c967361c3"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "8f67e015f81f2d20ac92da3d5c68aeabfdddc96efa0583c6274c1fe3cef18ef4"
+hash = "54987ba7ea7be5164207025e2b8fe407dee569de4e65b76d608beb426c85c04d"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"

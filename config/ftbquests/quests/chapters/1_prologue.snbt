@@ -4,92 +4,92 @@
 	filename: "1_prologue"
 	group: ""
 	icon: { id: "minecraft:ender_eye" }
-	id: "8E4A79EE5B85B105"
+	id: "0E4A79EE5B85B105"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			icon: { id: "minecraft:ender_eye" }
 			id: "2680678988847D4A"
-			rewards: [{ count: 16, id: "EDECE2540C05B8BA", item: { count: 1, id: "minecraft:bread" }, type: "item" }, { count: 32, id: "BA1F07E22D1FC75B", item: { count: 1, id: "minecraft:torch" }, type: "item" }]
+			rewards: [{ count: 16, id: "6DECE2540C05B8BA", item: { count: 1, id: "minecraft:bread" }, type: "item" }, { count: 32, id: "3A1F07E22D1FC75B", item: { count: 1, id: "minecraft:torch" }, type: "item" }]
 			shape: "hexagon"
 			size: 2.0d
-			tasks: [{ id: "D6AF88AAB7EFED12", type: "checkmark" }]
+			tasks: [{ id: "56AF88AAB7EFED12", type: "checkmark" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2680678988847D4A"]
 			icon: { id: "minecraft:amethyst_shard" }
-			id: "E5CD6F2D0444E04E"
-			rewards: [{ command: "/cursed xp {p} 25", id: "D0725316400C8BF7", permission_level: 2, silent: true, type: "command" }]
-			tasks: [{ advancement: "cursedtech:awakened", criterion: "", id: "946336F2AEA3DF46", type: "advancement" }]
+			id: "65CD6F2D0444E04E"
+			rewards: [{ command: "/cursed xp {p} 25", id: "50725316400C8BF7", permission_level: 2, silent: true, type: "command" }]
+			tasks: [{ advancement: "cursedtech:awakened", criterion: "", id: "146336F2AEA3DF46", type: "advancement" }]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["E5CD6F2D0444E04E"]
+			dependencies: ["65CD6F2D0444E04E"]
 			icon: { id: "minecraft:iron_sword" }
-			id: "BFD3BEFD619989BC"
-			rewards: [{ count: 8, id: "BAEB159567886052", item: { count: 1, id: "minecraft:iron_ingot" }, type: "item" }]
-			tasks: [{ id: "CF277A7ED2AB3705", item: { count: 1, id: "minecraft:iron_sword" }, type: "item" }, { id: "676F2E61B42E6908", item: { count: 1, id: "minecraft:iron_pickaxe" }, type: "item" }, { id: "94BCC496BCEEC0E6", item: { count: 1, id: "minecraft:shield" }, type: "item" }]
+			id: "3FD3BEFD619989BC"
+			rewards: [{ count: 8, id: "3AEB159567886052", item: { count: 1, id: "minecraft:iron_ingot" }, type: "item" }]
+			tasks: [{ id: "4F277A7ED2AB3705", item: { count: 1, id: "minecraft:iron_sword" }, type: "item" }, { id: "676F2E61B42E6908", item: { count: 1, id: "minecraft:iron_pickaxe" }, type: "item" }, { id: "14BCC496BCEEC0E6", item: { count: 1, id: "minecraft:shield" }, type: "item" }]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["BFD3BEFD619989BC"]
-			id: "BBD02B54C98485AF"
+			dependencies: ["3FD3BEFD619989BC"]
+			id: "3BD02B54C98485AF"
 			optional: true
-			rewards: [{ id: "B5497CA478F3682A", type: "xp", xp: 10 }]
+			rewards: [{ id: "35497CA478F3682A", type: "xp", xp: 10 }]
 			shape: "diamond"
 			tasks: [{ id: "5E4AC730EBF624FF", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }]
 			x: 4.0d
 			y: -1.8d
 		}
 		{
-			dependencies: ["BFD3BEFD619989BC"]
+			dependencies: ["3FD3BEFD619989BC"]
 			id: "13A5D0746733FAB6"
 			optional: true
-			rewards: [{ count: 8, id: "74D86E5879CA60FF", item: { count: 1, id: "minecraft:carrot" }, type: "item" }, { count: 8, id: "DD689354CD3F5ABD", item: { count: 1, id: "minecraft:potato" }, type: "item" }]
+			rewards: [{ count: 8, id: "74D86E5879CA60FF", item: { count: 1, id: "minecraft:carrot" }, type: "item" }, { count: 8, id: "5D689354CD3F5ABD", item: { count: 1, id: "minecraft:potato" }, type: "item" }]
 			shape: "diamond"
-			tasks: [{ id: "8BA89B414DCF66CB", item: { count: 1, id: "farmersdelight:cooking_pot" }, type: "item" }]
+			tasks: [{ id: "0BA89B414DCF66CB", item: { count: 1, id: "farmersdelight:cooking_pot" }, type: "item" }]
 			x: 4.0d
 			y: 1.8d
 		}
 		{
-			dependencies: ["BFD3BEFD619989BC"]
+			dependencies: ["3FD3BEFD619989BC"]
 			icon: { id: "minecraft:rotten_flesh" }
-			id: "D90806AFA14049FF"
-			rewards: [{ command: "/cursed xp {p} 75", id: "BB0AD0F8F86FC546", permission_level: 2, silent: true, type: "command" }, { count: 32, id: "E83AF389FBC33A77", item: { count: 1, id: "minecraft:arrow" }, type: "item" }]
+			id: "590806AFA14049FF"
+			rewards: [{ command: "/cursed xp {p} 75", id: "3B0AD0F8F86FC546", permission_level: 2, silent: true, type: "command" }, { count: 32, id: "683AF389FBC33A77", item: { count: 1, id: "minecraft:arrow" }, type: "item" }]
 			tasks: [{ entity: "minecraft:zombie", id: "1B8FE641C6BE101E", type: "kill", value: 10L }, { entity: "minecraft:skeleton", id: "0813BA892190886D", type: "kill", value: 5L }]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["D90806AFA14049FF"]
+			dependencies: ["590806AFA14049FF"]
 			id: "4D25AA94D2948465"
 			optional: true
-			rewards: [{ count: 4, id: "E306F154999F078C", item: { count: 1, id: "minecraft:ender_pearl" }, type: "item" }]
+			rewards: [{ count: 4, id: "6306F154999F078C", item: { count: 1, id: "minecraft:ender_pearl" }, type: "item" }]
 			shape: "diamond"
 			tasks: [{ id: "384565EC482C6512", item: { count: 1, id: "waystones:waystone" }, type: "item" }]
 			x: 6.0d
 			y: -1.8d
 		}
 		{
-			dependencies: ["D90806AFA14049FF"]
+			dependencies: ["590806AFA14049FF"]
 			id: "60A0B9137C8201F1"
 			optional: true
 			rewards: [{ id: "556B3508C7BD8D3E", type: "xp", xp: 10 }]
 			shape: "diamond"
-			tasks: [{ id: "C83223E339E54920", item: { count: 1, id: "comforts:sleeping_bag_white" }, type: "item" }]
+			tasks: [{ id: "483223E339E54920", item: { count: 1, id: "comforts:sleeping_bag_white" }, type: "item" }]
 			x: 6.0d
 			y: 1.8d
 		}
 		{
-			dependencies: ["D90806AFA14049FF"]
+			dependencies: ["590806AFA14049FF"]
 			icon: { id: "explorerscompass:explorerscompass" }
 			id: "5EA22E5CB17582FB"
-			rewards: [{ command: "/cursed xp {p} 50", id: "D492A64C248763EF", permission_level: 2, silent: true, type: "command" }, { count: 16, id: "D3FA50B993DDD51D", item: { count: 1, id: "minecraft:cooked_beef" }, type: "item" }]
+			rewards: [{ command: "/cursed xp {p} 50", id: "5492A64C248763EF", permission_level: 2, silent: true, type: "command" }, { count: 16, id: "53FA50B993DDD51D", item: { count: 1, id: "minecraft:cooked_beef" }, type: "item" }]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{ id: "65FE2C7BCF98DD2F", item: { count: 1, id: "explorerscompass:explorerscompass" }, type: "item" }]

@@ -14,7 +14,10 @@ import hashlib, os, json, sys, shutil
 OUT = sys.argv[1]
 
 def qid(*parts):
-    return hashlib.sha1("/".join(parts).encode()).hexdigest()[:16].upper()
+    # Keep the top bit clear: FTB Quests treats IDs as signed longs, and a negative
+    # ID no longer matches its lang keys (titles show as "Unnamed").
+    h = int(hashlib.sha1("/".join(parts).encode()).hexdigest()[:16], 16) & 0x7FFFFFFFFFFFFFFF
+    return "%016X" % h
 
 def s(v):  # SNBT string
     return json.dumps(v, ensure_ascii=False)

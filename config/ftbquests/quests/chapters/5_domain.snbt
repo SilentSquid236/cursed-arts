@@ -15,7 +15,7 @@
 			rewards: [{ command: "/cursed xp {p} 50", id: "260C168223B4DADA", permission_level: 2, silent: true, type: "command" }]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [{ id: "B07CA6315DDA6083", type: "checkmark" }]
+			tasks: [{ id: "307CA6315DDA6083", type: "checkmark" }]
 			x: 0.0d
 			y: 0.0d
 		}
@@ -31,7 +31,7 @@
 		{
 			dependencies: ["1D356E96EC9FB68B"]
 			icon: { id: "minecraft:blue_ice" }
-			id: "A71B003505ED6F9F"
+			id: "271B003505ED6F9F"
 			optional: true
 			rewards: [{ command: "/cursed xp {p} 200", id: "5FF6DC417ACA2A73", permission_level: 2, silent: true, type: "command" }]
 			shape: "diamond"
@@ -53,25 +53,25 @@
 		{
 			dependencies: ["1D356E96EC9FB68B"]
 			icon: { id: "minecraft:diamond_sword" }
-			id: "FC48C374E7341857"
-			rewards: [{ count: 1, id: "AF579F6F1DE3A381", item: { count: 1, id: "minecraft:totem_of_undying" }, type: "item" }, { count: 6, id: "2013742CEBEE3D87", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			id: "7C48C374E7341857"
+			rewards: [{ count: 1, id: "2F579F6F1DE3A381", item: { count: 1, id: "minecraft:totem_of_undying" }, type: "item" }, { count: 6, id: "2013742CEBEE3D87", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
 			tasks: [{ advancement: "cursedtech:grade_1", criterion: "", id: "42843862FA9CCBBF", type: "advancement" }]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["FC48C374E7341857"]
+			dependencies: ["7C48C374E7341857"]
 			icon: { id: "minecraft:obsidian" }
-			id: "DEC5B233136DEC88"
-			rewards: [{ command: "/cursed xp {p} 100", id: "C0E1E06C2E529ED5", permission_level: 2, silent: true, type: "command" }]
+			id: "5EC5B233136DEC88"
+			rewards: [{ command: "/cursed xp {p} 100", id: "40E1E06C2E529ED5", permission_level: 2, silent: true, type: "command" }]
 			tasks: [{ advancement: "cursedtech:domain", criterion: "", id: "7E5BA5A7A5C24BBA", type: "advancement" }]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["DEC5B233136DEC88"]
+			dependencies: ["5EC5B233136DEC88"]
 			icon: { id: "minecraft:chiseled_stone_bricks" }
-			id: "9819298044AF1064"
+			id: "1819298044AF1064"
 			optional: true
 			rewards: [{ command: "/cursed xp {p} 200", id: "3376C0C34E9184A6", permission_level: 2, silent: true, type: "command" }]
 			shape: "diamond"
@@ -80,13 +80,13 @@
 			y: -1.8d
 		}
 		{
-			dependencies: ["DEC5B233136DEC88"]
+			dependencies: ["5EC5B233136DEC88"]
 			icon: { id: "minecraft:wither_skeleton_skull" }
-			id: "AE7AC5E566A8D5CA"
-			rewards: [{ command: "/cursed xp {p} 250", id: "2260731CCFBFE237", permission_level: 2, silent: true, type: "command" }, { count: 1, id: "C7C474D9435AF2C0", item: { count: 1, id: "minecraft:netherite_ingot" }, type: "item" }]
+			id: "2E7AC5E566A8D5CA"
+			rewards: [{ command: "/cursed xp {p} 250", id: "2260731CCFBFE237", permission_level: 2, silent: true, type: "command" }, { count: 1, id: "47C474D9435AF2C0", item: { count: 1, id: "minecraft:netherite_ingot" }, type: "item" }]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [{ entity: "minecraft:wither", id: "D481955BD5DD5DAD", type: "kill", value: 1L }]
+			tasks: [{ entity: "minecraft:wither", id: "5481955BD5DD5DAD", type: "kill", value: 1L }]
 			x: 8.0d
 			y: 0.0d
 		}

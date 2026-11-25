@@ -9,10 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["AE7AC5E566A8D5CA"]
+			dependencies: ["2E7AC5E566A8D5CA"]
 			icon: { id: "minecraft:netherite_scrap" }
-			id: "C6E3D26966D223CF"
-			rewards: [{ command: "/cursed xp {p} 50", id: "E5D3851AD5412906", permission_level: 2, silent: true, type: "command" }]
+			id: "46E3D26966D223CF"
+			rewards: [{ command: "/cursed xp {p} 50", id: "65D3851AD5412906", permission_level: 2, silent: true, type: "command" }]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{ id: "75A65177C5287552", type: "checkmark" }]
@@ -20,58 +20,58 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["C6E3D26966D223CF"]
+			dependencies: ["46E3D26966D223CF"]
 			icon: { id: "minecraft:dragon_head" }
-			id: "D61FBA295CDD39AA"
+			id: "561FBA295CDD39AA"
 			rewards: [{ command: "/cursed xp {p} 300", id: "114B25B0E819095E", permission_level: 2, silent: true, type: "command" }, { count: 1, id: "576F32DDDA11F115", item: { count: 1, id: "minecraft:elytra" }, type: "item" }]
-			tasks: [{ dimension: "minecraft:the_end", id: "7EAE0D46C78DCCF8", type: "dimension" }, { entity: "minecraft:ender_dragon", id: "CB65F8E96FE71CCC", type: "kill", value: 1L }]
+			tasks: [{ dimension: "minecraft:the_end", id: "7EAE0D46C78DCCF8", type: "dimension" }, { entity: "minecraft:ender_dragon", id: "4B65F8E96FE71CCC", type: "kill", value: 1L }]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["D61FBA295CDD39AA"]
+			dependencies: ["561FBA295CDD39AA"]
 			icon: { id: "cataclysm:gauntlet_of_guard" }
 			id: "370598B1E3374905"
 			optional: true
-			rewards: [{ command: "/cursed xp {p} 300", id: "BCDC625499956376", permission_level: 2, silent: true, type: "command" }]
+			rewards: [{ command: "/cursed xp {p} 300", id: "3CDC625499956376", permission_level: 2, silent: true, type: "command" }]
 			shape: "diamond"
-			tasks: [{ entity: "cataclysm:ender_guardian", id: "FA0065D084274CE4", type: "kill", value: 1L }]
+			tasks: [{ entity: "cataclysm:ender_guardian", id: "7A0065D084274CE4", type: "kill", value: 1L }]
 			x: 2.0d
 			y: -1.8d
 		}
 		{
-			dependencies: ["D61FBA295CDD39AA"]
+			dependencies: ["561FBA295CDD39AA"]
 			icon: { id: "minecraft:netherite_block" }
-			id: "D8941F09B2FF291B"
+			id: "58941F09B2FF291B"
 			rewards: [{ command: "/cursed xp {p} 300", id: "4F18741D0170D681", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "03E105B288BF5C44", item: { count: 1, id: "minecraft:netherite_ingot" }, type: "item" }]
-			tasks: [{ entity: "cataclysm:netherite_monstrosity", id: "8F974316316BBC49", type: "kill", value: 1L }]
+			tasks: [{ entity: "cataclysm:netherite_monstrosity", id: "0F974316316BBC49", type: "kill", value: 1L }]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["D8941F09B2FF291B"]
+			dependencies: ["58941F09B2FF291B"]
 			icon: { id: "cataclysm:ignitium_ingot" }
-			id: "C94F012CE6B97253"
+			id: "494F012CE6B97253"
 			rewards: [{ command: "/cursed xp {p} 400", id: "4874B18058D7F2F3", permission_level: 2, silent: true, type: "command" }]
-			tasks: [{ entity: "cataclysm:ignis", id: "A6FEBFE8B110ADB2", type: "kill", value: 1L }, { id: "BF292707B6D36E00", item: { count: 1, id: "cataclysm:ignitium_ingot" }, type: "item" }]
+			tasks: [{ entity: "cataclysm:ignis", id: "26FEBFE8B110ADB2", type: "kill", value: 1L }, { id: "3F292707B6D36E00", item: { count: 1, id: "cataclysm:ignitium_ingot" }, type: "item" }]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["C94F012CE6B97253"]
+			dependencies: ["494F012CE6B97253"]
 			icon: { id: "cataclysm:tidal_claws" }
 			id: "456C99D3A9AC0E29"
 			optional: true
 			rewards: [{ command: "/cursed xp {p} 400", id: "4C0AA92EBFA4E044", permission_level: 2, silent: true, type: "command" }]
 			shape: "diamond"
-			tasks: [{ entity: "cataclysm:the_leviathan", id: "8CFA652DC71B15AA", type: "kill", value: 1L }]
+			tasks: [{ entity: "cataclysm:the_leviathan", id: "0CFA652DC71B15AA", type: "kill", value: 1L }]
 			x: 6.0d
 			y: -1.8d
 		}
 		{
-			dependencies: ["C94F012CE6B97253"]
+			dependencies: ["494F012CE6B97253"]
 			icon: { id: "cataclysm:ancient_metal_ingot" }
-			id: "F042C98FF29CDF5F"
+			id: "7042C98FF29CDF5F"
 			optional: true
 			rewards: [{ command: "/cursed xp {p} 400", id: "64B92A12D1F45492", permission_level: 2, silent: true, type: "command" }]
 			shape: "diamond"
@@ -80,16 +80,16 @@
 			y: 1.8d
 		}
 		{
-			dependencies: ["C94F012CE6B97253"]
+			dependencies: ["494F012CE6B97253"]
 			icon: { id: "cataclysm:witherite_ingot" }
-			id: "AF8394C97958905E"
-			rewards: [{ command: "/cursed xp {p} 400", id: "BB7F00EB5D5FCC3D", permission_level: 2, silent: true, type: "command" }]
-			tasks: [{ entity: "cataclysm:the_harbinger", id: "1CDFC762E460B7C0", type: "kill", value: 1L }, { id: "A66BD75D885E4866", item: { count: 1, id: "cataclysm:witherite_ingot" }, type: "item" }]
+			id: "2F8394C97958905E"
+			rewards: [{ command: "/cursed xp {p} 400", id: "3B7F00EB5D5FCC3D", permission_level: 2, silent: true, type: "command" }]
+			tasks: [{ entity: "cataclysm:the_harbinger", id: "1CDFC762E460B7C0", type: "kill", value: 1L }, { id: "266BD75D885E4866", item: { count: 1, id: "cataclysm:witherite_ingot" }, type: "item" }]
 			x: 8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["AF8394C97958905E"]
+			dependencies: ["2F8394C97958905E"]
 			icon: { id: "cataclysm:cursium_ingot" }
 			id: "669AEA1FB14A31C7"
 			optional: true
@@ -100,10 +100,10 @@
 			y: -1.8d
 		}
 		{
-			dependencies: ["AF8394C97958905E"]
+			dependencies: ["2F8394C97958905E"]
 			icon: { id: "minecraft:netherite_sword" }
-			id: "D3E7D407F734B3AD"
-			rewards: [{ count: 1, id: "E72613AF3CEDEFD7", item: { count: 1, id: "minecraft:nether_star" }, type: "item" }, { count: 2, id: "D9A6699878785B9A", item: { count: 1, id: "minecraft:netherite_ingot" }, type: "item" }]
+			id: "53E7D407F734B3AD"
+			rewards: [{ count: 1, id: "672613AF3CEDEFD7", item: { count: 1, id: "minecraft:nether_star" }, type: "item" }, { count: 2, id: "59A6699878785B9A", item: { count: 1, id: "minecraft:netherite_ingot" }, type: "item" }]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{ advancement: "cursedtech:special", criterion: "", id: "64CBB1A86F010C6F", type: "advancement" }]
@@ -111,9 +111,9 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["D3E7D407F734B3AD"]
+			dependencies: ["53E7D407F734B3AD"]
 			icon: { id: "minecraft:nether_star" }
-			id: "9BE2E41FC78F78C6"
+			id: "1BE2E41FC78F78C6"
 			optional: true
 			rewards: [{ command: "/cursed xp {p} 100", id: "1FFDE8703B1DC9CB", permission_level: 2, silent: true, type: "command" }]
 			shape: "gear"

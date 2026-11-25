@@ -1,24 +1,31 @@
 {
+	chapter.0E4A79EE5B85B105.chapter_subtitle: ["Prologue"]
+	chapter.0E4A79EE5B85B105.title: "I. The Seal Cracks"
+	chapter.333DAB2DC0436B77.chapter_subtitle: ["How the seal was made"]
+	chapter.333DAB2DC0436B77.title: "III. Arcane Studies"
+	chapter.3BAA0E28793C63B1.chapter_subtitle: ["The end goal"]
+	chapter.3BAA0E28793C63B1.title: "VIII. Seal the Calamity"
+	chapter.539804EC1F21567B.chapter_subtitle: ["Power for the ritual"]
+	chapter.539804EC1F21567B.title: "IV. Engines of the Modern Age"
 	chapter.54869E9812C660E4.chapter_subtitle: ["Grade 1 and Domain Expansion"]
 	chapter.54869E9812C660E4.title: "V. A World of Your Own"
+	chapter.75A1286AF00B06FD.chapter_subtitle: ["Draconic fusion"]
+	chapter.75A1286AF00B06FD.title: "VII. Forging the Seal"
 	chapter.79C506352704F07D.chapter_subtitle: ["Special Grade"]
 	chapter.79C506352704F07D.title: "VI. Fragments of the Calamity"
 	chapter.7A52B8ADCDA34919.chapter_subtitle: ["Get stronger"]
 	chapter.7A52B8ADCDA34919.title: "II. Climbing the Grades"
-	chapter.8E4A79EE5B85B105.chapter_subtitle: ["Prologue"]
-	chapter.8E4A79EE5B85B105.title: "I. The Seal Cracks"
-	chapter.B33DAB2DC0436B77.chapter_subtitle: ["How the seal was made"]
-	chapter.B33DAB2DC0436B77.title: "III. Arcane Studies"
-	chapter.BBAA0E28793C63B1.chapter_subtitle: ["The end goal"]
-	chapter.BBAA0E28793C63B1.title: "VIII. Seal the Calamity"
-	chapter.D39804EC1F21567B.chapter_subtitle: ["Power for the ritual"]
-	chapter.D39804EC1F21567B.title: "IV. Engines of the Modern Age"
-	chapter.F5A1286AF00B06FD.chapter_subtitle: ["Draconic fusion"]
-	chapter.F5A1286AF00B06FD.title: "VII. Forging the Seal"
 	file.0000000000000001.title: "Cursed Arts: Seal the Calamity"
+	quest.01279509213C97CF.quest_desc: ["Bring a totem, food and friends.", "", "What to expect: every attack is telegraphed. A &5purple line&r means a cut is coming, and a &5purple ring&r means get out. At half health he opens his own &5domain&r. Open yours inside it and his sure-hit can't touch you. When his domain ends he &cburns out&r and takes extra damage, so that's your window."]
+	quest.01279509213C97CF.title: "Last Preparations"
+	quest.0198A40EF5153D64.quest_desc: ["A Chaotic Core: draconium, cursed energy and chaos, fused into something nothing can break.", "", "This is your seal. Keep it close. The Calamity knows you've made it, and it's coming."]
+	quest.0198A40EF5153D64.quest_subtitle: "Chapter complete"
+	quest.0198A40EF5153D64.title: "The Seal"
 	quest.01B259223925A287.quest_desc: ["Power, stored and ready. Now you need the strength to survive what the Calamity will throw at you."]
 	quest.01B259223925A287.quest_subtitle: "Chapter complete"
 	quest.01B259223925A287.title: "Stored Lightning"
+	quest.03BE1DB64EDE6EFE.quest_desc: ["Write your own spells from glyphs. Magic and cursed techniques stack: use both."]
+	quest.03BE1DB64EDE6EFE.title: "First Spells"
 	quest.05A684DEC840E2CC.quest_desc: ["Things are getting worse. Old guardians have woken up across the world, twisted by curse energy from the crack.", "", "Put them down. Every boss you kill gives a huge pile of grade XP and counts toward Special Grade."]
 	quest.05A684DEC840E2CC.title: "The Wardens Stir"
 	quest.07C50FBDD6FF438F.quest_desc: ["Brass opens up Create's automation: deployers, arms and logistics."]
@@ -29,15 +36,28 @@
 	quest.0FBFD1F99068F009.title: "A Worn Notebook"
 	quest.114ACCBCB58BC06A.quest_desc: ["Applied Energistics 2 turns your chests into one searchable network. Your stockpile is about to get big."]
 	quest.114ACCBCB58BC06A.title: "Digital Storage"
+	quest.11E888C4A384437A.quest_desc: ["The last of the old notes finally makes sense. The Calamity was never a beast. It was a &5sorcerer&r, the strongest who ever lived, so strong the others could only bury him alive.", "", "The fragments you killed were pieces of his power that leaked out through the crack. With them gone, he's alone down there, and weaker than he has been in a thousand years.", "", "The old sorcerers sealed him in his sleep. You're going to wake him, beat him, and seal him for good."]
+	quest.11E888C4A384437A.title: "The Name Under the Stone"
 	quest.13A5D0746733FAB6.quest_desc: ["Farmer's Delight meals give long-lasting buffs. Fights get long."]
 	quest.13A5D0746733FAB6.title: "Hot Meals"
 	quest.1414C7117E119916.quest_desc: ["Your reserves deepen: more energy, faster regen, harder hits.", "", "You're strong enough now to start studying how the seal actually worked."]
 	quest.1414C7117E119916.quest_subtitle: "Chapter complete: 2,500 grade XP"
 	quest.1414C7117E119916.title: "Semi-Grade 1"
+	quest.15B96D87869C10CE.quest_desc: ["On a distant island in the End lives the Chaos Guardian, a dragon fed on raw chaos. Its shards are the only thing strong enough to anchor your seal.", "", "Bring Wyvern gear at minimum, and friends. Destroy its crystals first."]
+	quest.15B96D87869C10CE.quest_subtitle: "The hardest fight before the last"
+	quest.15B96D87869C10CE.title: "The Chaos Guardian"
 	quest.15E233BBC152B5AA.quest_desc: ["Gear made from the fragments' metal is some of the best in the pack. You'll want it for the last fights."]
 	quest.15E233BBC152B5AA.title: "Temper with Cursed Metal"
+	quest.1819298044AF1064.quest_desc: ["A climbing challenge at the top of a stone pillar."]
+	quest.1819298044AF1064.title: "The Sculptor"
+	quest.18633B0C8F990D59.quest_desc: ["A Fusion Crafting Core surrounded by injectors, just like the Apparatus but much stronger. Every core from here on is fused, and fusion eats power."]
+	quest.18633B0C8F990D59.title: "Fusion Crafting"
 	quest.18FD8395C305E1E4.quest_desc: ["The second tier. Wyvern tools and armor are a big step up from netherite."]
 	quest.18FD8395C305E1E4.title: "Wyvern Core"
+	quest.197D0869720A3B12.quest_desc: ["Ore processing doubles everything you mine. You'll need a mountain of metal."]
+	quest.197D0869720A3B12.title: "Double Your Ore"
+	quest.1BE2E41FC78F78C6.quest_desc: ["Unleash everything you have."]
+	quest.1BE2E41FC78F78C6.title: "Maximum"
 	quest.1CD2A121A3E4917C.quest_desc: ["Build a Sealing Altar: amethyst, crying obsidian, obsidian and a Nether Star.", "", "Place it somewhere with room to fight, away from anything you care about. He doesn't break blocks, but he hits very hard."]
 	quest.1CD2A121A3E4917C.title: "The Sealing Altar"
 	quest.1D356E96EC9FB68B.quest_desc: ["It sleeps in underground halls. Hit it from behind when it gets stuck after a swing."]
@@ -54,122 +74,102 @@
 	quest.2680678988847D4A.quest_desc: ["A thousand years ago the strongest sorcerers of their age buried something so dangerous they refused to write down its name. They called it &5the Calamity&r and sealed it beneath the world.", "", "Last night, the seal cracked.", "", "Everyone near the fracture woke up with &dcursed energy&r in their veins. You are one of them. Somewhere out there the Calamity is pulling itself back together, and the old seal will not hold much longer.", "", "This book is your path from a frightened Grade 2 sorcerer to the one who seals it again. Follow the main line left to right. &7Diamond-shaped quests are optional&r: they make the road easier, but you can skip them."]
 	quest.2680678988847D4A.quest_subtitle: "Read me first"
 	quest.2680678988847D4A.title: "The Seal Cracks"
+	quest.271B003505ED6F9F.quest_desc: ["A giant of the snowy biomes."]
+	quest.271B003505ED6F9F.title: "Frostmaw"
 	quest.2AA84823A8E7D08E.quest_desc: ["The old seal was stone and sacrifice. Yours will be &ddraconic&r: forged from dragon-touched metal, fused with power, and set around a heart of pure chaos.", "", "The path runs Draconium, Wyvern, Awakened, Chaotic. The last core is the seal itself."]
 	quest.2AA84823A8E7D08E.title: "A Better Seal"
+	quest.2E7AC5E566A8D5CA.quest_desc: ["Fight it somewhere you don't mind wrecking. Trap it in your domain.", "", "When it dies, something answers from far away: a sound like a heartbeat from every direction at once."]
+	quest.2E7AC5E566A8D5CA.quest_subtitle: "Chapter complete"
+	quest.2E7AC5E566A8D5CA.title: "The Wither"
+	quest.2F8394C97958905E.quest_desc: ["A war machine in a hidden factory, built to call the Calamity home. Witherite is the second cursed metal."]
+	quest.2F8394C97958905E.quest_subtitle: "The machine that heralds it"
+	quest.2F8394C97958905E.title: "The Harbinger"
 	quest.30A907C87F67B90A.quest_desc: ["Awakened draconium, fused with cursed metal. The seal is nearly ready. It only needs a heart."]
 	quest.30A907C87F67B90A.title: "Awakened"
 	quest.370598B1E3374905.quest_desc: ["A fragment that hides in a fortress on the End islands."]
 	quest.370598B1E3374905.title: "Ender Guardian"
 	quest.37825911BC93780B.quest_desc: ["Sorcerers are ranked by grade. Right now you're &7Grade 2&r: two abilities and a shallow pool of energy.", "", "Nobody seals a Calamity at Grade 2. Time to climb."]
 	quest.37825911BC93780B.title: "Grade 2 Is Not Enough"
+	quest.3BD02B54C98485AF.quest_desc: ["A backpack makes the long trips ahead much easier. Upgrade it later."]
+	quest.3BD02B54C98485AF.title: "Pack Light, Pack Lots"
 	quest.3D65B5F385AF5DA1.quest_desc: ["Curses run thick in the Nether. So does the XP."]
 	quest.3D65B5F385AF5DA1.title: "Into the Nether"
+	quest.3F6D5B06003E0B56.quest_desc: ["A Megatorch stops hostile spawns in a huge radius. Your base deserves a quiet night."]
+	quest.3F6D5B06003E0B56.title: "Safe Ground"
+	quest.3FD3BEFD619989BC.quest_desc: ["Cursed energy runs dry. A good blade doesn't.", "", "Technique hits are about as strong as a sword, so you'll still be doing most of your fighting the old way."]
+	quest.3FD3BEFD619989BC.quest_subtitle: "Gear up"
+	quest.3FD3BEFD619989BC.title: "Steel Before Sorcery"
 	quest.456C99D3A9AC0E29.quest_desc: ["A fragment that drowned itself in a sunken city."]
 	quest.456C99D3A9AC0E29.title: "The Leviathan"
+	quest.46E3D26966D223CF.quest_desc: ["Now you know what that heartbeat was. The great beasts sleeping in the deepest ruins aren't natural. Each one is a &5fragment of the Calamity&r that slipped through the crack.", "", "Kill them, and the Calamity can't rebuild itself. Each fragment leaves behind cursed metal, and you'll need that metal later."]
+	quest.46E3D26966D223CF.title: "Fragments"
+	quest.47879EBA4B0B5939.quest_desc: ["Extra grade XP for anyone willing to stay out after dark."]
+	quest.47879EBA4B0B5939.title: "Night Patrol"
+	quest.48E3F5205C045D02.quest_desc: ["Hit something with a &efully charged&r melee attack. Sometimes it becomes a &cBlack Flash&r: about 1.8x damage and a flash that warps the screen.", "", "Land one and you're &cin the zone&r for 10 seconds, with much better odds. Higher grades require several."]
+	quest.48E3F5205C045D02.quest_subtitle: "Space bends with a perfect hit"
+	quest.48E3F5205C045D02.title: "Black Flash"
+	quest.494F012CE6B97253.quest_desc: ["Its fortress burns in the Nether. Ignitium is the first of the cursed metals you need."]
+	quest.494F012CE6B97253.quest_subtitle: "The burning knight"
+	quest.494F012CE6B97253.title: "Ignis"
 	quest.4D25AA94D2948465.quest_desc: ["Place waystones as you explore so you can always get home. You will be travelling a lot."]
 	quest.4D25AA94D2948465.title: "Waystones"
+	quest.4E6196D7D5E49625.quest_desc: ["Malum harvests the spirits of what you kill and infuses them into gear. Useful for an exorcist."]
+	quest.4E6196D7D5E49625.title: "Spirit Arcana"
 	quest.52A447075068A9A3.quest_desc: ["Draconium ore is found deep in the Overworld, and more plentifully in the Nether and End. It's tough to mine without at least a diamond pick."]
 	quest.52A447075068A9A3.title: "Draconium"
+	quest.53E7D407F734B3AD.quest_desc: ["30,000 XP, 12 Black Flashes, 2 bosses. You've reached the peak.", "", "You unlock your &cMaximum&r technique (G) and &aReverse Cursed Technique&r, which slowly heals you with cursed energy.", "", "You're as strong as the sorcerers who made the first seal. Now build a better one."]
+	quest.53E7D407F734B3AD.quest_subtitle: "Chapter complete"
+	quest.53E7D407F734B3AD.title: "Special Grade"
+	quest.561FBA295CDD39AA.quest_desc: ["The Ender Dragon has been guarding one of the old seal-stones all this time. Free the End. The Chaos Guardian is waiting there too, but not yet."]
+	quest.561FBA295CDD39AA.title: "Beyond the Portal"
 	quest.57E40ABD98E25BBA.quest_desc: ["A multiblock battery that holds staggering amounts of power. Fusion crafting will drain your basic cells fast."]
 	quest.57E40ABD98E25BBA.title: "Energy Core"
 	quest.57F7D00097F3EC0F.quest_desc: ["Powah's generators and energy cells are a simple way to make a lot of power."]
 	quest.57F7D00097F3EC0F.title: "Powah"
+	quest.58941F09B2FF291B.quest_desc: ["Sleeping in a soul-black fortress in the Nether. It hits like a landslide. Fire resistance helps."]
+	quest.58941F09B2FF291B.title: "Netherite Monstrosity"
+	quest.590806AFA14049FF.quest_desc: ["The crack is leaking. Curses drift up through it and settle into the dead, and the nights are worse than they used to be.", "", "Every hostile mob you put down gives &bgrade XP&r. That's how you get stronger."]
+	quest.590806AFA14049FF.quest_subtitle: "The dead walk more often now"
+	quest.590806AFA14049FF.title: "What Leaks Through"
 	quest.5EA22E5CB17582FB.quest_desc: ["The sorcerers who made the seal left ruins all over the world, and the Calamity's pieces are drawn to them.", "", "An &eExplorer's Compass&r can point you at any structure. You'll need it to find what comes next."]
 	quest.5EA22E5CB17582FB.quest_subtitle: "Chapter complete"
 	quest.5EA22E5CB17582FB.title: "Where the Old Sorcerers Went"
+	quest.5EC5B233136DEC88.quest_desc: ["A domain raises a barrier around you, and everything inside suffers your technique's sure-hit effect.", "", "Two overlapping domains &6clash&r and the stronger one wins. Afterwards your technique &cburns out&r for a few seconds, so pick your moment."]
+	quest.5EC5B233136DEC88.quest_subtitle: "Press V"
+	quest.5EC5B233136DEC88.title: "Domain Expansion"
 	quest.5F69960F281574F6.quest_desc: ["Diamond gear keeps you alive long enough to learn."]
 	quest.5F69960F281574F6.title: "Harder Than Curses"
 	quest.602F3E82FE042271.quest_desc: ["Draconium needs to be &eawakened&r with the heart of a dragon. Kill the Ender Dragon again (you can respawn it) and claim its heart."]
 	quest.602F3E82FE042271.title: "A Dragon's Heart"
 	quest.60A0B9137C8201F1.quest_desc: ["A sleeping bag lets you skip the night without moving your spawn."]
 	quest.60A0B9137C8201F1.title: "Camp Out"
+	quest.6240F0166D4B01E7.quest_desc: ["Source powers Ars Nouveau's machines. Fill a jar and set up an Imbuement Chamber."]
+	quest.6240F0166D4B01E7.title: "Source"
+	quest.65CD6F2D0444E04E.quest_desc: ["Your technique and grade show above your hotbar. &eZ&r and &eX&r are your two abilities.", "", "Abilities cost cursed energy, which refills over about 30 seconds. Type &b/cursed info&r any time to see your technique and what your next promotion needs."]
+	quest.65CD6F2D0444E04E.quest_subtitle: "What were you born with?"
+	quest.65CD6F2D0444E04E.title: "Your Innate Technique"
 	quest.669AEA1FB14A31C7.quest_desc: ["A reaper of souls in a frozen citadel. Not one of the fragments, but it fights like one, and Cursium makes excellent gear."]
 	quest.669AEA1FB14A31C7.title: "Maledictus"
 	quest.6A0345C45A5FE968.quest_desc: ["Iron's Spells 'n Spellbooks has dozens of ready-made spells and some excellent wizard armor."]
 	quest.6A0345C45A5FE968.title: "A Different School"
+	quest.6B35B1058F7055AE.quest_desc: ["Occultism lets you summon and bind spirits to work for you, including miners that dig ore while you're away."]
+	quest.6B35B1058F7055AE.title: "Bound Spirits"
 	quest.6D83A875B8058B48.quest_desc: ["The old sorcerers needed a hundred of them pouring their lives into one ritual.", "", "You have machines. The seal you're going to build needs a lot of power, so start an industry."]
 	quest.6D83A875B8058B48.title: "What They Didn't Have"
+	quest.7026E54E6D4C85BF.quest_desc: ["Mekanism's Metallurgic Infuser makes steel and alloys. Most of Mekanism is built from them."]
+	quest.7026E54E6D4C85BF.title: "Steel and Osmium"
+	quest.7042C98FF29CDF5F.quest_desc: ["Buried under the desert sands."]
+	quest.7042C98FF29CDF5F.title: "Ancient Remnant"
 	quest.748B9DA622F49EB0.quest_desc: ["Hold the seal in one hand and his heart in the other.", "", "Cursed energy, magic, machines and chaos, bound together the way the old sorcerers never could. The crack closes. The nights go quiet.", "", "It's over. Thank you for playing &dCursed Arts&r.", "", "&7The altar still works if you want a rematch, and every boss still drops loot."]
 	quest.748B9DA622F49EB0.quest_subtitle: "The end"
 	quest.748B9DA622F49EB0.title: "Seal the Calamity"
 	quest.798449A13CAD54E8.quest_desc: ["Apotheosis gear rolls random affixes. A Reforging Table lets you reroll them into something good."]
 	quest.798449A13CAD54E8.title: "Reforge"
+	quest.7B7B212BBA0798B5.quest_desc: ["Create runs on rotation. Waterwheels and windmills turn shafts, and shafts turn machines."]
+	quest.7B7B212BBA0798B5.title: "Turning Gears"
+	quest.7C48C374E7341857.quest_desc: ["You're now one of the strongest sorcerers alive. And you've unlocked something new."]
+	quest.7C48C374E7341857.quest_subtitle: "8,000 XP and 3 Black Flashes"
+	quest.7C48C374E7341857.title: "Grade 1"
 	quest.7EAABCECF92E9469.quest_desc: ["In the ruins you find what's left of the old sorcerers' notes. Cursed energy alone never held the Calamity. They wove it together with every other kind of magic they knew.", "", "To rebuild the seal, you'll have to learn those arts too."]
 	quest.7EAABCECF92E9469.title: "Notes in the Ruins"
-	quest.81279509213C97CF.quest_desc: ["Bring a totem, food and friends.", "", "What to expect: every attack is telegraphed. A &5purple line&r means a cut is coming, and a &5purple ring&r means get out. At half health he opens his own &5domain&r. Open yours inside it and his sure-hit can't touch you. When his domain ends he &cburns out&r and takes extra damage, so that's your window."]
-	quest.81279509213C97CF.title: "Last Preparations"
-	quest.8198A40EF5153D64.quest_desc: ["A Chaotic Core: draconium, cursed energy and chaos, fused into something nothing can break.", "", "This is your seal. Keep it close. The Calamity knows you've made it, and it's coming."]
-	quest.8198A40EF5153D64.quest_subtitle: "Chapter complete"
-	quest.8198A40EF5153D64.title: "The Seal"
-	quest.83BE1DB64EDE6EFE.quest_desc: ["Write your own spells from glyphs. Magic and cursed techniques stack: use both."]
-	quest.83BE1DB64EDE6EFE.title: "First Spells"
-	quest.91E888C4A384437A.quest_desc: ["The last of the old notes finally makes sense. The Calamity was never a beast. It was a &5sorcerer&r, the strongest who ever lived, so strong the others could only bury him alive.", "", "The fragments you killed were pieces of his power that leaked out through the crack. With them gone, he's alone down there, and weaker than he has been in a thousand years.", "", "The old sorcerers sealed him in his sleep. You're going to wake him, beat him, and seal him for good."]
-	quest.91E888C4A384437A.title: "The Name Under the Stone"
-	quest.95B96D87869C10CE.quest_desc: ["On a distant island in the End lives the Chaos Guardian, a dragon fed on raw chaos. Its shards are the only thing strong enough to anchor your seal.", "", "Bring Wyvern gear at minimum, and friends. Destroy its crystals first."]
-	quest.95B96D87869C10CE.quest_subtitle: "The hardest fight before the last"
-	quest.95B96D87869C10CE.title: "The Chaos Guardian"
-	quest.9819298044AF1064.quest_desc: ["A climbing challenge at the top of a stone pillar."]
-	quest.9819298044AF1064.title: "The Sculptor"
-	quest.98633B0C8F990D59.quest_desc: ["A Fusion Crafting Core surrounded by injectors, just like the Apparatus but much stronger. Every core from here on is fused, and fusion eats power."]
-	quest.98633B0C8F990D59.title: "Fusion Crafting"
-	quest.997D0869720A3B12.quest_desc: ["Ore processing doubles everything you mine. You'll need a mountain of metal."]
-	quest.997D0869720A3B12.title: "Double Your Ore"
-	quest.9BE2E41FC78F78C6.quest_desc: ["Unleash everything you have."]
-	quest.9BE2E41FC78F78C6.title: "Maximum"
-	quest.A71B003505ED6F9F.quest_desc: ["A giant of the snowy biomes."]
-	quest.A71B003505ED6F9F.title: "Frostmaw"
-	quest.AE7AC5E566A8D5CA.quest_desc: ["Fight it somewhere you don't mind wrecking. Trap it in your domain.", "", "When it dies, something answers from far away: a sound like a heartbeat from every direction at once."]
-	quest.AE7AC5E566A8D5CA.quest_subtitle: "Chapter complete"
-	quest.AE7AC5E566A8D5CA.title: "The Wither"
-	quest.AF8394C97958905E.quest_desc: ["A war machine in a hidden factory, built to call the Calamity home. Witherite is the second cursed metal."]
-	quest.AF8394C97958905E.quest_subtitle: "The machine that heralds it"
-	quest.AF8394C97958905E.title: "The Harbinger"
-	quest.BBD02B54C98485AF.quest_desc: ["A backpack makes the long trips ahead much easier. Upgrade it later."]
-	quest.BBD02B54C98485AF.title: "Pack Light, Pack Lots"
-	quest.BF6D5B06003E0B56.quest_desc: ["A Megatorch stops hostile spawns in a huge radius. Your base deserves a quiet night."]
-	quest.BF6D5B06003E0B56.title: "Safe Ground"
-	quest.BFD3BEFD619989BC.quest_desc: ["Cursed energy runs dry. A good blade doesn't.", "", "Technique hits are about as strong as a sword, so you'll still be doing most of your fighting the old way."]
-	quest.BFD3BEFD619989BC.quest_subtitle: "Gear up"
-	quest.BFD3BEFD619989BC.title: "Steel Before Sorcery"
-	quest.C6E3D26966D223CF.quest_desc: ["Now you know what that heartbeat was. The great beasts sleeping in the deepest ruins aren't natural. Each one is a &5fragment of the Calamity&r that slipped through the crack.", "", "Kill them, and the Calamity can't rebuild itself. Each fragment leaves behind cursed metal, and you'll need that metal later."]
-	quest.C6E3D26966D223CF.title: "Fragments"
-	quest.C7879EBA4B0B5939.quest_desc: ["Extra grade XP for anyone willing to stay out after dark."]
-	quest.C7879EBA4B0B5939.title: "Night Patrol"
-	quest.C8E3F5205C045D02.quest_desc: ["Hit something with a &efully charged&r melee attack. Sometimes it becomes a &cBlack Flash&r: about 1.8x damage and a flash that warps the screen.", "", "Land one and you're &cin the zone&r for 10 seconds, with much better odds. Higher grades require several."]
-	quest.C8E3F5205C045D02.quest_subtitle: "Space bends with a perfect hit"
-	quest.C8E3F5205C045D02.title: "Black Flash"
-	quest.C94F012CE6B97253.quest_desc: ["Its fortress burns in the Nether. Ignitium is the first of the cursed metals you need."]
-	quest.C94F012CE6B97253.quest_subtitle: "The burning knight"
-	quest.C94F012CE6B97253.title: "Ignis"
-	quest.CE6196D7D5E49625.quest_desc: ["Malum harvests the spirits of what you kill and infuses them into gear. Useful for an exorcist."]
-	quest.CE6196D7D5E49625.title: "Spirit Arcana"
-	quest.D3E7D407F734B3AD.quest_desc: ["30,000 XP, 12 Black Flashes, 2 bosses. You've reached the peak.", "", "You unlock your &cMaximum&r technique (G) and &aReverse Cursed Technique&r, which slowly heals you with cursed energy.", "", "You're as strong as the sorcerers who made the first seal. Now build a better one."]
-	quest.D3E7D407F734B3AD.quest_subtitle: "Chapter complete"
-	quest.D3E7D407F734B3AD.title: "Special Grade"
-	quest.D61FBA295CDD39AA.quest_desc: ["The Ender Dragon has been guarding one of the old seal-stones all this time. Free the End. The Chaos Guardian is waiting there too, but not yet."]
-	quest.D61FBA295CDD39AA.title: "Beyond the Portal"
-	quest.D8941F09B2FF291B.quest_desc: ["Sleeping in a soul-black fortress in the Nether. It hits like a landslide. Fire resistance helps."]
-	quest.D8941F09B2FF291B.title: "Netherite Monstrosity"
-	quest.D90806AFA14049FF.quest_desc: ["The crack is leaking. Curses drift up through it and settle into the dead, and the nights are worse than they used to be.", "", "Every hostile mob you put down gives &bgrade XP&r. That's how you get stronger."]
-	quest.D90806AFA14049FF.quest_subtitle: "The dead walk more often now"
-	quest.D90806AFA14049FF.title: "What Leaks Through"
-	quest.DEC5B233136DEC88.quest_desc: ["A domain raises a barrier around you, and everything inside suffers your technique's sure-hit effect.", "", "Two overlapping domains &6clash&r and the stronger one wins. Afterwards your technique &cburns out&r for a few seconds, so pick your moment."]
-	quest.DEC5B233136DEC88.quest_subtitle: "Press V"
-	quest.DEC5B233136DEC88.title: "Domain Expansion"
-	quest.E240F0166D4B01E7.quest_desc: ["Source powers Ars Nouveau's machines. Fill a jar and set up an Imbuement Chamber."]
-	quest.E240F0166D4B01E7.title: "Source"
-	quest.E5CD6F2D0444E04E.quest_desc: ["Your technique and grade show above your hotbar. &eZ&r and &eX&r are your two abilities.", "", "Abilities cost cursed energy, which refills over about 30 seconds. Type &b/cursed info&r any time to see your technique and what your next promotion needs."]
-	quest.E5CD6F2D0444E04E.quest_subtitle: "What were you born with?"
-	quest.E5CD6F2D0444E04E.title: "Your Innate Technique"
-	quest.EB35B1058F7055AE.quest_desc: ["Occultism lets you summon and bind spirits to work for you, including miners that dig ore while you're away."]
-	quest.EB35B1058F7055AE.title: "Bound Spirits"
-	quest.F026E54E6D4C85BF.quest_desc: ["Mekanism's Metallurgic Infuser makes steel and alloys. Most of Mekanism is built from them."]
-	quest.F026E54E6D4C85BF.title: "Steel and Osmium"
-	quest.F042C98FF29CDF5F.quest_desc: ["Buried under the desert sands."]
-	quest.F042C98FF29CDF5F.title: "Ancient Remnant"
-	quest.FB7B212BBA0798B5.quest_desc: ["Create runs on rotation. Waterwheels and windmills turn shafts, and shafts turn machines."]
-	quest.FB7B212BBA0798B5.title: "Turning Gears"
-	quest.FC48C374E7341857.quest_desc: ["You're now one of the strongest sorcerers alive. And you've unlocked something new."]
-	quest.FC48C374E7341857.quest_subtitle: "8,000 XP and 3 Black Flashes"
-	quest.FC48C374E7341857.title: "Grade 1"
 }

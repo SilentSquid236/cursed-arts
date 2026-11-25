@@ -4,14 +4,14 @@
 	filename: "8_finale"
 	group: ""
 	icon: { id: "cursedtech:calamity_heart" }
-	id: "BBAA0E28793C63B1"
+	id: "3BAA0E28793C63B1"
 	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["8198A40EF5153D64"]
+			dependencies: ["0198A40EF5153D64"]
 			icon: { id: "minecraft:soul_lantern" }
-			id: "91E888C4A384437A"
+			id: "11E888C4A384437A"
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{ id: "18ADBE280D545316", type: "checkmark" }]
@@ -19,25 +19,25 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["91E888C4A384437A"]
+			dependencies: ["11E888C4A384437A"]
 			icon: { id: "cursedtech:sealing_altar" }
 			id: "1CD2A121A3E4917C"
 			rewards: [{ id: "2FBA3976B4F996CA", type: "xp", xp: 50 }]
-			tasks: [{ id: "8F8FB7AB5227F319", item: { count: 1, id: "cursedtech:sealing_altar" }, type: "item" }]
+			tasks: [{ id: "0F8FB7AB5227F319", item: { count: 1, id: "cursedtech:sealing_altar" }, type: "item" }]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1CD2A121A3E4917C"]
 			icon: { id: "minecraft:totem_of_undying" }
-			id: "81279509213C97CF"
-			rewards: [{ count: 4, id: "AB994393EB202BA8", item: { count: 1, id: "minecraft:golden_apple" }, type: "item" }]
-			tasks: [{ id: "79A7E133C3727EEB", item: { count: 1, id: "minecraft:totem_of_undying" }, type: "item" }, { id: "CCAB3ECC2F6A424C", item: { count: 1, id: "minecraft:enchanted_golden_apple" }, type: "item" }]
+			id: "01279509213C97CF"
+			rewards: [{ count: 4, id: "2B994393EB202BA8", item: { count: 1, id: "minecraft:golden_apple" }, type: "item" }]
+			tasks: [{ id: "79A7E133C3727EEB", item: { count: 1, id: "minecraft:totem_of_undying" }, type: "item" }, { id: "4CAB3ECC2F6A424C", item: { count: 1, id: "minecraft:enchanted_golden_apple" }, type: "item" }]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["81279509213C97CF"]
+			dependencies: ["01279509213C97CF"]
 			icon: { id: "cursedtech:calamity_heart" }
 			id: "211E8A3943E1A4C2"
 			rewards: [{ command: "/cursed xp {p} 1000", id: "0D33BC6A08BDA706", permission_level: 2, silent: true, type: "command" }]
@@ -51,10 +51,10 @@
 			dependencies: ["211E8A3943E1A4C2"]
 			icon: { id: "draconicevolution:chaotic_core" }
 			id: "748B9DA622F49EB0"
-			rewards: [{ count: 2, id: "7F7E623886CF6055", item: { count: 1, id: "minecraft:nether_star" }, type: "item" }, { count: 1, id: "698F55C9F20F244B", item: { count: 1, id: "minecraft:beacon" }, type: "item" }, { id: "CE0103895654DE0F", type: "xp", xp: 500 }, { command: "/tellraw @a [\"\",{\"text\":\"[Cursed Arts] \",\"color\":\"dark_purple\"},{\"selector\":\"{p}\"},{\"text\":\" has sealed the Calamity.\",\"color\":\"light_purple\"}]", id: "6ED4B45E6A39EE57", permission_level: 2, silent: true, type: "command" }]
+			rewards: [{ count: 2, id: "7F7E623886CF6055", item: { count: 1, id: "minecraft:nether_star" }, type: "item" }, { count: 1, id: "698F55C9F20F244B", item: { count: 1, id: "minecraft:beacon" }, type: "item" }, { id: "4E0103895654DE0F", type: "xp", xp: 500 }, { command: "/tellraw @a [\"\",{\"text\":\"[Cursed Arts] \",\"color\":\"dark_purple\"},{\"selector\":\"{p}\"},{\"text\":\" has sealed the Calamity.\",\"color\":\"light_purple\"}]", id: "6ED4B45E6A39EE57", permission_level: 2, silent: true, type: "command" }]
 			shape: "hexagon"
 			size: 2.5d
-			tasks: [{ id: "74FC9B0F8EE8F386", item: { count: 1, id: "draconicevolution:chaotic_core" }, type: "item" }, { id: "FDD9B4F7415CB4B7", item: { count: 1, id: "cursedtech:calamity_heart" }, type: "item" }]
+			tasks: [{ id: "74FC9B0F8EE8F386", item: { count: 1, id: "draconicevolution:chaotic_core" }, type: "item" }, { id: "7DD9B4F7415CB4B7", item: { count: 1, id: "cursedtech:calamity_heart" }, type: "item" }]
 			x: 8.0d
 			y: 0.0d
 		}

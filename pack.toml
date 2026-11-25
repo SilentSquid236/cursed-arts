@@ -1,12 +1,12 @@
 name = "Cursed Arts"
 author = "Ethan Pierce"
-version = "0.6.0"
+version = "0.6.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "6e65cde8355da6194e18af940f03899f44cb8cd468245d1c25758d117eccc1c5"
+hash = "bc030168457f9d9fa53d093b99bcc0955b4cda4dc159eba387935ffaf35b7806"
 
 [versions]
 minecraft = "1.21.1"
