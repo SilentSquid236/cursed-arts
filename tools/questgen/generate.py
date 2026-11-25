@@ -89,7 +89,8 @@ class Chapter:
     def __init__(self, name, title, subtitle, icon):
         self.name, self.title, self.subtitle, self.icon = name, title, subtitle, icon
         self.quests = []
-        self.x = 0.0
+        self.y = 0.0
+        self.prev_y = 0.0
         self.prev = None          # previous main quest key
         self.side_slots = {}      # main key -> number of side quests placed
         self.entry_dep = None     # cross-chapter dependency for the first quest
@@ -123,9 +124,11 @@ class Chapter:
             deps.append(qid(f"{self.name}/{self.prev}"))
         elif self.entry_dep:
             deps.append(self.entry_dep)
-        self._quest(key, self.x, 0.0, tasks, rewards, deps, title, sub, desc, icon, shape, size, False)
-        self.prev = key
-        self.x += 2.0
+        pad = ((size or 1.0) - 1.0) * 0.5
+        y = self.y + pad
+        self._quest(key, 0.0, y, tasks, rewards, deps, title, sub, desc, icon, shape, size, False)
+        self.prev, self.prev_y = key, y
+        self.y = y + pad + 1.5
         return key
 
     def side(self, key, tasks, rewards=(), title=None, sub=None, desc=None, icon=None, shape="diamond"):
@@ -133,8 +136,8 @@ class Chapter:
         anchor = self.prev
         n = self.side_slots.get(anchor, 0)
         self.side_slots[anchor] = n + 1
-        y = (-1.75, 1.75, -3.25, 3.25)[n]
-        self._quest(key, self.x - 2.0, y, tasks, rewards, [qid(f"{self.name}/{anchor}")],
+        x = (-2.5, 2.5, -4.0, 4.0)[n]
+        self._quest(key, x, self.prev_y, tasks, rewards, [qid(f"{self.name}/{anchor}")],
                     title, sub, desc, icon, shape, None, True)
 
     def finish(self, order):
@@ -173,12 +176,18 @@ c.main("welcome", [t_check()], [r_item("minecraft:bread", 16), r_item("minecraft
              "",
              "Everyone near the fracture woke up with &dcursed energy&r in their veins. You are one of them. Somewhere out there the Calamity is pulling itself back together, and the old seal will not hold much longer.",
              "",
-             "This book is your path from a frightened Grade 2 sorcerer to the one who seals it again. Follow the main line left to right. &7Diamond-shaped quests are optional&r: they make the road easier, but you can skip them."])
+             "This book is your path from a frightened Grade 2 sorcerer to the one who seals it again. Follow the main line from top to bottom. &7Diamond-shaped quests off to the sides are optional&r: they make the road easier, but you can skip them."])
 c.main("awakened", [t_adv("cursedtech:awakened")], [r_grade(25)],
        title="Your Innate Technique", sub="What were you born with?", icon="minecraft:amethyst_shard",
        desc=["Your technique and grade show above your hotbar. &eZ&r and &eX&r are your two abilities.",
              "",
              "Abilities cost cursed energy, which refills over about 30 seconds. Type &b/cursed info&r any time to see your technique and what your next promotion needs."])
+c.main("stone", [t_item("minecraft:stone_pickaxe"), t_item("minecraft:furnace")], [r_item("minecraft:coal", 16)],
+       title="First Tools", icon="minecraft:stone_pickaxe",
+       desc=["Get off the surface: a stone pickaxe, and a furnace to smelt what you find."])
+c.main("iron", [t_item("minecraft:iron_ingot", 16)], [r_item("minecraft:bread", 8)],
+       title="Iron", icon="minecraft:iron_ingot",
+       desc=["Mine iron ore and smelt it. Almost everything you build next starts with iron."])
 c.main("steel", [t_item("minecraft:iron_sword"), t_item("minecraft:iron_pickaxe"), t_item("minecraft:shield")],
        [r_item("minecraft:iron_ingot", 8)],
        title="Steel Before Sorcery", sub="Gear up", icon="minecraft:iron_sword",
@@ -214,11 +223,17 @@ c.main("intro", [t_check()], [r_grade(25)],
        desc=["Sorcerers are ranked by grade. Right now you're &7Grade 2&r: two abilities and a shallow pool of energy.",
              "",
              "Nobody seals a Calamity at Grade 2. Time to climb."])
+c.main("iron_armor", [t_item("minecraft:iron_chestplate"), t_item("minecraft:iron_leggings")], [r_item("minecraft:iron_ingot", 8)],
+       title="Armor Up", icon="minecraft:iron_chestplate",
+       desc=["Armor reduces technique damage too. Wear a full set before you go looking for trouble."])
 c.main("diamonds", [t_item("minecraft:diamond", 5)], [r_item("minecraft:experience_bottle", 8)],
        title="Harder Than Curses", icon="minecraft:diamond",
        desc=["Diamond gear keeps you alive long enough to learn."])
 c.side("reforging", [t_item("apotheosis:reforging_table")], [r_item("minecraft:diamond", 2)],
        title="Reforge", desc=["Apotheosis gear rolls random affixes. A Reforging Table lets you reroll them into something good."])
+c.main("enchanting", [t_item("minecraft:diamond_pickaxe"), t_item("minecraft:enchanting_table")], [r_item("minecraft:lapis_lazuli", 16)],
+       title="Enchanting", icon="minecraft:enchanting_table",
+       desc=["A diamond pickaxe mines obsidian. Obsidian builds an enchanting table, and enchanted gear is how you'll survive what comes next."])
 c.main("black_flash", [t_adv("cursedtech:black_flash")], [r_grade(75), r_item("minecraft:diamond", 2)],
        title="Black Flash", sub="Space bends with a perfect hit", icon="minecraft:black_dye",
        desc=["Hit something with a &efully charged&r melee attack. Sometimes it becomes a &cBlack Flash&r: about 1.8x damage and a flash that warps the screen.",
@@ -229,9 +244,15 @@ c.side("night_patrol", [t_kill("minecraft:creeper", 10), t_kill("minecraft:spide
        desc=["Extra grade XP for anyone willing to stay out after dark."])
 c.side("megatorch", [t_item("torchmaster:megatorch")], [r_xp(20)],
        title="Safe Ground", desc=["A Megatorch stops hostile spawns in a huge radius. Your base deserves a quiet night."])
+c.main("obsidian", [t_item("minecraft:obsidian", 10), t_item("minecraft:flint_and_steel")], [r_xp(20)],
+       title="A Door Downward", icon="minecraft:flint_and_steel",
+       desc=["Ten obsidian and a flint and steel make a Nether portal."])
 c.main("nether", [t_dim("minecraft:the_nether")], [r_grade(100)],
        title="Into the Nether", icon="minecraft:obsidian",
        desc=["Curses run thick in the Nether. So does the XP."])
+c.main("blaze", [t_kill("minecraft:blaze", 5), t_item("minecraft:blaze_rod", 6)], [r_grade(150)],
+       title="Blaze Rods", icon="minecraft:blaze_rod",
+       desc=["Find a Nether fortress and hunt blazes. You'll need their rods for brewing now, and to reach the End much later."])
 c.main("semi_grade_1", [t_adv("cursedtech:semi_grade_1")], [r_item("minecraft:golden_apple", 2), r_item("minecraft:diamond", 4)],
        title="Semi-Grade 1", sub="Chapter complete: 2,500 grade XP", icon="minecraft:golden_sword", shape="hexagon", size=1.5,
        desc=["Your reserves deepen: more energy, faster regen, harder hits.",
@@ -251,17 +272,26 @@ c.main("intro", [t_check()], [r_xp(20)],
 c.main("notebook", [t_item("ars_nouveau:worn_notebook")], [r_xp(20)],
        title="A Worn Notebook", icon="ars_nouveau:worn_notebook",
        desc=["Ars Nouveau's guidebook. Everything about source and glyphs is inside."])
-c.main("spell_book", [t_item("ars_nouveau:novice_spell_book")], [r_item("ars_nouveau:source_gem", 4)],
+c.main("imbuement", [t_item("ars_nouveau:imbuement_chamber")], [r_item("minecraft:amethyst_shard", 16)],
+       title="Imbuement Chamber", icon="ars_nouveau:imbuement_chamber",
+       desc=["The chamber soaks items in source. Put amethyst in it to make Source Gems."])
+c.main("source_gem", [t_item("ars_nouveau:source_gem", 8)], [r_xp(20)],
+       title="Source Gems", icon="ars_nouveau:source_gem",
+       desc=["The basic currency of Ars Nouveau. Almost every recipe from here on uses them."])
+c.main("source_jar", [t_item("ars_nouveau:source_jar")], [r_xp(20)],
+       title="Store Source", icon="ars_nouveau:source_jar",
+       desc=["Source jars hold the source your machines run on. Fill one with a Sourcelink or by hand."])
+c.main("spell_book", [t_item("ars_nouveau:novice_spell_book"), t_item("ars_nouveau:scribes_table")], [r_item("ars_nouveau:source_gem", 4)],
        title="First Spells", icon="ars_nouveau:novice_spell_book",
-       desc=["Write your own spells from glyphs. Magic and cursed techniques stack: use both."])
-c.main("imbuement", [t_item("ars_nouveau:imbuement_chamber"), t_item("ars_nouveau:source_jar")], [r_xp(30)],
-       title="Source", icon="ars_nouveau:source_jar",
-       desc=["Source powers Ars Nouveau's machines. Fill a jar and set up an Imbuement Chamber."])
+       desc=["Write your own spells from glyphs, and unlock new glyphs at the Scribe's Table. Magic and cursed techniques stack: use both."])
+c.main("pedestals", [t_item("ars_nouveau:arcane_pedestal", 4)], [r_xp(30)],
+       title="Pedestals", icon="ars_nouveau:arcane_pedestal",
+       desc=["Four pedestals to hold ingredients around a core."])
 c.side("apprentice", [t_item("ars_nouveau:apprentice_spell_book")], [r_xp(30)],
        title="Apprentice Spell Book", desc=["More spell slots, stronger glyphs."])
 c.side("irons", [t_item("irons_spellbooks:inscription_table")], [r_item("irons_spellbooks:arcane_essence", 8)],
        title="A Different School", desc=["Iron's Spells 'n Spellbooks has dozens of ready-made spells and some excellent wizard armor."])
-c.main("apparatus", [t_item("ars_nouveau:enchanting_apparatus"), t_item("ars_nouveau:arcane_core")], [r_grade(150)],
+c.main("apparatus", [t_item("ars_nouveau:arcane_core"), t_item("ars_nouveau:enchanting_apparatus")], [r_grade(150)],
        title="The Apparatus", sub="Chapter complete", icon="ars_nouveau:enchanting_apparatus", shape="hexagon", size=1.5,
        desc=["The notes describe crafting on a ring of pedestals around a central core. The Enchanting Apparatus works the same way.",
              "",
@@ -281,14 +311,26 @@ c.main("intro", [t_check()], [r_xp(20)],
        desc=["The old sorcerers needed a hundred of them pouring their lives into one ritual.",
              "",
              "You have machines. The seal you're going to build needs a lot of power, so start an industry."])
-c.main("andesite", [t_item("create:andesite_alloy", 16), t_item("create:mechanical_press")], [r_item("create:cogwheel", 16)],
-       title="Turning Gears", icon="create:mechanical_press",
-       desc=["Create runs on rotation. Waterwheels and windmills turn shafts, and shafts turn machines."])
+c.main("andesite", [t_item("create:andesite_alloy", 16)], [r_item("create:cogwheel", 8)],
+       title="Andesite Alloy", icon="create:andesite_alloy",
+       desc=["Andesite and iron nuggets. The building block of everything in Create."])
+c.main("water_wheel", [t_item("create:water_wheel"), t_item("create:shaft", 8)], [r_item("create:cogwheel", 8)],
+       title="Turning Gears", icon="create:water_wheel",
+       desc=["Create runs on rotation. A water wheel in flowing water turns shafts, and shafts turn machines."])
+c.main("press", [t_item("create:mechanical_press")], [r_xp(30)],
+       title="Mechanical Press", icon="create:mechanical_press",
+       desc=["Presses turn ingots into sheets. You'll need sheets for Create's better machines."])
 c.side("brass", [t_item("create:brass_ingot", 8)], [r_xp(30)],
        title="Brass", desc=["Brass opens up Create's automation: deployers, arms and logistics."])
-c.main("infuser", [t_item("mekanism:metallurgic_infuser"), t_item("mekanism:ingot_steel", 8)], [r_item("mekanism:ingot_osmium", 8)],
-       title="Steel and Osmium", icon="mekanism:metallurgic_infuser",
-       desc=["Mekanism's Metallurgic Infuser makes steel and alloys. Most of Mekanism is built from them."])
+c.main("osmium", [t_item("mekanism:ingot_osmium", 8)], [r_item("minecraft:coal", 16)],
+       title="Osmium", icon="mekanism:ingot_osmium",
+       desc=["Osmium ore is Mekanism's starting metal. Smelt the raw ore."])
+c.main("infuser", [t_item("mekanism:metallurgic_infuser")], [r_xp(30)],
+       title="Metallurgic Infuser", icon="mekanism:metallurgic_infuser",
+       desc=["Infuses metals with carbon, redstone and more. Power it with a generator, or with Create rotation through an Alternator from Create Crafts & Additions."])
+c.main("steel", [t_item("mekanism:ingot_steel", 8), t_item("mekanism:steel_casing")], [r_item("mekanism:ingot_osmium", 8)],
+       title="Steel Casing", icon="mekanism:steel_casing",
+       desc=["Steel, and the casing every Mekanism machine is built around."])
 c.main("ore_processing", [t_item("mekanism:enrichment_chamber")], [r_xp(40)],
        title="Double Your Ore", icon="mekanism:enrichment_chamber",
        desc=["Ore processing doubles everything you mine. You'll need a mountain of metal."])
@@ -296,7 +338,13 @@ c.side("powah", [t_item("powah:energizing_orb")], [r_xp(30)],
        title="Powah", desc=["Powah's generators and energy cells are a simple way to make a lot of power."])
 c.side("ae2", [t_item("ae2:controller")], [r_xp(50)],
        title="Digital Storage", desc=["Applied Energistics 2 turns your chests into one searchable network. Your stockpile is about to get big."])
-c.main("battery", [t_item("mekanism:basic_energy_cube"), t_item("mekanism:basic_control_circuit", 4)], [r_grade(150)],
+c.main("circuits", [t_item("mekanism:basic_control_circuit", 4)], [r_xp(30)],
+       title="Control Circuits", icon="mekanism:basic_control_circuit",
+       desc=["Osmium and redstone in the infuser. Every upgrade tier needs circuits."])
+c.main("generator", [t_item("mekanismgenerators:heat_generator")], [r_xp(30)],
+       title="Generate Power", icon="mekanismgenerators:heat_generator",
+       desc=["A Heat Generator burns fuel or sits next to lava. Steady power to start with."])
+c.main("battery", [t_item("mekanism:basic_energy_cube")], [r_grade(150)],
        title="Stored Lightning", sub="Chapter complete", icon="mekanism:basic_energy_cube", shape="hexagon", size=1.5,
        desc=["Power, stored and ready. Now you need the strength to survive what the Calamity will throw at you."])
 done(c)
@@ -327,6 +375,12 @@ c.main("domain", [t_adv("cursedtech:domain")], [r_grade(100)],
              "Two overlapping domains &6clash&r and the stronger one wins. Afterwards your technique &cburns out&r for a few seconds, so pick your moment."])
 c.side("sculptor", [t_kill("mowziesmobs:sculptor")], [r_grade(200)], title="The Sculptor", icon="minecraft:chiseled_stone_bricks",
        desc=["A climbing challenge at the top of a stone pillar."])
+c.main("netherite", [t_item("minecraft:netherite_ingot")], [r_item("minecraft:netherite_scrap", 2)],
+       title="Netherite", icon="minecraft:netherite_ingot",
+       desc=["Ancient debris lies deep in the Nether. Upgrade your best gear before the next fight."])
+c.main("skulls", [t_item("minecraft:wither_skeleton_skull", 3), t_item("minecraft:soul_sand", 4)], [r_xp(50)],
+       title="Three Skulls", icon="minecraft:wither_skeleton_skull",
+       desc=["Wither skeletons in Nether fortresses drop their skulls, rarely. You need three."])
 c.main("wither", [t_kill("minecraft:wither")], [r_grade(250), r_item("minecraft:netherite_ingot")],
        title="The Wither", sub="Chapter complete", icon="minecraft:wither_skeleton_skull", shape="hexagon", size=1.5,
        desc=["Fight it somewhere you don't mind wrecking. Trap it in your domain.",
@@ -343,6 +397,9 @@ c.main("intro", [t_check()], [r_grade(50)],
        desc=["Now you know what that heartbeat was. The great beasts sleeping in the deepest ruins aren't natural. Each one is a &5fragment of the Calamity&r that slipped through the crack.",
              "",
              "Kill them, and the Calamity can't rebuild itself. Each fragment leaves behind cursed metal, and you'll need that metal later."])
+c.main("eyes", [t_item("minecraft:ender_eye", 12)], [r_item("minecraft:ender_pearl", 8)],
+       title="Eyes of Ender", icon="minecraft:ender_eye",
+       desc=["Blaze powder and ender pearls. Throw one and follow it to a stronghold."])
 c.main("end", [t_dim("minecraft:the_end"), t_kill("minecraft:ender_dragon")], [r_grade(300), r_item("minecraft:elytra")],
        title="Beyond the Portal", icon="minecraft:dragon_head",
        desc=["The Ender Dragon has been guarding one of the old seal-stones all this time. Free the End. The Chaos Guardian is waiting there too, but not yet."])

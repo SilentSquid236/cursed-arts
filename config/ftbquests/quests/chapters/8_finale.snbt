@@ -16,7 +16,7 @@
 			size: 1.5d
 			tasks: [{ id: "18ADBE280D545316", type: "checkmark" }]
 			x: 0.0d
-			y: 0.0d
+			y: 0.2d
 		}
 		{
 			dependencies: ["11E888C4A384437A"]
@@ -24,8 +24,8 @@
 			id: "1CD2A121A3E4917C"
 			rewards: [{ id: "2FBA3976B4F996CA", type: "xp", xp: 50 }]
 			tasks: [{ id: "0F8FB7AB5227F319", item: { count: 1, id: "cursedtech:sealing_altar" }, type: "item" }]
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1CD2A121A3E4917C"]
@@ -33,8 +33,8 @@
 			id: "01279509213C97CF"
 			rewards: [{ count: 4, id: "2B994393EB202BA8", item: { count: 1, id: "minecraft:golden_apple" }, type: "item" }]
 			tasks: [{ id: "79A7E133C3727EEB", item: { count: 1, id: "minecraft:totem_of_undying" }, type: "item" }, { id: "4CAB3ECC2F6A424C", item: { count: 1, id: "minecraft:enchanted_golden_apple" }, type: "item" }]
-			x: 4.0d
-			y: 0.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["01279509213C97CF"]
@@ -44,8 +44,8 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ entity: "cursedtech:calamity", id: "04C968F68D2BA517", type: "kill", value: 1L }, { id: "38A109C3464F59C0", item: { count: 1, id: "cursedtech:calamity_heart" }, type: "item" }]
-			x: 6.0d
-			y: 0.0d
+			x: 0.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["211E8A3943E1A4C2"]
@@ -55,8 +55,8 @@
 			shape: "hexagon"
 			size: 2.5d
 			tasks: [{ id: "74FC9B0F8EE8F386", item: { count: 1, id: "draconicevolution:chaotic_core" }, type: "item" }, { id: "7DD9B4F7415CB4B7", item: { count: 1, id: "cursedtech:calamity_heart" }, type: "item" }]
-			x: 8.0d
-			y: 0.0d
+			x: 0.0d
+			y: 8.2d
 		}
 	]
 }

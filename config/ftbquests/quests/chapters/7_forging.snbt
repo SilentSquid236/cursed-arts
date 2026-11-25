@@ -17,7 +17,7 @@
 			size: 1.5d
 			tasks: [{ id: "554EB2C19D2947FC", type: "checkmark" }]
 			x: 0.0d
-			y: 0.0d
+			y: 0.2d
 		}
 		{
 			dependencies: ["2AA84823A8E7D08E"]
@@ -25,8 +25,8 @@
 			id: "52A447075068A9A3"
 			rewards: [{ count: 8, id: "30CBD34B792F74FD", item: { count: 1, id: "draconicevolution:draconium_ingot" }, type: "item" }]
 			tasks: [{ count: 16L, id: "58845069E815683A", item: { count: 1, id: "draconicevolution:draconium_ingot" }, type: "item" }]
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["52A447075068A9A3"]
@@ -34,8 +34,8 @@
 			id: "18633B0C8F990D59"
 			rewards: [{ command: "/cursed xp {p} 100", id: "3083926B4865FC27", permission_level: 2, silent: true, type: "command" }]
 			tasks: [{ id: "7F1E53881AA1B5C9", item: { count: 1, id: "draconicevolution:draconium_core" }, type: "item" }, { id: "4447A0926AC455EF", item: { count: 1, id: "draconicevolution:crafting_core" }, type: "item" }, { count: 4L, id: "67C8042F89F6D979", item: { count: 1, id: "draconicevolution:basic_crafting_injector" }, type: "item" }]
-			x: 4.0d
-			y: 0.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["18633B0C8F990D59"]
@@ -44,8 +44,8 @@
 			rewards: [{ id: "43AB83F8B8EFFDEA", type: "xp", xp: 50 }]
 			shape: "diamond"
 			tasks: [{ id: "72EE7F9D0CAC645E", item: { count: 1, id: "draconicevolution:energy_core" }, type: "item" }]
-			x: 4.0d
-			y: -1.8d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["18633B0C8F990D59"]
@@ -53,8 +53,8 @@
 			id: "18FD8395C305E1E4"
 			rewards: [{ command: "/cursed xp {p} 150", id: "6F15F106728F36CC", permission_level: 2, silent: true, type: "command" }]
 			tasks: [{ id: "486D16DA47811B8B", item: { count: 1, id: "draconicevolution:wyvern_core" }, type: "item" }]
-			x: 6.0d
-			y: 0.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["18FD8395C305E1E4"]
@@ -62,8 +62,8 @@
 			id: "602F3E82FE042271"
 			rewards: [{ command: "/cursed xp {p} 150", id: "179F49827E2C2C5F", permission_level: 2, silent: true, type: "command" }]
 			tasks: [{ id: "628FE5F068BA1B6F", item: { count: 1, id: "draconicevolution:dragon_heart" }, type: "item" }]
-			x: 8.0d
-			y: 0.0d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["602F3E82FE042271"]
@@ -71,8 +71,8 @@
 			id: "30A907C87F67B90A"
 			rewards: [{ command: "/cursed xp {p} 200", id: "6357D3FC7016BF33", permission_level: 2, silent: true, type: "command" }]
 			tasks: [{ count: 4L, id: "7165855BD33BF112", item: { count: 1, id: "draconicevolution:awakened_draconium_ingot" }, type: "item" }, { id: "431680FC84F6A7A4", item: { count: 1, id: "draconicevolution:awakened_core" }, type: "item" }]
-			x: 10.0d
-			y: 0.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["30A907C87F67B90A"]
@@ -82,8 +82,8 @@
 			rewards: [{ command: "/cursed xp {p} 150", id: "0C3AD92AA0A0CDA1", permission_level: 2, silent: true, type: "command" }]
 			shape: "diamond"
 			tasks: [{ count: 4L, id: "5AFC5F6CEC3C5661", item: { count: 1, id: "cataclysm:ignitium_ingot" }, type: "item" }, { count: 4L, id: "2D151E027536CC63", item: { count: 1, id: "cataclysm:witherite_ingot" }, type: "item" }]
-			x: 10.0d
-			y: -1.8d
+			x: -2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["30A907C87F67B90A"]
@@ -91,8 +91,8 @@
 			id: "15B96D87869C10CE"
 			rewards: [{ command: "/cursed xp {p} 500", id: "0467C01D19282EBF", permission_level: 2, silent: true, type: "command" }]
 			tasks: [{ entity: "draconicevolution:draconic_guardian", id: "71FE3666993B9D15", type: "kill", value: 1L }, { count: 4L, id: "271533F2E0F5F2B6", item: { count: 1, id: "draconicevolution:chaos_shard" }, type: "item" }]
-			x: 12.0d
-			y: 0.0d
+			x: 0.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["15B96D87869C10CE"]
@@ -102,8 +102,8 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{ id: "4E528308AD682245", item: { count: 1, id: "draconicevolution:chaotic_core" }, type: "item" }]
-			x: 14.0d
-			y: 0.0d
+			x: 0.0d
+			y: 11.5d
 		}
 	]
 }

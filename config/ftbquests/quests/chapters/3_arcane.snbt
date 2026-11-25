@@ -17,7 +17,7 @@
 			size: 1.5d
 			tasks: [{ id: "40F134E97094296A", type: "checkmark" }]
 			x: 0.0d
-			y: 0.0d
+			y: 0.2d
 		}
 		{
 			dependencies: ["7EAABCECF92E9469"]
@@ -25,57 +25,84 @@
 			id: "0FBFD1F99068F009"
 			rewards: [{ id: "4AA1234B067DD5CB", type: "xp", xp: 20 }]
 			tasks: [{ id: "31E0FEC8849DFD42", item: { count: 1, id: "ars_nouveau:worn_notebook" }, type: "item" }]
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0FBFD1F99068F009"]
-			icon: { id: "ars_nouveau:novice_spell_book" }
-			id: "03BE1DB64EDE6EFE"
-			rewards: [{ count: 4, id: "5D0AC40559FFD6CC", item: { count: 1, id: "ars_nouveau:source_gem" }, type: "item" }]
-			tasks: [{ id: "2218A8E26261D6B3", item: { count: 1, id: "ars_nouveau:novice_spell_book" }, type: "item" }]
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["03BE1DB64EDE6EFE"]
-			icon: { id: "ars_nouveau:source_jar" }
+			icon: { id: "ars_nouveau:imbuement_chamber" }
 			id: "6240F0166D4B01E7"
-			rewards: [{ id: "5E69C0F24EA5CED4", type: "xp", xp: 30 }]
-			tasks: [{ id: "548BB8DFFE613A15", item: { count: 1, id: "ars_nouveau:imbuement_chamber" }, type: "item" }, { id: "640C73683397E454", item: { count: 1, id: "ars_nouveau:source_jar" }, type: "item" }]
-			x: 6.0d
-			y: 0.0d
+			rewards: [{ count: 16, id: "27CA82DB7226259C", item: { count: 1, id: "minecraft:amethyst_shard" }, type: "item" }]
+			tasks: [{ id: "548BB8DFFE613A15", item: { count: 1, id: "ars_nouveau:imbuement_chamber" }, type: "item" }]
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6240F0166D4B01E7"]
+			icon: { id: "ars_nouveau:source_gem" }
+			id: "2B3D97D5E8B382E8"
+			rewards: [{ id: "5AAE2304D2801D07", type: "xp", xp: 20 }]
+			tasks: [{ count: 8L, id: "7D018556133DBFFB", item: { count: 1, id: "ars_nouveau:source_gem" }, type: "item" }]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2B3D97D5E8B382E8"]
+			icon: { id: "ars_nouveau:source_jar" }
+			id: "751CD728C205F255"
+			rewards: [{ id: "5B2B03240F50F3F2", type: "xp", xp: 20 }]
+			tasks: [{ id: "6B99B23DBA35EDF9", item: { count: 1, id: "ars_nouveau:source_jar" }, type: "item" }]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["751CD728C205F255"]
+			icon: { id: "ars_nouveau:novice_spell_book" }
+			id: "03BE1DB64EDE6EFE"
+			rewards: [{ count: 4, id: "5D0AC40559FFD6CC", item: { count: 1, id: "ars_nouveau:source_gem" }, type: "item" }]
+			tasks: [{ id: "2218A8E26261D6B3", item: { count: 1, id: "ars_nouveau:novice_spell_book" }, type: "item" }, { id: "06442B0B6C94B529", item: { count: 1, id: "ars_nouveau:scribes_table" }, type: "item" }]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["03BE1DB64EDE6EFE"]
+			icon: { id: "ars_nouveau:arcane_pedestal" }
+			id: "2E1FD4DED508C02F"
+			rewards: [{ id: "2D9AACDBA3B7FD53", type: "xp", xp: 30 }]
+			tasks: [{ count: 4L, id: "6482BC31B21A2C1C", item: { count: 1, id: "ars_nouveau:arcane_pedestal" }, type: "item" }]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2E1FD4DED508C02F"]
 			id: "08C6C64C2558FB23"
 			optional: true
 			rewards: [{ id: "65F967F162179E78", type: "xp", xp: 30 }]
 			shape: "diamond"
 			tasks: [{ id: "51D238F51BAA134B", item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }, type: "item" }]
-			x: 6.0d
-			y: -1.8d
+			x: -2.5d
+			y: 9.5d
 		}
 		{
-			dependencies: ["6240F0166D4B01E7"]
+			dependencies: ["2E1FD4DED508C02F"]
 			id: "6A0345C45A5FE968"
 			optional: true
 			rewards: [{ count: 8, id: "54423F5FCAF60B7B", item: { count: 1, id: "irons_spellbooks:arcane_essence" }, type: "item" }]
 			shape: "diamond"
 			tasks: [{ id: "23FFC25C210BF02A", item: { count: 1, id: "irons_spellbooks:inscription_table" }, type: "item" }]
-			x: 6.0d
-			y: 1.8d
+			x: 2.5d
+			y: 9.5d
 		}
 		{
-			dependencies: ["6240F0166D4B01E7"]
+			dependencies: ["2E1FD4DED508C02F"]
 			icon: { id: "ars_nouveau:enchanting_apparatus" }
 			id: "1F2F060EC8B20381"
 			rewards: [{ command: "/cursed xp {p} 150", id: "1637FABCC85D0ED8", permission_level: 2, silent: true, type: "command" }]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [{ id: "6D24DCD456DD25CF", item: { count: 1, id: "ars_nouveau:enchanting_apparatus" }, type: "item" }, { id: "0877F305E1F18289", item: { count: 1, id: "ars_nouveau:arcane_core" }, type: "item" }]
-			x: 8.0d
-			y: 0.0d
+			tasks: [{ id: "6975555A7FE6431A", item: { count: 1, id: "ars_nouveau:arcane_core" }, type: "item" }, { id: "6E1CC7916C16C151", item: { count: 1, id: "ars_nouveau:enchanting_apparatus" }, type: "item" }]
+			x: 0.0d
+			y: 11.2d
 		}
 		{
 			dependencies: ["1F2F060EC8B20381"]
@@ -84,8 +111,8 @@
 			rewards: [{ id: "08313A455F2B9BA1", type: "xp", xp: 30 }]
 			shape: "diamond"
 			tasks: [{ id: "6A7624521D6D8FCE", item: { count: 1, id: "malum:spirit_altar" }, type: "item" }]
-			x: 8.0d
-			y: -1.8d
+			x: -2.5d
+			y: 11.2d
 		}
 		{
 			dependencies: ["1F2F060EC8B20381"]
@@ -94,8 +121,8 @@
 			rewards: [{ id: "3F99176D9F3C9309", type: "xp", xp: 30 }]
 			shape: "diamond"
 			tasks: [{ id: "06681AA47DDBADA5", item: { count: 1, id: "occultism:dictionary_of_spirits" }, type: "item" }]
-			x: 8.0d
-			y: 1.8d
+			x: 2.5d
+			y: 11.2d
 		}
 	]
 }
