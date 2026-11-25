@@ -1,0 +1,94 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5_domain"
+	group: ""
+	icon: { id: "minecraft:obsidian" }
+	id: "54869E9812C660E4"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["01B259223925A287"]
+			icon: { id: "minecraft:iron_axe" }
+			id: "05A684DEC840E2CC"
+			rewards: [{ command: "/cursed xp {p} 50", id: "260C168223B4DADA", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{ id: "B07CA6315DDA6083", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05A684DEC840E2CC"]
+			icon: { id: "minecraft:iron_axe" }
+			id: "1D356E96EC9FB68B"
+			rewards: [{ command: "/cursed xp {p} 200", id: "101A1E116AE735B2", permission_level: 2, silent: true, type: "command" }, { count: 3, id: "02315C0E8AC6469A", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ entity: "mowziesmobs:ferrous_wroughtnaut", id: "40656A9C52BB58B5", type: "kill", value: 1L }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D356E96EC9FB68B"]
+			icon: { id: "minecraft:blue_ice" }
+			id: "A71B003505ED6F9F"
+			optional: true
+			rewards: [{ command: "/cursed xp {p} 200", id: "5FF6DC417ACA2A73", permission_level: 2, silent: true, type: "command" }]
+			shape: "diamond"
+			tasks: [{ entity: "mowziesmobs:frostmaw", id: "2417D6065591D399", type: "kill", value: 1L }]
+			x: 2.0d
+			y: -1.8d
+		}
+		{
+			dependencies: ["1D356E96EC9FB68B"]
+			icon: { id: "minecraft:gold_block" }
+			id: "1DB75725777CDF30"
+			optional: true
+			rewards: [{ command: "/cursed xp {p} 200", id: "3437F0F946D528E0", permission_level: 2, silent: true, type: "command" }]
+			shape: "diamond"
+			tasks: [{ entity: "mowziesmobs:umvuthi", id: "4A53B593A7443FCA", type: "kill", value: 1L }]
+			x: 2.0d
+			y: 1.8d
+		}
+		{
+			dependencies: ["1D356E96EC9FB68B"]
+			icon: { id: "minecraft:diamond_sword" }
+			id: "FC48C374E7341857"
+			rewards: [{ count: 1, id: "AF579F6F1DE3A381", item: { count: 1, id: "minecraft:totem_of_undying" }, type: "item" }, { count: 6, id: "2013742CEBEE3D87", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ advancement: "cursedtech:grade_1", criterion: "", id: "42843862FA9CCBBF", type: "advancement" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FC48C374E7341857"]
+			icon: { id: "minecraft:obsidian" }
+			id: "DEC5B233136DEC88"
+			rewards: [{ command: "/cursed xp {p} 100", id: "C0E1E06C2E529ED5", permission_level: 2, silent: true, type: "command" }]
+			tasks: [{ advancement: "cursedtech:domain", criterion: "", id: "7E5BA5A7A5C24BBA", type: "advancement" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DEC5B233136DEC88"]
+			icon: { id: "minecraft:chiseled_stone_bricks" }
+			id: "9819298044AF1064"
+			optional: true
+			rewards: [{ command: "/cursed xp {p} 200", id: "3376C0C34E9184A6", permission_level: 2, silent: true, type: "command" }]
+			shape: "diamond"
+			tasks: [{ entity: "mowziesmobs:sculptor", id: "767A0EC1D9EF4414", type: "kill", value: 1L }]
+			x: 6.0d
+			y: -1.8d
+		}
+		{
+			dependencies: ["DEC5B233136DEC88"]
+			icon: { id: "minecraft:wither_skeleton_skull" }
+			id: "AE7AC5E566A8D5CA"
+			rewards: [{ command: "/cursed xp {p} 250", id: "2260731CCFBFE237", permission_level: 2, silent: true, type: "command" }, { count: 1, id: "C7C474D9435AF2C0", item: { count: 1, id: "minecraft:netherite_ingot" }, type: "item" }]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{ entity: "minecraft:wither", id: "D481955BD5DD5DAD", type: "kill", value: 1L }]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+}

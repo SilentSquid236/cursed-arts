@@ -20,7 +20,7 @@
 		passive: 0
 	}
 	pause_game: false
-	progression_mode: "flexible"
+	progression_mode: "linear"
 	show_lock_icons: true
 	verify_on_load: false
 	version: 13

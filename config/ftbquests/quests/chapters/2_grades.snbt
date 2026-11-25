@@ -1,0 +1,92 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2_grades"
+	group: ""
+	icon: { id: "minecraft:iron_sword" }
+	id: "7A52B8ADCDA34919"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5EA22E5CB17582FB"]
+			icon: { id: "minecraft:iron_sword" }
+			id: "37825911BC93780B"
+			rewards: [{ command: "/cursed xp {p} 25", id: "B592CA28BF16733B", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{ id: "B5ACE461C5FB08B3", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37825911BC93780B"]
+			icon: { id: "minecraft:diamond" }
+			id: "5F69960F281574F6"
+			rewards: [{ count: 8, id: "7F11DAB8368590E8", item: { count: 1, id: "minecraft:experience_bottle" }, type: "item" }]
+			tasks: [{ count: 5L, id: "B8A3519118A288AF", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F69960F281574F6"]
+			id: "798449A13CAD54E8"
+			optional: true
+			rewards: [{ count: 2, id: "CE8006A06E159216", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "diamond"
+			tasks: [{ id: "A5D849FF74612E18", item: { count: 1, id: "apotheosis:reforging_table" }, type: "item" }]
+			x: 2.0d
+			y: -1.8d
+		}
+		{
+			dependencies: ["5F69960F281574F6"]
+			icon: { id: "minecraft:black_dye" }
+			id: "C8E3F5205C045D02"
+			rewards: [{ command: "/cursed xp {p} 75", id: "CC6CF30BE720C1AC", permission_level: 2, silent: true, type: "command" }, { count: 2, id: "DB6CBFF4C5F61CC3", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			tasks: [{ advancement: "cursedtech:black_flash", criterion: "", id: "7B62EF3EFCB3BD6F", type: "advancement" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C8E3F5205C045D02"]
+			icon: { id: "minecraft:bow" }
+			id: "C7879EBA4B0B5939"
+			optional: true
+			rewards: [{ command: "/cursed xp {p} 150", id: "938B6CAB988C9423", permission_level: 2, silent: true, type: "command" }]
+			shape: "diamond"
+			tasks: [{ entity: "minecraft:creeper", id: "832077619FDDFE20", type: "kill", value: 10L }, { entity: "minecraft:spider", id: "ED094F0E8E762479", type: "kill", value: 10L }, { entity: "minecraft:enderman", id: "C98E424B5BEE7A79", type: "kill", value: 5L }]
+			x: 4.0d
+			y: -1.8d
+		}
+		{
+			dependencies: ["C8E3F5205C045D02"]
+			id: "BF6D5B06003E0B56"
+			optional: true
+			rewards: [{ id: "D212B112A8735424", type: "xp", xp: 20 }]
+			shape: "diamond"
+			tasks: [{ id: "CBB9309FF8C2C8DB", item: { count: 1, id: "torchmaster:megatorch" }, type: "item" }]
+			x: 4.0d
+			y: 1.8d
+		}
+		{
+			dependencies: ["C8E3F5205C045D02"]
+			icon: { id: "minecraft:obsidian" }
+			id: "3D65B5F385AF5DA1"
+			rewards: [{ command: "/cursed xp {p} 100", id: "E4031F8BBC20A5C5", permission_level: 2, silent: true, type: "command" }]
+			tasks: [{ dimension: "minecraft:the_nether", id: "5B42083724125D30", type: "dimension" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D65B5F385AF5DA1"]
+			icon: { id: "minecraft:golden_sword" }
+			id: "1414C7117E119916"
+			rewards: [{ count: 2, id: "35602CAF72CDC915", item: { count: 1, id: "minecraft:golden_apple" }, type: "item" }, { count: 4, id: "713321C3F67DC7E5", item: { count: 1, id: "minecraft:diamond" }, type: "item" }]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{ advancement: "cursedtech:semi_grade_1", criterion: "", id: "11471AC5BB63E719", type: "advancement" }]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+}

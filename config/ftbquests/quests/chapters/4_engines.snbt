@@ -1,0 +1,91 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4_engines"
+	group: ""
+	icon: { id: "mekanism:metallurgic_infuser" }
+	id: "D39804EC1F21567B"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1F2F060EC8B20381"]
+			icon: { id: "minecraft:redstone" }
+			id: "6D83A875B8058B48"
+			rewards: [{ id: "58C50C453D49A5E8", type: "xp", xp: 20 }]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{ id: "636B628024925C2E", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D83A875B8058B48"]
+			icon: { id: "create:mechanical_press" }
+			id: "FB7B212BBA0798B5"
+			rewards: [{ count: 16, id: "63E8279731FBEE45", item: { count: 1, id: "create:cogwheel" }, type: "item" }]
+			tasks: [{ count: 16L, id: "2E039624091895EA", item: { count: 1, id: "create:andesite_alloy" }, type: "item" }, { id: "63FA393110932D01", item: { count: 1, id: "create:mechanical_press" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FB7B212BBA0798B5"]
+			id: "07C50FBDD6FF438F"
+			optional: true
+			rewards: [{ id: "46B16AA8661A645E", type: "xp", xp: 30 }]
+			shape: "diamond"
+			tasks: [{ count: 8L, id: "EF85BCEB739470F5", item: { count: 1, id: "create:brass_ingot" }, type: "item" }]
+			x: 2.0d
+			y: -1.8d
+		}
+		{
+			dependencies: ["FB7B212BBA0798B5"]
+			icon: { id: "mekanism:metallurgic_infuser" }
+			id: "F026E54E6D4C85BF"
+			rewards: [{ count: 8, id: "D80837FC95AFE7F2", item: { count: 1, id: "mekanism:ingot_osmium" }, type: "item" }]
+			tasks: [{ id: "6D10704237575DD9", item: { count: 1, id: "mekanism:metallurgic_infuser" }, type: "item" }, { count: 8L, id: "6C0CA1C4F1669474", item: { count: 1, id: "mekanism:ingot_steel" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F026E54E6D4C85BF"]
+			icon: { id: "mekanism:enrichment_chamber" }
+			id: "997D0869720A3B12"
+			rewards: [{ id: "522FF6CB71F61F17", type: "xp", xp: 40 }]
+			tasks: [{ id: "5B0F60F40EFD2F9D", item: { count: 1, id: "mekanism:enrichment_chamber" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["997D0869720A3B12"]
+			id: "57F7D00097F3EC0F"
+			optional: true
+			rewards: [{ id: "9321EA0B5AB935C1", type: "xp", xp: 30 }]
+			shape: "diamond"
+			tasks: [{ id: "EAC6B74EEBBF92F9", item: { count: 1, id: "powah:energizing_orb" }, type: "item" }]
+			x: 6.0d
+			y: -1.8d
+		}
+		{
+			dependencies: ["997D0869720A3B12"]
+			id: "114ACCBCB58BC06A"
+			optional: true
+			rewards: [{ id: "79551BD79238C30B", type: "xp", xp: 50 }]
+			shape: "diamond"
+			tasks: [{ id: "7904188C86204A00", item: { count: 1, id: "ae2:controller" }, type: "item" }]
+			x: 6.0d
+			y: 1.8d
+		}
+		{
+			dependencies: ["997D0869720A3B12"]
+			icon: { id: "mekanism:basic_energy_cube" }
+			id: "01B259223925A287"
+			rewards: [{ command: "/cursed xp {p} 150", id: "F61227B84FA2F7B2", permission_level: 2, silent: true, type: "command" }]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{ id: "1F444F56589B080B", item: { count: 1, id: "mekanism:basic_energy_cube" }, type: "item" }, { count: 4L, id: "DEFF585CAA54B076", item: { count: 1, id: "mekanism:basic_control_circuit" }, type: "item" }]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+}

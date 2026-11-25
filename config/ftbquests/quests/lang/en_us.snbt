@@ -1,800 +1,175 @@
 {
-	chapter.04A8EEB70DFF77BC.title: "Occultism"
-	chapter.091F443D16F9D169.title: "Powah"
-	chapter.2C42FF5A3D34FF15.title: "Industrial Foregoing"
-	chapter.32F4545024F13413.title: "Applied Energistics 2"
-	chapter.3340A80A91A38798.title: "Apotheosis"
-	chapter.34AB771EE72F1086.title: "Forbidden & Arcanus"
-	chapter.370602F37E1A7E10.title: "Expedition"
-	chapter.3D4C1587C87099CC.title: "Iron's Spells 'n Spellbooks"
-	chapter.3E5745D0EB57D8EC.title: "Flux Networks"
-	chapter.46241502AD047BC9.title: "Immersive Engineering"
-	chapter.519DCA519D17C275.title: "Awakening"
-	chapter.528EEC168398F2CE.title: "Gadgets & Tools"
-	chapter.692D12828AB8E9AF.title: "Mowzie's Mobs"
-	chapter.6E2C61BED7B0237E.title: "Pipes & Logistics"
-	chapter.74275127051E7775.title: "Silent Gear"
-	chapter.7C0EABBBC134CBB9.title: "Malum"
-	chapter.90138904D2605D92.title: "Mekanism"
-	chapter.956D4C94B07E4CBE.title: "Ars Nouveau"
-	chapter.96573FC8637C02D1.title: "Oh The Biomes We've Gone"
-	chapter.968A76721911FBD9.title: "Mystical Agriculture"
-	chapter.9B43247ADAE7E6DC.title: "L_Ender's Cataclysm"
-	chapter.A2342087C3E31DF2.title: "Create"
-	chapter.AB296798DE2B1B75.title: "Draconic Evolution"
-	chapter.BF89DD74B796F038.title: "Lootr"
-	chapter.C4412F38E2495344.title: "Astral Sorcery"
-	chapter.C5ADC3D897E2E7E3.title: "Oritech"
-	chapter.E02A10CDAD1A40BF.title: "Farmer's Delight"
-	chapter.E56BF6F681F7E14E.title: "PneumaticCraft"
-	chapter.E68273B9ACC9CCEB.title: "Exorcisms"
-	chapter.E8EA4D503D09C07F.title: "When Dungeons Arise"
-	chapter.F77CCA1C071DC556.title: "Storage & Travel"
-	chapter_group.03203A1312E25E36.title: "Magic"
-	chapter_group.079344C30D45973B.title: "Farming & Food"
-	chapter_group.193A39D685B7FCB1.title: "Cursed Arts"
-	chapter_group.75D26D7A788B4CE3.title: "Combat & Gear"
-	chapter_group.76581968F62E459A.title: "Exploration"
-	chapter_group.7E0E5E7D94D8772C.title: "Utility"
-	chapter_group.AEAA9718BAF5A32A.title: "Technology"
-	file.0000000000000001.title: "Cursed Arts"
-	quest.012E7235E82B6BC3.quest_desc: ["A domain raises a barrier around you and everything inside suffers your technique's sure-hit effect.", "", "If two domains overlap they &6clash&r: the stronger one shatters the other. Afterwards your technique &cburns out&r for 10 seconds, so pick your moment."]
-	quest.012E7235E82B6BC3.quest_subtitle: "Trap them in your world"
-	quest.012E7235E82B6BC3.title: "Domain Expansion"
-	quest.01AE8C8842D004E3.quest_desc: ["{ars_nouveau.adv.desc.spell_prism}"]
-	quest.022D24B85BC3FCDF.quest_desc: ["{achievement.ae2.PatternTerminal.desc}"]
-	quest.02BB4B5C0726BE5D.quest_desc: ["{advancements.irons_spellbooks.staff_root.description}"]
-	quest.02F9774314CEF76D.quest_desc: ["{ars_nouveau.adv.desc.potion_jar}"]
-	quest.03B62B59B045BEF4.quest_desc: ["{advancement.dungeons_arise.find_illager_fort.desc}"]
-	quest.03C987131A87959B.quest_desc: ["{advancements.apothic_spawners.playerrange.desc}"]
-	quest.05283D8616DF2312.quest_desc: ["{advancements.apothic_enchanting.enchanting_stats.desc}"]
-	quest.05E0EF550EE7C927.quest_desc: ["{advancements.mekanism.disassembler.description}"]
-	quest.063C7C1F480DC338.quest_desc: ["{advancement.dungeons_arise.find_mining_complex.desc}"]
-	quest.069D132FBBE6DE06.quest_desc: ["{advancements.biomeswevegone.adventure.oh_the_biomes_weve_gone.description}"]
-	quest.06CB35B8B3BF8E84.quest_desc: ["{advancements.mekanism.steel_casing.description}"]
-	quest.06DC9331F6C671B2.quest_desc: ["{advancements.irons_spellbooks.spell_book_gold.description}"]
-	quest.06DC959A7D3B249B.quest_desc: ["{advancement.immersiveengineering.craft_powerpack.desc}"]
-	quest.06EAF927EC0DFCBB.quest_desc: ["{advancements.mekanism.polonium.description}"]
-	quest.06F16D2E3F5921DC.quest_desc: ["{advancement.immersiveengineering.mb_fermenter.desc}"]
-	quest.077A9CC3175B267A.quest_desc: ["{advancements.apotheosis.challenge_gates.frontier.desc}"]
-	quest.0786608921364242.quest_desc: ["{advancements.mekanism.breathing_assistance.description}"]
-	quest.07AF529C64E6035E.quest_desc: ["{advancements.apothic_spawners.ultimate_spawner.desc}"]
-	quest.07CB47E3B60CA3E0.quest_desc: ["{advancement.create.ejector_maxed.desc}"]
-	quest.07D52847DD891588.quest_desc: ["{advancements.occultism.familiar.mummy_dodge.description}"]
-	quest.07D848DE5A5B0811.quest_desc: ["{advancements.apotheosis.progression.pinnacle.desc}"]
-	quest.08E43A0DF4B6E086.quest_desc: ["{advancement.immersiveengineering.creosote.desc}"]
-	quest.098B9B4D404C2C4C.quest_desc: ["New terrain, biomes and structures everywhere: Terralith and Tectonic reshape the land, and When Dungeons Arise and Dungeon Crawl hide dungeons full of loot.", "", "Loot chests are per-player (Lootr), so everyone gets their own."]
-	quest.098B9B4D404C2C4C.title: "Expedition"
-	quest.0A1199D1CEE19CF2.quest_desc: ["{lootr.advancements.1barrel.description}"]
-	quest.0AC3EE3F2D154E42.quest_desc: ["{advancement.dungeons_arise.find_mushroom_village.desc}"]
-	quest.0B8B4507A429A6F9.quest_desc: ["{advancement.dungeons_arise.find_coliseum.desc}"]
-	quest.0B9ED1526BBC6EF3.quest_desc: ["{advancements.mekanism.configuration_copying.description}"]
-	quest.0C27FEB8881C6047.quest_desc: ["{advancements.mekanism.heat_transport.description}"]
-	quest.0C2DD41809453605.quest_desc: ["{advancements.mekanismtools.better_than_netherite.description}"]
-	quest.0D2FC3C925A0EB80.quest_desc: ["{advancements.mekanism.painting_machine.description}"]
-	quest.0D8F2AEB41396857.quest_desc: ["{advancements.silentgear.swords.description}"]
-	quest.0D9F0B399B15B6F5.quest_desc: ["Simple pipes for items, fluids and energy. Upgrades make them faster."]
-	quest.0D9F0B399B15B6F5.title: "Pipez"
-	quest.0DF36FAB7A2E648C.quest_desc: ["{advancements.mekanism.item_transport.description}"]
-	quest.0E45A9B3E34B4E5C.quest_desc: ["{advancements.mekanismadditions.not_the_babies.description}"]
-	quest.0E6B64F6FE0A770A.quest_desc: ["{advancements.occultism.familiar.beaver_woodchop.description}"]
-	quest.0EEB44F559F12411.quest_desc: ["{advancements.apothic_enchanting.hellshelf.desc}"]
-	quest.0F5AAC0AD79575D6.quest_desc: ["Fast travel between waystones, or carry a scroll."]
-	quest.0F5AAC0AD79575D6.title: "Waystones"
-	quest.101BD55E973F7F5D.quest_desc: ["Dielectric paste and an Energizing Orb power almost every Powah recipe."]
-	quest.101BD55E973F7F5D.title: "Getting started"
-	quest.1057FF9B63379F1C.quest_desc: ["{advancements.apothic_spawners.maxdelay.desc}"]
-	quest.10B7C227B9D49627.quest_desc: ["{advancement.create.linked_controller.desc}"]
-	quest.10E8DA47A7119015.quest_desc: ["{lootr.advancements.archaeologist.description}"]
-	quest.110E2776F1F68FC4.quest_desc: ["{ars_elemental.adv.desc.caster_bag}"]
-	quest.119EC0DBA96D62D5.quest_desc: ["{advancements.mekanism.robit.description}"]
-	quest.125FC3EBD98BC9C5.quest_desc: ["{advancements.biomeswevegone.husbandry.hot_diggity_not_dog.description}"]
-	quest.12EE8789A9627A5E.quest_desc: ["{advancements.mekanism.sps.description}"]
-	quest.12F80440FD444BB6.quest_desc: ["{advancement.immersiveengineering.craft_railgun.desc}"]
-	quest.1328518B188CAD72.quest_desc: ["{advancement.create.cardboard.desc}"]
-	quest.1393069B6DFC7441.quest_desc: ["{advancements.silentgear.crimson_repair_kit.description}"]
-	quest.140DB590C95ACBC8.quest_desc: ["{advancements.irons_spellbooks.spell_book_netherite.description}"]
-	quest.151AE3F795BFBEC7.quest_desc: ["{advancements.apothic_enchanting.quanta100.desc}"]
-	quest.1620565941693535.quest_desc: ["{advancements.mekanism.energy_transport.description}"]
-	quest.1697C739C6819D4B.quest_desc: ["{advancement.immersiveengineering.craft_workbench.desc}"]
-	quest.175FF08EC6632AFD.quest_desc: ["{advancements.apothic_enchanting.endshelf.desc}"]
-	quest.17663D14A6C48120.quest_desc: ["{advancement.dungeons_arise.find_heavenly_challenger.desc}"]
-	quest.17E6BCCE4BB831EE.quest_desc: ["{advancement.immersiveengineering.place_windmill.desc}"]
-	quest.17F4E8CD1214663B.quest_desc: ["{advancement.immersiveengineering.multiblocks_root.desc}"]
-	quest.187762AD7C066D98.quest_desc: ["{advancements.apotheosis.progression.summit.desc}"]
-	quest.1908E8C77E376B27.quest_desc: ["{advancements.occultism.chalks.light_blue.description}"]
-	quest.197A87FD93C9C942.quest_desc: ["{advancement.immersiveengineering.tools_root.desc}"]
-	quest.19A599840CF20D14.quest_desc: ["{advancement.create.cuckoo_clock.desc}"]
-	quest.19A9B0317180E6B8.quest_desc: ["{advancements.mekanism.moving_blocks.description}"]
-	quest.19D5BC3A924720E5.quest_desc: ["{achievement.ae2.IOPort.desc}"]
-	quest.19DE2F2F696B149D.quest_desc: ["{advancements.occultism.familiar.shub_cthulhu_friends.description}"]
-	quest.1A126F2372761298.quest_desc: ["{advancement.immersiveengineering.skyhook_distance.desc}"]
-	quest.1AAEDA0CD8A25CBF.quest_desc: ["{advancements.mekanism.atomic_alloy.description}"]
-	quest.1AC5055A60803819.quest_desc: ["{achievement.ae2.Compass.desc}"]
-	quest.1B0A2A52A514A20E.quest_desc: ["{advancement.immersiveengineering.craft_router.desc}"]
-	quest.1B28CD02C4F01192.quest_desc: ["{advancements.mekanismgenerators.heat_generator.description}"]
-	quest.1B4581D753794C4B.quest_desc: ["{pneumaticcraft.advancement.programming_puzzle.desc}"]
-	quest.1B4D18E6E50CD9AF.quest_desc: ["{lootr.advancements.all_gravel.description}"]
-	quest.1B5B0390A8D40A25.quest_desc: ["{advancements.apotheosis.challenge_gates.pinnacle.desc}"]
-	quest.1B98577966800F26.quest_desc: ["{advancement.immersiveengineering.craft_revolver.desc}"]
-	quest.1B9D12DC8D1E7705.quest_desc: ["{pneumaticcraft.advancement.drill_bit_netherite.desc}"]
-	quest.1BED9D7E71864057.quest_desc: ["{advancements.silentgear.kachink2.description}"]
-	quest.1C68B1D86DDA4586.quest_desc: ["{advancements.mekanism.chemical_crystallizer.description}"]
-	quest.1C71310DA32FC4D0.quest_desc: ["{advancement.dungeons_arise.find_plague_asylum.desc}"]
-	quest.1C79D408B08F1BFC.quest_desc: ["{advancement.create.speed_controller.desc}"]
-	quest.1CB8BCD75BF4BA5F.quest_desc: ["{ars_nouveau.adv.desc.ritual_brazier}"]
-	quest.1CD674E77CC21D89.quest_desc: ["{advancements.biomeswevegone.adventure.forgotten_fae.description}"]
-	quest.1DF4241BBF3657D3.quest_desc: ["{ars_nouveau.adv.desc.starbuncle_shades}"]
-	quest.1E5ECE1A39B0D673.quest_desc: ["{advancements.apothic_spawners.spawner.desc}"]
-	quest.1F3660509908F64C.quest_desc: ["{ars_nouveau.adv.desc.imbuement_chamber}"]
-	quest.1FA21CB9278FA462.quest_desc: ["{advancement.create.cart_pickup.desc}"]
-	quest.1FB1EE03C687C87F.quest_desc: ["{advancements.silentgear.template_board.description}"]
-	quest.20392C331FCA1297.quest_desc: ["{advancements.mekanism.purification_chamber.description}"]
-	quest.20A119F146A77533.quest_desc: ["{advancement.astralsorcery.lumen.description}"]
-	quest.2198078028A4587E.quest_desc: ["{ars_nouveau.adv.desc.wilden_tribute}"]
-	quest.21EB93220E6F32C3.quest_desc: ["{advancement.astralsorcery.perk_level_10.description}"]
-	quest.22F7DB12D454F6B0.quest_desc: ["{advancement.create.water_supply.desc}"]
-	quest.2351224D2ABC72BB.quest_desc: ["{advancement.create.super_glue.desc}"]
-	quest.23BA0A9360454876.quest_desc: ["{achievement.ae2.Root.desc}"]
-	quest.23BCBFDA159D6FAA.quest_desc: ["{advancements.mekanism.auto_collection.description}"]
-	quest.23C06D0D64B0ADA8.quest_desc: ["{advancements.mekanism.enricher.description}"]
-	quest.23F80C54AC23BF67.quest_desc: ["{achievement.ae2.GlassCable.desc}"]
-	quest.2408BFB9BB6B658E.quest_desc: ["{advancements.silentgear.material_grader.description}"]
-	quest.247C5D3EEBE19CC6.quest_desc: ["{pneumaticcraft.advancement.assembly_controller.desc}"]
-	quest.252F5FBEB0C4ECEC.quest_desc: ["{pneumaticcraft.advancement.uv_light_box.desc}"]
-	quest.25D6C899C925D658.quest_desc: ["{advancements.mekanism.portable_teleporter.description}"]
-	quest.26CBBBC2B9C2AE94.title: "Into the Nether"
-	quest.276CC11D54CAA5F8.quest_desc: ["{advancements.mekanism.personal_radiation.description}"]
-	quest.27A6BCDE5A89A113.quest_desc: ["{pneumaticcraft.advancement.speed_upgrade.desc}"]
-	quest.27FF28589518E300.quest_desc: ["{advancement.dungeons_arise.find_heavenly_rider.desc}"]
-	quest.2840FB9916784C4C.quest_desc: ["{advancements.apothic_spawners.nearbyents.desc}"]
-	quest.284F05AAC8EA6ACB.quest_desc: ["{advancements.mekanism.qio_importer.description}"]
-	quest.290F60ED8FE7C287.quest_desc: ["{advancements.mekanismgenerators.solar_generator.description}"]
-	quest.296DD2EE26733760.quest_desc: ["{advancement.create.crusher_maxed_0000.desc}"]
-	quest.297F2F7F3595D6B5.quest_desc: ["{ars_elemental.adv.desc.summon_skeleton_horse}"]
-	quest.2A10A75F96876500.quest_desc: ["{advancement.create.saw_processing.desc}"]
-	quest.2A20A82475445375.quest_desc: ["{advancement.dungeons_arise.find_ceryneian_hind.desc}"]
-	quest.2A630FE21A651883.quest_desc: ["{advancements.apothic_enchanting.max_stable.desc}"]
-	quest.2A6F88466620AC03.quest_desc: ["{advancement.create.precision_mechanism.desc}"]
-	quest.2ACFDBC53FB3BC4F.quest_desc: ["{advancement.dungeons_arise.find_fishing_hut.desc}"]
-	quest.2B17F646CABB6E72.quest_desc: ["{advancements.cataclysm.kill_scylla.description}"]
-	quest.2BBD31E5049F6132.quest_desc: ["{ars_elemental.adv.desc.fire_focus}"]
-	quest.2BCB3022D28358BE.quest_desc: ["Fly."]
-	quest.2BCB3022D28358BE.title: "Iron Jetpacks"
-	quest.2BCD1468D706A47F.quest_desc: ["{advancement.immersiveengineering.upgrade_powerpack.desc}"]
-	quest.2BCF50E758E1E188.quest_desc: ["Promotion to Grade 1 unlocks &dDomain Expansion&r (V)."]
-	quest.2BCF50E758E1E188.quest_subtitle: "8,000 XP and 3 Black Flashes"
-	quest.2BCF50E758E1E188.title: "Grade 1"
-	quest.2C330C1F0E8FCB55.quest_desc: ["{advancement.dungeons_arise.find_bathhouse.desc}"]
-	quest.2C5689B82E288FC4.quest_desc: ["{advancements.silentgear.nether.description}"]
-	quest.2DB1BFAEA5D55337.quest_desc: ["{advancements.farmersdelight.place_skillet.description}"]
-	quest.2E47B4034EFCB318.quest_desc: ["{ars_nouveau.adv.desc.enchanting_apparatus}"]
-	quest.2E7F9D33BA084914.quest_desc: ["{advancements.mekanism.configurator.description}"]
-	quest.2E913F31731A46B9.quest_desc: ["{advancements.mowziesmobs.kill_grottol.description}"]
-	quest.2EA612256A700CA2.quest_desc: ["{advancements.irons_spellbooks.make_inscription_table.description}"]
-	quest.2F5682E6F5430B01.quest_desc: ["{ars_elemental.adv.desc.siren_charm}"]
-	quest.2FA6801E2728EB91.quest_desc: ["{advancement.create.root.desc}"]
-	quest.2FC48F72D5EE658C.quest_desc: ["{advancement.create.wrench_goggles.desc}"]
-	quest.2FD0212379219060.quest_desc: ["{advancement.dungeons_arise.find_monastery.desc}"]
-	quest.3066C704CBFB3FEA.quest_desc: ["{advancement.dungeons_arise.find_illager_campsite.desc}"]
-	quest.30867CC9226FA781.quest_desc: ["{advancements.silentgear.big_job_tools.description}"]
-	quest.30FB1D84750ADD24.quest_desc: ["{advancements.mekanism.cleaning_gauges.description}"]
-	quest.312D16EEC20ED5E3.title: "Frostmaw"
-	quest.31C2BA47FD24262B.quest_desc: ["{advancements.occultism.familiar.fairy_save.description}"]
-	quest.31E1E7576DA10DCA.quest_desc: ["{advancement.create.stock_ticker.desc}"]
-	quest.323B3D6E9CE166D7.quest_desc: ["{advancement.create.windmill.desc}"]
-	quest.324CA3ABC3E284F8.quest_desc: ["{advancement.immersiveengineering.mb_metalpress.desc}"]
-	quest.32D93A77F187D055.quest_desc: ["{advancement.dungeons_arise.find_keep_kayra.desc}"]
-	quest.3311A1C9421E6250.quest_desc: ["{advancements.mekanism.root.description}"]
-	quest.3358B43F84EF158D.quest_desc: ["{advancement.immersiveengineering.villager.desc}"]
-	quest.337C0E59C84E1315.quest_desc: ["{advancement.dungeons_arise.find_undead_pirate_ship.desc}"]
-	quest.338D9B13A2DF4679.quest_desc: ["{advancements.occultism.chalks.rainbow.description}"]
-	quest.339D290413CEE7E7.quest_desc: ["{advancement.create.foods.desc}"]
-	quest.33BCC654E3D9FE4A.quest_desc: ["{advancements.cataclysm.kill_maledictus.description}"]
-	quest.3511A991C676363D.quest_desc: ["{advancements.irons_spellbooks.ink_root.description}"]
-	quest.358899BED17C3877.quest_desc: ["{achievement.ae2.NetworkTool.desc}"]
-	quest.35E9AA90A7C2DBFB.title: "The Wither"
-	quest.35EA8F5A2B341E8E.quest_desc: ["{advancements.cataclysm.kill_monstrosity.description}"]
-	quest.3656804B04DD33C7.quest_desc: ["{advancements.mekanism.ultimate_control_circuit.description}"]
-	quest.36832AA1D7B70E24.quest_desc: ["{pneumaticcraft.advancement.logistics_frame.desc}"]
-	quest.369A3C9A91C53DA1.title: "Elder Guardian"
-	quest.36EFF480A4928F16.quest_desc: ["{advancements.apothic_enchanting.seashelf.desc}"]
-	quest.36F2FFACE0415A05.quest_desc: ["{pneumaticcraft.advancement.unassembled_pcb.desc}"]
-	quest.37E4EB57C3D91ECB.quest_desc: ["{advancement.create_connected.control_chip.desc}"]
-	quest.37EA4211D39A1CDE.quest_desc: ["{advancements.mekanism.alloy_upgrading.description}"]
-	quest.37F4B01F78D2D9BC.quest_desc: ["Your technique and grade are shown above your hotbar.", "", "Abilities cost &dcursed energy&r, which refills over about 30 seconds. Watch the cooldowns."]
-	quest.37F4B01F78D2D9BC.quest_subtitle: "Find out what you were born with"
-	quest.37F4B01F78D2D9BC.title: "Your Innate Technique"
-	quest.38016D13B9E71AC1.quest_desc: ["The peak. Unlocks your &cMaximum&r technique (G) and &aReverse Cursed Technique&r, which slowly heals you with cursed energy."]
-	quest.38016D13B9E71AC1.quest_subtitle: "30,000 XP, 12 Black Flashes, 2 bosses"
-	quest.38016D13B9E71AC1.title: "Special Grade"
-	quest.3897F80DE1BA42C8.quest_desc: ["{advancement.dungeons_arise.find_small_blimp.desc}"]
-	quest.38B6F408FC3BD5F3.quest_desc: ["{advancements.mekanismgenerators.burn_the_gas.description}"]
-	quest.39225FB73B8E5A0F.quest_desc: ["{advancement.immersiveengineering.upgrade_revolver.desc}"]
-	quest.39804E1F0240BF21.quest_desc: ["{advancement.immersiveengineering.mb_cokeoven.desc}"]
-	quest.39D543ACC50C4F75.quest_desc: ["{advancement.immersiveengineering.upgrade_buzzsaw.desc}"]
-	quest.3A3CAC0A09CD27CF.quest_desc: ["{advancements.occultism.familiar.dragon_nugget.description}"]
-	quest.3A4AAD8FD1334E95.quest_desc: ["{advancements.occultism.chalks.magenta.description}"]
-	quest.3AA60CA0F8CB3DC5.quest_desc: ["{advancement.dungeons_arise.find_scorched_mines.desc}"]
-	quest.3AB497505A976776.quest_desc: ["{advancement.create.extendo_grip.desc}"]
-	quest.3AD2F526DC7F505C.quest_desc: ["{advancement.create.track_0.desc}"]
-	quest.3BB0D134493DDA5E.quest_desc: ["{advancements.apothic_enchanting.quanta0.desc}"]
-	quest.3C08E77F35909D39.quest_desc: ["{advancement.immersiveengineering.kill_illager.desc}"]
-	quest.3C3ABF191DE0579A.quest_desc: ["Combine essence to climb the tiers and grow better seeds."]
-	quest.3C3ABF191DE0579A.title: "Essence tiers"
-	quest.3C3D531AB5A1F125.quest_desc: ["Craft seeds and upgrades on the Infusion Altar."]
-	quest.3C3D531AB5A1F125.title: "Infusion"
-	quest.3CC527445B2A1898.quest_desc: ["{advancement.immersiveengineering.mb_silo.desc}"]
-	quest.3CF3B80C66ED19D9.quest_desc: ["{advancements.biomeswevegone.adventure.witches_road.description}"]
-	quest.3D0201D34D2439F2.quest_desc: ["{advancements.biomeswevegone.husbandry.forgotten_nostalgia.description}"]
-	quest.3DDC6223B91DA090.quest_desc: ["{ars_nouveau.adv.desc.summon_focus}"]
-	quest.3DEED5B12DAC426B.quest_desc: ["{advancements.mowziesmobs.kill_ferrous_wroughtnaut.description}"]
-	quest.3E073665B4B81EDA.quest_desc: ["{advancements.cataclysm.kill_ignis.description}"]
-	quest.3E0DAAD85ECFA75A.quest_desc: ["{advancements.silentgear.azure_electrum.description}"]
-	quest.3E4C62638E14DE33.quest_desc: ["{ars_elemental.adv.desc.everfull_urn}"]
-	quest.3F3720DF66C23BC4.quest_desc: ["{advancement.create.burner.desc}"]
-	quest.40335C561E05A0F4.quest_desc: ["{advancements.silentgear.crimson_iron.description}"]
-	quest.40426CD9F476C356.quest_desc: ["{advancements.mekanism.elite_control_circuit.description}"]
-	quest.4058083348E3228C.quest_desc: ["{advancement.dungeons_arise.find_foundry.desc}"]
-	quest.40600C3A1BCA6409.quest_desc: ["{ars_nouveau.adv.desc.source_jar}"]
-	quest.40787814549F4181.quest_desc: ["{advancements.mekanism.infused_alloy.description}"]
-	quest.40BAD33606E11013.quest_desc: ["{advancements.mekanism.fluid_tank.description}"]
-	quest.40D6BF0BBB50552F.quest_desc: ["{advancements.occultism.chalks.brown.description}"]
-	quest.40F8529201D89721.quest_desc: ["{advancements.occultism.familiar.greedy.description}"]
-	quest.416A3679E8CF99A4.quest_desc: ["{ars_elemental.adv.desc.spore_blossom}"]
-	quest.417E11B2AB2E8FE3.quest_desc: ["{ars_elemental.adv.desc.necrotic_focus}"]
-	quest.41AE09C7AE614017.quest_desc: ["{advancement.dungeons_arise.find_kisegi_sanctuary.desc}"]
-	quest.4213DE14B590F23A.quest_desc: ["{advancements.cataclysm.kill_leviathan.description}"]
-	quest.42B98EB78662A7DB.quest_desc: ["{advancements.apothic_enchanting.upgrade_hellshelf.desc}"]
-	quest.43EA41AC6FBE3A80.quest_desc: ["{advancements.farmersdelight.get_mushroom_colony.description}"]
-	quest.440DA4B066961D00.quest_desc: ["Drop redstone on obsidian over bedrock to make Flux Dust, then send power anywhere."]
-	quest.440DA4B066961D00.title: "Wireless power"
-	quest.442E86F5ED27BD97.quest_desc: ["{advancements.occultism.chalks.red.description}"]
-	quest.4453FF24D8F2658E.quest_desc: ["{advancements.silentgear.grader_catalyst_2.description}"]
-	quest.461167454491B1D9.quest_desc: ["{advancements.occultism.chalks.white.description}"]
-	quest.4637DD813DDA0781.quest_desc: ["{ars_elemental.adv.desc.levitation}"]
-	quest.4676656928207B2C.quest_desc: ["{pneumaticcraft.advancement.aphorism_tile.desc}"]
-	quest.47273348BBAD08A0.title: "Maledictus"
-	quest.477B1FA17A22C6B4.quest_desc: ["{advancement.immersiveengineering.craft_chemthrower.desc}"]
-	quest.4824E84692F62D70.quest_desc: ["{advancements.irons_spellbooks.spell_book_iron.description}"]
-	quest.4880646465B859DE.quest_desc: ["{ars_nouveau.adv.desc.familiar}"]
-	quest.488150BA39C037BE.quest_desc: ["{advancements.apothic_spawners.capturing.desc}"]
-	quest.4893E864CB61A69D.title: "Ender Dragon"
-	quest.48C59492C0E2705C.quest_desc: ["{advancement.create.arm_many_targets.desc}"]
-	quest.498215F2AB083235.quest_desc: ["{lootr.advancements.root.description}"]
-	quest.49BDB4B0553F6113.quest_desc: ["{ars_nouveau.adv.desc.novice_spell_book}"]
-	quest.49C6394EBED401B1.quest_desc: ["{advancement.create.potato_cannon.desc}"]
-	quest.49EA4012633D4924.quest_desc: ["{advancement.create.haunted_bell.desc}"]
-	quest.4A6B3798FCC93802.quest_desc: ["Latex from trees becomes plastic, which becomes machine frames."]
-	quest.4A6B3798FCC93802.title: "Plastic age"
-	quest.4A7D410411F3DCC1.quest_desc: ["{ars_elemental.adv.desc.lesser_water_focus}"]
-	quest.4AC82495A6E7CC28.quest_desc: ["{advancement.create_connected.sequenced_pulse_generator.desc}"]
-	quest.4B8485B8D580305F.quest_desc: ["{advancements.occultism.chalks.purple.description}"]
-	quest.4BFD7AD91F076E92.quest_desc: ["{advancement.create.portable_storage_interface.desc}"]
-	quest.4C09F6FC9C6CEDA4.quest_desc: ["{advancement.create.potato_cannon_collide.desc}"]
-	quest.4C18BAFD4FB62872.quest_desc: ["{advancements.cataclysm.kill_ender_golem.description}"]
-	quest.4CD7B231C8139333.quest_desc: ["{advancements.mekanism.radiation_prevention.description}"]
-	quest.4D3D65DC8E0D352B.title: "The Leviathan"
-	quest.4D6A31FC31068C7F.quest_desc: ["{advancements.silentgear.the_end.description}"]
-	quest.4D96B0E4D4C64A06.quest_desc: ["{advancements.apothic_enchanting.deepshelf.desc}"]
-	quest.4DDDB48B1B1E6CEF.quest_desc: ["{advancement.astralsorcery.celestial_crystal.description}"]
-	quest.4E063388DAF681F1.quest_desc: ["{advancements.irons_spellbooks.make_scroll_forge.description}"]
-	quest.4E927E6B4688EE8B.quest_desc: ["{lootr.advancements.25loot.description}"]
-	quest.4E97247D988A32CF.title: "The Warden"
-	quest.4EA261854E7FE60E.quest_desc: ["{advancements.mekanism.advanced_control_circuit.description}"]
-	quest.4F8EA158DC1579A4.quest_desc: ["{advancements.mekanism.plutonium.description}"]
-	quest.4FECA815D71BFB0A.quest_desc: ["{pneumaticcraft.advancement.minigun.desc}"]
-	quest.4FFBA026073ABC70.quest_desc: ["{advancements.occultism.chalks.root.description}"]
-	quest.5018534B6F624C6D.quest_desc: ["{achievement.ae2.PortableCell.desc}"]
-	quest.502BBF1AB9434A06.quest_desc: ["{advancements.mowziesmobs.sculptor_failure.description}"]
-	quest.505983E0A0FFD09C.quest_desc: ["{advancements.mekanismtools.paxel.description}"]
-	quest.506DCE53C7764E25.quest_desc: ["{advancements.mekanism.quantum_entangloporter.description}"]
-	quest.5086B9461E5653A5.quest_desc: ["{pneumaticcraft.advancement.amadron_tablet.desc}"]
-	quest.5142825D47D41E47.quest_desc: ["{advancements.cataclysm.kill_harbinger.description}"]
-	quest.51B8776410915EEE.quest_desc: ["{ars_nouveau.adv.desc.mob_jar}"]
-	quest.5226B34067505A4B.quest_desc: ["{advancements.apothic_enchanting.upgrade_endshelf.desc}"]
-	quest.52381AC572D00227.quest_desc: ["{advancements.apothic_enchanting.sculkshelf.desc}"]
-	quest.5247ADF26D2CF785.quest_desc: ["{advancements.mekanismtools.not_enough_shielding.description}"]
-	quest.525EA74C5B1A0687.quest_desc: ["{advancements.occultism.familiar.devil.description}"]
-	quest.52CF9DAE85D13F1A.quest_desc: ["{achievement.ae2.SpatialIOExplorer.desc}"]
-	quest.532640DEB6F82AB2.quest_desc: ["{advancements.occultism.familiars.description}"]
-	quest.537CCD14CAB1A08B.quest_desc: ["{advancements.occultism.familiar.headless_rebuilt.description}"]
-	quest.5496144FB9F485CF.quest_desc: ["{advancements.mekanism.infusing_efficiency.description}"]
-	quest.54962363E37635F9.quest_desc: ["{pneumaticcraft.advancement.pneumatic_armor.desc}"]
-	quest.5506C7FC75C09A7B.quest_desc: ["{advancement.dungeons_arise.find_thornborn_towers.desc}"]
-	quest.55C6596D0F4B789F.quest_desc: ["{advancements.apotheosis.progression.root.desc}"]
-	quest.5625244EAF9E5979.quest_desc: ["{advancements.apotheosis.progression.ascent.desc}"]
-	quest.56787753F39EA391.quest_desc: ["{advancements.mekanism.basic_control_circuit.description}"]
-	quest.56EB3A070876FBE1.quest_desc: ["{ars_elemental.adv.desc.summon_dolphin}"]
-	quest.5839EE2E510DD6F6.quest_desc: ["{advancements.mekanismgenerators.wind_generator.description}"]
-	quest.58BF9C3BACD7609C.quest_desc: ["{advancements.occultism.familiar.rare.description}"]
-	quest.590789275B277B4E.quest_desc: ["{advancements.irons_spellbooks.staff_ice.description}"]
-	quest.592FBAAF17BBF5A3.quest_desc: ["{advancements.apotheosis.challenge_gates.summit.desc}"]
-	quest.599A35068F48060B.quest_desc: ["{advancements.occultism.chalks.light_gray.description}"]
-	quest.59E0758B427BFCAB.quest_desc: ["{advancement.create.track_crafting_factory.desc}"]
-	quest.5A0F6163DB8A777B.title: "Night Patrol"
-	quest.5A373CD54777D433.quest_desc: ["{advancement.create.long_train.desc}"]
-	quest.5A915E9812B6889C.quest_desc: ["{pneumaticcraft.advancement.printed_circuit_board.desc}"]
-	quest.5AFBA80DCE945C0E.quest_desc: ["{advancement.create.train.desc}"]
-	quest.5B0D237042366F16.quest_desc: ["{pneumaticcraft.advancement.pneumatic_wrench.desc}"]
-	quest.5B412A989E5D9D60.quest_desc: ["{advancement.create.self_deploying.desc}"]
-	quest.5B5A430F8FE7A2E1.quest_desc: ["{advancements.biomeswevegone.adventure.inside_quicksand.description}"]
-	quest.5B612B7C32404559.quest_desc: ["{advancement.create.rose_quartz.desc}"]
-	quest.5C093050F4B266E5.quest_desc: ["{advancements.cataclysm.frosted_prison.description}"]
-	quest.5C0CA5FD15B8C773.quest_desc: ["{achievement.ae2.QNB.desc}"]
-	quest.5C166749EB486281.quest_desc: ["{advancements.mekanism.stabilizing_chunks.description}"]
-	quest.5C3E4E57877A61B6.quest_desc: ["{advancements.cataclysm.acropolis.description}"]
-	quest.5C8AB34E9457DC64.quest_desc: ["{advancement.dungeons_arise.find_aviary.desc}"]
-	quest.5CC96F75031DFB78.quest_desc: ["{advancement.immersiveengineering.craft_heater.desc}"]
-	quest.5CFF5767777E429A.quest_desc: ["{advancement.dungeons_arise.find_merchant_campsite.desc}"]
-	quest.5DB67A1C20865646.quest_desc: ["{pneumaticcraft.advancement.block_hack.desc}"]
-	quest.5DCE572617C0FF19.quest_desc: ["{advancement.immersiveengineering.chorus_cloche.desc}"]
-	quest.5E44ED1777D9F865.quest_desc: ["{advancements.occultism.familiar.blacksmith_upgrade.description}"]
-	quest.5E71767E5F2CE720.quest_desc: ["{advancement.create.diving_suit_lava.desc}"]
-	quest.5ED49E462F6A95B2.quest_desc: ["Bosses (150+ max health) give a huge amount of grade XP and count toward Special Grade. See the &cExorcisms&r chapter for targets."]
-	quest.5ED49E462F6A95B2.quest_subtitle: "Defeat a boss"
-	quest.5ED49E462F6A95B2.title: "Exorcist"
-	quest.5F3A77B6BA947413.quest_desc: ["{advancement.create.honey_drain.desc}"]
-	quest.5F537FE8076F7100.quest_desc: ["{advancements.cataclysm.root.description}"]
-	quest.5F91ACF08665C3BC.quest_desc: ["{advancements.mekanism.stone_generator.description}"]
-	quest.5FE80EF2BB845325.quest_desc: ["{advancements.mekanism.restrictive_item_transport.description}"]
-	quest.607DFA2F107D16B3.title: "Umvuthi"
-	quest.609A6890C40A5A45.quest_desc: ["{advancement.dungeons_arise.find_mushroom_mines.desc}"]
-	quest.60BB9A8584986147.quest_desc: ["{advancement.dungeons_arise.find_infested_temple_map.desc}"]
-	quest.60CDC00B3FC92719.quest_desc: ["{advancements.mekanismtools.alternate_armor.description}"]
-	quest.60FEB3F882C6F04F.quest_desc: ["{advancement.dungeons_arise.find_heavenly_conqueror.desc}"]
-	quest.6104EC6A8F9E33E6.quest_desc: ["{ars_nouveau.adv.desc.shapers_focus}"]
-	quest.6136A86304465F32.quest_desc: ["{advancement.create.brass.desc}"]
-	quest.616AC8AA93EF7EE0.quest_desc: ["{advancement.astralsorcery.focal_point.description}"]
-	quest.625AA736AEE33BEC.quest_desc: ["{ars_nouveau.adv.desc.wixie_hat}"]
-	quest.6408C2C065FB5122.quest_desc: ["{advancements.apothic_spawners.spawncount.desc}"]
-	quest.6427B99AF4E0F73D.quest_desc: ["{advancement.create.steam_engine_maxed.desc}"]
-	quest.64C9A778D1C49BA1.quest_desc: ["{advancements.mekanism.basic_qio_drive.description}"]
-	quest.651D3A17051D2A45.quest_desc: ["{advancements.mekanism.running_free.description}"]
-	quest.664FA2684697959A.quest_desc: ["{advancement.immersiveengineering.mb_blastfurnace.desc}"]
-	quest.66693F4317DDCCFB.quest_desc: ["{advancements.occultism.familiar.shub_niggurath_spawn.description}"]
-	quest.67769F89B36CE4D0.quest_desc: ["Keep spawns away from your base."]
-	quest.67769F89B36CE4D0.title: "Mob control"
-	quest.6783F05A1B0BEB9B.quest_desc: ["{advancement.astralsorcery.constellation.description}"]
-	quest.67F4A856FC08BD82.quest_desc: ["{advancement.dungeons_arise.find_bandit_village.desc}"]
-	quest.69335B84FB5FAB14.quest_desc: ["{ars_elemental.adv.desc.earth_focus}"]
-	quest.69FBFBEE1B5B8817.quest_desc: ["{advancements.apothic_enchanting.enchantment.desc}"]
-	quest.6A74C6B192D0EECA.quest_desc: ["{advancements.irons_spellbooks.spell_book_blood.description}"]
-	quest.6A91253782AFF070.quest_desc: ["{advancements.mekanism.digital_miner.description}"]
-	quest.6AFAEAC7E221AC75.quest_desc: ["{advancements.apothic_spawners.mindelay.desc}"]
-	quest.6C2BF981A87F4249.quest_desc: ["{advancements.occultism.familiar.deer.description}"]
-	quest.6C8E49DA02A8EEDA.quest_desc: ["{advancements.occultism.familiar.bat.description}"]
-	quest.6E57E08B923545A5.quest_desc: ["These are the strongest things in the world. Each one is worth a huge pile of &bgrade XP&r, and bosses count toward &cSpecial Grade&r.", "", "Explore to find them: Cataclysm bosses guard their own structures, Mowzie's bosses roam specific biomes. &eExplorer's Compass&r helps.", "", "Bring friends. Domain Expansion is your best tool here."]
-	quest.6E57E08B923545A5.quest_subtitle: "Cursed spirits of every grade"
-	quest.6E57E08B923545A5.title: "The Hunt"
-	quest.6E5AEC5EE2317501.quest_desc: ["{advancements.mekanism.liquifier.description}"]
-	quest.6E9B3E7D0027CD23.quest_desc: ["{pneumaticcraft.advancement.jackhammer.desc}"]
-	quest.6EBA88502E8383CB.quest_desc: ["{advancement.create.deployer.desc}"]
-	quest.6F3CB538F17CC2FE.quest_desc: ["{advancements.irons_spellbooks.staff_lightning_rod.description}"]
-	quest.6F6362F9AA5AA77D.quest_desc: ["{advancements.apothic_enchanting.80ench.desc}"]
-	quest.6F7993E9AB031D16.quest_desc: ["{achievement.ae2.StorageBus.desc}"]
-	quest.6FCB3E0EA9A7C81A.quest_desc: ["{advancement.create.fan_processing.desc}"]
-	quest.7063ABB766898BE3.quest_desc: ["{advancements.silentgear.salvager.description}"]
-	quest.707EAE6F6A826DAC.quest_desc: ["{advancement.create.hose_pulley_lava.desc}"]
-	quest.709E072103EFBF19.quest_desc: ["{advancements.mekanism.simple_mass_storage.description}"]
-	quest.71F09F0F3AB8E78D.quest_desc: ["{pneumaticcraft.advancement.logistics_configurator.desc}"]
-	quest.723C8334E200372A.quest_desc: ["{advancements.mowziesmobs.kill_umvuthana_raptor.description}"]
-	quest.728B265D07B4E4C0.quest_desc: ["{advancements.mekanism.plenisher.description}"]
-	quest.72C8124E6F186808.title: "Netherite Monstrosity"
-	quest.737DF151101A721A.quest_desc: ["{advancements.mekanism.waste_removal.description}"]
-	quest.740DB487401E9C80.quest_desc: ["{advancement.immersiveengineering.chute_bonk.desc}"]
-	quest.74361782239AE54D.quest_desc: ["{advancements.mekanism.advanced_qio_drive.description}"]
-	quest.7499906E80C1E1BB.quest_desc: ["{advancement.immersiveengineering.craft_treatedwood.desc}"]
-	quest.7514E90C2172171C.quest_desc: ["{advancement.create_connected.shear_pin.desc}"]
-	quest.754F6CE8578BDC8E.quest_desc: ["{advancements.farmersdelight.plant_all_crops.description}"]
-	quest.75F5328EFECA0741.quest_desc: ["{ars_nouveau.adv.desc.magebloom_crop}"]
-	quest.76331FC15AFEA864.quest_desc: ["{advancement.astralsorcery.rock_crystal.description}"]
-	quest.770232E3F9E68313.quest_desc: ["{advancements.silentgear.crude_knife.description}"]
-	quest.772DE37B7BE6D978.quest_desc: ["{advancements.mekanism.factory.description}"]
-	quest.7761AB4E4B42F440.quest_desc: ["Harvest spirits from the creatures you slay, then infuse them into gear."]
-	quest.7761AB4E4B42F440.title: "Spirit magic"
-	quest.78DDD8ABCC5910EA.quest_subtitle: "Everything you have"
-	quest.78DDD8ABCC5910EA.title: "Maximum"
-	quest.78F77DE03D4E6F79.quest_desc: ["{advancements.silentgear.repair_from_broken.description}"]
-	quest.78FFC243CFF9A1A8.quest_desc: ["{advancement.immersiveengineering.craft_pump.desc}"]
-	quest.791DF961B2B5483A.quest_desc: ["{advancement.immersiveengineering.mb_tank.desc}"]
-	quest.79D5E78DC15DA3E3.quest_desc: ["{advancement.create.hose_pulley.desc}"]
-	quest.79EA40A3175DDFE1.quest_desc: ["{achievement.ae2.Facade.desc}"]
-	quest.79F6C64A23E99DB4.quest_desc: ["{advancements.apothic_enchanting.arcana100.desc}"]
-	quest.7A8C421053C32B42.quest_desc: ["{achievement.ae2.Presses.desc}"]
-	quest.7B559C87FD64720B.quest_desc: ["New materials and clever tools."]
-	quest.7B559C87FD64720B.title: "Just Dire Things"
-	quest.7B900055979A8FF2.quest_desc: ["{advancements.cataclysm.kill_clawdian.description}"]
-	quest.7D58EFB7127D053F.quest_desc: ["{achievement.ae2.Charger.desc}"]
-	quest.7D5BE4FC65E14220.quest_desc: ["{pneumaticcraft.advancement.fly_into_wall.desc}"]
-	quest.7DCF23B1BF111AAA.quest_desc: ["{ars_elemental.adv.desc.mark_of_mastery}"]
-	quest.7E12B34E6AF0F3D3.quest_desc: ["{achievement.ae2.CrystalGrowthAccelerator.desc}"]
-	quest.7E6AE2FD01572D04.quest_desc: ["{advancements.irons_spellbooks.spell_book_equip.description}"]
-	quest.7E7CAC6DCEDA5B28.quest_desc: ["{advancements.mowziesmobs.kill_bluff.description}"]
-	quest.7EA817436A360348.quest_desc: ["{advancement.create.display_link.desc}"]
-	quest.7FDE62619B145448.quest_desc: ["{advancement.immersiveengineering.mb_mixer.desc}"]
-	quest.801562464355030D.quest_desc: ["{pneumaticcraft.advancement.yeast_culture.desc}"]
-	quest.801F75C72055EBD8.quest_desc: ["{advancement.create_connected.root.desc}"]
-	quest.802CE926471B6591.quest_desc: ["{advancements.silentgear.crimson_steel.description}"]
-	quest.80370654C92BCF95.title: "The Harbinger"
-	quest.805CA98C579646D5.quest_desc: ["{advancements.mowziesmobs.kill_naga.description}"]
-	quest.81AC947A6919850E.quest_desc: ["{advancements.irons_spellbooks.spell_book_frostbranded.description}"]
-	quest.81FD894340540D11.quest_desc: ["{pneumaticcraft.advancement.root.desc}"]
-	quest.8289470054E7CE5C.title: "The End"
-	quest.83CF600E5B1DA6D9.quest_desc: ["{achievement.ae2.Recursive.desc}"]
-	quest.84248AF28774433F.quest_desc: ["{achievement.ae2.ChargedQuartz.desc}"]
-	quest.846D17FD8F7BFCAC.quest_desc: ["{advancement.create_connected.overstress_clutch.desc}"]
-	quest.84CA915E69ECBDB2.quest_desc: ["{advancements.mekanismadditions.balloon.description}"]
-	quest.852D0DF3D020526C.quest_desc: ["{advancements.silentgear.kachink1.description}"]
-	quest.856D5CEAC6DCFEFF.quest_desc: ["{advancement.create.chocolate_bucket.desc}"]
-	quest.85DC9B94D9F44286.quest_desc: ["{advancements.mekanism.nucleosynthesizer.description}"]
-	quest.860CEB42B508B423.quest_desc: ["Arcane crystals, deorum and the Clibano furnace."]
-	quest.860CEB42B508B423.title: "Dark arts"
-	quest.867E36A61CB663EA.quest_desc: ["{advancements.apotheosis.progression.haven.desc}"]
-	quest.86A39AE951A5CF11.quest_desc: ["{advancements.occultism.familiar.mans_best_friend.description}"]
-	quest.870A5E89161A6583.quest_desc: ["{advancement.create_connected.brass_gearbox.desc}"]
-	quest.875708BAEBDF657C.quest_desc: ["{advancements.occultism.chalks.yellow.description}"]
-	quest.87632D024A1C2F55.quest_desc: ["{advancements.farmersdelight.place_campfire.description}"]
-	quest.876E595BF6FC292F.quest_desc: ["{advancements.occultism.familiar.beholder_eat.description}"]
-	quest.87D62A025D82C695.quest_desc: ["{advancements.occultism.chalks.green.description}"]
-	quest.88841F951EBD90D7.quest_desc: ["{advancement.create.sturdy_sheet.desc}"]
-	quest.8905463764F245B2.quest_desc: ["{advancements.mekanism.installer.description}"]
-	quest.898BB7FB94B6C71F.quest_desc: ["{advancements.farmersdelight.place_organic_compost.description}"]
-	quest.89A6788DEBA11808.quest_desc: ["{advancements.mekanism.modification_station.description}"]
-	quest.8A1C79F8F717D4B8.quest_desc: ["{advancements.occultism.familiar.goat_detach.description}"]
-	quest.8A8BF83FBEB6EB62.quest_desc: ["{lootr.advancements.1chest.description}"]
-	quest.8A92900B3E8A7116.quest_desc: ["{pneumaticcraft.advancement.charged_wrench.desc}"]
-	quest.8AC9DF58056B1DD9.quest_desc: ["{pneumaticcraft.advancement.programmable_controller.desc}"]
-	quest.8ADBA98E361C2D3A.quest_desc: ["{advancement.create.encased_fan.desc}"]
-	quest.8B7CAC3D12B9943E.quest_desc: ["{advancement.create.mechanical_arm.desc}"]
-	quest.8BC04C7FD342ACC7.quest_desc: ["{advancement.create.frogport.desc}"]
-	quest.8BCF8BC9B5288EF7.quest_desc: ["{advancements.biomeswevegone.adventure.little_house_on_the_prairie.description}"]
-	quest.8C0A9D24CCF13AF4.quest_desc: ["{ars_nouveau.adv.desc.alteration_table}"]
-	quest.8C773F550D445041.quest_desc: ["{advancements.occultism.familiar.headless_cthulhu_head.description}"]
-	quest.8CFC8E46331331BD.quest_desc: ["{advancements.biomeswevegone.adventure.root.description}"]
-	quest.8D9647F991F211B6.quest_desc: ["Every hostile mob you defeat gives &bgrade XP&r: about a quarter of its max health. Farm animals and villagers give nothing."]
-	quest.8D9647F991F211B6.quest_subtitle: "Hostile kills give grade XP"
-	quest.8D9647F991F211B6.title: "First Exorcisms"
-	quest.8DA49C7E7086A7DA.quest_desc: ["Everyone here is born with an &dinnate technique&r. Most awaken as &7Grade 2&r sorcerers; a rare few are born far stronger.", "", "&eZ&r and &eX&r use your two abilities. &eV&r is Domain Expansion (unlocks at &6Grade 1&r). &eG&r is your Maximum technique (Special Grade only).", "", "Type &b/cursed info&r any time to see your technique, grade and what you need for the next promotion.", "", "Other chapters cover the magic, tech and exploration mods in the pack. Do them in any order."]
-	quest.8DA49C7E7086A7DA.quest_subtitle: "Read me first"
-	quest.8DA49C7E7086A7DA.title: "Welcome to Cursed Arts"
-	quest.8DCD9FDB3CE4B60C.quest_desc: ["{advancements.mekanism.materials.description}"]
-	quest.8DD4C6A76B78B5AA.quest_desc: ["{advancements.silentgear.stone_anvil.description}"]
-	quest.8E68E1048D1D458E.quest_desc: ["{advancements.apotheosis.progression.frontier.desc}"]
-	quest.8E7A420D8ACC943B.quest_desc: ["{achievement.ae2.P2P.desc}"]
-	quest.8ED35648516B3012.quest_desc: ["{advancement.immersiveengineering.main_root.desc}"]
-	quest.8EE4808DD480898D.quest_desc: ["{advancement.immersiveengineering.craft_duroplast.desc}"]
-	quest.8F4C6FE3EA3BEAEB.quest_desc: ["{advancement.create.mechanical_mixer.desc}"]
-	quest.8FA079A808FCAD16.quest_desc: ["{advancement.create.brass_casing.desc}"]
-	quest.8FF31AEF081EA381.quest_desc: ["{advancements.mekanism.stopping_lasers.description}"]
-	quest.8FF80CF8A4D5878F.quest_desc: ["Big, animated machines for processing and power."]
-	quest.8FF80CF8A4D5878F.title: "Industry"
-	quest.904313FED0998DAD.quest_desc: ["{advancements.biomeswevegone.adventure.true_traveler.description}"]
-	quest.90504D158DF25297.quest_desc: ["{advancements.silentgear.high_durability.description}"]
-	quest.9236044D66906A32.quest_desc: ["{advancements.farmersdelight.place_feast.description}"]
-	quest.9377AE95BB5E4E36.quest_desc: ["{advancements.irons_spellbooks.make_wayward_compass.description}"]
-	quest.9483E9FB35FFCAFD.quest_desc: ["{advancements.biomeswevegone.husbandry.root.description}"]
-	quest.94C11AB059C53BB2.quest_desc: ["{advancement.create.display_board_0.desc}"]
-	quest.94C33C857C9E87C4.quest_desc: ["{lootr.advancements.1cart.description}"]
-	quest.94D425703130EEA7.quest_desc: ["{ars_nouveau.adv.desc.whirlisprig_charm}"]
-	quest.94E450FE8F6E5793.quest_desc: ["{advancements.farmersdelight.use_skillet.description}"]
-	quest.95313302C105FA91.quest_desc: ["{advancement.create.train_portal.desc}"]
-	quest.95323BCDE285A4D5.quest_desc: ["{advancement.create.factory_gauge.desc}"]
-	quest.95819F02F75A3D7E.quest_desc: ["{advancement.dungeons_arise.find_greenwood_pub.desc}"]
-	quest.963DF83A9D1BB4F5.quest_desc: ["{advancements.farmersdelight.plant_rice.description}"]
-	quest.964D8D595CE37988.quest_desc: ["{advancement.immersiveengineering.craft_hammer.desc}"]
-	quest.970E7CED049BCC86.quest_desc: ["{advancements.occultism.familiar.party.description}"]
-	quest.97E4BA2D3375CD29.quest_desc: ["{advancement.create.water_wheel.desc}"]
-	quest.9816E5AE9F0FE060.quest_desc: ["{advancement.create.funnel.desc}"]
-	quest.9827E8225A21022B.quest_desc: ["{advancement.dungeons_arise.find_wishing_well.desc}"]
-	quest.984C93F251A6AD6D.quest_desc: ["{advancements.occultism.familiar.shub_niggurath_summon.description}"]
-	quest.9874C636FB5AC4FD.quest_desc: ["{advancements.mekanism.chemical_transport.description}"]
-	quest.9887DEC4B63840EC.quest_desc: ["{ars_nouveau.adv.desc.starby_charm}"]
-	quest.98C546D1896A2066.quest_desc: ["{advancement.immersiveengineering.mb_dieselgen.desc}"]
-	quest.98E29E13C518B9B0.quest_desc: ["{advancements.biomeswevegone.adventure.pale_in_comparison.description}"]
-	quest.99667AF58EBDB573.quest_desc: ["{pneumaticcraft.advancement.plastic.desc}"]
-	quest.9A07843E78F11B95.quest_desc: ["{advancement.immersiveengineering.connect_wire.desc}"]
-	quest.9A1BF2E9240EF85D.quest_desc: ["{advancements.silentgear.blaze_gold.description}"]
-	quest.9AE739B8C446C7A9.quest_desc: ["{ars_nouveau.adv.desc.potion_melder}"]
-	quest.9B037679623F62E4.quest_desc: ["{advancements.mowziesmobs.kill_foliaath.description}"]
-	quest.9B050ED10540CDBE.quest_desc: ["{lootr.advancements.100loot.description}"]
-	quest.9B25F0207E4C3807.quest_desc: ["{advancements.mekanism.radiation_poisoning.description}"]
-	quest.9B2C5C3B53AB8A9F.quest_desc: ["{advancements.cataclysm.burning_arena.description}"]
-	quest.9B392D7923CC4243.title: "Ancient Remnant"
-	quest.9B6A7E1C8A949197.quest_desc: ["{ars_elemental.adv.desc.summon_strider}"]
-	quest.9BF545F9022868DB.quest_desc: ["{advancements.biomeswevegone.description.root}"]
-	quest.9BF6269F5DEA7172.quest_desc: ["{advancements.farmersdelight.harvest_ropelogged_tomato.description}"]
-	quest.9C26F8EF01C89CA9.quest_desc: ["{advancement.create.millstone.desc}"]
-	quest.9C4CCE7F82F42D6A.quest_desc: ["{advancements.apothic_spawners.redstone.desc}"]
-	quest.9C887BF5EB86206C.quest_desc: ["{advancement.create.pulley_maxed.desc}"]
-	quest.9CA90B855C42001F.quest_desc: ["Fusion crafting unlocks the Wyvern tier of gear and machines."]
-	quest.9CA90B855C42001F.title: "Wyvern tier"
-	quest.9CFE1290B0E4EBF3.quest_desc: ["{ars_elemental.adv.desc.curio_bag}"]
-	quest.9D29485A0E33A552.quest_desc: ["{lootr.advancements.a_pot.description}"]
-	quest.9D3D9E4147D93CFD.quest_desc: ["{advancements.silentgear.standard_tools.description}"]
-	quest.9D4F8C2029F05441.quest_desc: ["{advancements.irons_spellbooks.make_arcane_anvil.description}"]
-	quest.9D6B6727EE8A729C.quest_desc: ["{advancements.irons_spellbooks.staff_artificer.description}"]
-	quest.9D7B4FC424D10C23.quest_desc: ["{advancements.cataclysm.ancient_factory.description}"]
-	quest.9E048902ABA867FD.quest_desc: ["{advancement.immersiveengineering.craft_sheetmetal.desc}"]
-	quest.9E10562E5747BFD3.quest_desc: ["{advancements.cataclysm.find_soul_black_smith.description}"]
-	quest.9E20D2740E3279F8.quest_desc: ["{advancements.mekanism.qio_drive_array.description}"]
-	quest.9E3A77F8A60A251D.quest_desc: ["{advancements.apotheosis.challenge_gates.sigil_of_supremacy.desc}"]
-	quest.9EE0365D77C186AF.quest_desc: ["{advancements.irons_spellbooks.make_inscription_table.description}"]
-	quest.9FEDB3F5FA4B9D35.quest_desc: ["{advancement.immersiveengineering.liquid_concrete.desc}"]
-	quest.9FF9DBAE5AC48F1B.quest_desc: ["{advancements.apothic_spawners.spawnrange.desc}"]
-	quest.A0211C427572C661.quest_desc: ["{ars_nouveau.adv.desc.scryers_oculus}"]
-	quest.A02820E52741F5FA.quest_desc: ["{advancements.apothic_enchanting.60ench.desc}"]
-	quest.A0A1F3EA8AE5BE8E.quest_desc: ["{advancements.mekanism.elite_qio_drive.description}"]
-	quest.A15583008F67D47E.quest_desc: ["{advancements.silentgear.moonwalker.description}"]
-	quest.A1EE6F45355E03F5.quest_desc: ["{advancements.cataclysm.kill_revenant.description}"]
-	quest.A26C2A5F88C0E4ED.quest_desc: ["{advancement.create.arm_blaze_burner.desc}"]
-	quest.A29AC9162B55FE44.quest_desc: ["{advancement.immersiveengineering.mb_improvedblastfurnace.desc}"]
-	quest.A2ED25D74767CA78.quest_desc: ["{advancements.farmersdelight.master_chef.description}"]
-	quest.A33A32F3AB196EE7.quest_desc: ["{ars_nouveau.adv.desc.archmage_spell_book}"]
-	quest.A34A9F1B5AC81476.quest_desc: ["Apotheosis gear has random affixes. Reforge it for better rolls."]
-	quest.A351B403099DC171.quest_desc: ["{advancements.mowziesmobs.kill_frostmaw.description}"]
-	quest.A36B33CEA06302A2.quest_desc: ["{pneumaticcraft.advancement.program_drone.desc}"]
-	quest.A372CA9FDC4EE4BF.quest_desc: ["{advancement.immersiveengineering.mb_squeezer.desc}"]
-	quest.A373510204BB3050.quest_desc: ["{advancements.mekanism.qio_redstone_adapter.description}"]
-	quest.A3F13B2FB023B0DF.quest_desc: ["The endgame: awakened draconium and chaos."]
-	quest.A3F13B2FB023B0DF.title: "Awakened"
-	quest.A4568A6F9EC15C3D.quest_desc: ["Points you at any structure, including boss arenas."]
-	quest.A530EAF396066656.quest_desc: ["{advancement.create.train_whistle.desc}"]
-	quest.A53B37D3F0B1B75D.quest_desc: ["{advancements.mekanism.mekasuit.description}"]
-	quest.A5403A50CE6C9525.quest_desc: ["Your cursed energy reserves deepen: more energy, faster regen, harder hits."]
-	quest.A5403A50CE6C9525.quest_subtitle: "2,500 grade XP"
-	quest.A5403A50CE6C9525.title: "Semi-Grade 1"
-	quest.A56D94CB84D12016.quest_desc: ["{advancement.astralsorcery.socket_gem.description}"]
-	quest.A5F3B52D787CF53D.quest_desc: ["{advancement.create.table_cloth_shop.desc}"]
-	quest.A61DA38FA30B44BE.quest_desc: ["{advancement.immersiveengineering.upgrade_railgun.desc}"]
-	quest.A666BDF9635E6316.quest_desc: ["{pneumaticcraft.advancement.ethanol.desc}"]
-	quest.A6C871DA89116F0A.quest_desc: ["{advancements.occultism.familiar.dragon_ride.description}"]
-	quest.A760D992481BED01.quest_desc: ["{advancements.silentgear.root.description}"]
-	quest.A8FC1B769764622D.quest_desc: ["{achievement.ae2.Fluix.desc}"]
-	quest.A9084599041EC275.quest_desc: ["{advancement.create.steam_engine.desc}"]
-	quest.AA36C68A495C76EE.title: "Ferrous Wroughtnaut"
-	quest.AA6AB7FC664DE488.quest_desc: ["{advancements.mekanism.pump.description}"]
-	quest.AAE80E4261A6FFB5.quest_desc: ["{advancement.create.copper.desc}"]
-	quest.AB675B6079A01DFA.quest_desc: ["{ars_elemental.adv.desc.water_focus}"]
-	quest.AB776739330C1A8A.quest_desc: ["{advancement.immersiveengineering.mb_excavator.desc}"]
-	quest.AC50A758346596DF.quest_desc: ["{advancements.mekanism.ultimate_qio_drive.description}"]
-	quest.ADAF7FE142E7D793.quest_desc: ["{advancements.occultism.familiar.capture.description}"]
-	quest.ADBC12EF5E651860.quest_desc: ["{advancements.silentgear.bow.description}"]
-	quest.AE376BB09A929298.quest_desc: ["{ars_nouveau.advancement.desc.root}"]
-	quest.AE562960B510CF06.quest_desc: ["{advancements.mekanism.portable_qio_dashboard.description}"]
-	quest.AEB2A87B9BEBC865.quest_desc: ["{advancement.immersiveengineering.craft_batcher.desc}"]
-	quest.AED93B1C7B2A8CC4.quest_desc: ["{advancements.occultism.chalks.lime.description}"]
-	quest.AF454D6C3808D47F.quest_desc: ["{advancement.create.diving_suit.desc}"]
-	quest.AF7176A8F8B81691.quest_desc: ["{advancement.create.andesite_alloy.desc}"]
-	quest.AF9AE3D1C2FD195D.quest_desc: ["{advancements.farmersdelight.harvest_straw.description}"]
-	quest.AFE2C35A46AB67A5.quest_desc: ["{advancement.create.anvil_plough.desc}"]
-	quest.B02170EC2F533BAC.quest_desc: ["{advancement.create.shifting_gears.desc}"]
-	quest.B093F52C4F979B2F.quest_desc: ["{advancements.apothic_enchanting.quanta50.desc}"]
-	quest.B0A0C6A1CC3363D9.quest_desc: ["{advancements.mekanism.sna.description}"]
-	quest.B0EE9EAAC78BA596.quest_desc: ["{advancement.create.windmill_maxed.desc}"]
-	quest.B12C57B8159FC9D8.quest_desc: ["{advancements.silentgear.grader_catalyst_3.description}"]
-	quest.B16F5001A02C1003.quest_desc: ["{achievement.ae2.Networking2.desc}"]
-	quest.B1DFF6C2BE8F3C0E.quest_desc: ["{advancements.silentgear.crossbow.description}"]
-	quest.B2166D1EFF94E0B6.quest_desc: ["{advancement.dungeons_arise.wda_root.desc}"]
-	quest.B2F723D591E98CFC.quest_desc: ["{advancements.mekanism.machine_security.description}"]
-	quest.B3299E39D864564C.quest_desc: ["{advancements.apothic_enchanting.bookshelf.desc}"]
-	quest.B344ED76A4AF2B5C.quest_desc: ["{advancement.create.spout.desc}"]
-	quest.B3799B3A5A056ECB.quest_desc: ["{ars_nouveau.adv.desc.potion_diffuser}"]
-	quest.B37EA7A483F67E39.quest_desc: ["{pneumaticcraft.advancement.programmer.desc}"]
-	quest.B3A8351EEC9F4D14.quest_desc: ["{advancements.irons_spellbooks.root.description}"]
-	quest.B3BC59E33AA8F4D6.quest_desc: ["{advancements.apothic_spawners.light.desc}"]
-	quest.B3BFD859FB2B1977.quest_desc: ["{ars_nouveau.adv.desc.ritual_gravity}"]
-	quest.B3E684A9B82342B2.quest_desc: ["{advancements.silentgear.tip_upgrade.description}"]
-	quest.B44A77CCA7312013.quest_desc: ["{advancements.irons_spellbooks.ink_legendary.description}"]
-	quest.B477487393FC4026.quest_desc: ["{ars_nouveau.adv.desc.drygmy_charm}"]
-	quest.B5F66DE662D362B1.quest_desc: ["{advancements.mekanism.logistical_sorter.description}"]
-	quest.B618BDD708253FC7.quest_desc: ["{advancements.mowziesmobs.kill_umvuthi.description}"]
-	quest.B659F719FDE99EEA.quest_desc: ["{advancement.create.clockwork_bearing.desc}"]
-	quest.B7816C76B3DB310A.quest_desc: ["{ars_nouveau.adv.desc.basic_spell_turret}"]
-	quest.B804574EF48CF901.quest_desc: ["{advancements.mekanism.hydrogen_powered_flight.description}"]
-	quest.B8116B76E33120C4.quest_desc: ["{advancements.biomeswevegone.husbandry.granny_smith.description}"]
-	quest.B860837FD76D74E0.quest_desc: ["{pneumaticcraft.advancement.air_compressor.desc}"]
-	quest.B86AD1270F4C918B.quest_desc: ["{achievement.ae2.SpatialIO.desc}"]
-	quest.B88D9C407AC896F1.quest_desc: ["{advancements.mekanism.automated_crafting.description}"]
-	quest.B8996C31008B117A.quest_desc: ["{advancements.mekanismadditions.glow_in_the_dark.description}"]
-	quest.B8C3107887A0CF75.quest_desc: ["{advancements.mekanism.energy_cube.description}"]
-	quest.B8DA5D68CCB980D0.quest_desc: ["{ars_elemental.adv.desc.lesser_fire_focus}"]
-	quest.B934E5EFB7E1FBF3.quest_desc: ["{advancement.dungeons_arise.find_typhon.desc}"]
-	quest.B93D5A8BD0493B0C.quest_desc: ["{advancements.occultism.chalks.black.description}"]
-	quest.BA5CC017A76A81AD.quest_desc: ["{advancement.create.contraption_actors.desc}"]
-	quest.BAD3BE93855D3744.quest_desc: ["{advancements.mekanism.qio_dashboard.description}"]
-	quest.BAFDFFE242318A9A.quest_desc: ["{advancement.dungeons_arise.find_abandoned_temple.desc}"]
-	quest.BB014CD595D8C6EF.quest_desc: ["{advancement.create.crushing_wheel.desc}"]
-	quest.BB0BF8F5F2B26CD4.quest_desc: ["{pneumaticcraft.advancement.pressure_tube.desc}"]
-	quest.BB80E847317C0EC8.quest_desc: ["{achievement.ae2.StorageCell.desc}"]
-	quest.BBBBAC4D6960A81F.quest_desc: ["{advancements.mekanism.qio_exporter.description}"]
-	quest.BC2DC2533B9D9818.quest_desc: ["{advancement.create.backtank.desc}"]
-	quest.BC487FBBDCA9F604.quest_desc: ["{advancements.mowziesmobs.sculptor_challenge.description}"]
-	quest.BC802ECD0869E9F6.quest_desc: ["{advancements.mekanism.seismic_vibrations.description}"]
-	quest.BCBBDA04D3D8AC9F.quest_desc: ["{pneumaticcraft.advancement.pressure_chamber.desc}"]
-	quest.BCE9D41A64B1B544.quest_desc: ["{advancements.mekanism.yellow_cake.description}"]
-	quest.BD9395CCD7043202.quest_desc: ["{advancements.occultism.familiar.chimera_ride.description}"]
-	quest.BDF5B4F013A20EEB.quest_desc: ["{advancements.biomeswevegone.husbandry.berrily_alive.description}"]
-	quest.BE1A26D853716B83.quest_desc: ["{advancement.dungeons_arise.find_giant_mushroom.desc}"]
-	quest.BE7C75B4F3A3C7BE.quest_desc: ["{advancements.occultism.chalks.pink.description}"]
-	quest.BEC63B9BB9483D2E.quest_desc: ["{advancements.silentgear.blueprint_book.description}"]
-	quest.BEF6DAABB5B9DFF6.quest_desc: ["{advancements.biomeswevegone.husbandry.just_like_grandmas.description}"]
-	quest.BEF72515AFC032D8.quest_desc: ["{advancement.create.packager.desc}"]
-	quest.BEFDFE9BF937C7A6.quest_desc: ["{advancement.astralsorcery.attune_player.description}"]
-	quest.BF226043CA1FE422.quest_desc: ["{achievement.ae2.CraftingCPU.desc}"]
-	quest.BF5620BF5F24FC62.quest_desc: ["{advancements.farmersdelight.obtain_netherite_knife.description}"]
-	quest.BF715F71C6651386.quest_desc: ["{advancement.create.drain.desc}"]
-	quest.BFEE5284B643FD45.quest_desc: ["{advancements.occultism.familiar.beholder_ray.description}"]
-	quest.C00AFA5634471204.quest_desc: ["{pneumaticcraft.advancement.lubricant_bucket.desc}"]
-	quest.C080380378795367.quest_desc: ["{advancements.farmersdelight.get_ham.description}"]
-	quest.C114471A50D3B31B.quest_desc: ["{advancements.irons_spellbooks.spell_book_dragon.description}"]
-	quest.C22F5EA2DF0095F6.quest_desc: ["{advancements.mowziesmobs.root.description}"]
-	quest.C27132A37BF36985.quest_desc: ["{advancements.biomeswevegone.husbandry.johnny_appleseed.description}"]
-	quest.C3A7241FA3C4E8A2.quest_desc: ["Better food, longer fights."]
-	quest.C3AF22BC6A897412.quest_desc: ["{advancement.dungeons_arise.find_illager_corsair_or_illager_galley.desc}"]
-	quest.C3BADE332ABBF654.quest_desc: ["{advancements.mowziesmobs.kill_elokosa_howler.description}"]
-	quest.C43D6763B2BE26E1.quest_desc: ["{advancements.silentgear.overworld_plants.description}"]
-	quest.C44DFCBC1BFD9EB7.quest_desc: ["{advancement.astralsorcery.lumen_prismatic.description}"]
-	quest.C4BFB58CCC01F704.quest_desc: ["{advancements.farmersdelight.place_cooking_pot.description}"]
-	quest.C5270B62B069BEAF.quest_desc: ["{advancements.cataclysm.find_ruined_citadel.description}"]
-	quest.C57667D18A15428F.title: "The Sculptor"
-	quest.C5DD73D7D1CFE218.quest_desc: ["{advancements.mekanism.environmental_radiation.description}"]
-	quest.C66931FB5ED3C653.quest_desc: ["{ars_nouveau.adv.desc.wixie_charm}"]
-	quest.C7405B3D326997AA.quest_desc: ["{advancements.occultism.familiar.cthulhu.description}"]
-	quest.C75C8FE06CCBAC93.quest_desc: ["{advancements.cataclysm.sunken_city.description}"]
-	quest.C86F66533B5E4AB1.quest_desc: ["{pneumaticcraft.advancement.flux_compressor.desc}"]
-	quest.C8A3265816FC73F3.quest_desc: ["{advancements.irons_spellbooks.pyrium_staff.description}"]
-	quest.CA3B09FC19C039EF.quest_desc: ["{pneumaticcraft.advancement.lpg_bucket.desc}"]
-	quest.CA59F4F6DE1336DC.quest_desc: ["{advancements.mekanism.dictionary.description}"]
-	quest.CA6B1FDF9CA51A29.quest_desc: ["{lootr.advancements.1frame.description}"]
-	quest.CADAC459A3EA4D24.quest_desc: ["{ars_nouveau.adv.desc.poof_mob}"]
-	quest.CB45B192309FA1BC.quest_desc: ["{advancements.farmersdelight.get_rich_soil.description}"]
-	quest.CB5644CD48E4DA45.quest_desc: ["{advancements.silentgear.sickle.description}"]
-	quest.CB8883312C629D59.quest_desc: ["{pneumaticcraft.advancement.etchacid_bucket.desc}"]
-	quest.CC3DB9D6B1FA2B17.quest_desc: ["{achievement.ae2.Networking1.desc}"]
-	quest.CC3EC79693E7A7BE.quest_desc: ["{pneumaticcraft.advancement.liquid_compressor.desc}"]
-	quest.CC59109E7E00C5F1.quest_desc: ["{advancement.create.belt.desc}"]
-	quest.CCDA31EC041EF63E.quest_desc: ["{advancements.apothic_spawners.noai.desc}"]
-	quest.CD544C33BC1EE436.quest_desc: ["{advancement.dungeons_arise.find_lighthouse.desc}"]
-	quest.CE7ABE497CACDBE5.quest_desc: ["{advancement.create.conductor.desc}"]
-	quest.CF1C7AE5449D85EE.quest_desc: ["{ars_elemental.adv.desc.lesser_air_focus}"]
-	quest.CF25B20C87D919E6.quest_desc: ["{pneumaticcraft.advancement.machine_vandal.desc}"]
-	quest.CF325CCC6178DE37.quest_desc: ["{advancement.immersiveengineering.buy_shaderbag.desc}"]
-	quest.CF5641397D0ECEDF.quest_desc: ["{advancements.silentgear.mattock.description}"]
-	quest.CF88591C7F4B59D9.quest_desc: ["{advancement.create.glass_pipe.desc}"]
-	quest.CFC8EDA5EA916890.quest_desc: ["{advancement.create.mechanical_press.desc}"]
-	quest.D0208D9F2F59EA20.quest_desc: ["{advancement.immersiveengineering.craft_drop_conveyor.desc}"]
-	quest.D08E3514E8CA3704.quest_desc: ["{ars_nouveau.adv.desc.apprentice_spell_book}"]
-	quest.D09B5BE4DE758B17.quest_desc: ["{pneumaticcraft.advancement.aerial_interface.desc}"]
-	quest.D0B8A03CB85725D9.quest_desc: ["Laser mining tools you can upgrade at the Modification Table."]
-	quest.D0B8A03CB85725D9.title: "Mining Gadgets"
-	quest.D0EEC1F4C5F32AB6.quest_desc: ["{pneumaticcraft.advancement.pcb_blueprint.desc}"]
-	quest.D13D02E0690B8064.quest_desc: ["{pneumaticcraft.advancement.logistics_drone_deployed.desc}"]
-	quest.D185C50CD6084C5E.quest_desc: ["{advancements.occultism.chalks.orange.description}"]
-	quest.D1F04CA663CAA65E.quest_desc: ["{advancement.create.stressometer.desc}"]
-	quest.D1FDDBB3DD4683D0.quest_desc: ["{advancement.immersiveengineering.craft_drill.desc}"]
-	quest.D219F70B2EBB7D49.quest_desc: ["{advancement.create.long_travel.desc}"]
-	quest.D2C7154E8FAD5323.quest_desc: ["{advancements.silentgear.azure_silver.description}"]
-	quest.D2F5D028B8419480.title: "Scylla"
-	quest.D3779579DB656CFE.quest_desc: ["{advancements.mekanismtools.loved_by_piglins.description}"]
-	quest.D46E99C580453862.quest_desc: ["{pneumaticcraft.advancement.tp_plant.desc}"]
-	quest.D4795A6AFCBBED1E.quest_desc: ["{ars_nouveau.adv.desc.amethyst_golem_charm}"]
-	quest.D491BE8D6C228127.quest_desc: ["{advancement.create.track_signal.desc}"]
-	quest.D519A93373A83EF1.quest_desc: ["{ars_additions.adv.desc.find_ruined_portal}"]
-	quest.D57EB1FB6917151F.quest_desc: ["{advancements.occultism.chalks.gray.description}"]
-	quest.D6492E915E738D70.quest_desc: ["{achievement.ae2.Networking3.desc}"]
-	quest.D68F3B6CE9E3ED60.quest_desc: ["{advancement.dungeons_arise.find_infested_temple.desc}"]
-	quest.D735291EBF8D3326.quest_desc: ["{advancements.mekanism.reinforced_alloy.description}"]
-	quest.D75F77311AADC927.quest_desc: ["{advancement.immersiveengineering.place_conveyor.desc}"]
-	quest.D76AEC9115DD30CF.quest_desc: ["{advancements.silentgear.armor.description}"]
-	quest.D7887D308C692338.quest_desc: ["{advancement.create_connected.kinetic_battery.desc}"]
-	quest.D7896D70DF1195DF.quest_desc: ["{advancements.mekanism.sawmill.description}"]
-	quest.D7997DEDAA582093.title: "Ender Guardian"
-	quest.D8C17911B4C20831.quest_desc: ["{pneumaticcraft.advancement.biodiesel.desc}"]
-	quest.DA1E15F8C70AA064.quest_desc: ["{advancements.apothic_enchanting.max_stats.desc}"]
-	quest.DA869FFAE810FEEA.quest_desc: ["{advancement.astralsorcery.root.description}"]
-	quest.DB2396F581953196.quest_desc: ["Draconium ore is found in the Overworld, Nether and End. Everything starts here."]
-	quest.DB2396F581953196.title: "Draconium"
-	quest.DB5156A100E2A599.quest_desc: ["{advancements.apothic_enchanting.upgrade_seashelf.desc}"]
-	quest.DB5FE85741661A98.quest_desc: ["{advancement.dungeons_arise.find_shiraz_palace.desc}"]
-	quest.DC56D31777BE547C.quest_desc: ["{advancements.mekanism.teleportation_core.description}"]
-	quest.DC96A307E73B6E8A.quest_desc: ["{pneumaticcraft.advancement.vortex_tube.desc}"]
-	quest.DD0F28807C629132.quest_desc: ["{advancements.farmersdelight.use_cutting_board.description}"]
-	quest.DE63D62064B311FA.quest_desc: ["{advancement.create.chute.desc}"]
-	quest.DE82D96B93CD8761.quest_desc: ["{advancements.cataclysm.kill_all_bosses.description}"]
-	quest.E032621B04D3894A.quest_desc: ["{advancements.mekanism.steel_ingot.description}"]
-	quest.E0572D6530502BA0.quest_desc: ["{advancement.create.copper_casing.desc}"]
-	quest.E0632906CAA3A4DF.quest_desc: ["{advancements.apothic_spawners.modifier.desc}"]
-	quest.E18EEAFF4BD2487D.quest_desc: ["{pneumaticcraft.advancement.advanced_pressure_tube.desc}"]
-	quest.E1CA863F5A0DFA24.quest_desc: ["{advancement.create.steam_whistle.desc}"]
-	quest.E21F6CA3D1105AC0.quest_desc: ["{advancement.create.cardboard_armor.desc}"]
-	quest.E2397FA42D9F109A.title: "Ignis"
-	quest.E2867C13E006675B.quest_desc: ["Wireless logistics with laser nodes and cards."]
-	quest.E2867C13E006675B.title: "LaserIO"
-	quest.E2B2F4CD3C5D9525.quest_desc: ["{advancements.occultism.chalks.blue.description}"]
-	quest.E2FBB0D3F5CEC8FB.quest_desc: ["{advancement.create.mechanical_pump_0.desc}"]
-	quest.E3605646B6BBE3DE.quest_desc: ["{advancements.silentgear.repair_kit.description}"]
-	quest.E36B1F92221D425B.quest_desc: ["{advancements.apothic_spawners.conditions.desc}"]
-	quest.E3F2F19E6998174D.quest_desc: ["Pick a generator and store what it makes."]
-	quest.E3F2F19E6998174D.title: "Generation"
-	quest.E51296596094329E.quest_desc: ["{advancement.create.compacting.desc}"]
-	quest.E5530EF5CFED2776.quest_desc: ["{ars_nouveau.adv.desc.create_portal}"]
-	quest.E55700C4EEC6542E.quest_desc: ["{achievement.ae2.Controller.desc}"]
-	quest.E5CA354021B657DE.quest_desc: ["{lootr.advancements.10loot.description}"]
-	quest.E6B2BC6EB5A0012E.quest_desc: ["{advancement.dungeons_arise.find_mushroom_house.desc}"]
-	quest.E75B7FB54EE8B340.quest_desc: ["{ars_elemental.adv.desc.air_focus}"]
-	quest.E79E57DA43555DF8.quest_desc: ["{ars_elemental.adv.desc.firenando_charm}"]
-	quest.E7A7F3EED3857A66.quest_desc: ["{ars_nouveau.adv.desc.potion_flask}"]
-	quest.E7FB4EA7477E66B0.quest_desc: ["{advancements.mekanism.alarm.description}"]
-	quest.E8367FE0EA5F2F29.quest_desc: ["{advancements.apothic_spawners.players.desc}"]
-	quest.E8C6C3FAA6CF8C71.quest_desc: ["{advancements.silentgear.nether_plants.description}"]
-	quest.E9A080A61088D8E2.quest_desc: ["{advancements.mekanism.injection_chamber.description}"]
-	quest.E9A1FED6EE408CF7.quest_desc: ["{advancement.astralsorcery.attune_crystal.description}"]
-	quest.E9E5639EB879A658.quest_desc: ["{advancement.dungeons_arise.find_bandit_towers.desc}"]
-	quest.E9F630050868792E.quest_desc: ["{advancements.farmersdelight.craft_knife.description}"]
-	quest.EA04E4C9AA182E8D.quest_desc: ["{advancements.apotheosis.challenge_gates.ascent.desc}"]
-	quest.EA50ACFADE98BF24.quest_desc: ["{advancement.immersiveengineering.mb_refinery.desc}"]
-	quest.EB0E2B3D9764BBCE.quest_desc: ["{advancement.create.train_casing_00.desc}"]
-	quest.EB6945937B9084CA.quest_desc: ["{advancement.astralsorcery.perk_level_20.description}"]
-	quest.EB8998374AA0E0B6.quest_desc: ["Upgrade your backpack tier by tier."]
-	quest.EB8998374AA0E0B6.title: "Backpacks"
-	quest.EBA88305B31E9305.quest_desc: ["{lootr.advancements.1shulker.description}"]
-	quest.EC0D22AA296DD9F5.quest_desc: ["{achievement.ae2.CraftingTerminal.desc}"]
-	quest.EC12D3DC0C408713.quest_desc: ["{ars_nouveau.adv.desc.warp_scroll}"]
-	quest.EC1B46C4F466A08E.quest_desc: ["{advancement.immersiveengineering.mb_crusher.desc}"]
-	quest.EC2CA2C629E63CE3.quest_desc: ["{advancements.apothic_enchanting.max_rectified.desc}"]
-	quest.ED166CC18B780BC1.quest_desc: ["{advancements.farmersdelight.hit_raider_with_rotten_tomato.description}"]
-	quest.ED1FE1451A679B5D.quest_desc: ["{advancements.irons_spellbooks.spell_book_diamond.description}"]
-	quest.ED33747499DDA850.quest_desc: ["{advancements.farmersdelight.root.description}"]
-	quest.ED3AABE62ADB3259.quest_desc: ["{advancements.mekanism.teleporter.description}"]
-	quest.EDB9022BAD22445D.quest_desc: ["{advancements.occultism.chalks.cyan.description}"]
-	quest.EE415F894B6BF226.quest_desc: ["{advancement.immersiveengineering.make_steel.desc}"]
-	quest.EEFD08C78E7C75CE.quest_desc: ["{advancements.mekanism.playing_with_fire.description}"]
-	quest.EFB7A71AA518C426.quest_desc: ["{advancements.occultism.chalks.void.description}"]
-	quest.F1247F8F1D714EEB.quest_desc: ["{advancement.immersiveengineering.craft_buzzsaw.desc}"]
-	quest.F158C9FCA369A751.quest_desc: ["{advancements.silentgear.azure_repair_kit.description}"]
-	quest.F168D7C4084C7311.quest_desc: ["{lootr.advancements.50loot.description}"]
-	quest.F19C273A02CA9B17.quest_desc: ["{advancement.create.mechanical_crafter.desc}"]
-	quest.F1AA6CC8FE4FE9E1.quest_desc: ["{advancement.immersiveengineering.craft_extract_conveyor.desc}"]
-	quest.F20E0D68280EAD2F.quest_desc: ["{advancement.immersiveengineering.mb_arcfurnace.desc}"]
-	quest.F22FB46DD916BCFC.quest_desc: ["{pneumaticcraft.advancement.flight.desc}"]
-	quest.F25F542D081CF905.quest_desc: ["{advancement.immersiveengineering.place_dynamo.desc}"]
-	quest.F3EB80DBDA8AC33F.quest_desc: ["{advancement.immersiveengineering.upgrade_drill.desc}"]
-	quest.F45E534923203F83.quest_desc: ["{advancements.mekanism.network_reader.description}"]
-	quest.F4B58D7EB9778534.quest_desc: ["{advancements.mekanism.personal_storage.description}"]
-	quest.F5083C44730CA352.quest_desc: ["{advancements.mekanism.diversion_item_transport.description}"]
-	quest.F514A35E598B989C.quest_desc: ["{advancement.dungeons_arise.find_mechanical_nest.desc}"]
-	quest.F5D992ED2A02CF6B.quest_desc: ["{advancements.apothic_enchanting.100ench.desc}"]
-	quest.F5E97595FFAD13A6.quest_desc: ["{advancements.cataclysm.kill_remnant.description}"]
-	quest.F6B221FCF06709A3.quest_desc: ["Build, exchange, copy and paste whole structures."]
-	quest.F6B221FCF06709A3.title: "Building Gadgets"
-	quest.F6DD29AABA1E951A.quest_desc: ["{advancements.biomeswevegone.husbandry.forager.description}"]
-	quest.F79AACEF65C15AD6.quest_desc: ["{pneumaticcraft.advancement.empty_pcb.desc}"]
-	quest.F7B8E51F53D1AFDC.quest_desc: ["{advancements.mekanism.fluid_transport.description}"]
-	quest.F98971C9CFE3AFF5.quest_desc: ["{advancements.apothic_enchanting.30ench.desc}"]
-	quest.F9D306530C7DE3B7.quest_desc: ["{pneumaticcraft.advancement.entity_hack.desc}"]
-	quest.F9E239911D3215BA.quest_desc: ["Place Waystones to fast-travel between them."]
-	quest.F9E4DC0783E81E29.quest_desc: ["{advancements.cataclysm.cursed_pyramid.description}"]
-	quest.FA618DFC7BCD5AEE.quest_desc: ["{advancements.mekanism.laser.description}"]
-	quest.FA6EF56410E9B008.quest_desc: ["Automate the boring parts of the world."]
-	quest.FA6EF56410E9B008.title: "Machines"
-	quest.FA93A9A77228EAAE.quest_desc: ["{advancement.create.andesite_casing.desc}"]
-	quest.FB23F7144097BBBB.quest_desc: ["{pneumaticcraft.advancement.refinery.desc}"]
-	quest.FB317F76EC616B03.quest_desc: ["{advancements.mekanism.metallurgic_infuser.description}"]
-	quest.FB427618433710D5.quest_desc: ["{ars_elemental.adv.desc.lesser_earth_focus}"]
-	quest.FB6A5F90C4F9B2F0.quest_desc: ["{advancements.occultism.familiar.guardian_ultimate_sacrifice.description}"]
-	quest.FC697D5E6726D0E9.quest_desc: ["{advancements.farmersdelight.get_fd_seed.description}"]
-	quest.FC93372D1AE24925.quest_desc: ["{advancements.mekanism.antimatter.description}"]
-	quest.FC9D515908BD7883.quest_desc: ["{advancements.mekanism.chemical_tank.description}"]
-	quest.FCBDB4CE472341C0.quest_desc: ["{advancement.immersiveengineering.buy_oremap.desc}"]
-	quest.FCEDCD86F0BB1BF1.quest_desc: ["{advancements.apothic_enchanting.arcana50.desc}"]
-	quest.FD2FBB0BD9D37997.quest_desc: ["{advancements.silentgear.blueprint_paper.description}"]
-	quest.FD56A00AD259E514.quest_desc: ["{advancements.mekanismtools.alternate_tools.description}"]
-	quest.FD7E125F0FC2BCAB.quest_desc: ["{advancement.astralsorcery.perk_level_30.description}"]
-	quest.FE9736063ED9C2D4.quest_desc: ["{advancement.dungeons_arise.find_illager_windmill.desc}"]
-	quest.FEA7017828D5F4C9.quest_desc: ["{pneumaticcraft.advancement.oil_bucket.desc}"]
-	quest.FF73E831F7B090D8.quest_desc: ["{advancements.farmersdelight.eat_nourishing_food.description}"]
-	quest.FFF1749F797BE8C4.quest_desc: ["Hit something with a &efully charged&r melee attack. There's a small chance it becomes a &cBlack Flash&r: about 1.8x damage and a flash that warps the screen.", "", "Landing one puts you &cin the zone&r for 10 seconds, with much higher odds. Higher grades require several."]
-	quest.FFF1749F797BE8C4.quest_subtitle: "Space bends with a perfect hit"
-	quest.FFF1749F797BE8C4.title: "Black Flash"
+	chapter.54869E9812C660E4.chapter_subtitle: ["Grade 1 and Domain Expansion"]
+	chapter.54869E9812C660E4.title: "V. A World of Your Own"
+	chapter.79C506352704F07D.chapter_subtitle: ["Special Grade"]
+	chapter.79C506352704F07D.title: "VI. Fragments of the Calamity"
+	chapter.7A52B8ADCDA34919.chapter_subtitle: ["Get stronger"]
+	chapter.7A52B8ADCDA34919.title: "II. Climbing the Grades"
+	chapter.8E4A79EE5B85B105.chapter_subtitle: ["Prologue"]
+	chapter.8E4A79EE5B85B105.title: "I. The Seal Cracks"
+	chapter.B33DAB2DC0436B77.chapter_subtitle: ["How the seal was made"]
+	chapter.B33DAB2DC0436B77.title: "III. Arcane Studies"
+	chapter.BBAA0E28793C63B1.chapter_subtitle: ["The end goal"]
+	chapter.BBAA0E28793C63B1.title: "VIII. Seal the Calamity"
+	chapter.D39804EC1F21567B.chapter_subtitle: ["Power for the ritual"]
+	chapter.D39804EC1F21567B.title: "IV. Engines of the Modern Age"
+	chapter.F5A1286AF00B06FD.chapter_subtitle: ["Draconic fusion"]
+	chapter.F5A1286AF00B06FD.title: "VII. Forging the Seal"
+	file.0000000000000001.title: "Cursed Arts: Seal the Calamity"
+	quest.01B259223925A287.quest_desc: ["Power, stored and ready. Now you need the strength to survive what the Calamity will throw at you."]
+	quest.01B259223925A287.quest_subtitle: "Chapter complete"
+	quest.01B259223925A287.title: "Stored Lightning"
+	quest.05A684DEC840E2CC.quest_desc: ["Things are getting worse. Old guardians have woken up across the world, twisted by curse energy from the crack.", "", "Put them down. Every boss you kill gives a huge pile of grade XP and counts toward Special Grade."]
+	quest.05A684DEC840E2CC.title: "The Wardens Stir"
+	quest.07C50FBDD6FF438F.quest_desc: ["Brass opens up Create's automation: deployers, arms and logistics."]
+	quest.07C50FBDD6FF438F.title: "Brass"
+	quest.08C6C64C2558FB23.quest_desc: ["More spell slots, stronger glyphs."]
+	quest.08C6C64C2558FB23.title: "Apprentice Spell Book"
+	quest.0FBFD1F99068F009.quest_desc: ["Ars Nouveau's guidebook. Everything about source and glyphs is inside."]
+	quest.0FBFD1F99068F009.title: "A Worn Notebook"
+	quest.114ACCBCB58BC06A.quest_desc: ["Applied Energistics 2 turns your chests into one searchable network. Your stockpile is about to get big."]
+	quest.114ACCBCB58BC06A.title: "Digital Storage"
+	quest.13A5D0746733FAB6.quest_desc: ["Farmer's Delight meals give long-lasting buffs. Fights get long."]
+	quest.13A5D0746733FAB6.title: "Hot Meals"
+	quest.1414C7117E119916.quest_desc: ["Your reserves deepen: more energy, faster regen, harder hits.", "", "You're strong enough now to start studying how the seal actually worked."]
+	quest.1414C7117E119916.quest_subtitle: "Chapter complete: 2,500 grade XP"
+	quest.1414C7117E119916.title: "Semi-Grade 1"
+	quest.15E233BBC152B5AA.quest_desc: ["Gear made from the fragments' metal is some of the best in the pack. You'll want it for the last fights."]
+	quest.15E233BBC152B5AA.title: "Temper with Cursed Metal"
+	quest.18FD8395C305E1E4.quest_desc: ["The second tier. Wyvern tools and armor are a big step up from netherite."]
+	quest.18FD8395C305E1E4.title: "Wyvern Core"
+	quest.1CD2A121A3E4917C.quest_desc: ["Build a Sealing Altar: amethyst, crying obsidian, obsidian and a Nether Star.", "", "Place it somewhere with room to fight, away from anything you care about. He doesn't break blocks, but he hits very hard."]
+	quest.1CD2A121A3E4917C.title: "The Sealing Altar"
+	quest.1D356E96EC9FB68B.quest_desc: ["It sleeps in underground halls. Hit it from behind when it gets stuck after a swing."]
+	quest.1D356E96EC9FB68B.quest_subtitle: "The armored guardian"
+	quest.1D356E96EC9FB68B.title: "Ferrous Wroughtnaut"
+	quest.1DB75725777CDF30.quest_desc: ["The sun-masked king of the savanna."]
+	quest.1DB75725777CDF30.title: "Umvuthi"
+	quest.1F2F060EC8B20381.quest_desc: ["The notes describe crafting on a ring of pedestals around a central core. The Enchanting Apparatus works the same way.", "", "The real seal needs something far bigger, and far more power than magic alone can give."]
+	quest.1F2F060EC8B20381.quest_subtitle: "Chapter complete"
+	quest.1F2F060EC8B20381.title: "The Apparatus"
+	quest.211E8A3943E1A4C2.quest_desc: ["Hold your Chaotic Core and use it on the altar. The seal isn't used up.", "", "He rises. Win.", "", "When he falls he leaves his &5Heart&r behind: everything he was, in a form small enough to bind."]
+	quest.211E8A3943E1A4C2.quest_subtitle: "Use the seal on the altar"
+	quest.211E8A3943E1A4C2.title: "The Calamity"
+	quest.2680678988847D4A.quest_desc: ["A thousand years ago the strongest sorcerers of their age buried something so dangerous they refused to write down its name. They called it &5the Calamity&r and sealed it beneath the world.", "", "Last night, the seal cracked.", "", "Everyone near the fracture woke up with &dcursed energy&r in their veins. You are one of them. Somewhere out there the Calamity is pulling itself back together, and the old seal will not hold much longer.", "", "This book is your path from a frightened Grade 2 sorcerer to the one who seals it again. Follow the main line left to right. &7Diamond-shaped quests are optional&r: they make the road easier, but you can skip them."]
+	quest.2680678988847D4A.quest_subtitle: "Read me first"
+	quest.2680678988847D4A.title: "The Seal Cracks"
+	quest.2AA84823A8E7D08E.quest_desc: ["The old seal was stone and sacrifice. Yours will be &ddraconic&r: forged from dragon-touched metal, fused with power, and set around a heart of pure chaos.", "", "The path runs Draconium, Wyvern, Awakened, Chaotic. The last core is the seal itself."]
+	quest.2AA84823A8E7D08E.title: "A Better Seal"
+	quest.30A907C87F67B90A.quest_desc: ["Awakened draconium, fused with cursed metal. The seal is nearly ready. It only needs a heart."]
+	quest.30A907C87F67B90A.title: "Awakened"
+	quest.370598B1E3374905.quest_desc: ["A fragment that hides in a fortress on the End islands."]
+	quest.370598B1E3374905.title: "Ender Guardian"
+	quest.37825911BC93780B.quest_desc: ["Sorcerers are ranked by grade. Right now you're &7Grade 2&r: two abilities and a shallow pool of energy.", "", "Nobody seals a Calamity at Grade 2. Time to climb."]
+	quest.37825911BC93780B.title: "Grade 2 Is Not Enough"
+	quest.3D65B5F385AF5DA1.quest_desc: ["Curses run thick in the Nether. So does the XP."]
+	quest.3D65B5F385AF5DA1.title: "Into the Nether"
+	quest.456C99D3A9AC0E29.quest_desc: ["A fragment that drowned itself in a sunken city."]
+	quest.456C99D3A9AC0E29.title: "The Leviathan"
+	quest.4D25AA94D2948465.quest_desc: ["Place waystones as you explore so you can always get home. You will be travelling a lot."]
+	quest.4D25AA94D2948465.title: "Waystones"
+	quest.52A447075068A9A3.quest_desc: ["Draconium ore is found deep in the Overworld, and more plentifully in the Nether and End. It's tough to mine without at least a diamond pick."]
+	quest.52A447075068A9A3.title: "Draconium"
+	quest.57E40ABD98E25BBA.quest_desc: ["A multiblock battery that holds staggering amounts of power. Fusion crafting will drain your basic cells fast."]
+	quest.57E40ABD98E25BBA.title: "Energy Core"
+	quest.57F7D00097F3EC0F.quest_desc: ["Powah's generators and energy cells are a simple way to make a lot of power."]
+	quest.57F7D00097F3EC0F.title: "Powah"
+	quest.5EA22E5CB17582FB.quest_desc: ["The sorcerers who made the seal left ruins all over the world, and the Calamity's pieces are drawn to them.", "", "An &eExplorer's Compass&r can point you at any structure. You'll need it to find what comes next."]
+	quest.5EA22E5CB17582FB.quest_subtitle: "Chapter complete"
+	quest.5EA22E5CB17582FB.title: "Where the Old Sorcerers Went"
+	quest.5F69960F281574F6.quest_desc: ["Diamond gear keeps you alive long enough to learn."]
+	quest.5F69960F281574F6.title: "Harder Than Curses"
+	quest.602F3E82FE042271.quest_desc: ["Draconium needs to be &eawakened&r with the heart of a dragon. Kill the Ender Dragon again (you can respawn it) and claim its heart."]
+	quest.602F3E82FE042271.title: "A Dragon's Heart"
+	quest.60A0B9137C8201F1.quest_desc: ["A sleeping bag lets you skip the night without moving your spawn."]
+	quest.60A0B9137C8201F1.title: "Camp Out"
+	quest.669AEA1FB14A31C7.quest_desc: ["A reaper of souls in a frozen citadel. Not one of the fragments, but it fights like one, and Cursium makes excellent gear."]
+	quest.669AEA1FB14A31C7.title: "Maledictus"
+	quest.6A0345C45A5FE968.quest_desc: ["Iron's Spells 'n Spellbooks has dozens of ready-made spells and some excellent wizard armor."]
+	quest.6A0345C45A5FE968.title: "A Different School"
+	quest.6D83A875B8058B48.quest_desc: ["The old sorcerers needed a hundred of them pouring their lives into one ritual.", "", "You have machines. The seal you're going to build needs a lot of power, so start an industry."]
+	quest.6D83A875B8058B48.title: "What They Didn't Have"
+	quest.748B9DA622F49EB0.quest_desc: ["Hold the seal in one hand and his heart in the other.", "", "Cursed energy, magic, machines and chaos, bound together the way the old sorcerers never could. The crack closes. The nights go quiet.", "", "It's over. Thank you for playing &dCursed Arts&r.", "", "&7The altar still works if you want a rematch, and every boss still drops loot."]
+	quest.748B9DA622F49EB0.quest_subtitle: "The end"
+	quest.748B9DA622F49EB0.title: "Seal the Calamity"
+	quest.798449A13CAD54E8.quest_desc: ["Apotheosis gear rolls random affixes. A Reforging Table lets you reroll them into something good."]
+	quest.798449A13CAD54E8.title: "Reforge"
+	quest.7EAABCECF92E9469.quest_desc: ["In the ruins you find what's left of the old sorcerers' notes. Cursed energy alone never held the Calamity. They wove it together with every other kind of magic they knew.", "", "To rebuild the seal, you'll have to learn those arts too."]
+	quest.7EAABCECF92E9469.title: "Notes in the Ruins"
+	quest.81279509213C97CF.quest_desc: ["Bring a totem, food and friends.", "", "What to expect: every attack is telegraphed. A &5purple line&r means a cut is coming, and a &5purple ring&r means get out. At half health he opens his own &5domain&r. Open yours inside it and his sure-hit can't touch you. When his domain ends he &cburns out&r and takes extra damage, so that's your window."]
+	quest.81279509213C97CF.title: "Last Preparations"
+	quest.8198A40EF5153D64.quest_desc: ["A Chaotic Core: draconium, cursed energy and chaos, fused into something nothing can break.", "", "This is your seal. Keep it close. The Calamity knows you've made it, and it's coming."]
+	quest.8198A40EF5153D64.quest_subtitle: "Chapter complete"
+	quest.8198A40EF5153D64.title: "The Seal"
+	quest.83BE1DB64EDE6EFE.quest_desc: ["Write your own spells from glyphs. Magic and cursed techniques stack: use both."]
+	quest.83BE1DB64EDE6EFE.title: "First Spells"
+	quest.91E888C4A384437A.quest_desc: ["The last of the old notes finally makes sense. The Calamity was never a beast. It was a &5sorcerer&r, the strongest who ever lived, so strong the others could only bury him alive.", "", "The fragments you killed were pieces of his power that leaked out through the crack. With them gone, he's alone down there, and weaker than he has been in a thousand years.", "", "The old sorcerers sealed him in his sleep. You're going to wake him, beat him, and seal him for good."]
+	quest.91E888C4A384437A.title: "The Name Under the Stone"
+	quest.95B96D87869C10CE.quest_desc: ["On a distant island in the End lives the Chaos Guardian, a dragon fed on raw chaos. Its shards are the only thing strong enough to anchor your seal.", "", "Bring Wyvern gear at minimum, and friends. Destroy its crystals first."]
+	quest.95B96D87869C10CE.quest_subtitle: "The hardest fight before the last"
+	quest.95B96D87869C10CE.title: "The Chaos Guardian"
+	quest.9819298044AF1064.quest_desc: ["A climbing challenge at the top of a stone pillar."]
+	quest.9819298044AF1064.title: "The Sculptor"
+	quest.98633B0C8F990D59.quest_desc: ["A Fusion Crafting Core surrounded by injectors, just like the Apparatus but much stronger. Every core from here on is fused, and fusion eats power."]
+	quest.98633B0C8F990D59.title: "Fusion Crafting"
+	quest.997D0869720A3B12.quest_desc: ["Ore processing doubles everything you mine. You'll need a mountain of metal."]
+	quest.997D0869720A3B12.title: "Double Your Ore"
+	quest.9BE2E41FC78F78C6.quest_desc: ["Unleash everything you have."]
+	quest.9BE2E41FC78F78C6.title: "Maximum"
+	quest.A71B003505ED6F9F.quest_desc: ["A giant of the snowy biomes."]
+	quest.A71B003505ED6F9F.title: "Frostmaw"
+	quest.AE7AC5E566A8D5CA.quest_desc: ["Fight it somewhere you don't mind wrecking. Trap it in your domain.", "", "When it dies, something answers from far away: a sound like a heartbeat from every direction at once."]
+	quest.AE7AC5E566A8D5CA.quest_subtitle: "Chapter complete"
+	quest.AE7AC5E566A8D5CA.title: "The Wither"
+	quest.AF8394C97958905E.quest_desc: ["A war machine in a hidden factory, built to call the Calamity home. Witherite is the second cursed metal."]
+	quest.AF8394C97958905E.quest_subtitle: "The machine that heralds it"
+	quest.AF8394C97958905E.title: "The Harbinger"
+	quest.BBD02B54C98485AF.quest_desc: ["A backpack makes the long trips ahead much easier. Upgrade it later."]
+	quest.BBD02B54C98485AF.title: "Pack Light, Pack Lots"
+	quest.BF6D5B06003E0B56.quest_desc: ["A Megatorch stops hostile spawns in a huge radius. Your base deserves a quiet night."]
+	quest.BF6D5B06003E0B56.title: "Safe Ground"
+	quest.BFD3BEFD619989BC.quest_desc: ["Cursed energy runs dry. A good blade doesn't.", "", "Technique hits are about as strong as a sword, so you'll still be doing most of your fighting the old way."]
+	quest.BFD3BEFD619989BC.quest_subtitle: "Gear up"
+	quest.BFD3BEFD619989BC.title: "Steel Before Sorcery"
+	quest.C6E3D26966D223CF.quest_desc: ["Now you know what that heartbeat was. The great beasts sleeping in the deepest ruins aren't natural. Each one is a &5fragment of the Calamity&r that slipped through the crack.", "", "Kill them, and the Calamity can't rebuild itself. Each fragment leaves behind cursed metal, and you'll need that metal later."]
+	quest.C6E3D26966D223CF.title: "Fragments"
+	quest.C7879EBA4B0B5939.quest_desc: ["Extra grade XP for anyone willing to stay out after dark."]
+	quest.C7879EBA4B0B5939.title: "Night Patrol"
+	quest.C8E3F5205C045D02.quest_desc: ["Hit something with a &efully charged&r melee attack. Sometimes it becomes a &cBlack Flash&r: about 1.8x damage and a flash that warps the screen.", "", "Land one and you're &cin the zone&r for 10 seconds, with much better odds. Higher grades require several."]
+	quest.C8E3F5205C045D02.quest_subtitle: "Space bends with a perfect hit"
+	quest.C8E3F5205C045D02.title: "Black Flash"
+	quest.C94F012CE6B97253.quest_desc: ["Its fortress burns in the Nether. Ignitium is the first of the cursed metals you need."]
+	quest.C94F012CE6B97253.quest_subtitle: "The burning knight"
+	quest.C94F012CE6B97253.title: "Ignis"
+	quest.CE6196D7D5E49625.quest_desc: ["Malum harvests the spirits of what you kill and infuses them into gear. Useful for an exorcist."]
+	quest.CE6196D7D5E49625.title: "Spirit Arcana"
+	quest.D3E7D407F734B3AD.quest_desc: ["30,000 XP, 12 Black Flashes, 2 bosses. You've reached the peak.", "", "You unlock your &cMaximum&r technique (G) and &aReverse Cursed Technique&r, which slowly heals you with cursed energy.", "", "You're as strong as the sorcerers who made the first seal. Now build a better one."]
+	quest.D3E7D407F734B3AD.quest_subtitle: "Chapter complete"
+	quest.D3E7D407F734B3AD.title: "Special Grade"
+	quest.D61FBA295CDD39AA.quest_desc: ["The Ender Dragon has been guarding one of the old seal-stones all this time. Free the End. The Chaos Guardian is waiting there too, but not yet."]
+	quest.D61FBA295CDD39AA.title: "Beyond the Portal"
+	quest.D8941F09B2FF291B.quest_desc: ["Sleeping in a soul-black fortress in the Nether. It hits like a landslide. Fire resistance helps."]
+	quest.D8941F09B2FF291B.title: "Netherite Monstrosity"
+	quest.D90806AFA14049FF.quest_desc: ["The crack is leaking. Curses drift up through it and settle into the dead, and the nights are worse than they used to be.", "", "Every hostile mob you put down gives &bgrade XP&r. That's how you get stronger."]
+	quest.D90806AFA14049FF.quest_subtitle: "The dead walk more often now"
+	quest.D90806AFA14049FF.title: "What Leaks Through"
+	quest.DEC5B233136DEC88.quest_desc: ["A domain raises a barrier around you, and everything inside suffers your technique's sure-hit effect.", "", "Two overlapping domains &6clash&r and the stronger one wins. Afterwards your technique &cburns out&r for a few seconds, so pick your moment."]
+	quest.DEC5B233136DEC88.quest_subtitle: "Press V"
+	quest.DEC5B233136DEC88.title: "Domain Expansion"
+	quest.E240F0166D4B01E7.quest_desc: ["Source powers Ars Nouveau's machines. Fill a jar and set up an Imbuement Chamber."]
+	quest.E240F0166D4B01E7.title: "Source"
+	quest.E5CD6F2D0444E04E.quest_desc: ["Your technique and grade show above your hotbar. &eZ&r and &eX&r are your two abilities.", "", "Abilities cost cursed energy, which refills over about 30 seconds. Type &b/cursed info&r any time to see your technique and what your next promotion needs."]
+	quest.E5CD6F2D0444E04E.quest_subtitle: "What were you born with?"
+	quest.E5CD6F2D0444E04E.title: "Your Innate Technique"
+	quest.EB35B1058F7055AE.quest_desc: ["Occultism lets you summon and bind spirits to work for you, including miners that dig ore while you're away."]
+	quest.EB35B1058F7055AE.title: "Bound Spirits"
+	quest.F026E54E6D4C85BF.quest_desc: ["Mekanism's Metallurgic Infuser makes steel and alloys. Most of Mekanism is built from them."]
+	quest.F026E54E6D4C85BF.title: "Steel and Osmium"
+	quest.F042C98FF29CDF5F.quest_desc: ["Buried under the desert sands."]
+	quest.F042C98FF29CDF5F.title: "Ancient Remnant"
+	quest.FB7B212BBA0798B5.quest_desc: ["Create runs on rotation. Waterwheels and windmills turn shafts, and shafts turn machines."]
+	quest.FB7B212BBA0798B5.title: "Turning Gears"
+	quest.FC48C374E7341857.quest_desc: ["You're now one of the strongest sorcerers alive. And you've unlocked something new."]
+	quest.FC48C374E7341857.quest_subtitle: "8,000 XP and 3 Black Flashes"
+	quest.FC48C374E7341857.title: "Grade 1"
 }

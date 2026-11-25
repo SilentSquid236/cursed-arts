@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Generates the Cursed Arts FTB Quests book.
+"""Generates the Cursed Arts FTB Quests book: a linear story, "Seal the Calamity".
+
+Eight chapters, each a single main path. Chapter N's first quest depends on the
+last quest of chapter N-1. Optional side quests branch off the main path: they
+make the next steps easier but are never required.
+
+Every item/entity ID below was checked against the pack's jars.
 
 Usage: python3 tools/questgen/generate.py config/ftbquests/quests
 """
-import hashlib, os, json, sys
+import hashlib, os, json, sys, shutil
 
 OUT = sys.argv[1]
-HERE = os.path.dirname(os.path.abspath(__file__))
 
 def qid(*parts):
     return hashlib.sha1("/".join(parts).encode()).hexdigest()[:16].upper()
@@ -17,364 +22,453 @@ def s(v):  # SNBT string
 LANG = {}
 SEEN = set()
 
+# ------------------------------------------------------------------- tasks
 def item(i, n=1):
     return '{ count: %d, id: %s }' % (n, s(i))
 
-def task_item(qkey, i, n=1):
-    cnt = ("count: %dL, " % n) if n > 1 else ""
-    return '{ %sid: %s, item: %s, type: "item" }' % (cnt, s(qid(qkey, "t", i)), item(i, 1))
+def t_item(i, n=1):
+    return ("item", i, n)
 
-def task_kill(qkey, e, n):
-    return '{ entity: %s, id: %s, type: "kill", value: %dL }' % (s(e), s(qid(qkey, "t", e)), n)
+def t_kill(e, n=1):
+    return ("kill", e, n)
 
-def task_adv(qkey, a):
-    return '{ advancement: %s, criterion: "", id: %s, type: "advancement" }' % (s(a), s(qid(qkey, "t", a)))
+def t_adv(a):
+    return ("adv", a, 0)
 
-def task_dim(qkey, d):
-    return '{ dimension: %s, id: %s, type: "dimension" }' % (s(d), s(qid(qkey, "t", d)))
+def t_dim(d):
+    return ("dim", d, 0)
 
-def task_check(qkey):
-    return '{ id: %s, type: "checkmark" }' % s(qid(qkey, "t", "check"))
+def t_check():
+    return ("check", "check", 0)
 
-def r_xp(qkey, n):
-    return '{ id: %s, type: "xp", xp: %d }' % (s(qid(qkey, "r", "xp")), n)
+def render_task(qkey, t, n):
+    kind, v, cnt = t
+    tid = s(qid(qkey, "t", str(n), v))
+    if kind == "item":
+        c = ("count: %dL, " % cnt) if cnt > 1 else ""
+        return '{ %sid: %s, item: %s, type: "item" }' % (c, tid, item(v))
+    if kind == "kill":
+        return '{ entity: %s, id: %s, type: "kill", value: %dL }' % (s(v), tid, cnt)
+    if kind == "adv":
+        return '{ advancement: %s, criterion: "", id: %s, type: "advancement" }' % (s(v), tid)
+    if kind == "dim":
+        return '{ dimension: %s, id: %s, type: "dimension" }' % (s(v), tid)
+    return '{ id: %s, type: "checkmark" }' % tid
 
-def r_item(qkey, i, n=1):
-    return '{ count: %d, id: %s, item: %s, type: "item" }' % (n, s(qid(qkey, "r", i)), item(i))
+# ----------------------------------------------------------------- rewards
+def r_item(i, n=1):
+    return ("item", i, n)
 
-def r_grade_xp(qkey, n):
-    # Cursed Techniques grade XP, granted by command.
-    return ('{ command: %s, id: %s, permission_level: 2, silent: true, type: "command" }'
-            % (s("/cursed xp {p} %d" % n), s(qid(qkey, "r", "gradexp"))))
+def r_xp(n):
+    return ("xp", "", n)
 
-def quest(ch, key, x, y, tasks, rewards=(), deps=(), title=None, sub=None, desc=None,
-          icon=None, shape=None, size=None):
-    i = qid(ch, key)
-    assert i not in SEEN, f"duplicate quest {ch}/{key}"
-    SEEN.add(i)
-    if title: LANG[f"quest.{i}.title"] = title
-    if sub: LANG[f"quest.{i}.quest_subtitle"] = sub
-    if desc: LANG[f"quest.{i}.quest_desc"] = desc
-    lines = ["\t\t{"]
-    if deps: lines.append("\t\t\tdependencies: [%s]" % ", ".join(s(qid(ch, d)) for d in deps))
-    if icon: lines.append("\t\t\ticon: { id: %s }" % s(icon))
-    lines.append("\t\t\tid: %s" % s(i))
-    if rewards: lines.append("\t\t\trewards: [%s]" % ", ".join(rewards))
-    if shape: lines.append("\t\t\tshape: %s" % s(shape))
-    if size: lines.append("\t\t\tsize: %.1fd" % size)
-    lines.append("\t\t\ttasks: [%s]" % ", ".join(tasks))
-    lines.append("\t\t\tx: %.1fd" % x)
-    lines.append("\t\t\ty: %.1fd" % y)
-    lines.append("\t\t}")
-    return "\n".join(lines)
+def r_grade(n):  # Cursed Techniques grade XP
+    return ("cmd", "/cursed xp {p} %d" % n, 0)
 
+def r_cmd(c):
+    return ("cmd", c, 0)
+
+def render_reward(qkey, r, n):
+    kind, v, cnt = r
+    rid = s(qid(qkey, "r", str(n), v))
+    if kind == "item":
+        return '{ count: %d, id: %s, item: %s, type: "item" }' % (cnt, rid, item(v))
+    if kind == "xp":
+        return '{ id: %s, type: "xp", xp: %d }' % (rid, cnt)
+    return '{ command: %s, id: %s, permission_level: 2, silent: true, type: "command" }' % (s(v), rid)
+
+# ---------------------------------------------------------------- chapters
 CHAPTERS = []
-
-def chapter(name, title, icon, order, quests, group=""):
-    i = qid("chapter", name)
-    LANG[f"chapter.{i}.title"] = title
-    body = ("{\n\tdefault_hide_dependency_lines: false\n\tdefault_quest_shape: \"\"\n"
-            f"\tfilename: {s(name)}\n\tgroup: {s(group)}\n\ticon: {{ id: {s(icon)} }}\n\tid: {s(i)}\n"
-            f"\torder_index: {order}\n\tquest_links: [ ]\n\tquests: [\n" + "\n".join(quests) + "\n\t]\n}\n")
-    CHAPTERS.append((name, body))
-
-# ------------------------------------------------------------- chapter groups
-GROUPS = [("cursed", "Cursed Arts"), ("magic", "Magic"), ("tech", "Technology"), ("combat", "Combat & Gear"),
-          ("explore", "Exploration"), ("farming", "Farming & Food"), ("utility", "Utility")]
-G = {k: qid("group", k) for k, _ in GROUPS}
-for k, t in GROUPS:
-    LANG[f"chapter_group.{G[k]}.title"] = t
-
-# ------------------------------------------------------------------ Awakening
-c = "awakening"
-q = lambda *a, **k: quest(c, *a, **k)
-chapter(c, "Awakening", "minecraft:ender_eye", 0, group=G["cursed"], quests=[
-    q("welcome", 0, 0, [task_check("welcome")], [r_item("welcome", "minecraft:bread", 16), r_xp("welcome", 10)],
-      title="Welcome to Cursed Arts", sub="Read me first", shape="hexagon", size=2.0, icon="minecraft:ender_eye",
-      desc=["Everyone here is born with an &dinnate technique&r. Most awaken as &7Grade 2&r sorcerers; a rare few are born far stronger.",
-            "",
-            "&eZ&r and &eX&r use your two abilities. &eV&r is Domain Expansion (unlocks at &6Grade 1&r). &eG&r is your Maximum technique (Special Grade only).",
-            "",
-            "Type &b/cursed info&r any time to see your technique, grade and what you need for the next promotion.",
-            "",
-            "Other chapters cover the magic, tech and exploration mods in the pack. Do them in any order."]),
-    q("awakened", 2.5, 0, [task_adv("awakened", "cursedtech:awakened")], [r_grade_xp("awakened", 25)], deps=["welcome"],
-      title="Your Innate Technique", sub="Find out what you were born with",
-      desc=["Your technique and grade are shown above your hotbar.", "",
-            "Abilities cost &dcursed energy&r, which refills over about 30 seconds. Watch the cooldowns."]),
-    q("first_exorcism", 5, -1.5, [task_kill("first_exorcism", "minecraft:zombie", 10)],
-      [r_grade_xp("first_exorcism", 50), r_item("first_exorcism", "minecraft:iron_ingot", 8)], deps=["awakened"],
-      title="First Exorcisms", sub="Hostile kills give grade XP",
-      desc=["Every hostile mob you defeat gives &bgrade XP&r: about a quarter of its max health. Farm animals and villagers give nothing."]),
-    q("night_patrol", 7.5, -1.5, [task_kill("night_patrol", "minecraft:skeleton", 20), task_kill("night_patrol", "minecraft:creeper", 10)],
-      [r_grade_xp("night_patrol", 100)], deps=["first_exorcism"], title="Night Patrol", icon="minecraft:bow"),
-    q("black_flash", 5, 1.5, [task_adv("black_flash", "cursedtech:black_flash")],
-      [r_grade_xp("black_flash", 75), r_item("black_flash", "minecraft:diamond", 2)], deps=["awakened"],
-      title="Black Flash", sub="Space bends with a perfect hit", icon="minecraft:black_dye", shape="diamond",
-      desc=["Hit something with a &efully charged&r melee attack. There's a small chance it becomes a &cBlack Flash&r: about 1.8x damage and a flash that warps the screen.",
-            "", "Landing one puts you &cin the zone&r for 10 seconds, with much higher odds. Higher grades require several."]),
-    q("semi_grade_1", 10, 0, [task_adv("semi_grade_1", "cursedtech:semi_grade_1")],
-      [r_item("semi_grade_1", "minecraft:diamond", 4), r_item("semi_grade_1", "minecraft:golden_apple", 2)],
-      deps=["night_patrol"], title="Semi-Grade 1", sub="2,500 grade XP", icon="minecraft:iron_sword",
-      desc=["Your cursed energy reserves deepen: more energy, faster regen, harder hits."]),
-    q("boss", 10, 3, [task_adv("boss", "cursedtech:boss")], [r_item("boss", "minecraft:diamond", 6)], deps=["black_flash"],
-      title="Exorcist", sub="Defeat a boss", icon="minecraft:wither_skeleton_skull",
-      desc=["Bosses (150+ max health) give a huge amount of grade XP and count toward Special Grade. See the &cExorcisms&r chapter for targets."]),
-    q("grade_1", 12.5, 0, [task_adv("grade_1", "cursedtech:grade_1")],
-      [r_item("grade_1", "minecraft:diamond", 8), r_item("grade_1", "minecraft:totem_of_undying", 1)],
-      deps=["semi_grade_1", "black_flash"], title="Grade 1", sub="8,000 XP and 3 Black Flashes", icon="minecraft:diamond_sword",
-      shape="hexagon", size=1.5,
-      desc=["Promotion to Grade 1 unlocks &dDomain Expansion&r (V)."]),
-    q("domain", 15, -1.5, [task_adv("domain", "cursedtech:domain")], [r_xp("domain", 30)], deps=["grade_1"],
-      title="Domain Expansion", sub="Trap them in your world", icon="minecraft:obsidian",
-      desc=["A domain raises a barrier around you and everything inside suffers your technique's sure-hit effect.",
-            "", "If two domains overlap they &6clash&r: the stronger one shatters the other. Afterwards your technique &cburns out&r for 10 seconds, so pick your moment."]),
-    q("special", 15, 1.5, [task_adv("special", "cursedtech:special")],
-      [r_item("special", "minecraft:nether_star", 1), r_item("special", "minecraft:netherite_ingot", 2)],
-      deps=["grade_1", "boss"], title="Special Grade", sub="30,000 XP, 12 Black Flashes, 2 bosses", icon="minecraft:netherite_sword",
-      shape="hexagon", size=2.0,
-      desc=["The peak. Unlocks your &cMaximum&r technique (G) and &aReverse Cursed Technique&r, which slowly heals you with cursed energy."]),
-    q("maximum", 17.5, 1.5, [task_adv("maximum", "cursedtech:maximum")], [r_xp("maximum", 50)], deps=["special"],
-      title="Maximum", sub="Everything you have", icon="minecraft:nether_star", shape="gear"),
-])
-
-# ----------------------------------------------------------------- Exorcisms
-c = "exorcisms"
-q = lambda *a, **k: quest(c, *a, **k)
-bosses = [
-    ("elder_guardian", "minecraft:elder_guardian", "Elder Guardian", "minecraft:prismarine_shard"),
-    ("wither", "minecraft:wither", "The Wither", "minecraft:wither_skeleton_skull"),
-    ("ender_dragon", "minecraft:ender_dragon", "Ender Dragon", "minecraft:dragon_head"),
-    ("warden", "minecraft:warden", "The Warden", "minecraft:sculk_shrieker"),
-    ("ferrous_wroughtnaut", "mowziesmobs:ferrous_wroughtnaut", "Ferrous Wroughtnaut", "minecraft:iron_axe"),
-    ("frostmaw", "mowziesmobs:frostmaw", "Frostmaw", "minecraft:blue_ice"),
-    ("umvuthi", "mowziesmobs:umvuthi", "Umvuthi", "minecraft:gold_block"),
-    ("sculptor", "mowziesmobs:sculptor", "The Sculptor", "minecraft:chiseled_stone_bricks"),
-    ("ender_guardian", "cataclysm:ender_guardian", "Ender Guardian", "minecraft:end_stone_bricks"),
-    ("netherite_monstrosity", "cataclysm:netherite_monstrosity", "Netherite Monstrosity", "minecraft:netherite_block"),
-    ("ignis", "cataclysm:ignis", "Ignis", "minecraft:blaze_rod"),
-    ("the_harbinger", "cataclysm:the_harbinger", "The Harbinger", "minecraft:redstone_block"),
-    ("the_leviathan", "cataclysm:the_leviathan", "The Leviathan", "minecraft:heart_of_the_sea"),
-    ("ancient_remnant", "cataclysm:ancient_remnant", "Ancient Remnant", "minecraft:sandstone"),
-    ("maledictus", "cataclysm:maledictus", "Maledictus", "minecraft:soul_lantern"),
-    ("scylla", "cataclysm:scylla", "Scylla", "minecraft:trident"),
-]
-qs = [q("hunt", 0, 0, [task_check("hunt")], [r_xp("hunt", 5)], title="The Hunt", sub="Cursed spirits of every grade",
-        icon="minecraft:iron_sword", shape="hexagon", size=2.0,
-        desc=["These are the strongest things in the world. Each one is worth a huge pile of &bgrade XP&r, and bosses count toward &cSpecial Grade&r.",
-              "", "Explore to find them: Cataclysm bosses guard their own structures, Mowzie's bosses roam specific biomes. &eExplorer's Compass&r helps.",
-              "", "Bring friends. Domain Expansion is your best tool here."])]
-for n, (k, e, t, ic) in enumerate(bosses):
-    col, row = n % 4, n // 4
-    qs.append(q(k, 3 + col * 2.5, -3 + row * 2.0, [task_kill(k, e, 1)],
-                [r_grade_xp(k, 150), r_item(k, "minecraft:diamond", 3)], deps=["hunt"], title=t, icon=ic))
-chapter(c, "Exorcisms", "minecraft:wither_skeleton_skull", 1, qs, group=G["cursed"])
-
-# ---------------------------------------------------------------- Expedition
-c = "expedition"
-q = lambda *a, **k: quest(c, *a, **k)
-qs = [q("intro", 0, 0, [task_check("intro")], [r_xp("intro", 5)], title="Expedition", icon="minecraft:compass", shape="hexagon", size=1.5,
-        desc=["New terrain, biomes and structures everywhere: Terralith and Tectonic reshape the land, and When Dungeons Arise and Dungeon Crawl hide dungeons full of loot.",
-              "", "Loot chests are per-player (Lootr), so everyone gets their own."]),
-      q("waystone", 2.5, -2, [task_item("waystone", "waystones:waystone")], [r_xp("waystone", 10)], deps=["intro"],
-        desc=["Place Waystones to fast-travel between them."]),
-      q("backpack", 2.5, 0, [task_item("backpack", "sophisticatedbackpacks:backpack")], [r_xp("backpack", 10)], deps=["intro"]),
-      q("cooking_pot", 2.5, 2, [task_item("cooking_pot", "farmersdelight:cooking_pot")], [r_xp("cooking_pot", 10)], deps=["intro"],
-        desc=["Better food, longer fights."]),
-      q("explorers", 5, -2, [task_item("explorers", "explorerscompass:explorerscompass")], [r_xp("explorers", 15)], deps=["waystone"],
-        desc=["Points you at any structure, including boss arenas."]),
-      q("natures", 5, 0, [task_item("natures", "naturescompass:naturescompass")], [r_xp("natures", 15)], deps=["backpack"]),
-      q("reforging", 5, 2, [task_item("reforging", "apotheosis:reforging_table")], [r_xp("reforging", 20)], deps=["cooking_pot"],
-        desc=["Apotheosis gear has random affixes. Reforge it for better rolls."]),
-      q("nether", 7.5, -1, [task_dim("nether", "minecraft:the_nether")], [r_grade_xp("nether", 50)], deps=["explorers"],
-        title="Into the Nether", icon="minecraft:obsidian"),
-      q("end", 10, -1, [task_dim("end", "minecraft:the_end")], [r_grade_xp("end", 100)], deps=["nether"],
-        title="The End", icon="minecraft:end_portal_frame"),
-]
-chapter(c, "Expedition", "minecraft:compass", 2, qs, group=G["cursed"])
+LAST = {}  # chapter -> key of its final main quest
 
 
-# ======================================================= kitchen-sink chapters
-# Chapters generated from each mod's own advancement tree (advancements.json is
-# extracted from the mod jars by extract_advancements.py). Titles come from the
-# advancement itself and descriptions use the mod's translation keys, so they
-# show in the player's language and stay in sync with the mod.
-ADV = json.load(open(os.path.join(HERE, "advancements.json")))
-NAMES = ADV["names"]
+class Chapter:
+    def __init__(self, name, title, subtitle, icon):
+        self.name, self.title, self.subtitle, self.icon = name, title, subtitle, icon
+        self.quests = []
+        self.x = 0.0
+        self.prev = None          # previous main quest key
+        self.side_slots = {}      # main key -> number of side quests placed
+        self.entry_dep = None     # cross-chapter dependency for the first quest
 
-ADV_CHAPTERS = [
-    # name, title, group, namespaces
-    ("create", "Create", "tech", ["create", "create_connected"]),
-    ("mekanism", "Mekanism", "tech", ["mekanism", "mekanismgenerators", "mekanismtools", "mekanismadditions"]),
-    ("immersive_engineering", "Immersive Engineering", "tech", ["immersiveengineering"]),
-    ("pneumaticcraft", "PneumaticCraft", "tech", ["pneumaticcraft"]),
-    ("ae2", "Applied Energistics 2", "tech", ["ae2"]),
-    ("ars_nouveau", "Ars Nouveau", "magic", ["ars_nouveau", "ars_additions"]),
-    ("irons_spellbooks", "Iron's Spells 'n Spellbooks", "magic", ["irons_spellbooks"]),
-    ("occultism", "Occultism", "magic", ["occultism"]),
-    ("astral_sorcery", "Astral Sorcery", "magic", ["astralsorcery"]),
-    ("silent_gear", "Silent Gear", "combat", ["silentgear"]),
-    ("apotheosis", "Apotheosis", "combat", ["apotheosis", "apothic_enchanting", "apothic_spawners"]),
-    ("cataclysm", "L_Ender's Cataclysm", "combat", ["cataclysm"]),
-    ("mowzies_mobs", "Mowzie's Mobs", "combat", ["mowziesmobs"]),
-    ("dungeons_arise", "When Dungeons Arise", "explore", ["dungeons_arise"]),
-    ("biomes", "Oh The Biomes We've Gone", "explore", ["biomeswevegone"]),
-    ("lootr", "Lootr", "explore", ["lootr"]),
-    ("farmers_delight", "Farmer's Delight", "farming", ["farmersdelight"]),
-]
+    def _quest(self, key, x, y, tasks, rewards, deps, title, sub, desc, icon, shape, size, optional):
+        qkey = f"{self.name}/{key}"
+        i = qid(qkey)
+        assert i not in SEEN, f"duplicate quest {qkey}"
+        SEEN.add(i)
+        if title: LANG[f"quest.{i}.title"] = title
+        if sub: LANG[f"quest.{i}.quest_subtitle"] = sub
+        if desc: LANG[f"quest.{i}.quest_desc"] = desc
+        L = ["\t\t{"]
+        if deps: L.append("\t\t\tdependencies: [%s]" % ", ".join(s(d) for d in deps))
+        if icon: L.append("\t\t\ticon: { id: %s }" % s(icon))
+        L.append("\t\t\tid: %s" % s(i))
+        if optional: L.append("\t\t\toptional: true")
+        if rewards: L.append("\t\t\trewards: [%s]" % ", ".join(render_reward(qkey, r, n) for n, r in enumerate(rewards)))
+        if shape: L.append("\t\t\tshape: %s" % s(shape))
+        if size: L.append("\t\t\tsize: %.1fd" % size)
+        L.append("\t\t\ttasks: [%s]" % ", ".join(render_task(qkey, t, n) for n, t in enumerate(tasks)))
+        L.append("\t\t\tx: %.1fd" % x)
+        L.append("\t\t\ty: %.1fd" % y)
+        L.append("\t\t}")
+        self.quests.append("\n".join(L))
+        return i
 
-def text_of(k):
-    if not k: return None
-    if k.startswith("T:"): return "{" + k[2:] + "}"
-    v = k[2:].strip()
-    return v or None
+    def main(self, key, tasks, rewards=(), title=None, sub=None, desc=None, icon=None, shape=None, size=None):
+        deps = []
+        if self.prev:
+            deps.append(qid(f"{self.name}/{self.prev}"))
+        elif self.entry_dep:
+            deps.append(self.entry_dep)
+        self._quest(key, self.x, 0.0, tasks, rewards, deps, title, sub, desc, icon, shape, size, False)
+        self.prev = key
+        self.x += 2.0
+        return key
 
-FRAME_REWARDS = {"task": (10, 0), "goal": (25, 25), "challenge": (50, 100)}
+    def side(self, key, tasks, rewards=(), title=None, sub=None, desc=None, icon=None, shape="diamond"):
+        """Optional quest hanging off the most recent main quest."""
+        anchor = self.prev
+        n = self.side_slots.get(anchor, 0)
+        self.side_slots[anchor] = n + 1
+        y = (-1.75, 1.75, -3.25, 3.25)[n]
+        self._quest(key, self.x - 2.0, y, tasks, rewards, [qid(f"{self.name}/{anchor}")],
+                    title, sub, desc, icon, shape, None, True)
 
-def adv_chapter(order, name, title, group, namespaces):
-    rows = [r for r in ADV["adv"] if r[0].split(":")[0] in namespaces]
-    if len(rows) < 3: return None
-    by_id = {r[0]: r for r in rows}
-    kids = {}
-    roots = []
-    for r in rows:
-        par = r[1] if r[1] in by_id else None
-        if par: kids.setdefault(par, []).append(r[0])
-        else: roots.append(r[0])
-    for k in kids: kids[k].sort()
-    roots.sort(key=lambda a: (len(kids.get(a, [])) == 0, a))  # real trees first, loose ends last
-    pos, leaf = {}, [0]
-    def place(a, depth):
-        ch = kids.get(a, [])
-        if not ch:
-            y = leaf[0]; leaf[0] += 1
-        else:
-            ys = [place(c, depth + 1) for c in ch]
-            y = sum(ys) / len(ys)
-        pos[a] = (depth * 1.75, y * 1.25)
-        return y
-    for rt in roots:
-        place(rt, 0)
-        leaf[0] += 1  # gap between trees
-    c = name
-    qs = []
-    for a, (x, y) in sorted(pos.items(), key=lambda kv: kv[1]):
-        r = by_id[a]
-        key = a.replace(":", "/")
-        xp, gxp = FRAME_REWARDS.get(r[3], (10, 0))
-        rewards = [r_xp(key, xp)]
-        if gxp: rewards.append(r_grade_xp(key, gxp))
-        if r[3] == "challenge": rewards.append(r_item(key, "minecraft:diamond", 2))
-        desc = text_of(r[5])
-        deps = [r[1].replace(":", "/")] if r[1] in by_id else []
-        shape = {"goal": "hexagon", "challenge": "gear"}.get(r[3])
-        qs.append(quest(c, key, x, y, [task_adv(key, a)], rewards, deps=deps,
-                        desc=[desc] if desc else None, icon=r[2], shape=shape))
-    root_icon = by_id[roots[0]][2] if roots else "minecraft:book"
-    chapter(name, title, root_icon, order, qs, group=G[group])
-    return len(qs)
+    def finish(self, order):
+        i = qid("chapter", self.name)
+        LANG[f"chapter.{i}.title"] = self.title
+        if self.subtitle: LANG[f"chapter.{i}.chapter_subtitle"] = [self.subtitle]
+        body = ("{\n\tdefault_hide_dependency_lines: false\n\tdefault_quest_shape: \"\"\n"
+                f"\tfilename: {s(self.name)}\n\tgroup: \"\"\n\ticon: {{ id: {s(self.icon)} }}\n\tid: {s(i)}\n"
+                f"\torder_index: {order}\n\tquest_links: [ ]\n\tquests: [\n" + "\n".join(self.quests) + "\n\t]\n}\n")
+        CHAPTERS.append((self.name, body))
+        LAST[self.name] = qid(f"{self.name}/{self.prev}")
 
-# Item-progression chapters for mods that ship no advancements. Each row is a path
-# through the mod; every item ID was checked against the installed jars.
-ITEM_CHAPTERS = [
-    ("draconic_evolution", "Draconic Evolution", "tech", "draconicevolution:draconium_ingot", [
-        ("Draconium", "Draconium ore is found in the Overworld, Nether and End. Everything starts here.",
-         ["draconicevolution:draconium_ingot", "draconicevolution:draconium_core", "draconicevolution:crafting_core"]),
-        ("Wyvern tier", "Fusion crafting unlocks the Wyvern tier of gear and machines.",
-         ["draconicevolution:wyvern_core", "draconicevolution:wyvern_pickaxe", "draconicevolution:energy_core"]),
-        ("Awakened", "The endgame: awakened draconium and chaos.",
-         ["draconicevolution:awakened_draconium_ingot", "draconicevolution:awakened_core", "draconicevolution:chaotic_core"]),
-    ]),
-    ("powah", "Powah", "tech", "powah:energy_cell_starter", [
-        ("Getting started", "Dielectric paste and an Energizing Orb power almost every Powah recipe.",
-         ["powah:dielectric_paste", "powah:energizing_orb", "powah:energizing_rod_starter"]),
-        ("Generation", "Pick a generator and store what it makes.",
-         ["powah:furnator_starter", "powah:solar_panel_starter", "powah:energy_cell_starter", "powah:capacitor_basic", "powah:reactor_starter"]),
-    ]),
-    ("industrial_foregoing", "Industrial Foregoing", "tech", "industrialforegoing:machine_frame_pity", [
-        ("Plastic age", "Latex from trees becomes plastic, which becomes machine frames.",
-         ["industrialforegoing:latex_processing_unit", "industrialforegoing:fluid_extractor", "industrialforegoing:plastic", "industrialforegoing:machine_frame_pity"]),
-        ("Machines", "Automate the boring parts of the world.",
-         ["industrialforegoing:dissolution_chamber", "industrialforegoing:mob_crusher", "industrialforegoing:infinity_drill"]),
-    ]),
-    ("flux_networks", "Flux Networks", "tech", "fluxnetworks:flux_core", [
-        ("Wireless power", "Drop redstone on obsidian over bedrock to make Flux Dust, then send power anywhere.",
-         ["fluxnetworks:flux_dust", "fluxnetworks:flux_core", "fluxnetworks:flux_plug", "fluxnetworks:flux_point", "fluxnetworks:flux_controller", "fluxnetworks:basic_flux_storage", "fluxnetworks:flux_configurator"]),
-    ]),
-    ("oritech", "Oritech", "tech", "oritech:assembler_block", [
-        ("Industry", "Big, animated machines for processing and power.",
-         ["oritech:basic_generator_block", "oritech:pulverizer_block", "oritech:assembler_block", "oritech:foundry_block", "oritech:fragment_forge_block", "oritech:laser_arm_block"]),
-    ]),
-    ("logistics", "Pipes & Logistics", "tech", "pipez:item_pipe", [
-        ("Pipez", "Simple pipes for items, fluids and energy. Upgrades make them faster.",
-         ["pipez:item_pipe", "pipez:fluid_pipe", "pipez:energy_pipe", "pipez:universal_pipe", "pipez:basic_upgrade"]),
-        ("LaserIO", "Wireless logistics with laser nodes and cards.",
-         ["laserio:laser_wrench", "laserio:laser_connector", "laserio:laser_node", "laserio:card_item"]),
-    ]),
-    ("gadgets", "Gadgets & Tools", "utility", "mininggadgets:mininggadget", [
-        ("Mining Gadgets", "Laser mining tools you can upgrade at the Modification Table.",
-         ["mininggadgets:mininggadget_simple", "mininggadgets:modificationtable", "mininggadgets:upgrade_empty", "mininggadgets:mininggadget", "mininggadgets:mininggadget_fancy"]),
-        ("Building Gadgets", "Build, exchange, copy and paste whole structures.",
-         ["buildinggadgets2:gadget_building", "buildinggadgets2:gadget_exchanging", "buildinggadgets2:gadget_copy_paste", "buildinggadgets2:gadget_destruction", "buildinggadgets2:template_manager"]),
-        ("Iron Jetpacks", "Fly.", ["ironjetpacks:strap", "ironjetpacks:basic_coil", "ironjetpacks:cell"]),
-        ("Just Dire Things", "New materials and clever tools.",
-         ["justdirethings:gooblock_tier1", "justdirethings:ferricore_ingot", "justdirethings:blazegold_ingot", "justdirethings:celestigem", "justdirethings:eclipsealloy_ingot"]),
-    ]),
-    ("malum", "Malum", "magic", "malum:spirit_altar", [
-        ("Spirit magic", "Harvest spirits from the creatures you slay, then infuse them into gear.",
-         ["malum:encyclopedia_arcana", "malum:runewood_log", "malum:spirit_altar", "malum:spirit_jar", "malum:soul_stained_steel_ingot", "malum:hallowed_gold_ingot", "malum:spirit_crucible"]),
-    ]),
-    ("forbidden_arcanus", "Forbidden & Arcanus", "magic", "forbidden_arcanus:arcane_crystal", [
-        ("Dark arts", "Arcane crystals, deorum and the Clibano furnace.",
-         ["forbidden_arcanus:arcane_crystal", "forbidden_arcanus:mundabitur_dust", "forbidden_arcanus:deorum_ingot", "forbidden_arcanus:smelter_prism", "forbidden_arcanus:clibano_core"]),
-    ]),
-    ("mystical_agriculture", "Mystical Agriculture", "farming", "mysticalagriculture:inferium_essence", [
-        ("Essence tiers", "Combine essence to climb the tiers and grow better seeds.",
-         ["mysticalagriculture:inferium_essence", "mysticalagriculture:prosperity_shard", "mysticalagriculture:prudentium_essence", "mysticalagriculture:tertium_essence", "mysticalagriculture:imperium_essence", "mysticalagriculture:supremium_essence"]),
-        ("Infusion", "Craft seeds and upgrades on the Infusion Altar.",
-         ["mysticalagriculture:infusion_pedestal", "mysticalagriculture:infusion_altar", "mysticalagriculture:awakening_altar"]),
-    ]),
-    ("storage_travel", "Storage & Travel", "utility", "waystones:waystone", [
-        ("Backpacks", "Upgrade your backpack tier by tier.",
-         ["sophisticatedbackpacks:backpack", "sophisticatedbackpacks:pickup_upgrade", "sophisticatedbackpacks:iron_backpack", "sophisticatedbackpacks:gold_backpack", "sophisticatedbackpacks:diamond_backpack", "sophisticatedbackpacks:netherite_backpack"]),
-        ("Waystones", "Fast travel between waystones, or carry a scroll.",
-         ["waystones:waystone", "waystones:warp_stone", "waystones:warp_scroll", "waystones:return_scroll"]),
-        ("Mob control", "Keep spawns away from your base.",
-         ["torchmaster:megatorch", "torchmaster:feral_flare_lantern", "torchmaster:dreadlamp"]),
-    ]),
-]
 
-def item_chapter(order, name, title, group, icon, rows):
-    c = name
-    qs = []
-    for ri, (rtitle, rdesc, items) in enumerate(rows):
-        y = ri * 2.0
-        prev = None
-        for n, it in enumerate(items):
-            key = f"{name}_r{ri}_{n}"
-            kw = dict(title=rtitle, desc=[rdesc], shape="hexagon") if n == 0 else {}
-            qs.append(quest(c, key, n * 1.75, y, [task_item(key, it)], [r_xp(key, 10 + 5 * n)],
-                            deps=[prev] if prev else [], **kw))
-            prev = key
-    chapter(name, title, icon, order, qs, group=G[group])
-    return len(qs)
+def new_chapter(*a):
+    ch = Chapter(*a)
+    if CHAPTERS_ORDER:
+        ch.entry_dep = LAST[CHAPTERS_ORDER[-1].name]
+    return ch
 
-order = 10
-stats = []
-for spec in ADV_CHAPTERS:
-    n = adv_chapter(order, *spec)
-    if n: stats.append((spec[1], n)); order += 1
-for spec in ITEM_CHAPTERS:
-    stats.append((spec[1], item_chapter(order, *spec))); order += 1
-print(", ".join(f"{t} {n}" for t, n in stats))
+CHAPTERS_ORDER = []
+
+def done(ch):
+    ch.finish(len(CHAPTERS_ORDER))
+    CHAPTERS_ORDER.append(ch)
+
+
+# =========================================================================
+# Chapter 1 - Prologue
+# =========================================================================
+c = new_chapter("1_prologue", "I. The Seal Cracks", "Prologue", "minecraft:ender_eye")
+c.main("welcome", [t_check()], [r_item("minecraft:bread", 16), r_item("minecraft:torch", 32)],
+       title="The Seal Cracks", sub="Read me first", icon="minecraft:ender_eye", shape="hexagon", size=2.0,
+       desc=["A thousand years ago the strongest sorcerers of their age buried something so dangerous they refused to write down its name. They called it &5the Calamity&r and sealed it beneath the world.",
+             "",
+             "Last night, the seal cracked.",
+             "",
+             "Everyone near the fracture woke up with &dcursed energy&r in their veins. You are one of them. Somewhere out there the Calamity is pulling itself back together, and the old seal will not hold much longer.",
+             "",
+             "This book is your path from a frightened Grade 2 sorcerer to the one who seals it again. Follow the main line left to right. &7Diamond-shaped quests are optional&r: they make the road easier, but you can skip them."])
+c.main("awakened", [t_adv("cursedtech:awakened")], [r_grade(25)],
+       title="Your Innate Technique", sub="What were you born with?", icon="minecraft:amethyst_shard",
+       desc=["Your technique and grade show above your hotbar. &eZ&r and &eX&r are your two abilities.",
+             "",
+             "Abilities cost cursed energy, which refills over about 30 seconds. Type &b/cursed info&r any time to see your technique and what your next promotion needs."])
+c.main("steel", [t_item("minecraft:iron_sword"), t_item("minecraft:iron_pickaxe"), t_item("minecraft:shield")],
+       [r_item("minecraft:iron_ingot", 8)],
+       title="Steel Before Sorcery", sub="Gear up", icon="minecraft:iron_sword",
+       desc=["Cursed energy runs dry. A good blade doesn't.",
+             "",
+             "Technique hits are about as strong as a sword, so you'll still be doing most of your fighting the old way."])
+c.side("backpack", [t_item("sophisticatedbackpacks:backpack")], [r_xp(10)],
+       title="Pack Light, Pack Lots", desc=["A backpack makes the long trips ahead much easier. Upgrade it later."])
+c.side("cooking_pot", [t_item("farmersdelight:cooking_pot")], [r_item("minecraft:carrot", 8), r_item("minecraft:potato", 8)],
+       title="Hot Meals", desc=["Farmer's Delight meals give long-lasting buffs. Fights get long."])
+c.main("leak", [t_kill("minecraft:zombie", 10), t_kill("minecraft:skeleton", 5)], [r_grade(75), r_item("minecraft:arrow", 32)],
+       title="What Leaks Through", sub="The dead walk more often now", icon="minecraft:rotten_flesh",
+       desc=["The crack is leaking. Curses drift up through it and settle into the dead, and the nights are worse than they used to be.",
+             "",
+             "Every hostile mob you put down gives &bgrade XP&r. That's how you get stronger."])
+c.side("waystone", [t_item("waystones:waystone")], [r_item("minecraft:ender_pearl", 4)],
+       title="Waystones", desc=["Place waystones as you explore so you can always get home. You will be travelling a lot."])
+c.side("sleep", [t_item("comforts:sleeping_bag_white")], [r_xp(10)],
+       title="Camp Out", desc=["A sleeping bag lets you skip the night without moving your spawn."])
+c.main("compass", [t_item("explorerscompass:explorerscompass")], [r_grade(50), r_item("minecraft:cooked_beef", 16)],
+       title="Where the Old Sorcerers Went", sub="Chapter complete", icon="explorerscompass:explorerscompass", shape="hexagon", size=1.5,
+       desc=["The sorcerers who made the seal left ruins all over the world, and the Calamity's pieces are drawn to them.",
+             "",
+             "An &eExplorer's Compass&r can point you at any structure. You'll need it to find what comes next."])
+done(c)
+
+# =========================================================================
+# Chapter 2 - Grades
+# =========================================================================
+c = new_chapter("2_grades", "II. Climbing the Grades", "Get stronger", "minecraft:iron_sword")
+c.main("intro", [t_check()], [r_grade(25)],
+       title="Grade 2 Is Not Enough", icon="minecraft:iron_sword", shape="hexagon", size=1.5,
+       desc=["Sorcerers are ranked by grade. Right now you're &7Grade 2&r: two abilities and a shallow pool of energy.",
+             "",
+             "Nobody seals a Calamity at Grade 2. Time to climb."])
+c.main("diamonds", [t_item("minecraft:diamond", 5)], [r_item("minecraft:experience_bottle", 8)],
+       title="Harder Than Curses", icon="minecraft:diamond",
+       desc=["Diamond gear keeps you alive long enough to learn."])
+c.side("reforging", [t_item("apotheosis:reforging_table")], [r_item("minecraft:diamond", 2)],
+       title="Reforge", desc=["Apotheosis gear rolls random affixes. A Reforging Table lets you reroll them into something good."])
+c.main("black_flash", [t_adv("cursedtech:black_flash")], [r_grade(75), r_item("minecraft:diamond", 2)],
+       title="Black Flash", sub="Space bends with a perfect hit", icon="minecraft:black_dye",
+       desc=["Hit something with a &efully charged&r melee attack. Sometimes it becomes a &cBlack Flash&r: about 1.8x damage and a flash that warps the screen.",
+             "",
+             "Land one and you're &cin the zone&r for 10 seconds, with much better odds. Higher grades require several."])
+c.side("night_patrol", [t_kill("minecraft:creeper", 10), t_kill("minecraft:spider", 10), t_kill("minecraft:enderman", 5)],
+       [r_grade(150)], title="Night Patrol", icon="minecraft:bow",
+       desc=["Extra grade XP for anyone willing to stay out after dark."])
+c.side("megatorch", [t_item("torchmaster:megatorch")], [r_xp(20)],
+       title="Safe Ground", desc=["A Megatorch stops hostile spawns in a huge radius. Your base deserves a quiet night."])
+c.main("nether", [t_dim("minecraft:the_nether")], [r_grade(100)],
+       title="Into the Nether", icon="minecraft:obsidian",
+       desc=["Curses run thick in the Nether. So does the XP."])
+c.main("semi_grade_1", [t_adv("cursedtech:semi_grade_1")], [r_item("minecraft:golden_apple", 2), r_item("minecraft:diamond", 4)],
+       title="Semi-Grade 1", sub="Chapter complete: 2,500 grade XP", icon="minecraft:golden_sword", shape="hexagon", size=1.5,
+       desc=["Your reserves deepen: more energy, faster regen, harder hits.",
+             "",
+             "You're strong enough now to start studying how the seal actually worked."])
+done(c)
+
+# =========================================================================
+# Chapter 3 - Magic
+# =========================================================================
+c = new_chapter("3_arcane", "III. Arcane Studies", "How the seal was made", "ars_nouveau:novice_spell_book")
+c.main("intro", [t_check()], [r_xp(20)],
+       title="Notes in the Ruins", icon="minecraft:writable_book", shape="hexagon", size=1.5,
+       desc=["In the ruins you find what's left of the old sorcerers' notes. Cursed energy alone never held the Calamity. They wove it together with every other kind of magic they knew.",
+             "",
+             "To rebuild the seal, you'll have to learn those arts too."])
+c.main("notebook", [t_item("ars_nouveau:worn_notebook")], [r_xp(20)],
+       title="A Worn Notebook", icon="ars_nouveau:worn_notebook",
+       desc=["Ars Nouveau's guidebook. Everything about source and glyphs is inside."])
+c.main("spell_book", [t_item("ars_nouveau:novice_spell_book")], [r_item("ars_nouveau:source_gem", 4)],
+       title="First Spells", icon="ars_nouveau:novice_spell_book",
+       desc=["Write your own spells from glyphs. Magic and cursed techniques stack: use both."])
+c.main("imbuement", [t_item("ars_nouveau:imbuement_chamber"), t_item("ars_nouveau:source_jar")], [r_xp(30)],
+       title="Source", icon="ars_nouveau:source_jar",
+       desc=["Source powers Ars Nouveau's machines. Fill a jar and set up an Imbuement Chamber."])
+c.side("apprentice", [t_item("ars_nouveau:apprentice_spell_book")], [r_xp(30)],
+       title="Apprentice Spell Book", desc=["More spell slots, stronger glyphs."])
+c.side("irons", [t_item("irons_spellbooks:inscription_table")], [r_item("irons_spellbooks:arcane_essence", 8)],
+       title="A Different School", desc=["Iron's Spells 'n Spellbooks has dozens of ready-made spells and some excellent wizard armor."])
+c.main("apparatus", [t_item("ars_nouveau:enchanting_apparatus"), t_item("ars_nouveau:arcane_core")], [r_grade(150)],
+       title="The Apparatus", sub="Chapter complete", icon="ars_nouveau:enchanting_apparatus", shape="hexagon", size=1.5,
+       desc=["The notes describe crafting on a ring of pedestals around a central core. The Enchanting Apparatus works the same way.",
+             "",
+             "The real seal needs something far bigger, and far more power than magic alone can give."])
+c.side("malum", [t_item("malum:spirit_altar")], [r_xp(30)],
+       title="Spirit Arcana", desc=["Malum harvests the spirits of what you kill and infuses them into gear. Useful for an exorcist."])
+c.side("occultism", [t_item("occultism:dictionary_of_spirits")], [r_xp(30)],
+       title="Bound Spirits", desc=["Occultism lets you summon and bind spirits to work for you, including miners that dig ore while you're away."])
+done(c)
+
+# =========================================================================
+# Chapter 4 - Technology
+# =========================================================================
+c = new_chapter("4_engines", "IV. Engines of the Modern Age", "Power for the ritual", "mekanism:metallurgic_infuser")
+c.main("intro", [t_check()], [r_xp(20)],
+       title="What They Didn't Have", icon="minecraft:redstone", shape="hexagon", size=1.5,
+       desc=["The old sorcerers needed a hundred of them pouring their lives into one ritual.",
+             "",
+             "You have machines. The seal you're going to build needs a lot of power, so start an industry."])
+c.main("andesite", [t_item("create:andesite_alloy", 16), t_item("create:mechanical_press")], [r_item("create:cogwheel", 16)],
+       title="Turning Gears", icon="create:mechanical_press",
+       desc=["Create runs on rotation. Waterwheels and windmills turn shafts, and shafts turn machines."])
+c.side("brass", [t_item("create:brass_ingot", 8)], [r_xp(30)],
+       title="Brass", desc=["Brass opens up Create's automation: deployers, arms and logistics."])
+c.main("infuser", [t_item("mekanism:metallurgic_infuser"), t_item("mekanism:ingot_steel", 8)], [r_item("mekanism:ingot_osmium", 8)],
+       title="Steel and Osmium", icon="mekanism:metallurgic_infuser",
+       desc=["Mekanism's Metallurgic Infuser makes steel and alloys. Most of Mekanism is built from them."])
+c.main("ore_processing", [t_item("mekanism:enrichment_chamber")], [r_xp(40)],
+       title="Double Your Ore", icon="mekanism:enrichment_chamber",
+       desc=["Ore processing doubles everything you mine. You'll need a mountain of metal."])
+c.side("powah", [t_item("powah:energizing_orb")], [r_xp(30)],
+       title="Powah", desc=["Powah's generators and energy cells are a simple way to make a lot of power."])
+c.side("ae2", [t_item("ae2:controller")], [r_xp(50)],
+       title="Digital Storage", desc=["Applied Energistics 2 turns your chests into one searchable network. Your stockpile is about to get big."])
+c.main("battery", [t_item("mekanism:basic_energy_cube"), t_item("mekanism:basic_control_circuit", 4)], [r_grade(150)],
+       title="Stored Lightning", sub="Chapter complete", icon="mekanism:basic_energy_cube", shape="hexagon", size=1.5,
+       desc=["Power, stored and ready. Now you need the strength to survive what the Calamity will throw at you."])
+done(c)
+
+# =========================================================================
+# Chapter 5 - Grade 1 and Domains
+# =========================================================================
+c = new_chapter("5_domain", "V. A World of Your Own", "Grade 1 and Domain Expansion", "minecraft:obsidian")
+c.main("intro", [t_check()], [r_grade(50)],
+       title="The Wardens Stir", icon="minecraft:iron_axe", shape="hexagon", size=1.5,
+       desc=["Things are getting worse. Old guardians have woken up across the world, twisted by curse energy from the crack.",
+             "",
+             "Put them down. Every boss you kill gives a huge pile of grade XP and counts toward Special Grade."])
+c.main("wroughtnaut", [t_kill("mowziesmobs:ferrous_wroughtnaut")], [r_grade(200), r_item("minecraft:diamond", 3)],
+       title="Ferrous Wroughtnaut", sub="The armored guardian", icon="minecraft:iron_axe",
+       desc=["It sleeps in underground halls. Hit it from behind when it gets stuck after a swing."])
+c.side("frostmaw", [t_kill("mowziesmobs:frostmaw")], [r_grade(200)], title="Frostmaw", icon="minecraft:blue_ice",
+       desc=["A giant of the snowy biomes."])
+c.side("umvuthi", [t_kill("mowziesmobs:umvuthi")], [r_grade(200)], title="Umvuthi", icon="minecraft:gold_block",
+       desc=["The sun-masked king of the savanna."])
+c.main("grade_1", [t_adv("cursedtech:grade_1")], [r_item("minecraft:totem_of_undying"), r_item("minecraft:diamond", 6)],
+       title="Grade 1", sub="8,000 XP and 3 Black Flashes", icon="minecraft:diamond_sword",
+       desc=["You're now one of the strongest sorcerers alive. And you've unlocked something new."])
+c.main("domain", [t_adv("cursedtech:domain")], [r_grade(100)],
+       title="Domain Expansion", sub="Press V", icon="minecraft:obsidian",
+       desc=["A domain raises a barrier around you, and everything inside suffers your technique's sure-hit effect.",
+             "",
+             "Two overlapping domains &6clash&r and the stronger one wins. Afterwards your technique &cburns out&r for a few seconds, so pick your moment."])
+c.side("sculptor", [t_kill("mowziesmobs:sculptor")], [r_grade(200)], title="The Sculptor", icon="minecraft:chiseled_stone_bricks",
+       desc=["A climbing challenge at the top of a stone pillar."])
+c.main("wither", [t_kill("minecraft:wither")], [r_grade(250), r_item("minecraft:netherite_ingot")],
+       title="The Wither", sub="Chapter complete", icon="minecraft:wither_skeleton_skull", shape="hexagon", size=1.5,
+       desc=["Fight it somewhere you don't mind wrecking. Trap it in your domain.",
+             "",
+             "When it dies, something answers from far away: a sound like a heartbeat from every direction at once."])
+done(c)
+
+# =========================================================================
+# Chapter 6 - Cataclysm bosses
+# =========================================================================
+c = new_chapter("6_fragments", "VI. Fragments of the Calamity", "Special Grade", "cataclysm:ignitium_ingot")
+c.main("intro", [t_check()], [r_grade(50)],
+       title="Fragments", icon="minecraft:netherite_scrap", shape="hexagon", size=1.5,
+       desc=["Now you know what that heartbeat was. The great beasts sleeping in the deepest ruins aren't natural. Each one is a &5fragment of the Calamity&r that slipped through the crack.",
+             "",
+             "Kill them, and the Calamity can't rebuild itself. Each fragment leaves behind cursed metal, and you'll need that metal later."])
+c.main("end", [t_dim("minecraft:the_end"), t_kill("minecraft:ender_dragon")], [r_grade(300), r_item("minecraft:elytra")],
+       title="Beyond the Portal", icon="minecraft:dragon_head",
+       desc=["The Ender Dragon has been guarding one of the old seal-stones all this time. Free the End. The Chaos Guardian is waiting there too, but not yet."])
+c.side("ender_guardian", [t_kill("cataclysm:ender_guardian")], [r_grade(300)],
+       title="Ender Guardian", icon="cataclysm:gauntlet_of_guard",
+       desc=["A fragment that hides in a fortress on the End islands."])
+c.main("monstrosity", [t_kill("cataclysm:netherite_monstrosity")], [r_grade(300), r_item("minecraft:netherite_ingot", 2)],
+       title="Netherite Monstrosity", icon="minecraft:netherite_block",
+       desc=["Sleeping in a soul-black fortress in the Nether. It hits like a landslide. Fire resistance helps."])
+c.main("ignis", [t_kill("cataclysm:ignis"), t_item("cataclysm:ignitium_ingot")], [r_grade(400)],
+       title="Ignis", sub="The burning knight", icon="cataclysm:ignitium_ingot",
+       desc=["Its fortress burns in the Nether. Ignitium is the first of the cursed metals you need."])
+c.side("leviathan", [t_kill("cataclysm:the_leviathan")], [r_grade(400)],
+       title="The Leviathan", icon="cataclysm:tidal_claws",
+       desc=["A fragment that drowned itself in a sunken city."])
+c.side("remnant", [t_kill("cataclysm:ancient_remnant")], [r_grade(400)],
+       title="Ancient Remnant", icon="cataclysm:ancient_metal_ingot",
+       desc=["Buried under the desert sands."])
+c.main("harbinger", [t_kill("cataclysm:the_harbinger"), t_item("cataclysm:witherite_ingot")], [r_grade(400)],
+       title="The Harbinger", sub="The machine that heralds it", icon="cataclysm:witherite_ingot",
+       desc=["A war machine in a hidden factory, built to call the Calamity home. Witherite is the second cursed metal."])
+c.side("maledictus", [t_kill("cataclysm:maledictus")], [r_grade(400)],
+       title="Maledictus", icon="cataclysm:cursium_ingot",
+       desc=["A reaper of souls in a frozen citadel. Not one of the fragments, but it fights like one, and Cursium makes excellent gear."])
+c.main("special", [t_adv("cursedtech:special")], [r_item("minecraft:nether_star"), r_item("minecraft:netherite_ingot", 2)],
+       title="Special Grade", sub="Chapter complete", icon="minecraft:netherite_sword", shape="hexagon", size=1.5,
+       desc=["30,000 XP, 12 Black Flashes, 2 bosses. You've reached the peak.",
+             "",
+             "You unlock your &cMaximum&r technique (G) and &aReverse Cursed Technique&r, which slowly heals you with cursed energy.",
+             "",
+             "You're as strong as the sorcerers who made the first seal. Now build a better one."])
+c.side("maximum", [t_adv("cursedtech:maximum")], [r_grade(100)], title="Maximum", icon="minecraft:nether_star", shape="gear",
+       desc=["Unleash everything you have."])
+done(c)
+
+# =========================================================================
+# Chapter 7 - Draconic Evolution
+# =========================================================================
+c = new_chapter("7_forging", "VII. Forging the Seal", "Draconic fusion", "draconicevolution:chaotic_core")
+c.main("intro", [t_check()], [r_xp(30)],
+       title="A Better Seal", icon="draconicevolution:draconium_core", shape="hexagon", size=1.5,
+       desc=["The old seal was stone and sacrifice. Yours will be &ddraconic&r: forged from dragon-touched metal, fused with power, and set around a heart of pure chaos.",
+             "",
+             "The path runs Draconium, Wyvern, Awakened, Chaotic. The last core is the seal itself."])
+c.main("draconium", [t_item("draconicevolution:draconium_ingot", 16)], [r_item("draconicevolution:draconium_ingot", 8)],
+       title="Draconium", icon="draconicevolution:draconium_ingot",
+       desc=["Draconium ore is found deep in the Overworld, and more plentifully in the Nether and End. It's tough to mine without at least a diamond pick."])
+c.main("fusion", [t_item("draconicevolution:draconium_core"), t_item("draconicevolution:crafting_core"), t_item("draconicevolution:basic_crafting_injector", 4)],
+       [r_grade(100)],
+       title="Fusion Crafting", icon="draconicevolution:crafting_core",
+       desc=["A Fusion Crafting Core surrounded by injectors, just like the Apparatus but much stronger. Every core from here on is fused, and fusion eats power."])
+c.side("energy_core", [t_item("draconicevolution:energy_core")], [r_xp(50)],
+       title="Energy Core", desc=["A multiblock battery that holds staggering amounts of power. Fusion crafting will drain your basic cells fast."])
+c.main("wyvern", [t_item("draconicevolution:wyvern_core")], [r_grade(150)],
+       title="Wyvern Core", icon="draconicevolution:wyvern_core",
+       desc=["The second tier. Wyvern tools and armor are a big step up from netherite."])
+c.main("heart", [t_item("draconicevolution:dragon_heart")], [r_grade(150)],
+       title="A Dragon's Heart", icon="draconicevolution:dragon_heart",
+       desc=["Draconium needs to be &eawakened&r with the heart of a dragon. Kill the Ender Dragon again (you can respawn it) and claim its heart."])
+c.main("awakened", [t_item("draconicevolution:awakened_draconium_ingot", 4), t_item("draconicevolution:awakened_core")], [r_grade(200)],
+       title="Awakened", icon="draconicevolution:awakened_core",
+       desc=["Awakened draconium, fused with cursed metal. The seal is nearly ready. It only needs a heart."])
+c.side("cursed_metal", [t_item("cataclysm:ignitium_ingot", 4), t_item("cataclysm:witherite_ingot", 4)], [r_grade(150)],
+       title="Temper with Cursed Metal", icon="cataclysm:ignitium_ingot",
+       desc=["Gear made from the fragments' metal is some of the best in the pack. You'll want it for the last fights."])
+c.main("chaos_guardian", [t_kill("draconicevolution:draconic_guardian"), t_item("draconicevolution:chaos_shard", 4)],
+       [r_grade(500)],
+       title="The Chaos Guardian", sub="The hardest fight before the last", icon="draconicevolution:chaos_shard",
+       desc=["On a distant island in the End lives the Chaos Guardian, a dragon fed on raw chaos. Its shards are the only thing strong enough to anchor your seal.",
+             "",
+             "Bring Wyvern gear at minimum, and friends. Destroy its crystals first."])
+c.main("chaotic_core", [t_item("draconicevolution:chaotic_core")], [r_grade(300)],
+       title="The Seal", sub="Chapter complete", icon="draconicevolution:chaotic_core", shape="hexagon", size=2.0,
+       desc=["A Chaotic Core: draconium, cursed energy and chaos, fused into something nothing can break.",
+             "",
+             "This is your seal. Keep it close. The Calamity knows you've made it, and it's coming."])
+done(c)
+
+# =========================================================================
+# Chapter 8 - Finale
+# =========================================================================
+c = new_chapter("8_finale", "VIII. Seal the Calamity", "The end goal", "cursedtech:calamity_heart")
+c.main("intro", [t_check()], [],
+       title="The Name Under the Stone", icon="minecraft:soul_lantern", shape="hexagon", size=1.5,
+       desc=["The last of the old notes finally makes sense. The Calamity was never a beast. It was a &5sorcerer&r, the strongest who ever lived, so strong the others could only bury him alive.",
+             "",
+             "The fragments you killed were pieces of his power that leaked out through the crack. With them gone, he's alone down there, and weaker than he has been in a thousand years.",
+             "",
+             "The old sorcerers sealed him in his sleep. You're going to wake him, beat him, and seal him for good."])
+c.main("altar", [t_item("cursedtech:sealing_altar")], [r_xp(50)],
+       title="The Sealing Altar", icon="cursedtech:sealing_altar",
+       desc=["Build a Sealing Altar: amethyst, crying obsidian, obsidian and a Nether Star.",
+             "",
+             "Place it somewhere with room to fight, away from anything you care about. He doesn't break blocks, but he hits very hard."])
+c.main("prepare", [t_item("minecraft:totem_of_undying"), t_item("minecraft:enchanted_golden_apple")], [r_item("minecraft:golden_apple", 4)],
+       title="Last Preparations", icon="minecraft:totem_of_undying",
+       desc=["Bring a totem, food and friends.",
+             "",
+             "What to expect: every attack is telegraphed. A &5purple line&r means a cut is coming, and a &5purple ring&r means get out. At half health he opens his own &5domain&r. Open yours inside it and his sure-hit can't touch you. When his domain ends he &cburns out&r and takes extra damage, so that's your window."])
+c.main("calamity", [t_kill("cursedtech:calamity"), t_item("cursedtech:calamity_heart")], [r_grade(1000)],
+       title="The Calamity", sub="Use the seal on the altar", icon="cursedtech:calamity_heart", shape="gear", size=2.0,
+       desc=["Hold your Chaotic Core and use it on the altar. The seal isn't used up.",
+             "",
+             "He rises. Win.",
+             "",
+             "When he falls he leaves his &5Heart&r behind: everything he was, in a form small enough to bind."])
+c.main("sealed", [t_item("draconicevolution:chaotic_core"), t_item("cursedtech:calamity_heart")],
+       [r_item("minecraft:nether_star", 2), r_item("minecraft:beacon"), r_xp(500),
+        r_cmd('/tellraw @a ["",{"text":"[Cursed Arts] ","color":"dark_purple"},{"selector":"{p}"},{"text":" has sealed the Calamity.","color":"light_purple"}]')],
+       title="Seal the Calamity", sub="The end", icon="draconicevolution:chaotic_core", shape="hexagon", size=2.5,
+       desc=["Hold the seal in one hand and his heart in the other.",
+             "",
+             "Cursed energy, magic, machines and chaos, bound together the way the old sorcerers never could. The crack closes. The nights go quiet.",
+             "",
+             "It's over. Thank you for playing &dCursed Arts&r.",
+             "",
+             "&7The altar still works if you want a rematch, and every boss still drops loot."])
+done(c)
 
 # -------------------------------------------------------------------- write
-os.makedirs(f"{OUT}/chapters", exist_ok=True)
-os.makedirs(f"{OUT}/lang", exist_ok=True)
+qdir = OUT
+if os.path.isdir(f"{qdir}/chapters"):
+    shutil.rmtree(f"{qdir}/chapters")
+os.makedirs(f"{qdir}/chapters")
+os.makedirs(f"{qdir}/lang", exist_ok=True)
 for name, body in CHAPTERS:
-    open(f"{OUT}/chapters/{name}.snbt", "w").write(body)
-LANG["file.0000000000000001.title"] = "Cursed Arts"
-with open(f"{OUT}/lang/en_us.snbt", "w") as f:
+    open(f"{qdir}/chapters/{name}.snbt", "w").write(body)
+LANG["file.0000000000000001.title"] = "Cursed Arts: Seal the Calamity"
+with open(f"{qdir}/lang/en_us.snbt", "w") as f:
     f.write("{\n")
     for k in sorted(LANG):
         v = LANG[k]
@@ -383,7 +477,7 @@ with open(f"{OUT}/lang/en_us.snbt", "w") as f:
         else:
             f.write("\t%s: %s\n" % (k, s(v)))
     f.write("}\n")
-open(f"{OUT}/data.snbt", "w").write("""{
+open(f"{qdir}/data.snbt", "w").write("""{
 	default_autoclaim_rewards: "disabled"
 	default_consume_items: false
 	default_quest_disable_jei: false
@@ -405,12 +499,13 @@ open(f"{OUT}/data.snbt", "w").write("""{
 		passive: 0
 	}
 	pause_game: false
-	progression_mode: "flexible"
+	progression_mode: "linear"
 	show_lock_icons: true
 	verify_on_load: false
 	version: 13
 }
 """)
-open(f"{OUT}/chapter_groups.snbt", "w").write("{\n\tchapter_groups: [\n" + "".join('\t\t{ id: %s }\n' % s(G[k]) for k, _ in GROUPS) + "\t]\n}\n")
+open(f"{qdir}/chapter_groups.snbt", "w").write("{\n\tchapter_groups: [ ]\n}\n")
 nq = sum(b.count("\t\t\tid: ") for _, b in CHAPTERS)
-print(f"{len(CHAPTERS)} chapters, {nq} quests, {len(LANG)} lang entries")
+nopt = sum(b.count("optional: true") for _, b in CHAPTERS)
+print(f"{len(CHAPTERS)} chapters, {nq} quests ({nopt} optional), {len(LANG)} lang entries")

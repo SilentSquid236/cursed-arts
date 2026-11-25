@@ -2,139 +2,47 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "7c045ba64f5df2296c1806242f3829c502085b6e1ae75af4591059ed71650927"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ae2.snbt"
-hash = "616fafbce42e14f6e978c6968da9dd5b860107967728bf63024c4ecb6b12ee52"
+file = "config/ftbquests/quests/chapters/1_prologue.snbt"
+hash = "69ecdbbb3dbe56bda7a641499036e88bfbf4be02bae900767bf9892832cf3949"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/apotheosis.snbt"
-hash = "971b274195a4251ed698edf579b596c1c2aff0fff3ce056abcaf5bfe558b5a04"
+file = "config/ftbquests/quests/chapters/2_grades.snbt"
+hash = "2acd4042d81a6111d84ed91f9a09210a665231c8ce3a973725acf72da15ebd9a"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ars_nouveau.snbt"
-hash = "4bff343763c201def6dbcc80ab365eceb27b34980b263ee0a4a027158dd5ba43"
+file = "config/ftbquests/quests/chapters/3_arcane.snbt"
+hash = "447d675f8202a38befeca7c3854be339c04cbe64286dac2d4a8b258f35a6fbb2"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/astral_sorcery.snbt"
-hash = "1b0e6591e81e41232ec52cd962fe25c5c4b1cdbdecd336f925eb17d2590cae72"
+file = "config/ftbquests/quests/chapters/4_engines.snbt"
+hash = "c48610a11648e4cb5e98aa310ae6b302540c3d1ffc6aabecf8f27210d2ff447b"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/awakening.snbt"
-hash = "7b7b122301dfac274c8948852ffe20fe728cf76cdc19585b44b2d372ac52680e"
+file = "config/ftbquests/quests/chapters/5_domain.snbt"
+hash = "c9bec44519b8b9db7ae3e37f48c1b9c8825ab1e98c7ae24bf77080ed01c33394"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/biomes.snbt"
-hash = "54871b5b8a4c3fd95a7f18441d739014185baa6d4e2200bc94d152231d520b0b"
+file = "config/ftbquests/quests/chapters/6_fragments.snbt"
+hash = "3530b7ae94213236bff8a2418e20f25806750a438b8e11d6f670f4953734f44e"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/cataclysm.snbt"
-hash = "3cf9e052387e855252aa730c59932e564979b6d77d9e5f329c0fae62e9609fb8"
+file = "config/ftbquests/quests/chapters/7_forging.snbt"
+hash = "329b244572266c33769dda5e22b9cec0d00b31366c4340e8cfa8c61950f48599"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/create.snbt"
-hash = "148f13282fe62241f606fa76733383ef87e28c4ab21b2e3a9f6168d64802e84b"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/draconic_evolution.snbt"
-hash = "231c0b3229b5b8f1c6109cd689a2504d0898f677701574027e8be4dfaf82d804"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/dungeons_arise.snbt"
-hash = "3c1f5f2c80239cd44a79cc6965ec7169ea7dab197525bd9660f665f974ce9257"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/exorcisms.snbt"
-hash = "2953708137b1cb5b3a9b362804b4a982ecbabb79ec846e003a2b84247cd4c2aa"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/expedition.snbt"
-hash = "5868e36ca41e227af527d219a28a1dfbde08e92f1c85a6a8d4754081a6bb82fe"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/farmers_delight.snbt"
-hash = "063133f8ff3b5dd5b45135cfb04b6057c8fa20727a3d13fc54fd0d9766c49995"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/flux_networks.snbt"
-hash = "bd8d8a09cba05172565cd8b8fd9edca36378dcb4beada4f391dbb898d6384336"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/forbidden_arcanus.snbt"
-hash = "9b0d8355cfac8007d3e23e542eea1043f0ed94748e0a547726fcb938f16d91b2"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/gadgets.snbt"
-hash = "5fdfcaa4fa52bfc42c57fcb1d05fcdd51b8bbf6cfc4d372af99e86d1a9c55213"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/immersive_engineering.snbt"
-hash = "e19b17aaf7500d2ae0bd54bff8d4e293b3b7439e617ea098badc7eb4d2289d9c"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/industrial_foregoing.snbt"
-hash = "5348852c280732c42f80cbd78c5c5f6b04f0c8546f1b485930f5748e97dab127"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/irons_spellbooks.snbt"
-hash = "a7057b0ac24e6b11c2026dc9fe7293066f3a42b7db3f81fd3b9f18c9b8696da8"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/logistics.snbt"
-hash = "b58c273ca8ffa19846f548b6da3a2138fae8c1d678bf848c4de8e493683de381"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/lootr.snbt"
-hash = "2ebc078e89196cad2a14ce7a45f93269efc2099da11abd06e036b1e4271ac7d0"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/malum.snbt"
-hash = "6c81caa6d2e6700a9ee5dcd015e0c11527f5ecba6bc1608afab820760b5a125b"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/mekanism.snbt"
-hash = "ed5591618677b87fc310bfa83efa91153c840deb80cbf4fbbd2ff4fb4857b9e0"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/mowzies_mobs.snbt"
-hash = "4f518262220eba20f35a30ea16410e60f4c65fdc4a7fd510090a3e6106f770de"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/mystical_agriculture.snbt"
-hash = "a272dc39585b269916e4f76da11dea852fa40bb74f8d27e02ebd4e3204bf0cb0"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/occultism.snbt"
-hash = "2ac19b23f7f2d1c0a920f07c0710cbf8e3f22dc6dc5dc859587dcbe2ddbda1be"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/oritech.snbt"
-hash = "95b5252af3b139261640abde4fed5d785d9f96f9746f935252223208a58774c6"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/pneumaticcraft.snbt"
-hash = "256806cbe26fe174646f589a9be8e1cf74c8fe3bbebdf37cfed8fc421af3636f"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/powah.snbt"
-hash = "c8f41464847f9397c58ed06a8fe290581b1ae70ac60e9755aaeed182dc9b1801"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/silent_gear.snbt"
-hash = "91958720e554749f2beb11f983d7bce2f367649f6af2c6f367860ad884373b9a"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/storage_travel.snbt"
-hash = "f9a36e98a0cb8b0e5015bfc230f41030db0eec9d3d2c435c9798db67f141a89f"
+file = "config/ftbquests/quests/chapters/8_finale.snbt"
+hash = "a9e3dad6c9a959f7c2472c3d2babda2d5231ec991d07b5aa52c942466b0e96b9"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "eddb19627c71897af55f11e308bc9059045e2e488297d956da1382bb7b5ce070"
+hash = "6fc1d5621ca2832651d447d3f1b09f247928cb38c4159740e6dd288c967361c3"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "7f8daca1b6217018d2d65f239f04f9cf13683f0a27ae08e26f11488dd2df5a71"
+hash = "8f67e015f81f2d20ac92da3d5c68aeabfdddc96efa0583c6274c1fe3cef18ef4"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
@@ -305,8 +213,8 @@ hash = "982c4bedb0295d598d57cf92cf39abe81562c0f2142f5bc1f90a7e61bff71bb5"
 metafile = true
 
 [[files]]
-file = "mods/cursedtech-0.4.0.jar"
-hash = "5d248830176e106f4b0c864e79817d65ae63e92679963a781356b4c94c800255"
+file = "mods/cursedtech-0.5.0.jar"
+hash = "7ee4d907ec3517997bb380464c8644964435c6114bf2ceb198532d7de539735c"
 
 [[files]]
 file = "mods/draconic-evolution.pw.toml"
